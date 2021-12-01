@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <svg class="page-header__logo-icon" width="96" height="15" xmlns="http://www.w3.org/2000/svg" role="img"
+        aria-label="Логотип Погнали.">
+        <path
+          d="M94.911 6.189C95.637 5.727 96 5.016 96 4.055c0-1.255-.523-2.242-1.568-2.96C93.416.366 92.22 0 90.84 0c-1.35 0-2.584.397-3.701 1.192-1.104.781-1.655 1.825-1.655 3.132 0 .487.152.89.457 1.211.305.308.74.462 1.307.462.551 0 .972-.154 1.263-.462.304-.32.457-.724.457-1.21-.03-.372.094-.75.37-1.135.276-.397.777-.595 1.502-.595.61.012 1.046.166 1.307.46.276.296.4.59.37.885 0 .205-.073.41-.218.615a2.031 2.031 0 0 1-.457.48c-.145.116-.385.282-.718.5-.334.218-.567.372-.697.462-.755.55-1.133 1.28-1.133 2.19 0 .449.16.827.48 1.135.333.294.776.442 1.328.442.551 0 .987-.148 1.306-.442.334-.308.501-.686.501-1.134 0-.193.036-.372.109-.539.073-.166.189-.32.348-.46.175-.142.32-.257.436-.347.13-.09.32-.205.566-.346.261-.14.443-.243.544-.307ZM76.305 10.235l3.857-4.771c.395-.577.932-.897 1.61-.963.678-.078 1.271.085 1.78.491.509.406.749.95.72 1.63v6.834c0 .432-.169.799-.508 1.1-.325.288-.72.432-1.187.432-.466 0-.868-.144-1.207-.432a1.443 1.443 0 0 1-.488-1.1V9.214l-3.856 4.772c-.396.576-.933.897-1.61.962-.679.079-1.272-.085-1.78-.49-.51-.406-.75-.95-.721-1.63V6.013c0-.432.162-.798.487-1.1.34-.3.742-.451 1.208-.451.466 0 .862.15 1.187.452.339.3.508.667.508 1.1v4.221Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M58.967 13.389V5.975c0-.426-.178-.793-.535-1.1a1.725 1.725 0 0 0-1.219-.479 1.7 1.7 0 0 0-1.198.48c-.342.306-.513.673-.513 1.099v-.18c-.171-.4-.513-.74-1.027-1.019-.513-.293-1.097-.44-1.753-.44-1.284 0-2.467.473-3.55 1.42C48.115 6.7 47.588 8 47.588 9.651c0 1.692.52 3.004 1.56 3.937 1.042.932 2.232 1.399 3.573 1.399.656 0 1.233-.12 1.732-.36.5-.253.863-.553 1.09-.9.086.36.286.66.6.9.313.226.67.34 1.07.34.47 0 .876-.154 1.218-.46.357-.306.535-.68.535-1.12Zm-5.47-1.362c1.169 0 2.116-1.026 2.116-2.291 0-1.266-.947-2.291-2.116-2.291S51.38 8.47 51.38 9.735c0 1.266.948 2.292 2.117 2.292Z" />
+        <path
+          d="M43.081 8.237V6.094c0-.435.177-.804.53-1.108a1.793 1.793 0 0 1 1.236-.475c.47 0 .882.159 1.235.475.353.304.53.673.53 1.108v7.343c0 .435-.177.804-.53 1.108-.338.303-.75.455-1.235.455-.486 0-.905-.152-1.258-.455a1.434 1.434 0 0 1-.508-1.108v-2.175h-3.817v2.175c0 .435-.177.804-.53 1.108-.338.303-.75.455-1.235.455-.486 0-.905-.152-1.258-.455a1.434 1.434 0 0 1-.508-1.108V6.094c0-.435.177-.804.53-1.108a1.793 1.793 0 0 1 1.236-.475c.47 0 .882.159 1.235.475.353.304.53.673.53 1.108v2.143h3.817ZM33.962 4.511c.346 0 .642.131.89.394.247.262.37.867.37 1.234 0 .368-.123.747-.37 1.01-.247.262-.544.354-.89.354h-2.958v5.971c0 1.13-.994 1.526-1.99 1.526-.924 0-1.807-.5-1.807-1.515l.03-8.974h6.725ZM12.855 0v13.332c0 .44-.239.812-.57 1.118-.317.307-.815.46-1.27.46-.455 0-1.113-.153-1.444-.46a1.497 1.497 0 0 1-.476-1.118V3.008H3.772v10.322c0 .44-.165.813-.496 1.12-.317.306-.963.46-1.418.46-.455 0-1.051-.154-1.382-.46A1.497 1.497 0 0 1 0 13.33V0h12.855ZM24.637 13.365c-1.076 1.01-2.517 1.516-4.322 1.516-1.804 0-3.237-.505-4.298-1.516-1.092-1.026-1.638-2.308-1.638-3.847 0-1.554.546-2.836 1.638-3.847 1.06-1.01 2.494-1.516 4.298-1.516 1.805 0 3.246.505 4.322 1.516 1.077 1.026 1.615 2.308 1.615 3.847 0 1.539-.538 2.821-1.614 3.847Zm-2.802-5.43a1.835 1.835 0 0 0-1.116-.567 2.288 2.288 0 0 0-1.235.114c-.38.15-.704.407-.973.769-.254.362-.364.784-.333 1.267 0 .634.198 1.162.594 1.584.412.407.926.611 1.543.611.634 0 1.148-.196 1.544-.588.396-.408.594-.943.594-1.607 0-.633-.206-1.161-.618-1.584ZM64.022 4.462c2.024 0 7.417.03 7.417.03s.004 6.591.004 8.894c0 .443-.182.824-.546 1.145-.347.305-.662.457-1.191.457-.53 0-.8.04-1.164-.265-.347-.32-.667-.894-.667-1.337v-5.95H65.42c0 4.266 0 5.203-1.57 6.728-.58.55-1.325.824-2.235.824-.546 0-.867-.13-1.214-.436-.347-.32-.617-.832-.617-1.304 0-1.018.213-1.423.76-2.088 1.566 0 1.498-.38 1.4-3.266v-1.83c.017-.443.098-1.602.098-1.602h1.98ZM93.16 12.745c0 1.239-1.05 2.243-2.345 2.243-1.295 0-2.344-1.005-2.344-2.243s1.05-2.242 2.344-2.242c1.295 0 2.345 1.004 2.345 2.242Z" />
+      </svg>
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a class="site-list__link" href="index.html">О сервисе</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Направления</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="companion.html">Попутчики</a></li>
+        </ul>
+      </div>
+
+      <div class="main-nav__user-wrapper">
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-item">
+            <a class="user-list__link button user-list__link--authentication" href="#">Авторизация</a>
+          </li>
+          <li class="user-list__item user-item">
+            <a class="user-list__link user-list__link--phone" href="tel:+78005558628">
+              <span class="visually-hidden">8 800 555-86-28</span>
+              <svg class="user-list__icon phone-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Номер телефона.">
+                <path
+                  d="M9.5 1.086c-2.796 0-5.6.473-6.617 1.415-.844.782-1.125 2.162-1.22 3.037 0 0-.013.086-.013.123 0 .343.295.618.654.618.043 0 1.616-.12 2.565-.195.022-.003.045-.006.068-.012.353-.01.638-.281.638-.618l.003-1.217c0-.377.324-.68.723-.68H12.7c.399 0 .723.303.723.68l.003 1.217c0 .337.285.609.638.618.022.006.045.01.069.012.948.074 2.521.195 2.564.195.36 0 .654-.275.654-.618 0-.037-.013-.123-.013-.123-.095-.875-.376-2.255-1.22-3.037-1.017-.942-3.82-1.415-6.617-1.415Zm0 8.032c-.723 0-1.308.553-1.308 1.235 0 .683.585 1.236 1.308 1.236.723 0 1.308-.553 1.308-1.236 0-.682-.585-1.235-1.308-1.235Zm-.981-2.78v-.773c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.773l-4.412 4.45a1.504 1.504 0 0 0-.494 1.107v1.239c0 .682.586 1.235 1.309 1.235h.327v.772c0 .427.366.773.817.773.452 0 .818-.346.818-.773v-.772h8.504v.772c0 .427.366.773.818.773.451 0 .817-.346.817-.773v-.772h.327c.723 0 1.309-.553 1.309-1.236v-1.238c0-.433-.19-.825-.494-1.106l-4.412-4.451v-.773c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.773H8.52ZM9.5 7.882c1.446 0 2.617 1.106 2.617 2.471 0 1.366-1.171 2.472-2.617 2.472s-2.617-1.106-2.617-2.472c0-1.365 1.171-2.47 2.617-2.47Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="user-list__item user-item">
+            <a class="user-list__link user-list__link--email" href="mailto:mail@htmlacademy.ru">
+              <span class="visually-hidden">mail@htmlacademy.ru</span>
+              <svg class="user-list__icon e-mail-icon" aria-hidden="true" focusable="false" width="18" height="13"
+                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="e-mail.">
+                <path
+                  d="M16.14 10.466 11.808 6.5l4.33-3.966-.59-.631L9.25 7.672l-6.299-5.77-.59.632L6.69 6.5l-4.33 3.966.59.631 4.38-4.011L9.25 8.844l1.92-1.758 4.379 4.011.59-.63ZM1.575.25C.767.25.111.949.111 1.808v9.384c0 .86.65 1.558 1.465 1.558h15.348c.81 0 1.465-.699 1.465-1.558V1.808c0-.86-.65-1.558-1.465-1.558H1.576Z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-nav__social-wrapper social-nav">
+        <ul class="social-nav__list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фэйсбук</span>
+              <svg class="social-icon" width="14" height="28" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Фэйсбук.">
+                <path
+                  d="M9.53 27.75H2.71v-12.9H0V8.47h2.63c-.2-2.89.3-5 1.52-6.44A6.21 6.21 0 0 1 8.74 0h4.78v6.15H9.76a6.55 6.55 0 0 0-.25 2.32h4v6.38h-4l.02 12.9Zm-5.31-1.5H8v-12.9h4V10H8v-.76c0-2 0-3.79 1-4.46l.19-.13H12V1.5H8.78A4.67 4.67 0 0 0 5.29 3c-1 1.23-1.41 3.29-1.1 6.14l.1.83H1.5v3.38h2.72v12.9Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vk" href="https://www.vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg class="social-icon" width="31" height="16" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Фэйсбук.">
+                <path
+                  d="M23.946 15.777a4.05 4.05 0 0 1-2.08-.63 10.17 10.17 0 0 1-1.78-1.53c-.44-.44-1.17-1.18-1.45-1.18s-.48.92-.47 1.57a1.75 1.75 0 0 1-.47 1.21 2.26 2.26 0 0 1-1.22.5h-1.92a11.32 11.32 0 0 1-7.43-3c-3.68-3.37-6.84-9.81-6.97-10.09a1.34 1.34 0 0 1 .15-1.48 2.07 2.07 0 0 1 1.36-.48h4.2c.338.05.661.169.95.35.272.183.49.435.63.73a22.09 22.09 0 0 0 1.48 2.67c1.31 2 1.89 2.46 2.1 2.56.234-.937.298-1.91.19-2.87a2.702 2.702 0 0 0-.21-1.28 1.33 1.33 0 0 0-.77-.29l-.73-.69c-.14-.66.59-1.23 1.1-1.45a8.69 8.69 0 0 1 3.15-.38h.71a9.11 9.11 0 0 1 2.15.2c1.7.36 1.64 1.73 1.57 3.31 0 .46-.05 1-.05 1.62v.48c-.04.436-.009.875.09 1.3a9.09 9.09 0 0 0 2.07-2.48 20.396 20.396 0 0 0 1.52-2.8 1.58 1.58 0 0 1 1.6-.95h4.28a2 2 0 0 1 .38 0c1 0 1.59.29 1.83.85s.17 1.66-2.36 4.61l-1 1.13a7.34 7.34 0 0 0-1.24 1.59c.379.431.809.814 1.28 1.14 1.15.867 2.16 1.902 3 3.07a1.6 1.6 0 0 1 .26 1.68 2.3 2.3 0 0 1-1.88 1l-3.79.05-.23-.04Zm-5.31-4.84c.9 0 1.68.79 2.51 1.62.448.49.952.926 1.5 1.3a2.51 2.51 0 0 0 1.4.42h.1l3.8-.05c.188-.01.371-.058.54-.14l-.1-.16a13.221 13.221 0 0 0-2.68-2.72c-1.19-1-1.8-1.47-1.87-2.24-.07-.77.49-1.44 1.61-2.71l1-1.11a10.731 10.731 0 0 0 2.05-2.95 5.66 5.66 0 0 0-.67 0h-4.37a.55.55 0 0 0-.24 0 20.507 20.507 0 0 1-1.65 3.05c-1.89 2.82-2.78 3.2-3.41 3.2a1.19 1.19 0 0 1-.56-.14c-1-.57-1-1.84-.94-2.76v-.43c0-.65 0-1.21.05-1.69.08-1.68 0-1.69-.38-1.78a8.561 8.561 0 0 0-1.86-.16h-.69a13 13 0 0 0-1.9.1c.096.07.18.155.25.25.413.65.618 1.41.59 2.18.13 1.65.06 3.8-1 4.32a1.38 1.38 0 0 1-.6.13c-.93 0-1.85-.88-3.42-3.26a23.42 23.42 0 0 1-1.61-2.85l-.08-.1a1.21 1.21 0 0 0-.32-.11h-4.07c.59 1.22 3.39 6.62 6.52 9.45a10 10 0 0 0 6.42 2.63h1.85a.999.999 0 0 0 .27-.1v-.09c0-.27 0-2.6 1.58-3 .122-.048.25-.081.38-.1Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--current social-list__link--instagram"
+              href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg class="social-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Инстаграм.">
+                <path
+                  d="M17.28 2.4a4.33 4.33 0 0 1 4.32 4.32v10.56a4.33 4.33 0 0 1-4.32 4.32H6.72a4.33 4.33 0 0 1-4.31-4.32V6.72A4.33 4.33 0 0 1 6.72 2.4h10.56Zm0-1.44H6.72A5.76 5.76 0 0 0 .96 6.72v10.56a5.76 5.76 0 0 0 5.76 5.76h10.56a5.76 5.76 0 0 0 5.76-5.76V6.72A5.76 5.76 0 0 0 17.28.96Z" />
+                <path
+                  d="M12.01 7.756a4.253 4.253 0 1 1-4.254 4.253 4.243 4.243 0 0 1 4.253-4.253Zm0-1.44a5.693 5.693 0 1 0 5.682 5.693 5.681 5.681 0 0 0-5.683-5.693ZM17.904 7.413a1.286 1.286 0 1 0 0-2.573 1.286 1.286 0 0 0 0 2.573Z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Направление путешествий</h1>
+    <section class="direction">
+      <h2 class="direction__title">Направление</h2>
+      <span class="direction__small">80 level</span>
+      <img class="direction__avatar" src="img/direction/demin.jpg" alt="Петр Демин" width="100" height="100">
+      <button class="button direction__button" type="button">сменить фото</button>
+      <div class="direction__hashtad hashtag">
+        <h3 class="hashtag__title">тэги</h3>
+        <ul class="hashtag__list">
+          <li class="hashtag__item">#бургер</li>
+          <li class="hashtag__item">#бар</li>
+          <li class="hashtag__item">#футбол</li>
+          <li class="hashtag__item">#концерт</li>
+          <li class="hashtag__item">#крафт</li>
+        </ul>
+      </div>
+      <div class="direction__hashtad transport">
+        <h3 class="transport__title">транспорт</h3>
+        <ul class="transport__list">
+          <li class="transport__item list-way">
+            <span class="visually-hidden">Самолет</span>
+            <svg class="list-way__icon list-way__icon--current" width="15" height="15"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка самолета.">
+              <path
+                d="M13.915.928c-.59.132-1.182.265-1.403.629l-1.706 3.206-9.158 2.053-.37 1.025 7.007.625-1.189 2.775-2.657.596-.668 1.09 1.918.197.218.892c.098.316.442.527.735.461l.886-.198 1.027 1.652.668-1.091-.656-2.676L10.49 9.85l3.672 6.079.74-.793-2.26-9.218 2.075-2.974c.224-.365.078-.958-.068-1.555-.073-.295-.442-.527-.735-.461Z" />
+            </svg>
+          </li>
+          <li class="transport__item list-way">
+            <span class="visually-hidden">Автобус</span>
+            <svg class="list-way__icon list-way__icon--current" width="17" height="16"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка автобуса.">
+              <path
+                d="M4.545 11.005c0-.319-.137-.59-.411-.815a1.515 1.515 0 0 0-.993-.337c-.388 0-.719.112-.993.337-.274.225-.412.497-.412.815 0 .317.138.589.412.814.274.225.605.337.993.337.387 0 .718-.112.993-.337.274-.225.411-.497.411-.815Zm11.234 0c0-.319-.137-.59-.412-.815a1.515 1.515 0 0 0-.992-.337c-.388 0-.719.112-.993.337-.274.225-.412.497-.412.815 0 .317.138.589.412.814.274.225.605.337.993.337.387 0 .718-.112.992-.337.275-.225.412-.497.412-.815Zm-.505-3.564-.79-3.455a.58.58 0 0 0-.246-.338.772.772 0 0 0-.445-.13H3.723a.771.771 0 0 0-.445.13.58.58 0 0 0-.247.338l-.79 3.455a.499.499 0 0 0 .154.477.73.73 0 0 0 .537.207h11.651a.73.73 0 0 0 .538-.207.498.498 0 0 0 .153-.477Zm-2.48-5.507a.383.383 0 0 0-.153-.306.569.569 0 0 0-.373-.126h-7.02a.569.569 0 0 0-.374.126.383.383 0 0 0-.153.306c0 .12.05.222.153.306a.569.569 0 0 0 .373.126h7.021c.147 0 .27-.042.373-.126a.383.383 0 0 0 .154-.306Zm4.39 6.524v5.426h-1.405v1.152c0 .318-.137.59-.412.814a1.515 1.515 0 0 1-.992.338c-.388 0-.719-.113-.993-.338-.274-.225-.412-.496-.412-.814v-1.152H4.545v1.152c0 .318-.137.59-.411.814a1.515 1.515 0 0 1-.993.338c-.388 0-.719-.113-.993-.338-.274-.225-.412-.496-.412-.814v-1.152H.332V8.458c0-.672.092-1.34.275-2.007l1.13-4.085c.065-.468.422-.879 1.07-1.233.646-.354 1.487-.62 2.522-.8 1.035-.18 2.178-.27 3.429-.27 1.25 0 2.393.09 3.428.27 1.035.18 1.876.446 2.523.8.648.354 1.004.765 1.07 1.233l1.152 4.085c.168.612.252 1.281.252 2.007Z" />
+            </svg>
+          </li>
+          <li class="transport__item list-way">
+            <span class="visually-hidden">Велосипед</span>
+            <svg class="list-way__icon list-way__icon--current" width="17" height="16"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка велосипеда.">
+              <path
+                d="M13.105 14.172c-.6 0-1.185-.17-1.683-.488a2.93 2.93 0 0 1-1.116-1.3 2.781 2.781 0 0 1-.172-1.675 2.86 2.86 0 0 1 .829-1.483 3.074 3.074 0 0 1 1.55-.793 3.157 3.157 0 0 1 1.75.165c.554.219 1.027.59 1.36 1.067a2.81 2.81 0 0 1 .51 1.61c0 .768-.32 1.504-.887 2.047a3.104 3.104 0 0 1-2.141.85Zm0-4.787c-.391 0-.773.11-1.098.318a1.911 1.911 0 0 0-.727.848c-.15.346-.19.726-.113 1.092.076.367.264.703.54.968.277.264.63.444 1.012.517.383.073.78.035 1.142-.108.36-.143.67-.385.886-.696.217-.31.333-.676.333-1.05 0-.5-.209-.98-.579-1.335a2.024 2.024 0 0 0-1.396-.554ZM4.412 14.172c-.599 0-1.184-.17-1.683-.488a2.93 2.93 0 0 1-1.115-1.3 2.78 2.78 0 0 1-.173-1.675 2.86 2.86 0 0 1 .83-1.483 3.074 3.074 0 0 1 1.55-.793 3.157 3.157 0 0 1 1.75.165c.554.219 1.027.59 1.36 1.067.333.476.51 1.036.51 1.61 0 .768-.32 1.504-.888 2.047a3.104 3.104 0 0 1-2.14.85Zm0-4.787c-.39 0-.772.11-1.097.318a1.91 1.91 0 0 0-.728.848c-.15.346-.188.726-.112 1.092.076.367.264.703.54.968.277.264.629.444 1.012.517.383.073.78.035 1.141-.108.361-.143.67-.385.887-.696.217-.31.333-.676.333-1.05 0-.5-.21-.98-.58-1.335a2.024 2.024 0 0 0-1.396-.554ZM10.866 4.094a1.092 1.092 0 0 0 .747-.296.966.966 0 0 0 .306-.716.957.957 0 0 0-.303-.712 1.08 1.08 0 0 0-.744-.292 1.095 1.095 0 0 0-.746.293 1.006 1.006 0 0 0-.23.326.97.97 0 0 0 .226 1.1c.097.093.213.168.34.219.129.05.265.077.404.078Z" />
+              <path
+                d="M12.431 6.11h-1.44a.136.136 0 0 1-.068-.018.128.128 0 0 1-.048-.048L9.83 4.212a.99.99 0 0 0-.31-.344 1.065 1.065 0 0 0-.911-.137 1.03 1.03 0 0 0-.405.237l-2.3 2.217a1.003 1.003 0 0 0-.306.705c0 .548.415.744.609.854.938.517 1.599.895 1.961 1.105.02.012.036.027.047.046.01.019.017.04.017.062v2.177c0 .27.218.503.501.517a.548.548 0 0 0 .389-.138.505.505 0 0 0 .163-.365V8.44c0-.08-.02-.159-.058-.23a.511.511 0 0 0-.16-.18l-1.22-.838a.128.128 0 0 1-.054-.09.121.121 0 0 1 .036-.099l1.383-1.41a.132.132 0 0 1 .112-.04c.02.003.04.01.057.021a.128.128 0 0 1 .042.044l.718 1.24a.516.516 0 0 0 .194.19c.081.045.173.07.267.07h1.844a.547.547 0 0 0 .382-.157.502.502 0 0 0 .145-.372c-.014-.271-.258-.48-.542-.48Z" />
+            </svg>
+          </li>
+          <li class="transport__item list-way">
+            <span class="visually-hidden">Пешком</span>
+            <svg class="list-way__icon list-way__icon--current" width="17" height="16"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка идущего человека.">
+              <path
+                d="M12.27 4.094c.776 0 1.405-.602 1.405-1.344 0-.742-.629-1.344-1.404-1.344-.776 0-1.405.602-1.405 1.344 0 .742.629 1.344 1.405 1.344ZM11.412 7.432a1.4 1.4 0 0 0 .662.507c.27.1.565.117.846.05l2.33-.556-.34-1.303-2.329.556-.969-1.388a1.416 1.416 0 0 0-.893-.574l-2.702-.517a1.461 1.461 0 0 0-.892.11c-.277.13-.502.343-.64.606L5.322 7.151l1.257.602 1.164-2.229 1.382.265-3.573 5.695H2.437v1.344H5.55c.49 0 .952-.25 1.205-.652l1.347-2.148 3.631.695 1.275 3.661 1.332-.425-1.275-3.66a1.345 1.345 0 0 0-.403-.583 1.435 1.435 0 0 0-.654-.311l-2.135-.408 1.245-1.985.293.42Z" />
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="plans">
+      <h2 class="plans__title">Мои планы:</h2>
+      <ol class="plans__slider slider-plan">
+        <li class="slider-plan__item">
+          <span class="slider-plan__number">1</span>
+          <p class="slider-plan__country">Франция, Италия</p>
+          <p class="slider-plan__quontity-companion">3 попутчика</p>
+          <p class="slider-plan__data data">
+            <span class="data__from">26 мар — </span>
+            <span class="data__before">29 мар</span>
+          </p>
+          <button class="slider-plan__button" type="button">изменить</button>
+        </li>
+        <li class="slider-plan__item">
+          <span class="slider-plan__number">2</span>
+          <p class="slider-plan__country">Таиланд, Индонезия</p>
+          <p class="slider-plan__quontity-companion">1 попутчик</p>
+          <p class="slider-plan__data data">
+            <span class="data__from">1 июл — </span>
+            <span class="data__before">15 июл</span>
+          </p>
+          <button class="slider-plan__button" type="button">изменить</button>
+        </li>
+      </ol>
+    </section>
+
+    <section class="add-plan">
+      <h2 class="add-plan__title">Добавить план:</h2>
+      <span class="add-plan__button add-plan__button--current">.</span>
+      <span class="add-plan__button">.</span>
+      <span class="add-plan__button">.</span>
+      <div class="add-plan__step step step-first">
+        <h3 class="add-plan__subtitle">Шаг 1.<br>Даты пребывания</h3>
+        <p class="add-plan__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в
+          поездку, и ее предполагаемую длительность.</p>
+        <form class="step-first__form form-step" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form-step__field-group field-group">
+            <label class="field-group__filter-label" for="search-companion">ищу попутчиков:</label>
+            <span class="field-group__small">чел.</span>
+            <button class="field-group__reduce" type="submit">
+              <span class="visually-hidden">Убавить количество попутчиков</span>
+            </button>
+            <input class="field-group__field" type="number" id="search-companion" placeholder="2">
+            <button class="field-group__add" type="submit">
+              <span class="visually-hidden">Добавить количество попутчиков</span>
+            </button>
+          </div>
+          <div class="form-step__field-group field-group">
+            <label class="field-group__filter-label" for="duration">длительность:</label>
+            <span class="field-group__small">дн.</span>
+            <button class="field-group__reduce" type="submit">
+              <span class="visually-hidden">Убавить количество дней</span>
+            </button>
+            <input class="field-group__field" type="number" id="duration" placeholder="2">
+            <button class="field-group__add" type="submit">
+              <span class="visually-hidden">Добавить количество дней</span>
+            </button>
+          </div>
+          <div class="form-step__field-group">
+            <input class="visually-hidden form-step__input" type="checkbox" name="pool" checked id="child">
+            <label class="form-step__label child" for="child">Можно с детьми</label>
+          </div>
+        </form>
+        <div class="step-first__table calendar">
+          <button class="calendar__button button-back">
+            <span class="visually-hidden">назад</span>
+          </button>
+          <p class="calendar__caption">Март 2019</p>
+          <button class="calendar__button button-forward">
+            <span class="visually-hidden">вперед</span>
+          </button>
+          <table class="calendar__table">
+            <tr>
+              <th class="calendar__cell">П</th>
+              <th class="calendar__cell">В</th>
+              <th class="calendar__cell">С</th>
+              <th class="calendar__cell">Ч</th>
+              <th class="calendar__cell">П</th>
+              <th class="calendar__cell calendar__cell--weekend">с</th>
+              <th class="calendar__cell calendar__cell--weekend">в</th>
+            </tr>
+            <tr>
+              <td class="calendar__cell calendar__cell--inactive">23</td>
+              <td class="calendar__cell calendar__cell--inactive">24</td>
+              <td class="calendar__cell calendar__cell--inactive">25</td>
+              <td class="calendar__cell calendar__cell--inactive">26</td>
+              <td class="calendar__cell calendar__cell--inactive">27</td>
+              <td class="calendar__cell calendar__cell--inactive">28</td>
+              <td class="calendar__cell calendar__cell--inactive">1</td>
+            </tr>
+            <tr>
+              <td class="calendar__cell calendar__cell--inactive">2</td>
+              <td class="calendar__cell calendar__cell--inactive">3</td>
+              <td class="calendar__cell calendar__cell--inactive">4</td>
+              <td class="calendar__cell calendar__cell--inactive">5</td>
+              <td class="calendar__cell calendar__cell--inactive">6</td>
+              <td class="calendar__cell calendar__cell--inactive">7</td>
+              <td class="calendar__cell calendar__cell--inactive">8</td>
+            </tr>
+            <tr>
+              <td class="calendar__cell calendar__cell--inactive">9</td>
+              <td class="calendar__cell calendar__cell--inactive">10</td>
+              <td class="calendar__cell calendar__cell--inactive">11</td>
+              <td class="calendar__cell calendar__cell--inactive">12</td>
+              <td class="calendar__cell calendar__cell--inactive">13</td>
+              <td class="calendar__cell calendar__cell--inactive">14</td>
+              <td class="calendar__cell calendar__cell--inactive">15</td>
+            </tr>
+            <tr>
+              <td class="calendar__cell calendar__cell--inactive">16</td>
+              <td class="calendar__cell calendar__cell--inactive">17</td>
+              <td class="calendar__cell calendar__cell--inactive">18</td>
+              <td class="calendar__cell calendar__cell--inactive">19</td>
+              <td class="calendar__cell calendar__cell--inactive">20</td>
+              <td class="calendar__cell calendar__cell--inactive">21</td>
+              <td class="calendar__cell calendar__cell--inactive">22</td>
+            </tr>
+            <tr>
+              <td class="calendar__cell calendar__cell--inactive">23</td>
+              <td class="calendar__cell calendar__cell--inactive">24</td>
+              <td class="calendar__cell calendar__cell--inactive">25</td>
+              <td class="calendar__cell calendar__cell--active calendar__cell--hover">26</td>
+              <td class="calendar__cell calendar__cell--actine">27</td>
+              <td class="calendar__cell calendar__cell--active">28</td>
+              <td class="calendar__cell">29</td>
+            </tr>
+            <tr>
+              <td class="calendar__cell">23</td>
+              <td class="calendar__cell">24</td>
+              <td class="calendar__cell">25</td>
+              <td class="calendar__cell">26</td>
+              <td class="calendar__cell">27</td>
+              <td class="calendar__cell">28</td>
+              <td class="calendar__cell">29</td>
+            </tr>
+          </table>
+        </div>
+        <button class="button step__button">Следующий шаг</button>
+      </div>
+      <div class="add-plan__step step step-second">
+        <h3 class="add-plan__subtitle">Шаг 2.<br>Маршрут</h3>
+        <p class="add-plan__text">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу
+          несколько.</p>
+        <form class="step-second__form form-step">
+          <div class="form-step__field-group form-step__field-group--active field-group">
+            <label class="visually-hidden" for="Bosnia-and-Herzegovina">Страна посещения</label>
+            <input class="field-group__field" type="text" id="Bosnia-and-Herzegovina"
+              placeholder="Босния и Герцеговина">
+            <div class="form-step__small form-step__small--current">
+              <span class="visually-hidden">активное поле</span>
+            </div>
+            <span class="field-group__flag flag">
+              <img class="flag__icon" width="35" height="24" alt="Босния и Герцеговина"
+                src="img/flag/bosnia-and-herzegovina.jpg">
+            </span>
+            <button class="field-group__button" type="button">
+              <span class="visually-hidden">Закрыть поле страны для посещения</span>
+            </button>
+          </div>
+
+          <div class="form-step__field-group form-step__field-group--active field-group">
+            <label class="visually-hidden" for="czech">Страна посещения</label>
+            <input class="field-group__field" type="text" id="czech" placeholder="Чехия">
+            <div class="form-step__small form-step__small--current">
+              <span class="visually-hidden">активное поле</span>
+            </div>
+            <span class="field-group__flag flag">
+              <img class="flag__icon" width="35" height="24" alt="Чехия" src="img/flag/czech.jpg">
+            </span>
+            <button class="field-group__button" type="button">
+              <span class="visually-hidden">Закрыть поле страны для посещения</span>
+            </button>
+          </div>
+
+          <div class="form-step__field-group field-group form-step__field-group--hover">
+            <label class="visually-hidden" for="country-hover">поле выбора страны</label>
+            <input class="field-group__field field-group__field--active" type="text" id="country-hover"
+              placeholder="выберите страну">
+            <div class="form-step__small form-step__small--hover">
+              <span class="visually-hidden">поле в фокусе</span>
+            </div>
+            <button class="field-group__button" type="button">
+              <span class="visually-hidden">Закрыть поле выбора страны</span>
+            </button>
+            <button class="field-group__flag flag-button flag-button--active">
+              <span class="visually-hidden">Выбрать страну</span>
+              <svg class="flag-button__icon" aria-hidden="true" focusable="false" width="16" height="12"
+                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Выбрать страну.">
+                <path
+                  d="M.638 5.098a.861.861 0 0 0-.162.275.946.946 0 0 0 0 .649.861.861 0 0 0 .162.274l4.96 5.627c.056.063.121.113.193.147a.534.534 0 0 0 .456 0 .594.594 0 0 0 .193-.147l4.96-5.627a.928.928 0 0 0 0-1.198c-.293-.332-.6-.057-.892.275l-2.6 2.963L6 10.424 1.2 5.091s-.275-.325-.562.007Z" />
+              </svg>
+            </button>
+            <table class="field-group__table direction-country">
+              <tr class="direction-country__line">
+                <th>выберите страну</th>
+                <th><button class="direction-country__button button-close">
+                    <span class="visually-hidden">Закрыть выбор страны по алфавиту</span>
+                  </button></th>
+              </tr>
+              <tr class="direction-country__line">
+                <td class="direction-country__cell">
+                  <a class="direction-country__link direction-country__link--current" href="#">А</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Австралия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Австрия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Азербайджан</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Албания</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Алжир</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Ангола</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Андорра</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Антигуа и Барбуда</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Аргентина</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Армения</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Афганистан</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Б</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Багамские Острова</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Бангладеш</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Барбадос</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Бахрейн</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Белоруссия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Белиз</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Бельгия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Бенин</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Болгария</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Боливия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Босния и Герцеговина</a>
+                      </li>
+                      <li class="direction-country__item"><a class="direction-country__link">Ботсвана</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Бразилия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Бруней</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Буркина-Фасо</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Бурунди</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Бутан</a></li>
+                    </ol>
+                  </div>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">в</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Вануату</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Великобритания</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Венгрия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Венесуэла</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Восточный Тимор</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Вьетнам</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Г</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Габон</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Гаити</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Гайана</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Гамбия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Гана</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Гватемала</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Гвинея</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Гвинея-Бисау</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Германия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Гондурас</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Гренада</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Греция</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Грузия</a></li>
+                    </ol>
+                  </div>
+                </td>
+
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Д</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Дания</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Джибути</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Доминика</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Доминикана</a></li>
+                    </ol>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="direction-country__line">
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Е</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Египет</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">З</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Замбия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Зимбабве</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">И</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Израиль</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Индия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Индонезия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Иордания</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Ирак</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Иран</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Ирландия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Исландия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Испания</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Италия</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">К</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Кабо-Верде</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Казахстан</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Камбоджа</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Камерун</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Канада</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Катар</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Кения</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Кипр</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Киргизия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Кирибати</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Китай</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Колумбия</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Л</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Лаос</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Латвия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Лесото</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Либерия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Ливан</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Ливия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Литва</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Лихтенштейн</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Люксембург</a></li>
+                    </ol>
+                  </div>
+                </td>
+              </tr>
+              <tr class="direction-country__line">
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">М</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Маврикий</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Мавритания</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Мадагаскар</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Малави</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Малайзия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Мали</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Мальдивы</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Мальта</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Марокко</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Н</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Намибия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Науру</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Непал</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Нигер</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Нигерия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Нидерланды</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Никарагуа</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Новая Зеландия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Норвегия</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">О</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">ОАЭ</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link"> Оман</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">П</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Пакистан</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Палау</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Панама</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Папуа - Новая Гвинея</a>
+                      </li>
+                      <li class="direction-country__item"><a class="direction-country__link">Парагвай</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Перу</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Польша</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Португалия</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Р</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Руанда</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Румыния</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Россия</a></li>
+                    </ol>
+                  </div>
+                </td>
+              </tr>
+              <tr class="direction-country__line">
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">С</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Сальвадор</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Самоа</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Сан-Марино</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Саудовская Аравия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Сейшелы</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Сенегал</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Сербия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Сингапур</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Сирия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Словакия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Словения</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">США</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Т</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Таджикистан</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Таиланд</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Танзания</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Того</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Тонга</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Тринидад и Тобаго</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Тувалу</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Тунис</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Туркмения</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Турция</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">У</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Уганда</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Узбекистан</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Украина</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Уругвай</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Ф</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Фиджи</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link"> Филиппины</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Финляндия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Франция</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Х</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Хорватия</a></li>
+                    </ol>
+                  </div>
+                </td>
+              </tr>
+              <tr class="direction-country__line">
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Ч</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Чад</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Черногория</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Чехия</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link"> Чили</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Ш</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Швейцария</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Швеция</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Шри-Ланка</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Э</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Эквадор</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Эритрея</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Эсватини</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Эстония</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Эфиопия</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Ю</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">ЮАР</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Южный Судан</a></li>
+                    </ol>
+                  </div>
+                </td>
+                <td class="direction-country__cell">
+                  <a class="direction-country__link" href="#">Я</a>
+                  <div class="direction-country__hidden alphabet">
+                    <ol class="direction-country__list alphabet__list">
+                      <li class="direction-country__item"><a class="direction-country__link">Ямайка</a></li>
+                      <li class="direction-country__item"><a class="direction-country__link">Япония</a></li>
+                    </ol>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="form-step__field-group field-group form-step__field-group--inactive">
+            <label class="visually-hidden" for="country-inactive">Добавить страну</label>
+            <input class="field-group__field field-group__field--inactive" type="text" id="country-inactive"
+              placeholder="выберите страну">
+            <div class="form-step__small form-step__small--hover">
+              <span class="visually-hidden">неактивное поле</span>
+            </div>
+            <button class="field-group__flag flag">
+              <span class="visually-hidden">Добавить страну</span>
+              <svg class="flag__icon" aria-hidden="true" focusable="false" width="14" height="14"
+                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Добавить страну.">
+                <path d="M7 0v14M0 7h14" />
+              </svg>
+            </button>
+          </div>
+        </form>
+        <button class="add-plan__button button">Следующий шаг</button>
+        <button class="add-plan__button add-plan__button--inactive button">на шаг назад</button>
+      </div>
+
+      <div class="add-plan__step step step-third">
+        <h3 class="add-plan__subtitle">Шаг 3.<br>Развлечения</h3>
+        <p class="add-plan__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и
+          ставить тэги.</p>
+        <form class="step-third__form form-step" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form-step__field-group field-group">
+            <label class="field-group__filter-label" for="Bosnia-and-Herzegovina-area">Босния и Герцеговина</label>
+            <div class="field-group__small">
+              <span class="visually-hidden">Флаг страны-Босния и Герцеговина</span>
+              <img class="step-third__flag" src="img/flag/bosnia-and-herzegovina.jpg" width="35" height="24"
+                alt="Флаг Босния и Герцеговина">
+            </div>
+            <textarea class="field-group__input" id="Bosnia-and-Herzegovina-area" placeholder="План действий"></textarea>
+          </div>
+          <div class="form-step__field-group field-group">
+            <label class="field-group__filter-label" for="Czech">Чехия</label>
+            <div class="field-group__small">
+              <span class="visually-hidden">Флаг страны-Чехия</span>
+              <img class="step-third__flag" src="img/flag/Czech.jpg" width="35" height="24" alt="Флаг Чехии">
+            </div>
+            <textarea class="field-group__input" id="Czech" placeholder="План действий">
+              Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+            </textarea>
+          </div>
+        </form>
+        <button class="add-plan__button button">Отправить</button>
+        <button class="add-plan__button add-plan__button--inactive button">на шаг назад</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo logo-footer" href="#">
+        <svg class="logo-footer__icon" width="96" height="15" xmlns="http://www.w3.org/2000/svg" role="img"
+          aria-label="иконка погнали.">
+          <path
+            d="M94.911 6.189C95.637 5.727 96 5.016 96 4.055c0-1.255-.523-2.242-1.568-2.96C93.416.366 92.22 0 90.84 0c-1.35 0-2.584.397-3.701 1.192-1.104.781-1.655 1.825-1.655 3.132 0 .487.152.89.457 1.211.305.308.74.462 1.307.462.551 0 .972-.154 1.263-.462.304-.32.457-.724.457-1.21-.03-.372.094-.75.37-1.135.276-.397.777-.595 1.502-.595.61.012 1.046.166 1.307.46.276.296.4.59.37.885 0 .205-.073.41-.218.615a2.031 2.031 0 0 1-.457.48c-.145.116-.385.282-.718.5-.334.218-.567.372-.697.462-.755.55-1.133 1.28-1.133 2.19 0 .449.16.827.48 1.135.333.294.776.442 1.328.442.551 0 .987-.148 1.306-.442.334-.308.501-.686.501-1.134 0-.193.036-.372.109-.539.073-.166.189-.32.348-.46.175-.142.32-.257.436-.347.13-.09.32-.205.566-.346.261-.14.443-.243.544-.307ZM76.305 10.235l3.857-4.771c.395-.577.932-.897 1.61-.963.678-.078 1.271.085 1.78.491.509.406.749.95.72 1.63v6.834c0 .432-.169.799-.508 1.1-.325.288-.72.432-1.187.432-.466 0-.868-.144-1.207-.432a1.443 1.443 0 0 1-.488-1.1V9.214l-3.856 4.772c-.396.576-.933.897-1.61.962-.679.079-1.272-.085-1.78-.49-.51-.406-.75-.95-.721-1.63V6.013c0-.432.162-.798.487-1.1a1.758 1.758 0 0 1 1.208-.451c.466 0 .862.15 1.187.452.339.3.508.667.508 1.1v4.221Z" />
+          <path
+            d="M58.967 13.389V5.975c0-.426-.178-.793-.535-1.1a1.725 1.725 0 0 0-1.219-.479 1.7 1.7 0 0 0-1.198.48c-.342.306-.513.673-.513 1.099v-.18c-.171-.4-.513-.74-1.027-1.019-.513-.293-1.097-.44-1.753-.44-1.284 0-2.467.473-3.55 1.42C48.115 6.7 47.588 8 47.588 9.651c0 1.692.52 3.004 1.56 3.937 1.042.932 2.232 1.399 3.573 1.399.656 0 1.233-.12 1.732-.36.5-.253.863-.553 1.09-.9.086.36.286.66.6.9.313.226.67.34 1.07.34.47 0 .876-.154 1.218-.46.357-.306.535-.68.535-1.12Zm-5.47-1.362c1.169 0 2.116-1.026 2.116-2.291 0-1.266-.947-2.291-2.116-2.291S51.38 8.47 51.38 9.735c0 1.266.948 2.292 2.117 2.292Z" />
+          <path
+            d="M43.081 8.237V6.094c0-.435.177-.804.53-1.108a1.793 1.793 0 0 1 1.236-.475c.47 0 .882.159 1.235.475.353.304.53.673.53 1.108v7.343c0 .435-.177.804-.53 1.108-.338.303-.75.455-1.235.455-.486 0-.905-.152-1.258-.455a1.434 1.434 0 0 1-.508-1.108v-2.175h-3.817v2.175c0 .435-.177.804-.53 1.108-.338.303-.75.455-1.235.455-.486 0-.905-.152-1.258-.455a1.434 1.434 0 0 1-.508-1.108V6.094c0-.435.177-.804.53-1.108a1.793 1.793 0 0 1 1.236-.475c.47 0 .882.159 1.235.475.353.304.53.673.53 1.108v2.143h3.817ZM33.962 4.511c.346 0 .642.131.89.394.247.262.37.867.37 1.234 0 .368-.123.747-.37 1.01-.247.262-.544.354-.89.354h-2.958v5.971c0 1.13-.994 1.526-1.99 1.526-.924 0-1.807-.5-1.807-1.515l.03-8.974h6.725ZM12.855 0v13.332c0 .44-.239.812-.57 1.118-.317.307-.815.46-1.27.46-.455 0-1.113-.153-1.444-.46a1.497 1.497 0 0 1-.476-1.118V3.008H3.772v10.322c0 .44-.165.813-.496 1.12-.317.306-.963.46-1.418.46-.455 0-1.051-.154-1.382-.46A1.497 1.497 0 0 1 0 13.33V0h12.855ZM24.637 13.365c-1.076 1.01-2.517 1.516-4.322 1.516-1.804 0-3.237-.505-4.298-1.516-1.092-1.026-1.638-2.308-1.638-3.847 0-1.554.546-2.836 1.638-3.847 1.06-1.01 2.494-1.516 4.298-1.516 1.805 0 3.246.505 4.322 1.516 1.077 1.026 1.615 2.308 1.615 3.847 0 1.539-.538 2.821-1.614 3.847Zm-2.802-5.43a1.835 1.835 0 0 0-1.116-.567 2.288 2.288 0 0 0-1.235.114c-.38.15-.704.407-.973.769-.254.362-.364.784-.333 1.267 0 .634.198 1.162.594 1.584.412.407.926.611 1.543.611.634 0 1.148-.196 1.544-.588.396-.408.594-.943.594-1.607 0-.633-.206-1.161-.618-1.584ZM64.022 4.462c2.024 0 7.417.03 7.417.03s.004 6.591.004 8.894c0 .443-.182.824-.546 1.145-.347.305-.662.457-1.191.457-.53 0-.8.04-1.164-.265-.347-.32-.667-.894-.667-1.337v-5.95H65.42c0 4.266 0 5.203-1.57 6.728-.58.55-1.325.824-2.235.824-.546 0-.867-.13-1.214-.436-.347-.32-.617-.832-.617-1.304 0-1.018.213-1.423.76-2.088 1.566 0 1.498-.38 1.4-3.266v-1.83c.017-.443.098-1.602.098-1.602h1.98ZM93.16 12.745c0 1.239-1.05 2.243-2.345 2.243-1.295 0-2.344-1.005-2.344-2.243s1.05-2.242 2.344-2.242c1.295 0 2.345 1.004 2.345 2.242Z" />
+        </svg>
+      </a>
+    </div>
+    <ul class="page-footer__list social">
+      <li class="social__item">
+        <a class href="https://www.facebook.com/htmlacademy">
+          <span class="visually-hidden">Фэйсбук</span>
+          <svg class="social-icon" width="11" height="21" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label="Фэйсбук.">
+            <path
+              d="M7.488 20.77H2.129V11.25H0V6.544h2.066c-.157-2.132.236-3.69 1.195-4.752A4.882 4.882 0 0 1 4.896.686 5.15 5.15 0 0 1 6.867.294h3.756v4.538H7.669a4.554 4.554 0 0 0-.197 1.712h3.143v4.707H7.472l.016 9.519Zm-4.172-1.107h2.97v-9.518h3.143V7.673H6.286v-.56c0-1.477 0-2.797.785-3.292l.15-.096h2.208V1.401h-2.53a3.876 3.876 0 0 0-1.497.28c-.472.19-.897.472-1.246.827-.785.907-1.107 2.427-.864 4.53l.079.613H1.179v2.494h2.137v9.518Z" />
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class href="https://www.facebook.com/htmlacademy">
+          <span class="visually-hidden">Вконтакте</span>
+          <svg class="social-icon" width="23" height="12" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label="Вконтакте.">
+            <path
+              d="M17.766 11.854a3.017 3.017 0 0 1-1.543-.465 7.53 7.53 0 0 1-1.32-1.129c-.327-.324-.869-.87-1.076-.87-.208 0-.356.679-.349 1.158.003.331-.122.65-.349.893-.258.21-.573.338-.905.369H10.8a8.424 8.424 0 0 1-5.513-2.214C2.557 7.11.212 2.358.116 2.152A.984.984 0 0 1 .227 1.06C.51.825.868.7 1.237.705H4.352c.25.037.49.125.704.259.202.134.363.32.467.538.32.681.687 1.34 1.099 1.97.971 1.476 1.402 1.815 1.558 1.89a5.96 5.96 0 0 0 .14-2.118 1.982 1.982 0 0 0-.155-.945.99.99 0 0 0-.572-.214l-.541-.509c-.104-.487.438-.907.816-1.07a6.481 6.481 0 0 1 2.337-.28h.527a6.795 6.795 0 0 1 1.595.147c1.261.266 1.217 1.277 1.165 2.443 0 .34-.037.737-.037 1.195v.354c-.03.321-.007.645.067.96a6.718 6.718 0 0 0 1.535-1.83c.43-.659.807-1.35 1.128-2.067a1.168 1.168 0 0 1 1.187-.7h3.176c.093-.01.188-.01.282 0 .742 0 1.18.214 1.357.627.178.413.127 1.225-1.75 3.401l-.742.834c-.36.347-.67.742-.92 1.173.28.318.6.6.95.841A10.542 10.542 0 0 1 21.95 9.87a1.177 1.177 0 0 1 .193 1.24 1.705 1.705 0 0 1-1.395.738l-2.812.037-.17-.03Zm-3.94-3.571c.668 0 1.247.583 1.863 1.195.333.362.706.683 1.113.96.308.203.67.31 1.039.31h.074l2.82-.037c.138-.008.274-.043.4-.104l-.074-.118a9.778 9.778 0 0 0-1.989-2.007c-.883-.738-1.335-1.084-1.387-1.653-.052-.568.363-1.062 1.194-2l.742-.818a7.914 7.914 0 0 0 1.521-2.177 4.22 4.22 0 0 0-.497 0h-3.242a.41.41 0 0 0-.178 0A15.093 15.093 0 0 1 16 4.084c-1.403 2.081-2.063 2.362-2.53 2.362a.887.887 0 0 1-.416-.103c-.742-.421-.742-1.358-.697-2.037V3.99c0-.48 0-.893.037-1.247.06-1.24 0-1.247-.282-1.313a6.386 6.386 0 0 0-1.38-.119h-.512a9.699 9.699 0 0 0-1.41.074c.071.052.134.114.186.185a2.8 2.8 0 0 1 .438 1.608c.096 1.218.044 2.804-.742 3.188-.14.064-.292.097-.446.096-.69 0-1.372-.65-2.537-2.406a17.253 17.253 0 0 1-1.195-2.103l-.059-.073a.901.901 0 0 0-.237-.082h-3.02c.438.9 2.515 4.885 4.837 6.973a7.44 7.44 0 0 0 4.764 1.94h1.372a.743.743 0 0 0 .2-.073v-.067c0-.199 0-1.918 1.173-2.213.09-.036.185-.06.282-.074Z" />
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class href="https://www.facebook.com/htmlacademy">
+          <span class="visually-hidden">Инстаграмм</span>
+          <svg class="social-icon" width="11" height="21" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label="Инстаграмм.">
+            <path
+              d="M12.96 2.033a3.274 3.274 0 0 1 2.29.936c.606.597.948 1.407.95 2.252v7.791a3.169 3.169 0 0 1-.95 2.252 3.275 3.275 0 0 1-2.29.936H5.04a3.274 3.274 0 0 1-2.284-.938 3.169 3.169 0 0 1-.949-2.25V5.221a3.169 3.169 0 0 1 .949-2.25 3.274 3.274 0 0 1 2.284-.938h7.92Zm0-1.062H5.04a4.356 4.356 0 0 0-3.055 1.244A4.215 4.215 0 0 0 .72 5.221v7.791c0 1.127.455 2.208 1.265 3.005a4.356 4.356 0 0 0 3.055 1.245h7.92a4.356 4.356 0 0 0 3.055-1.245 4.215 4.215 0 0 0 1.265-3.005V5.221a4.215 4.215 0 0 0-1.265-3.006A4.356 4.356 0 0 0 12.96.971Z" />
+            <path
+              d="M9.007 5.985c.63 0 1.248.184 1.772.529.525.344.933.835 1.175 1.408a3.09 3.09 0 0 1 .181 1.813 3.123 3.123 0 0 1-.873 1.607 3.206 3.206 0 0 1-1.633.858 3.238 3.238 0 0 1-1.843-.178 3.18 3.18 0 0 1-1.431-1.156 3.102 3.102 0 0 1 .394-3.964 3.187 3.187 0 0 1 1.036-.68 3.228 3.228 0 0 1 1.222-.237Zm0-1.063a4.32 4.32 0 0 0-2.374.705A4.216 4.216 0 0 0 5.057 7.51a4.137 4.137 0 0 0-.246 2.428 4.18 4.18 0 0 0 1.167 2.152 4.292 4.292 0 0 0 2.186 1.152c.829.162 1.687.08 2.468-.238a4.256 4.256 0 0 0 1.917-1.547 4.152 4.152 0 0 0-.525-5.304c-.396-.39-.867-.7-1.384-.91a4.323 4.323 0 0 0-1.633-.32ZM13.428 5.73a.957.957 0 0 0 .965-.948.957.957 0 0 0-.965-.95.957.957 0 0 0-.965.95c0 .524.432.949.965.949Z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="page-footer__developed developed">
+      <p class="developed__text">Разработано</p>
+      <a class href="https://htmlacademy.ru/">
+        <span class="visually-hidden">htmlacademy</span>
+        <svg class="social-icon" width="27" height="33" xmlns="http://www.w3.org/2000/svg" role="img"
+          aria-label="htmlacademy.">
+          <path
+            d="M13.643.101 13.5.086 0 1.464v24.102l13.5 7.823L27 25.566V1.464L13.643.101ZM25.234 24.59l-11.734 6.8-11.734-6.8v-9.88l11.685 6.774.02 1.228-8.017-4.646-.011 1.2 8.046 4.71.02 1.26-8.045-4.66-.01 1.2 8.046 4.71 8.124-4.734v-5.103l3.62-2.105-.01 10.046Zm0-11.327-3.22 1.842-1.482.857-7.065-4.101-.011 1.2 6.04 3.5-.053.03-.13.074-.86.482-4.986-2.888-.011 1.2 3.936 2.28-.933.598-.021.012-2.971-1.706-.011 1.2 1.947 1.11-1.988 1.163-11.618-6.731 11.638-6.815 11.8 6.693Zm0-1.2L13.44 5.288 1.766 12.055v-9.04l11.734-1.2 11.734 1.2v9.047Z" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
