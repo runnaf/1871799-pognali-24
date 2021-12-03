@@ -1,0 +1,25 @@
+.tariff {
+  width: 100%;
+  background-color: $lightgrey;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $darkfont-color;
+}
+
+.tariff__slogan {
+  color: $orangefont;
+  font-style: 24px;
+  line-height: 24px;
+}
+
+.tariff__item {
+  font-weight: 300;
+  color: hsla(0, 0%, 27%, 1);
+}
+
+.tariff__number {
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 1);
+}

@@ -1,0 +1,36 @@
+.direction-country {
+  width: 220px;
+  background-color: $white;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $darkfont-color;
+}
+
+.direction-country__title {
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.direction-country__list {
+  font-style: 16px;
+  line-height: 22px;
+  color: hsla(0, 0%, 27%, 1);
+  background-color: $white;
+}
+
+.direction-country__link-direction {
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.direction-country__link--active {
+  color: $lightfont-color;
+  background-color: $darkgrey;
+}
+
+.direction-country__link--current {
+  background-color: $grey;
+}
+

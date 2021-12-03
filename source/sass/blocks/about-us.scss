@@ -1,0 +1,20 @@
+.about-us {
+  background-color: $darkgrey;
+  background-image: url(../../img/about-us/about-mobile.png);
+  background-repeat: no-repeat;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $lightfont-color;
+}
+
+.about-us__title {
+  color: $orangefont;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.about-us__text {
+  font-weight: 300;
+}

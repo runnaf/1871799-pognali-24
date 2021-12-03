@@ -1,0 +1,30 @@
+.travel-direction {
+  width: 100%;
+  background-color: $lightgrey;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: hsla(0, 0%, 27%, 1);
+}
+
+.travel-direction__title {
+  color: $orangefont;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.travel-direction__desc {
+  font-weight: 300px;
+}
+
+.travel-direction__heading {
+  font-size: 21px;
+  line-height: 21px;
+  color: hsla(0, 0%, 0%, 1);
+}
+
+.travel-direction__text {
+  font-weight: 500;
+  line-height: 18px;
+}

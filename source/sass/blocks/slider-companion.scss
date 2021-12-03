@@ -1,0 +1,46 @@
+.slider-companion {
+  width: 100%;
+  background-color: $lightgrey;
+
+ }
+
+ .slider-companion__card {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  color: hsla(0, 0%, 27%, 1);
+}
+
+.slider-companion__name {
+  font-weight: 700;
+  font-style: 20px;
+  line-height: 20px;
+}
+
+.slider-companion__text {
+  font-style: 14px;
+  color: hsla(228, 41%, 15%, 1);
+}
+
+.slider-companion__list {
+  line-height: 18px;
+}
+
+.slider-companion__item {
+  color: $darkfont-color;
+}
+
+.slider-companion__level {
+  font-weight: 700;
+  font-style: 24px;
+  line-height: 24px;
+}
+
+.slider-companion__link {
+  font-weight: 700;
+  font-style: 17px;
+  line-height: 30px;
+}
+
+

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Погнали</title>
 </head>
 
@@ -105,12 +107,15 @@
     <h1 class="visually-hidden">Направление путешествий</h1>
     <section class="direction">
       <h2 class="direction__title">Направление</h2>
-      <span class="direction__small">80 level</span>
+      <div class="direction__small">
+        <p>80</p>
+        <p class="direction__small direction__small--small">level</p>
+      </div>
       <img class="direction__avatar" src="img/direction/demin.jpg" alt="Петр Демин" width="100" height="100">
-      <button class="button direction__button" type="button">сменить фото</button>
+      <button class="button direction__toggler" type="button">сменить фото</button>
       <div class="direction__hashtad hashtag">
         <h3 class="hashtag__title">тэги</h3>
-        <ul class="hashtag__list">
+        <ul class="direction__list hashtag__list">
           <li class="hashtag__item">#бургер</li>
           <li class="hashtag__item">#бар</li>
           <li class="hashtag__item">#футбол</li>
@@ -165,8 +170,8 @@
         <li class="slider-plan__item">
           <span class="slider-plan__number">1</span>
           <p class="slider-plan__country">Франция, Италия</p>
-          <p class="slider-plan__quontity-companion">3 попутчика</p>
-          <p class="slider-plan__data data">
+          <p class="slider-plan__text slider-plan__quontity-companion">3 попутчика</p>
+          <p class="slider-plan__text slider-plan__data data">
             <span class="data__from">26 мар — </span>
             <span class="data__before">29 мар</span>
           </p>
@@ -191,23 +196,23 @@
       <span class="add-plan__button">.</span>
       <span class="add-plan__button">.</span>
       <div class="add-plan__step step step-first">
-        <h3 class="add-plan__subtitle">Шаг 1.<br>Даты пребывания</h3>
-        <p class="add-plan__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в
+        <h3 class="add-plan__subtitle step__subtitle">Шаг 1.<br>Даты пребывания</h3>
+        <p class="add-plan__text step__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в
           поездку, и ее предполагаемую длительность.</p>
-        <form class="step-first__form form-step" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="add-plan__form step-first__form form-step" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form-step__field-group field-group">
-            <label class="field-group__filter-label" for="search-companion">ищу попутчиков:</label>
-            <span class="field-group__small">чел.</span>
+            <label class="add-plan__label step__label field-group__filter-label" for="search-companion">ищу попутчиков:</label>
+            <span class="add-plan__small field-group__small">чел.</span>
             <button class="field-group__reduce" type="submit">
               <span class="visually-hidden">Убавить количество попутчиков</span>
             </button>
-            <input class="field-group__field" type="number" id="search-companion" placeholder="2">
+            <input class="add-plan__input field-group__field" type="number" id="search-companion" placeholder="2">
             <button class="field-group__add" type="submit">
               <span class="visually-hidden">Добавить количество попутчиков</span>
             </button>
           </div>
           <div class="form-step__field-group field-group">
-            <label class="field-group__filter-label" for="duration">длительность:</label>
+            <label class="step__label add-plan__label field-group__filter-label" for="duration">длительность:</label>
             <span class="field-group__small">дн.</span>
             <button class="field-group__reduce" type="submit">
               <span class="visually-hidden">Убавить количество дней</span>
@@ -219,14 +224,14 @@
           </div>
           <div class="form-step__field-group">
             <input class="visually-hidden form-step__input" type="checkbox" name="pool" checked id="child">
-            <label class="form-step__label child" for="child">Можно с детьми</label>
+            <label class="step__label--child step__label form-step__label child" for="child">Можно с детьми</label>
           </div>
         </form>
         <div class="step-first__table calendar">
           <button class="calendar__button button-back">
             <span class="visually-hidden">назад</span>
           </button>
-          <p class="calendar__caption">Март 2019</p>
+          <p class="add-plan__subtitle calendar__caption">Март 2019</p>
           <button class="calendar__button button-forward">
             <span class="visually-hidden">вперед</span>
           </button>
@@ -237,75 +242,75 @@
               <th class="calendar__cell">С</th>
               <th class="calendar__cell">Ч</th>
               <th class="calendar__cell">П</th>
-              <th class="calendar__cell calendar__cell--weekend">с</th>
-              <th class="calendar__cell calendar__cell--weekend">в</th>
+              <th class="calendar__cell calendar__cell--weekend">С</th>
+              <th class="calendar__cell calendar__cell--weekend">В</th>
             </tr>
             <tr>
-              <td class="calendar__cell calendar__cell--inactive">23</td>
-              <td class="calendar__cell calendar__cell--inactive">24</td>
-              <td class="calendar__cell calendar__cell--inactive">25</td>
-              <td class="calendar__cell calendar__cell--inactive">26</td>
-              <td class="calendar__cell calendar__cell--inactive">27</td>
-              <td class="calendar__cell calendar__cell--inactive">28</td>
-              <td class="calendar__cell calendar__cell--inactive">1</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">23</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">24</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">25</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">26</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">27</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">28</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">1</td>
             </tr>
             <tr>
-              <td class="calendar__cell calendar__cell--inactive">2</td>
-              <td class="calendar__cell calendar__cell--inactive">3</td>
-              <td class="calendar__cell calendar__cell--inactive">4</td>
-              <td class="calendar__cell calendar__cell--inactive">5</td>
-              <td class="calendar__cell calendar__cell--inactive">6</td>
-              <td class="calendar__cell calendar__cell--inactive">7</td>
-              <td class="calendar__cell calendar__cell--inactive">8</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">2</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">3</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">4</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">5</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">6</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">7</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">8</td>
             </tr>
             <tr>
-              <td class="calendar__cell calendar__cell--inactive">9</td>
-              <td class="calendar__cell calendar__cell--inactive">10</td>
-              <td class="calendar__cell calendar__cell--inactive">11</td>
-              <td class="calendar__cell calendar__cell--inactive">12</td>
-              <td class="calendar__cell calendar__cell--inactive">13</td>
-              <td class="calendar__cell calendar__cell--inactive">14</td>
-              <td class="calendar__cell calendar__cell--inactive">15</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">9</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">10</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">11</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">12</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">13</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">14</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">15</td>
             </tr>
             <tr>
-              <td class="calendar__cell calendar__cell--inactive">16</td>
-              <td class="calendar__cell calendar__cell--inactive">17</td>
-              <td class="calendar__cell calendar__cell--inactive">18</td>
-              <td class="calendar__cell calendar__cell--inactive">19</td>
-              <td class="calendar__cell calendar__cell--inactive">20</td>
-              <td class="calendar__cell calendar__cell--inactive">21</td>
-              <td class="calendar__cell calendar__cell--inactive">22</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">16</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">17</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">18</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">19</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">20</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">21</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">22</td>
             </tr>
             <tr>
-              <td class="calendar__cell calendar__cell--inactive">23</td>
-              <td class="calendar__cell calendar__cell--inactive">24</td>
-              <td class="calendar__cell calendar__cell--inactive">25</td>
-              <td class="calendar__cell calendar__cell--active calendar__cell--hover">26</td>
-              <td class="calendar__cell calendar__cell--actine">27</td>
-              <td class="calendar__cell calendar__cell--active">28</td>
-              <td class="calendar__cell">29</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">23</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">24</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--inactive">25</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--active calendar__cell--hover">26</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--actine">27</td>
+              <td class="calendar__cell-number calendar__cell calendar__cell--active">28</td>
+              <td class="calendar__cell-number">29</td>
             </tr>
             <tr>
-              <td class="calendar__cell">23</td>
-              <td class="calendar__cell">24</td>
-              <td class="calendar__cell">25</td>
-              <td class="calendar__cell">26</td>
-              <td class="calendar__cell">27</td>
-              <td class="calendar__cell">28</td>
-              <td class="calendar__cell">29</td>
+              <td class="calendar__cell-number">23</td>
+              <td class="calendar__cell-number">24</td>
+              <td class="calendar__cell-number">25</td>
+              <td class="calendar__cell-number">26</td>
+              <td class="calendar__cell-number">27</td>
+              <td class="calendar__cell-number">28</td>
+              <td class="calendar__cell-number">29</td>
             </tr>
           </table>
         </div>
         <button class="button step__button">Следующий шаг</button>
       </div>
       <div class="add-plan__step step step-second">
-        <h3 class="add-plan__subtitle">Шаг 2.<br>Маршрут</h3>
+        <h3 class="add-plan__subtitle step__subtitle">Шаг 2.<br>Маршрут</h3>
         <p class="add-plan__text">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу
           несколько.</p>
         <form class="step-second__form form-step">
           <div class="form-step__field-group form-step__field-group--active field-group">
             <label class="visually-hidden" for="Bosnia-and-Herzegovina">Страна посещения</label>
-            <input class="field-group__field" type="text" id="Bosnia-and-Herzegovina"
+            <input class="step__input field-group__field" type="text" id="Bosnia-and-Herzegovina"
               placeholder="Босния и Герцеговина">
             <div class="form-step__small form-step__small--current">
               <span class="visually-hidden">активное поле</span>
@@ -321,7 +326,7 @@
 
           <div class="form-step__field-group form-step__field-group--active field-group">
             <label class="visually-hidden" for="czech">Страна посещения</label>
-            <input class="field-group__field" type="text" id="czech" placeholder="Чехия">
+            <input class="step__input field-group__field" type="text" id="czech" placeholder="Чехия">
             <div class="form-step__small form-step__small--current">
               <span class="visually-hidden">активное поле</span>
             </div>
@@ -335,7 +340,7 @@
 
           <div class="form-step__field-group field-group form-step__field-group--hover">
             <label class="visually-hidden" for="country-hover">поле выбора страны</label>
-            <input class="field-group__field field-group__field--active" type="text" id="country-hover"
+            <input class="step__input field-group__field field-group__field--active" type="text" id="country-hover"
               placeholder="выберите страну">
             <div class="form-step__small form-step__small--hover">
               <span class="visually-hidden">поле в фокусе</span>
@@ -353,14 +358,14 @@
             </button>
             <table class="field-group__table direction-country">
               <tr class="direction-country__line">
-                <th>выберите страну</th>
+                <th class="direction-country__title">выберите страну</th>
                 <th><button class="direction-country__button button-close">
                     <span class="visually-hidden">Закрыть выбор страны по алфавиту</span>
                   </button></th>
               </tr>
               <tr class="direction-country__line">
                 <td class="direction-country__cell">
-                  <a class="direction-country__link direction-country__link--current" href="#">А</a>
+                  <a class="direction-country__link direction-country__link-direction direction-country__link--current" href="#">А</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Австралия</a></li>
@@ -378,7 +383,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Б</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Б</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Багамские Острова</a></li>
@@ -401,7 +406,8 @@
                       <li class="direction-country__item"><a class="direction-country__link">Бутан</a></li>
                     </ol>
                   </div>
-                <td class="direction-country__cell">
+                </td>
+                <td class="direction-country__cell direction-country__link-direction">
                   <a class="direction-country__link" href="#">в</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
@@ -415,7 +421,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Г</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Г</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Габон</a></li>
@@ -436,7 +442,7 @@
                 </td>
 
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Д</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Д</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Дания</a></li>
@@ -450,7 +456,7 @@
 
               <tr class="direction-country__line">
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Е</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Е</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Египет</a></li>
@@ -458,7 +464,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">З</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">З</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Замбия</a></li>
@@ -467,7 +473,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">И</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">И</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Израиль</a></li>
@@ -484,7 +490,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">К</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">К</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Кабо-Верде</a></li>
@@ -503,7 +509,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Л</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Л</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Лаос</a></li>
@@ -521,7 +527,7 @@
               </tr>
               <tr class="direction-country__line">
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">М</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">М</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Маврикий</a></li>
@@ -537,7 +543,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Н</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Н</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Намибия</a></li>
@@ -553,7 +559,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">О</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">О</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">ОАЭ</a></li>
@@ -562,7 +568,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">П</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">П</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Пакистан</a></li>
@@ -578,7 +584,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Р</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Р</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Руанда</a></li>
@@ -590,7 +596,7 @@
               </tr>
               <tr class="direction-country__line">
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">С</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">С</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Сальвадор</a></li>
@@ -609,7 +615,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Т</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Т</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Таджикистан</a></li>
@@ -626,7 +632,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">У</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">У</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Уганда</a></li>
@@ -637,7 +643,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Ф</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Ф</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Фиджи</a></li>
@@ -648,7 +654,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Х</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Х</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Хорватия</a></li>
@@ -658,7 +664,7 @@
               </tr>
               <tr class="direction-country__line">
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Ч</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Ч</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Чад</a></li>
@@ -669,7 +675,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Ш</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Ш</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Швейцария</a></li>
@@ -679,7 +685,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Э</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Э</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Эквадор</a></li>
@@ -691,7 +697,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Ю</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Ю</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">ЮАР</a></li>
@@ -700,7 +706,7 @@
                   </div>
                 </td>
                 <td class="direction-country__cell">
-                  <a class="direction-country__link" href="#">Я</a>
+                  <a class="direction-country__link direction-country__link-direction" href="#">Я</a>
                   <div class="direction-country__hidden alphabet">
                     <ol class="direction-country__list alphabet__list">
                       <li class="direction-country__item"><a class="direction-country__link">Ямайка</a></li>
@@ -714,7 +720,7 @@
 
           <div class="form-step__field-group field-group form-step__field-group--inactive">
             <label class="visually-hidden" for="country-inactive">Добавить страну</label>
-            <input class="field-group__field field-group__field--inactive" type="text" id="country-inactive"
+            <input class="step__input field-group__field field-group__field--inactive" type="text" id="country-inactive"
               placeholder="выберите страну">
             <div class="form-step__small form-step__small--hover">
               <span class="visually-hidden">неактивное поле</span>
@@ -733,7 +739,7 @@
       </div>
 
       <div class="add-plan__step step step-third">
-        <h3 class="add-plan__subtitle">Шаг 3.<br>Развлечения</h3>
+        <h3 class="add-plan__subtitle step__subtitle">Шаг 3.<br>Развлечения</h3>
         <p class="add-plan__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и
           ставить тэги.</p>
         <form class="step-third__form form-step" action="https://echo.htmlacademy.ru/" method="post">
@@ -744,7 +750,7 @@
               <img class="step-third__flag" src="img/flag/bosnia-and-herzegovina.jpg" width="35" height="24"
                 alt="Флаг Босния и Герцеговина">
             </div>
-            <textarea class="field-group__input" id="Bosnia-and-Herzegovina-area" placeholder="План действий"></textarea>
+            <textarea class="add-plan__text field-group__input" id="Bosnia-and-Herzegovina-area" placeholder="План действий"></textarea>
           </div>
           <div class="form-step__field-group field-group">
             <label class="field-group__filter-label" for="Czech">Чехия</label>
@@ -752,7 +758,7 @@
               <span class="visually-hidden">Флаг страны-Чехия</span>
               <img class="step-third__flag" src="img/flag/Czech.jpg" width="35" height="24" alt="Флаг Чехии">
             </div>
-            <textarea class="field-group__input" id="Czech" placeholder="План действий">
+            <textarea class="add-plan__text field-group__input" id="Czech" placeholder="План действий">
               Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
             </textarea>
           </div>
@@ -801,7 +807,7 @@
       <li class="social__item">
         <a class href="https://www.facebook.com/htmlacademy">
           <span class="visually-hidden">Инстаграмм</span>
-          <svg class="social-icon" width="11" height="21" xmlns="http://www.w3.org/2000/svg" role="img"
+          <svg class="social-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" role="img"
             aria-label="Инстаграмм.">
             <path
               d="M12.96 2.033a3.274 3.274 0 0 1 2.29.936c.606.597.948 1.407.95 2.252v7.791a3.169 3.169 0 0 1-.95 2.252 3.275 3.275 0 0 1-2.29.936H5.04a3.274 3.274 0 0 1-2.284-.938 3.169 3.169 0 0 1-.949-2.25V5.221a3.169 3.169 0 0 1 .949-2.25 3.274 3.274 0 0 1 2.284-.938h7.92Zm0-1.062H5.04a4.356 4.356 0 0 0-3.055 1.244A4.215 4.215 0 0 0 .72 5.221v7.791c0 1.127.455 2.208 1.265 3.005a4.356 4.356 0 0 0 3.055 1.245h7.92a4.356 4.356 0 0 0 3.055-1.245 4.215 4.215 0 0 0 1.265-3.005V5.221a4.215 4.215 0 0 0-1.265-3.006A4.356 4.356 0 0 0 12.96.971Z" />

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Погнали</title>
 </head>
 
@@ -29,7 +31,7 @@
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="#">О сервисе</a></li>
           <li class="site-list__item"><a class="site-list__link" href="#">Направления</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Попутчики</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="companion.html">Попутчики</a></li>
         </ul>
       </div>
 
@@ -116,11 +118,11 @@
       </button>
       <ul class="country-filter__list country-list">
         <li class="country-filter__item country-filter__item--active">
-          <a class="country-filter__link" href="#">Европа</a>
+          <a class="country-filter__link country-filter__link--current" href="#">Европа</a>
           <table class="country-list__table direction-country">
             <tr class="country-list__line">
               <td class="country-list__cell">
-                <a class="direction-country__link country-list__link country-list__link--active" href="#">А</a>
+                <a class="direction-country__link country-list__link direction-country__link--active" href="#">А</a>
                 <div class="direction-country__hidden alphabet">
                   <ol class="direction-country__list alphabet__list">
                     <li class="direction-country__item"><a class="direction-country__link">Австралия</a></li>
@@ -482,38 +484,38 @@
       <form class="selection-companion__form selection-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="selection-companion__filter-group selection-form__filter-group hobby">
           <legend class="hobby__title selection-form__title">
-            <a class="hobby__link selection-form__link">хобби</a>
+            <a class="hobby__link selection-companion__link">хобби</a>
           </legend>
         </fieldset>
 
         <fieldset class="selection-companion__filter-group selection-form__filter-group music">
           <legend class="music__title selection-form__title">
-            <a class="music__link selection-form__link">музыка</a>
+            <a class="music__link selection-companion__link">музыка</a>
           </legend>
           <ul class="selection-form__list">
             <li class="selection-form__item">
               <input class="visually-hidden control-input" type="checkbox" name="metal" checked id="metal">
-              <label class="selection-form__label" for="metal">Тяжелый рок</label>
+              <label class="selection-companion__label" for="metal">Тяжелый рок</label>
             </li>
             <li class="selection-form__item">
               <input class="visually-hidden control-input" type="checkbox" name="rap" checked id="rap">
-              <label class="selection-form__label" for="rap">Русский рэп</label>
+              <label class="selection-companion__label" for="rap">Русский рэп</label>
             </li>
             <li class="selection-form__item">
               <input class="visually-hidden control-input" type="checkbox" name="evrodance" id="evrodance">
-              <label class="selection-form__label" for="evrodance">Евроденс</label>
+              <label class="selection-companion__label" for="evrodance">Евроденс</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="selection-companion__filter-group selection-form__filter-group meal">
           <legend class="meal__title selection-form__title">
-            <a class="meal__link selection-form__link">Еда</a>
+            <a class="meal__link selection-companion__link">Еда</a>
           </legend>
         </fieldset>
 
         <fieldset class="selection-companion__filter-group selection-form__filter-group transport">
           <legend class="transport__title selection-form__title">
-            <a class="transport__link selection-form__link">Транспорт</a>
+            <a class="transport__link selection-companion__link">Транспорт</a>
           </legend>
           <ul class="selection-companion__list transport__list list-way">
             <li class="list-way__item">
@@ -563,15 +565,15 @@
 
         <fieldset class="selection-companion__filter-group selection-form__filter-group level">
           <legend class="level__title selection-form__title">
-            <a class="level__link selection-form__link">Левел</a>
+            <a class="level__link selection-companion__link">Левел</a>
           </legend>
 
           <p class="level__wrapper">
             <label class="level__filter-label">
-              <input class="level__range-input input-from" type="number" name="min-level" value="30" min="0" step="1">
+              <input class="selection-companion__input level__range-input input-from" type="number" name="min-level" value="30" min="0" step="1">
             </label>
             <label class="level__filter-label">
-              <input class="level__range-input input-from" type="number" name="max-level" value="100" max="100"
+              <input class="selection-companion__input level__range-input input-from" type="number" name="max-level" value="100" max="100"
                 step="1">
             </label>
           </p>
@@ -597,8 +599,8 @@
     <section class="slider-companion">
       <div class="slider-companion__card companion-card">
         <div class="companion-card__desc card">
-          <h3 class="card__name">Таня Фирсова</h3>
-          <p class="card__text">1,5 М</p>
+          <h3 class="slider-companion__name card__name">Таня Фирсова</h3>
+          <p class="slider-companion__text card__text">1,5 М</p>
           <div class="card__block-img avatar">
             <img class="avatar__picture" src="img/avatar/firsova.jpg" alt="Девушка в бассейне на надовном матрасе"
               width="70" height="70">
@@ -614,7 +616,7 @@
           <div class="card__small">
             <span class="visually-hidden">Статус активности в сети</span>
           </div>
-          <ul class="card__list-hashtag">
+          <ul class="slider-companion__list card__list-hashtag">
             <li class="card__item-hashtag">#ЗОЖ</li>
             <li class="card__item-hashtag">#ПП</li>
             <li class="card__item-hashtag">#Фитнес</li>
@@ -622,21 +624,21 @@
             <li class="card__item-hashtag">#авокадо</li>
             <li class="card__item-hashtag">#смузи</li>
           </ul>
-          <div class="card__wrapper-country country-flag">
+          <div class="slider-companion__wrapper slider-companion__country-flag country-flag">
             <h3 class="country-flag__title">хочет посетить:</h3>
             <ul class="country-flag__list flag-list">
               <li class="flag-list__item flag-item">
-                <span class="visually-hidden">Шриланка</span>
+                <span class="slider-companion__item">Шриланка</span>
                 <img class="flag-item__img" src="img/flag-item/sri-lanka.jpg" alt="флаг Шри-Ланки." width="26"
                   height="18">
               </li>
               <li class="flag-list__item flag-item">
-                <span class="visually-hidden">Таиланд</span>
+                <span class="slider-companion__item">Таиланд</span>
                 <img class="flag-item__img" src="img/flag-item/thailand.jpg" alt="флаг Таиланда." width="26"
                   height="18">
               </li>
               <li class="flag-list__item flag-item">
-                <span class="visually-hidden">Сейшеллы</span>
+                <span class="slider-companion__item">Сейшеллы</span>
                 <img class="flag-item__img" src="img/flag-item/seychelles.jpg" alt="флаг Сейшеллы." width="26"
                   height="18">
               </li>
@@ -682,7 +684,7 @@
           </div>
           <div class="card__level level-wrapper">
             <h3 class="level-wrapper__title">левел:</h3>
-            <span class="level-wrapper__small">99 level</span>
+            <span class="slider-companion__level level-wrapper__small">99</span>
           </div>
         </div>
         <button class="button companion-card__button">Позвать!</button>
@@ -690,8 +692,8 @@
 
       <div class="slider-companion__card companion-card">
         <div class="companion-card__desc card">
-          <h3 class="card__name">Петя Демин</h3>
-          <p class="card__text">1500</p>
+          <h3 class="slider-companion__name card__name">Петя Демин</h3>
+          <p class="slider-companion__text card__text">1500</p>
           <div class="card__block-img avatar">
             <img class="avatar__picture" src="img/avatar/demin.jpg" alt="Петя Демин" width="70" height="70">
             <a class="avatar__link favorite-link">
@@ -706,22 +708,22 @@
           <div class="card__small">
             <span class="visually-hidden">Статус активности в сети</span>
           </div>
-          <ul class="card__list-hashtag">
+          <ul class="slider-companion__list card__list-hashtag">
             <li class="card__item-hashtag">#бургер</li>
             <li class="card__item-hashtag">#бар</li>
             <li class="card__item-hashtag">#футбол</li>
             <li class="card__item-hashtag">#концерт</li>
             <li class="card__item-hashtag">#крафт</li>
           </ul>
-          <div class="card__wrapper-country country-flag">
+          <div class="slider-companion__wrapper slider-companion__country-flag country-flag">
             <h3 class="country-flag__title">хочет посетить:</h3>
             <ul class="country-flag__list flag-list">
               <li class="flag-list__item flag-item">
-                <span class="visually-hidden">Бельгии</span>
+                <span class="slider-companion__item">Бельгии</span>
                 <img class="flag-item__img" src="img/flag-item/belgium.jpg" alt="флаг Бельгии." width="26" height="18">
               </li>
               <li class="flag-list__item flag-item">
-                <span class="visually-hidden">Чехия</span>
+                <span class="slider-companion__item">Чехия</span>
                 <img class="flag-item__img" src="img/flag-item/czech.jpg" alt="флаг Чехии." width="26" height="18">
               </li>
             </ul>
@@ -766,7 +768,7 @@
           </div>
           <div class="card__level level-wrapper">
             <h3 class="level-wrapper__title">левел:</h3>
-            <span class="level-wrapper__small">80 level</span>
+            <span class="slider-companion__level level-wrapper__small">80</span>
           </div>
         </div>
         <button class="button companion-card__button">Позвать!</button>
@@ -774,8 +776,8 @@
 
       <div class="slider-companion__card companion-card">
         <div class="companion-card__desc card">
-          <h3 class="card__name">Марк Смолов</h3>
-          <p class="card__text">170</p>
+          <h3 class="slider-companion__name card__name">Марк Смолов</h3>
+          <p class="slider-companion__text card__text">170</p>
           <div class="card__block-img avatar">
             <img class="avatar__picture" src="img/avatar/smolov.jpg" alt="Марк Смолов" width="70" height="70">
             <a class="avatar__link favorite-link">
@@ -790,28 +792,28 @@
           <div class="card__small">
             <span class="visually-hidden">Статус активности в сети</span>
           </div>
-          <ul class="card__list-hashtag">
+          <ul class="slider-companion__list card__list-hashtag">
             <li class="card__item-hashtag">#рэп </li>
             <li class="card__item-hashtag">#тату</li>
             <li class="card__item-hashtag">#хайпбист</li>
             <li class="card__item-hashtag">#кроссовки</li>
             <li class="card__item-hashtag">#суприм</li>
           </ul>
-          <div class="card__wrapper-country country-flag">
+          <div class="slider-companion__wrapper slider-companion__country-flag country-flag">
             <h3 class="country-flag__title">хочет посетить:</h3>
             <ul class="country-flag__list flag-list">
               <li class="flag-list__item flag-item">
-                <span class="visually-hidden">США</span>
+                <span class="slider-companion__item">США</span>
                 <img class="flag-item__img" src="img/flag-item/united-states-of-america.jpg" alt="флаг США." width="26"
                   height="18">
               </li>
               <li class="flag-list__item flag-item">
-                <span class="visually-hidden">Австралия</span>
+                <span class="slider-companion__item">Австралия</span>
                 <img class="flag-item__img" src="img/flag-item/australia.jpg" alt="флаг Австралии." width="26"
                   height="18">
               </li>
               <li class="flag-list__item flag-item">
-                <span class="visually-hidden">Доминика</span>
+                <span class="slider-companion__item">Доминика</span>
                 <img class="flag-item__img" src="img/flag-item/dominica.jpg" alt="флаг Доминиканы." width="26"
                   height="18">
               </li>
@@ -857,7 +859,7 @@
           </div>
           <div class="card__level level-wrapper">
             <h3 class="level-wrapper__title">левел:</h3>
-            <span class="level-wrapper__small">25 level</span>
+            <span class="slider-companion__level level-wrapper__small">25</span>
           </div>
         </div>
         <button class="button companion-card__button">Позвать!</button>
@@ -865,8 +867,8 @@
 
       <div class="slider-companion__card companion-card">
         <div class="companion-card__desc card">
-          <h3 class="card__name">Лариса Роговая</h3>
-          <p class="card__text">23</p>
+          <h3 class="slider-companion__name card__name">Лариса Роговая</h3>
+          <p class="slider-companion__text card__text">23</p>
           <div class="card__block-img avatar">
             <img class="avatar__picture" src="img/avatar/rogovaya.jpg" alt="Лариса Роговая" width="70" height="70">
             <a class="avatar__link favorite-link avatar__link--current">
@@ -881,22 +883,22 @@
           <div class="card__small card__small--active">
             <span class="visually-hidden">Статус активности в сети</span>
           </div>
-          <ul class="card__list-hashtag">
+          <ul class="slider-companion__list card__list-hashtag">
             <li class="card__item-hashtag">#образование</li>
             <li class="card__item-hashtag">#карьера</li>
             <li class="card__item-hashtag">#учеба</li>
             <li class="card__item-hashtag">#линкедин</li>
           </ul>
-          <div class="card__wrapper-country country-flag">
+          <div class="slider-companion__wrapper slider-companion__country-flag country-flag">
             <h3 class="country-flag__title">хочет посетить:</h3>
             <ul class="country-flag__list flag-list">
               <li class="flag-list__item flag-item">
-                <span class="visually-hidden">Великобритания</span>
+                <span class="slider-companion__item">Великобритания</span>
                 <img class="flag-item__img" src="img/flag-item/united-kingdom.jpg" alt="флаг Великобритании." width="26"
                   height="18">
               </li>
               <li class="flag-list__item flag-item">
-                <span class="visually-hidden">Германия</span>
+                <span class="slider-companion__item">Германия</span>
                 <img class="flag-item__img" src="img/flag-item/germany.jpg" alt="флаг Германии." width="26" height="18">
               </li>
             </ul>
@@ -941,7 +943,7 @@
           </div>
           <div class="card__level level-wrapper">
             <h3 class="level-wrapper__title">левел:</h3>
-            <span class="level-wrapper__small">50 level</span>
+            <span class="slider-companion__level level-wrapper__small">50</span>
           </div>
         </div>
         <button class="button companion-card__button">Позвать!</button>
@@ -1020,7 +1022,7 @@
       <li class="social__item">
         <a class href="https://www.facebook.com/htmlacademy">
           <span class="visually-hidden">Инстаграмм</span>
-          <svg class="social-icon" width="11" height="21" xmlns="http://www.w3.org/2000/svg" role="img"
+          <svg class="social-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" role="img"
             aria-label="Инстаграмм.">
             <path
               d="M12.96 2.033a3.274 3.274 0 0 1 2.29.936c.606.597.948 1.407.95 2.252v7.791a3.169 3.169 0 0 1-.95 2.252 3.275 3.275 0 0 1-2.29.936H5.04a3.274 3.274 0 0 1-2.284-.938 3.169 3.169 0 0 1-.949-2.25V5.221a3.169 3.169 0 0 1 .949-2.25 3.274 3.274 0 0 1 2.284-.938h7.92Zm0-1.062H5.04a4.356 4.356 0 0 0-3.055 1.244A4.215 4.215 0 0 0 .72 5.221v7.791c0 1.127.455 2.208 1.265 3.005a4.356 4.356 0 0 0 3.055 1.245h7.92a4.356 4.356 0 0 0 3.055-1.245 4.215 4.215 0 0 0 1.265-3.005V5.221a4.215 4.215 0 0 0-1.265-3.006A4.356 4.356 0 0 0 12.96.971Z" />
