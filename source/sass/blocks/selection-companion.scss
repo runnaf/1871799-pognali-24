@@ -1,0 +1,27 @@
+.selection-companion {
+  width: 100%;
+  background-color: $orange-background;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $darkfont-color;
+}
+
+.selection-companion__link {
+  font-style: 16px;
+  line-height: 18px;
+}
+
+.selection-companion__label {
+  font-weight: 400;
+  font-style: 15px;
+  line-height: 20px;
+  color: hsla(0, 0%, 0%, 1);
+}
+
+.selection-companion__input {
+  font-weight: 500;
+  font-style: 14px;
+  line-height: 13px;
+}

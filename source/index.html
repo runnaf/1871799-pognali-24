@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -19,22 +21,22 @@
           d="M43.081 8.237V6.094c0-.435.177-.804.53-1.108a1.793 1.793 0 0 1 1.236-.475c.47 0 .882.159 1.235.475.353.304.53.673.53 1.108v7.343c0 .435-.177.804-.53 1.108-.338.303-.75.455-1.235.455-.486 0-.905-.152-1.258-.455a1.434 1.434 0 0 1-.508-1.108v-2.175h-3.817v2.175c0 .435-.177.804-.53 1.108-.338.303-.75.455-1.235.455-.486 0-.905-.152-1.258-.455a1.434 1.434 0 0 1-.508-1.108V6.094c0-.435.177-.804.53-1.108a1.793 1.793 0 0 1 1.236-.475c.47 0 .882.159 1.235.475.353.304.53.673.53 1.108v2.143h3.817ZM33.962 4.511c.346 0 .642.131.89.394.247.262.37.867.37 1.234 0 .368-.123.747-.37 1.01-.247.262-.544.354-.89.354h-2.958v5.971c0 1.13-.994 1.526-1.99 1.526-.924 0-1.807-.5-1.807-1.515l.03-8.974h6.725ZM12.855 0v13.332c0 .44-.239.812-.57 1.118-.317.307-.815.46-1.27.46-.455 0-1.113-.153-1.444-.46a1.497 1.497 0 0 1-.476-1.118V3.008H3.772v10.322c0 .44-.165.813-.496 1.12-.317.306-.963.46-1.418.46-.455 0-1.051-.154-1.382-.46A1.497 1.497 0 0 1 0 13.33V0h12.855ZM24.637 13.365c-1.076 1.01-2.517 1.516-4.322 1.516-1.804 0-3.237-.505-4.298-1.516-1.092-1.026-1.638-2.308-1.638-3.847 0-1.554.546-2.836 1.638-3.847 1.06-1.01 2.494-1.516 4.298-1.516 1.805 0 3.246.505 4.322 1.516 1.077 1.026 1.615 2.308 1.615 3.847 0 1.539-.538 2.821-1.614 3.847Zm-2.802-5.43a1.835 1.835 0 0 0-1.116-.567 2.288 2.288 0 0 0-1.235.114c-.38.15-.704.407-.973.769-.254.362-.364.784-.333 1.267 0 .634.198 1.162.594 1.584.412.407.926.611 1.543.611.634 0 1.148-.196 1.544-.588.396-.408.594-.943.594-1.607 0-.633-.206-1.161-.618-1.584ZM64.022 4.462c2.024 0 7.417.03 7.417.03s.004 6.591.004 8.894c0 .443-.182.824-.546 1.145-.347.305-.662.457-1.191.457-.53 0-.8.04-1.164-.265-.347-.32-.667-.894-.667-1.337v-5.95H65.42c0 4.266 0 5.203-1.57 6.728-.58.55-1.325.824-2.235.824-.546 0-.867-.13-1.214-.436-.347-.32-.617-.832-.617-1.304 0-1.018.213-1.423.76-2.088 1.566 0 1.498-.38 1.4-3.266v-1.83c.017-.443.098-1.602.098-1.602h1.98ZM93.16 12.745c0 1.239-1.05 2.243-2.345 2.243-1.295 0-2.344-1.005-2.344-2.243s1.05-2.242 2.344-2.242c1.295 0 2.345 1.004 2.345 2.242Z" />
       </svg>
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="#">О сервисе</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Направления</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Попутчики</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="direction.html">Направления</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="companion.html">Попутчики</a></li>
         </ul>
       </div>
 
       <div class="main-nav__user-wrapper">
         <ul class="main-nav__list user-list">
           <li class="user-list__item user-item">
-            <a class="user-list__link button user-list__link--authentication" href="#">Авторизация</a>
+            <a class="user-list__link button button__user-link user-list__link--authentication" href="#">Авторизация</a>
           </li>
           <li class="user-list__item user-item">
             <a class="user-list__link user-list__link--phone" href="tel:+78005558628">
@@ -180,8 +182,8 @@
             alt="Две скалы в море рядом с пляжем в Таиланде Пхукет." width="270" height="110">
           <div class="travel-direction__block country">
             <img class="country__flag" src="img/country/thailand.jpg" alt="флаг Таиланда." width="35" height="24">
-            <h3 class="country__heading">Таиланд</h3>
-            <p class="country__desc">Джунгли зовут!</p>
+            <h3 class="travel-direction__heading country__heading">Таиланд</h3>
+            <p class="travel-direction__text country__desc">Джунгли зовут!</p>
             <span class="country__visiter">18321</span>
           </div>
         </li>
@@ -217,8 +219,8 @@
       <p class="companion__text companion__text--slogan">Теперь можно легко найти единомышленников!</p>
       <div class="companion__card companion-card">
         <div class="companion-card__desc">
-          <h3 class="companion-card__name">Таня Фирсова</h3>
-          <div class="companion-card__small companion-card__small--active">
+          <h3 class="companion-card__name companion__name">Таня Фирсова</h3>
+          <div class="companion-card__small companion-card__small--active" >
             <span class="visually-hidden">Статус активности в сети</span>
           </div>
           <ul class="companion-card__list-hashtag">
@@ -283,7 +285,10 @@
         <div class="companion-card__block-img companion-img">
           <img class="companion-img__picture" src="img/companion/firsova.jpg"
             alt="Девушка в бассейне на надовном матрасе" width="270" height="270">
-          <span class="companion-img__small">99 level</span>
+          <div class="companion-img__small companion-card__small">
+            <p>99</p>
+            <p class="companion-card__small--desc">level</p>
+          </div>
         </div>
       </div>
       <div class="companion__card companion-card">
@@ -360,26 +365,26 @@
         <span class="tariff-payment__coin">&#8381;</span>
       </div>
       <ol class="tariff__list tariff-list">
-        <li class="tariff-list__item">
+        <li class="tariff-list__item tariff__item">
           <p>Базовое размещение</p>
           <p>Бесплатно</p>
-          <span class="tariff-list__number">1</span>
+          <span class="tariff-list__number tariff__number">1</span>
         </li>
-        <li class="tariff-list__item">
+        <li class="tariff-list__item tariff__item">
           <p>Вывод на первых позициях</p>
           <p>99 руб./мес</p>
-          <span class="tariff-list__number">2</span>
+          <span class="tariff-list__number tariff__number">2</span>
         </li>
-        <li class="tariff-list__item">
+        <li class="tariff-list__item tariff__item">
           <p>Кастомный цвет карточки</p>
           <p>59 руб./мес</p>
-          <span class="tariff-list__number">3</span>
+          <span class="tariff-list__number tariff__number">3</span>
         </li>
       </ol>
 
       <div class="tariff__business-block business-block">
         <a class="business-block__link business-tariff">
-          <p class="business-block__desc ">Показать тарифы для бизнеса</p>
+          <p class="business-block__desc">Показать тарифы для бизнеса</p>
           <span class="business-block__small">
             <svg class="business-block__icon" width="27" height="27" xmlns="http://www.w3.org/2000/svg" role="img"
               aria-label="Иконка человека">
@@ -421,7 +426,7 @@
       </form>
       <p class="interested__desc">Остались вопросы?</p>
       <p class="interested__desc">Мы с радостью на них ответим!</p>
-      <a class="interested__phone phone-link" href="tel:+78005558628">
+      <a class="interested__link phone-link" href="tel:+78005558628">
         <span class="phone-link__img">
           <svg class="phone-link__icon" width="18" height="17" xmlns="http://www.w3.org/2000/svg" role="img"
             aria-label="иконка телефона.">
@@ -431,7 +436,7 @@
         </span>
         <span class="phone-link__desc">8 800 555-86-28</span>
       </a>
-      <a class="interested__email email-link" href="mailto:mail@htmlacademy.ru">
+      <a class="interested__link email-link" href="mailto:mail@htmlacademy.ru">
         <span class="email-link__img">
           <svg class="email-link__icon" width="18" height="12.5" xmlns="http://www.w3.org/2000/svg" role="img"
             aria-label="иконка e-mail.">
@@ -498,7 +503,7 @@
       <li class="social__item">
         <a class href="https://www.facebook.com/htmlacademy">
           <span class="visually-hidden">Инстаграмм</span>
-          <svg class="social-icon" width="11" height="21" xmlns="http://www.w3.org/2000/svg" role="img"
+          <svg class="social-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" role="img"
             aria-label="Инстаграмм.">
             <path
               d="M12.96 2.033a3.274 3.274 0 0 1 2.29.936c.606.597.948 1.407.95 2.252v7.791a3.169 3.169 0 0 1-.95 2.252 3.275 3.275 0 0 1-2.29.936H5.04a3.274 3.274 0 0 1-2.284-.938 3.169 3.169 0 0 1-.949-2.25V5.221a3.169 3.169 0 0 1 .949-2.25 3.274 3.274 0 0 1 2.284-.938h7.92Zm0-1.062H5.04a4.356 4.356 0 0 0-3.055 1.244A4.215 4.215 0 0 0 .72 5.221v7.791c0 1.127.455 2.208 1.265 3.005a4.356 4.356 0 0 0 3.055 1.245h7.92a4.356 4.356 0 0 0 3.055-1.245 4.215 4.215 0 0 0 1.265-3.005V5.221a4.215 4.215 0 0 0-1.265-3.006A4.356 4.356 0 0 0 12.96.971Z" />

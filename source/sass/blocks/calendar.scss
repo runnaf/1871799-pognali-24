@@ -1,0 +1,39 @@
+.calendar {
+  width: 100%;
+  background-color: $white;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $darkfont-color;
+}
+
+.calendar__caption {
+  font-weight: 700;
+  font-style: 20px;
+  line-height: 20px;
+}
+
+.calendar__cell {
+  color: hsla(0, 0%, 27%, 1);
+}
+
+.calendar__cell--weekend {
+  color: hsla(16, 100%, 57%, 1);
+}
+
+.calendar__cell--inactive {
+  color: hsla(0, 0%, 27%, 0.3);
+}
+
+.calendar__cell--active {
+  color: $lightfont-color;
+}
+
+.calendar__cell--hover {
+  border: 2px solid hsla(16, 100%, 57%, 1);
+}
+
+.calendar__cell-number {
+  color: $darkfont-color;
+}

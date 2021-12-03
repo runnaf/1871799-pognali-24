@@ -1,0 +1,45 @@
+.protocol {
+  width: 100%;
+  background-color: $darkgrey;
+  background-image: url(../../img/protocol/globe-back.jpg);
+  background-repeat: no-repeat;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $lightfont-color;
+}
+
+.protocol__slogan {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.protocol__quote-text {
+  font-weight: 300;
+}
+
+.protocol__item {
+  font-size: 18px;
+  line-height: 18;
+}
+
+.protocol__item--first {
+  background-color: $orangefont;
+}
+
+.protocol__item--second {
+  background-color: $midlorange;
+}
+
+.protocol__item--third {
+  background-color: $orange;
+}
+
+.protocol__item--fourth {
+  background-color: $lightorange;
+}
+
+.protocol__text {
+  color: $darkfont-color;
+}

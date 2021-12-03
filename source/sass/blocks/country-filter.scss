@@ -1,0 +1,13 @@
+.country-filter {
+  width: 100%;
+  background-color: $grey;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: hsla(229, 46%, 18%, 0.3);
+}
+
+.country-filter__link--current {
+  color: $darkfont-color;
+}

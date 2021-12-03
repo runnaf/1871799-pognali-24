@@ -1,0 +1,25 @@
+.companion {
+  width: 100%;
+  background-color: $darkgrey;
+  background-image: url(../../img/companion/back.png);
+  background-repeat: no-repeat;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $lightfont-color;
+}
+
+.companion__title {
+  color: $orangefont;
+  font-style: 24px;
+  line-height: 24px;
+}
+
+.companion__text {
+  font-weight: 300;
+}
+
+.companion__name{
+
+}
