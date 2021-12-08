@@ -1,0 +1,124 @@
+.tariff__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.tariff-list__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 34px;
+  grid-template-rows: min-content;
+  column-gap: 10px;
+  row-gap: 5px;
+  min-height: 65px;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    top: -3px;
+    right: 44px;
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: hsla(225, 15%, 90%, 1);
+  }
+}
+
+.tariff-list__item:last-of-type::after {
+  position: absolute;
+  bottom: -3px;
+  right: 44px;
+  content: "";
+  width: 200px;
+  height: 1px;
+  background-color: hsla(225, 15%, 90%, 1);
+}
+
+.tariff-list__wrapper {
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  display: grid;
+  grid-row-gap: 5px;
+}
+
+.tariff-list__text {
+  margin: 0;
+}
+
+.tariff-list__number {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  align-self: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.tariff-list__number--first {
+  background-color: $darkorange;
+}
+
+.tariff-list__number--second {
+  background-color: $midlorange;
+}
+
+.tariff-list__number--third {
+  background-color: $orange;
+}
+
+.tariff__link {
+  color: hsla(229, 72%, 27%, 1);
+}
+
+@media (min-width: $tablet-width) {
+  .tariff-list__item {
+    display: grid;
+    grid-template-columns: 80px 1fr 198px;
+    font-size: 28px;
+    line-height: 28px;
+    row-gap: 0;
+  }
+
+  .tariff-list__wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .tariff-list__number {
+    grid-column: 1/2;
+    width: 68px;
+    height: 68px;
+    align-self: center;
+  }
+
+  .tariff-list__wrapper {
+    grid-column: 2/4;
+    display: flex;
+  }
+
+  .tariff-list__text-therm {
+    flex-grow: 1;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    align-self: center;
+  }
+
+  .tariff-list__text-definition {
+    align-self: center;
+    min-width: 198px;
+    text-align: center;
+    background-color: hsla(229, 38%, 92%, 1);
+  }
+
+  .tariff-list__text-definition--first {
+  }
+
+  .tariff-list__text-definition--last {
+
+  }
+}
+

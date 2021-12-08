@@ -1,4 +1,6 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: $white;
   font-family: "Blogger Sans", "Arial", sans-serif;
@@ -6,4 +8,128 @@
   line-height: 16px;
   font-weight: 400;
   color: hsla(0, 0%, 27%, 1);
+  margin-top: -110px;
+  padding-top: 37px;
+  padding-bottom: 17px;
+  box-sizing: border-box;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.page-footer__wrapper {
+  margin-bottom: 40px;
+}
+
+.page-footer__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__icon {
+  fill: hsla(229, 46%, 18%, 1);
+}
+
+.page-footer__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__link-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  background-color: $orange-background;
+}
+
+.page-footer__developed {
+  position: relative;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-bottom: 0;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 270px;
+    height: 1px;
+    background-color: hsla(0, 0%, 95%, 1);
+  }
+}
+
+.page-footer__developed-text {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    margin-top: -70px;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 45px;
+    padding-bottom: 28px;
+    justify-content: space-between;
+    border-top-left-radius: 57px;
+  border-top-right-radius: 57px;
+  }
+
+  .page-footer__wrapper {
+    margin: 0;
+    padding-top: 11px;
+  }
+
+  .page-footer__logo {
+    background-image: url(../../img/page-footer/logo_full_tablet.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 155px;
+    height: 42px;
+  }
+
+  .page-footer__icon {
+    transform: scale(1.1);
+    justify-content: flex-start;
+    padding-left: 60px;
+    padding-top: 12px;
+  }
+
+  .page-footer__list {
+    margin: 0;
+  }
+
+  .page-footer__link-social {
+    width: 62px;
+    height: 62px;
+  }
+
+  .page-footer__developed {
+    margin: 0;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .page-footer__developed-text {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-right: 25px;
+    padding: 0;
+  }
 }

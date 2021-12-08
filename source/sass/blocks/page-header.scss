@@ -1,3 +1,254 @@
 .page-header {
+  width: 100%;
+  box-sizing: border-box;
   background-color: $darkgrey;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 16px;
+
+  &:focus-within {
+    background-color: $white;
+  }
+}
+
+.page-header__button-wrapper {
+  position: relative;
+}
+
+.page-header__toggle {
+  width: 57px;
+  height: 57px;
+  padding: 0;
+  border: 1px solid transparent;
+  background-color: inherit;
+  border: 2px solid red;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 28%;
+    top: 38%;
+    width: 25px;
+    height: 3px;
+    background-color: hsla(0, 0%, 100%, 1);
+    border-radius: 1.5px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 28%;
+    bottom: 42%;
+    width: 25px;
+    height: 3px;
+    background-color: hsla(0, 0%, 100%, 1);
+    border-radius: 1.5px;
+  }
+
+  &:hover::before {
+    content: "";
+    top: 16px;
+    transform: rotate(-45deg);
+    background-color: hsla(0, 0%, 80%, 1);
+  }
+
+  &:hover::after {
+    content: "";
+    bottom: 14px;
+    transform: rotate(45deg);
+    background-color: hsla(0, 0%, 80%, 1);
+  }
+
+  &:focus::before {
+    content: "";
+    top: 16px;
+    transform: rotate(-45deg);
+    background-color: hsla(0, 0%, 80%, 1);
+  }
+
+  &:focus::after {
+    content: "";
+    bottom: 14px;
+    transform: rotate(45deg);
+    background-color: hsla(0, 0%, 80%, 1);
+  }
+}
+
+.page-header__logo {
+  padding: 15px;
+}
+
+.page-header__logo-icon {
+  fill: hsla(0, 0%, 100%, 1);
+}
+
+.page-header__social {
+  display: none;
+}
+
+.page-header__nav {
+  display: none;
+  background-color: $white;
+}
+
+.page-header__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.pade-header__list--row {
+  flex-direction: row;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding: 40px;
+    padding-bottom: 35px;
+    background-color: $darkfont-color;
+  }
+
+  .page-header__button-wrapper {
+    margin-left: 52px;
+  }
+
+  .page-header__logo {
+    padding-left: 63px;
+    background-image: url(../../img/page-header/logo_full.svg);
+    background-repeat: no-repeat;
+  }
+
+  .page-header__logo-icon {
+    transform: scale(1.112);
+  }
+
+  .page-header__toggle {
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 28%;
+      top: 36%;
+      width: 25px;
+      height: 3px;
+      border-radius: 1.5px;
+      background-color: hsla(0, 0%, 100%, 1);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 28%;
+      top: 50%;
+      width: 25px;
+      height: 3px;
+      border-radius: 1.5px;
+      background-color: hsla(0, 0%, 100%, 1);
+    }
+
+    &:hover::before {
+      content: "";
+      top: 16px;
+      transform: rotate(-45deg);
+      background-color: hsla(0, 0%, 80%, 1);
+    }
+
+    &:hover::after {
+      content: "";
+      bottom: 14px;
+      transform: rotate(45deg);
+      background-color: hsla(0, 0%, 80%, 1);
+    }
+
+    &:focus::before {
+      content: "";
+      top: 16px;
+      transform: rotate(-45deg);
+      background-color: hsla(0, 0%, 80%, 1);
+    }
+
+    &:focus::after {
+      content: "";
+      bottom: 14px;
+      transform: rotate(45deg);
+      background-color: hsla(0, 0%, 80%, 1);
+    }
+  }
+
+  .page-header__social {
+    display: flex;
+  }
+
+  .page-header__item--closed {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 47px;
+    padding-bottom: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: transparent;
+  }
+
+  .page-header__item--closed {
+    display: flex;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__nav {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    padding-left: 95px;
+    background-color: inherit;
+
+    &::before {
+      position: absolute;
+      left: -11px;
+      top: 50%;
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: $white;
+    }
+  }
+
+  .page-header__list {
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: $white;
+    padding: 0;
+  }
+
+  .page-header__list--closed {
+    display: none;
+  }
+
+  .page-header__logo {
+    background-image: url(../../img/page-header/logo-desctop.svg);
+    background-repeat: no-repeat;
+    padding-left: 88px;
+  }
+
+  .page-header__logo-icon {
+    transform: scale(1.34);
+  }
 }
