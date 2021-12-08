@@ -1,0 +1,15 @@
+.white-theme .page-header {
+  background-color: $white;
+}
+
+.white-theme .page-header__nav::before {
+  background-color: $darkfont-color;
+}
+
+.white-theme .main-nav__link {
+  color: $darkfont-color;
+}
+
+.white-theme .page-header__logo-icon {
+  fill: $darkfont-color;
+}

@@ -1,0 +1,141 @@
+.card-country {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: hsla(0, 0%, 27%, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-country__img {
+  width: 270px;
+  height: 110px;
+  border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
+}
+
+.card-country__block {
+  position: relative;
+  display: grid;
+  min-height: 89px;
+  box-sizing: border-box;
+  grid-template-columns: 1fr 70px;
+  grid-template-rows: min-content;
+  margin-top: -11px;
+  padding-left: 25px;
+  padding-right: 14px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.card-country__img-flag {
+  position: absolute;
+  top: -12px;
+  left: 25px;
+  height: fit-content;
+  border-radius: 3px;
+}
+
+.card-country__heading {
+  grid-column: 1/2;
+  margin: 0;
+  font-size: 21px;
+  line-height: 21px;
+  color: hsla(0, 0%, 0%, 1);
+}
+
+.card-country__text {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin: 0;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.card-country__small {
+  position: relative;
+  grid-column: 2;
+  font-weight: 500;
+  line-height: 20px;
+  padding-left: 18px;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 21%;
+    content: "";
+    width: 11px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../img/card-list/man.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card-country {
+    flex-direction: row;
+  }
+
+  .card-country__block {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    order: -1;
+    margin: 0;
+    padding: 0;
+    padding-top: 26px;
+    padding-left: 29px;
+    padding-bottom: 23px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .card-country__heading{
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .card-country__text {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+  }
+
+  .card-country__img {
+    height: 140px;
+  }
+
+  .card-country__small {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 21px;
+    padding-left: 29px;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "";
+      width: 18px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../../img/card-list/man_tablet.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .card-country__img-flag {
+    top: 29px;
+    left: 418px;
+  }
+}

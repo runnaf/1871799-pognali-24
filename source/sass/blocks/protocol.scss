@@ -1,31 +1,100 @@
 .protocol {
   width: 100%;
+  box-sizing: border-box;
   background-color: $darkgrey;
-  background-image: url(../../img/protocol/globe-back.jpg);
-  background-repeat: no-repeat;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
   color: $lightfont-color;
+  margin: 0;
+  padding-bottom: 29px;
+  padding-top: 19px;
+  background-image: url(../../img/protocol/background__mobile.jpg);
+  background-position: 0 -73px;
+  background-repeat: no-repeat;
+}
+
+.protocol__social {
+  position: relative;
+  background-color: $darkgrey;
+  margin-top: -20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.protocol__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+}
+
+.protocol__list--row {
+  flex-direction: row;
+  position: absolute;
+  top: -20px;
+  left: 0;
 }
 
 .protocol__slogan {
+  min-height: 404px;
   font-size: 36px;
   line-height: 40px;
+  margin: 0 auto;
+  padding-left: 33px;
+  padding-right: 33px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.protocol__quote-text {
+.protocol__img {
+  width: 192px;
+  height: 255px;
+  padding-left: 80px;
+  padding-right: 48px;
+}
+
+.protocol__quote {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 51px;
+  padding-right: 25px;
+  padding-top: 50px;
+  background-color: $darkgrey;
+}
+
+.protocol__text {
+  padding: 0;
+  margin: 0;
   font-weight: 300;
+  width: 151px;
+}
+
+.protocol__auther {
+  width: 161px;
+  margin-top: 17px;
+  margin-bottom: 16px;
 }
 
 .protocol__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   font-size: 18px;
   line-height: 18;
 }
 
 .protocol__item--first {
   background-color: $orangefont;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .protocol__item--second {
@@ -40,6 +109,219 @@
   background-color: $lightorange;
 }
 
-.protocol__text {
+.protocol__item--last {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.protocol__item-text {
+  line-height: 18px;
   color: $darkfont-color;
+  margin: 0;
+  padding: 21px 24px 23px;
+}
+
+.protocol__number {
+  display: flex;
+  align-items: center;
+  height: 18px;
+  padding: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .protocol {
+    background-color: hsla(229, 48%, 18%, 1);
+    background-image: url(../../img/protocol/background__tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 252px;
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 96px;
+  }
+
+  .protocol__slogan {
+    width: 428px;
+    min-height: fit-content;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    padding: 0;
+    padding-top: 27px;
+    padding-bottom: 25px;
+    margin-bottom: 13px;
+    background-image: none;
+  }
+
+  .protocol__social {
+    display: none;
+    background-color: transparent;
+  }
+
+  .protocol__quote {
+    padding-left: 33px;
+    min-height: 365px;
+    background-color: transparent;
+  }
+
+  .protocol__text {
+    font-size: 28px;
+    line-height: 33px;
+    width: 270px;
+    padding: 0;
+  }
+
+  .protocol__auther {
+    width: 40%;
+    font-size: 21px;
+    line-height: 25px;
+    margin-top: 47px;
+  }
+
+  .protocol__list {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    padding: 0;
+  }
+
+  .protocol__item {
+    flex-direction: column;
+    padding-left: 32px;
+    padding-top: 29px;
+    padding-bottom: 31px;
+  }
+
+  .protocol__item:nth-of-type(2n) {
+    margin-left: -15px;
+  }
+
+  .protocol__item--first {
+    border-top-left-radius: 19px;
+    border-top-right-radius: 0;
+  }
+
+  .protocol__item--second {
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+  }
+
+  .protocol__item--third {
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 0;
+  }
+
+  .protocol__item--fourth {
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+  }
+
+  .protocol__item-text {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  .protocol__number {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .protocol {
+    background-color: hsla(229, 46%, 18%, 1);
+    background-image: url(../../img/protocol/background__desctop.png);
+    background-repeat: no-repeat;
+    background-position: 0 -101px;
+    padding-top: 102px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 122px;
+    display: grid;
+    grid-template-columns: 1fr 286px;
+    grid-row-gap: 100px;
+  }
+
+  .protocol__slogan {
+    grid-column: 1/2;
+    width: 435px;
+    min-height: fit-content;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: start;
+    margin: 0;
+    margin-left: 67px;
+    padding: 0;
+    background-image: none;
+  }
+
+  .protocol__social {
+    display: none;
+  }
+
+  .protocol__quote {
+    grid-column: 2/3;
+    min-height: fit-content;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    background-color: transparent;
+  }
+
+  .protocol__text {
+    font-size: 28px;
+    line-height: 33px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .protocol__auther {
+    width: 100%;
+    font-size: 21px;
+    line-height: 25px;
+    margin-top: 47px;
+  }
+
+  .protocol__list {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 345px 345px 345px 284px;
+  }
+
+  .protocol__item {
+    flex-direction: row;
+    padding: 0;
+    padding-top: 28px;
+    padding-left: 32px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+
+  .protocol__item:not(:last-of-type) {
+    padding-right: 64px;
+  }
+
+  .protocol__item:not(:first-of-type) {
+    margin-left: -31px;
+  }
+
+  .protocol__item:last-of-type {
+    padding-right: 32px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+
+  .protocol__item-text {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  .protocol__number {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0;
+  }
 }

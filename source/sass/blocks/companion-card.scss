@@ -1,4 +1,8 @@
 .companion-card {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 0 auto;
   background-color: hsla(0, 0%, 100%, 1);
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-style: normal;
@@ -8,22 +12,163 @@
   color: $darkfont-color;
 }
 
-.companion-card__name {
-  font-size: 21px;
-  line-height: 21px;
+.companion-card__block-img {
+  position: relative;
 }
 
-.companion-card__list-hashtag {
-  font-weight: 400;
-  color: hsla(0, 0%, 27%, 1);
+.companion-card__picture {
+  width: 270px;
+  height: 270px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
 .companion-card__small {
-  font-style: 24px;
-  line-height: 24px;
-  color: $lightfont-color;
+  position: absolute;
+  top: 23px;
+  left: 25px;
 }
 
-.companion-card__small--desc {
-  font-weight: 400;
+.companion-card__desc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 27px;
+  background-color: transparent;
 }
+
+.companion-card__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.companion-card__online {
+  width: 6px;
+  height: 6px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: hsla(0, 92%, 72%, 1);
+}
+
+.companion-card__name {
+  font-size: 21px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.companion-card__list-wrapper {
+  position: absolute;
+  top: -12px;
+  width: 100%;
+}
+
+.companion-card__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.companion-card__list-hashtag {
+  width: 204px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: hsla(0, 0%, 27%, 1);
+  margin: 0 auto;
+  margin-top: 15px;
+  padding-left: 4px;
+}
+
+.companion-card__list-way {
+  margin-top: 17px;
+}
+
+.companion-card__item-hashtag {
+  margin-right: 5px;
+}
+
+.companion-card__item-country:not(:last-of-type) {
+  height: fit-content;
+  margin-right: 20px;
+}
+
+.companion-card__item-way:not(:last-of-type) {
+  margin-right: 14.25px;
+}
+
+.companion-card__list-last {
+  margin-bottom: 13px;
+}
+
+.companion-card__img-flag {
+  height: fit-content;
+  border-radius: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .companion-card {
+    width: 285px;
+  }
+
+  .companion-card__picture {
+    width: 285px;
+    height: 285px;
+  }
+
+  .companion-card__desc {
+    padding-top: 30px;
+
+  }
+
+  .companion-card__wrapper {
+    margin-left: 48px;
+    justify-content: start;
+  }
+
+  .companion-card__online {
+    width: 8px;
+    height: 8px;
+    margin-right: 14px;
+  }
+
+  .companion-card__name {
+    font-size: 24px;
+    line-height: 22px;
+    padding-right: 18px;
+  }
+
+  .companion-card__list-hashtag {
+    width: 100%;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0;
+    margin-top: 24px;
+    padding-right: 26px;
+    padding-left: 31px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .companion-card__item-hashtag:not(:last-of-type) {
+    margin-right: 4px;
+  }
+
+  .companion-card__list-way {
+    margin-top: 28px;
+  }
+
+  .companion-card__item-way:not(:last-of-type) {
+    margin-right: 12px;
+  }
+
+  .companion-card__list-last {
+    margin-bottom: 0;
+  }
+}
+
+

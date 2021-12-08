@@ -21,48 +21,62 @@
           d="M43.081 8.237V6.094c0-.435.177-.804.53-1.108a1.793 1.793 0 0 1 1.236-.475c.47 0 .882.159 1.235.475.353.304.53.673.53 1.108v7.343c0 .435-.177.804-.53 1.108-.338.303-.75.455-1.235.455-.486 0-.905-.152-1.258-.455a1.434 1.434 0 0 1-.508-1.108v-2.175h-3.817v2.175c0 .435-.177.804-.53 1.108-.338.303-.75.455-1.235.455-.486 0-.905-.152-1.258-.455a1.434 1.434 0 0 1-.508-1.108V6.094c0-.435.177-.804.53-1.108a1.793 1.793 0 0 1 1.236-.475c.47 0 .882.159 1.235.475.353.304.53.673.53 1.108v2.143h3.817ZM33.962 4.511c.346 0 .642.131.89.394.247.262.37.867.37 1.234 0 .368-.123.747-.37 1.01-.247.262-.544.354-.89.354h-2.958v5.971c0 1.13-.994 1.526-1.99 1.526-.924 0-1.807-.5-1.807-1.515l.03-8.974h6.725ZM12.855 0v13.332c0 .44-.239.812-.57 1.118-.317.307-.815.46-1.27.46-.455 0-1.113-.153-1.444-.46a1.497 1.497 0 0 1-.476-1.118V3.008H3.772v10.322c0 .44-.165.813-.496 1.12-.317.306-.963.46-1.418.46-.455 0-1.051-.154-1.382-.46A1.497 1.497 0 0 1 0 13.33V0h12.855ZM24.637 13.365c-1.076 1.01-2.517 1.516-4.322 1.516-1.804 0-3.237-.505-4.298-1.516-1.092-1.026-1.638-2.308-1.638-3.847 0-1.554.546-2.836 1.638-3.847 1.06-1.01 2.494-1.516 4.298-1.516 1.805 0 3.246.505 4.322 1.516 1.077 1.026 1.615 2.308 1.615 3.847 0 1.539-.538 2.821-1.614 3.847Zm-2.802-5.43a1.835 1.835 0 0 0-1.116-.567 2.288 2.288 0 0 0-1.235.114c-.38.15-.704.407-.973.769-.254.362-.364.784-.333 1.267 0 .634.198 1.162.594 1.584.412.407.926.611 1.543.611.634 0 1.148-.196 1.544-.588.396-.408.594-.943.594-1.607 0-.633-.206-1.161-.618-1.584ZM64.022 4.462c2.024 0 7.417.03 7.417.03s.004 6.591.004 8.894c0 .443-.182.824-.546 1.145-.347.305-.662.457-1.191.457-.53 0-.8.04-1.164-.265-.347-.32-.667-.894-.667-1.337v-5.95H65.42c0 4.266 0 5.203-1.57 6.728-.58.55-1.325.824-2.235.824-.546 0-.867-.13-1.214-.436-.347-.32-.617-.832-.617-1.304 0-1.018.213-1.423.76-2.088 1.566 0 1.498-.38 1.4-3.266v-1.83c.017-.443.098-1.602.098-1.602h1.98ZM93.16 12.745c0 1.239-1.05 2.243-2.345 2.243-1.295 0-2.344-1.005-2.344-2.243s1.05-2.242 2.344-2.242c1.295 0 2.345 1.004 2.345 2.242Z" />
       </svg>
     </a>
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <div class="page-header__button-wrapper">
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <nav class="main-nav page-header__nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link" href="#">О сервисе</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="direction.html">Направления</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="companion.html">Попутчики</a></li>
+        <ul class="main-nav__list page-header__list main-nav__list--closed site-list">
+          <li class="main-nav__item site-list__item">
+            <a class="main-nav__link site-list__link" href="#">
+              <span class="main-nav__link-regular" data-hover="О сервисе">О сервисе</span>
+            </a>
+          </li>
+          <li class="main-nav__item site-list__item">
+            <a class="main-nav__link site-list__link" href="direction.html">
+              <span class="main-nav__link-regular" data-hover="Направления">Направления</span>
+            </a>
+          </li>
+          <li class="main-nav__item site-list__item">
+            <a class="main-nav__link site-list__link" href="companion.html">
+              <span class="main-nav__link-regular" data-hover="Попутчики">Попутчики</span>
+            </a>
+          </li>
         </ul>
       </div>
 
-      <div class="main-nav__user-wrapper">
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item user-item">
-            <a class="user-list__link button button__user-link user-list__link--authentication" href="#">Авторизация</a>
+      <div class="main-nav__user-wrapper main-nav__wrapper">
+        <ul class="main-nav__list page-header__list page-header__list--closed main-nav__list--user user-list">
+          <li class="user-list__item user-list__item--open user-item">
+            <a class="user-list__link button main-nav__button user-list__link--authentication" href="#">Авторизация</a>
           </li>
           <li class="user-list__item user-item">
             <a class="user-list__link user-list__link--phone" href="tel:+78005558628">
-              <span class="visually-hidden">8 800 555-86-28</span>
-              <svg class="user-list__icon phone-icon" aria-hidden="true" focusable="false" width="18" height="17"
-                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Номер телефона.">
-                <path
-                  d="M9.5 1.086c-2.796 0-5.6.473-6.617 1.415-.844.782-1.125 2.162-1.22 3.037 0 0-.013.086-.013.123 0 .343.295.618.654.618.043 0 1.616-.12 2.565-.195.022-.003.045-.006.068-.012.353-.01.638-.281.638-.618l.003-1.217c0-.377.324-.68.723-.68H12.7c.399 0 .723.303.723.68l.003 1.217c0 .337.285.609.638.618.022.006.045.01.069.012.948.074 2.521.195 2.564.195.36 0 .654-.275.654-.618 0-.037-.013-.123-.013-.123-.095-.875-.376-2.255-1.22-3.037-1.017-.942-3.82-1.415-6.617-1.415Zm0 8.032c-.723 0-1.308.553-1.308 1.235 0 .683.585 1.236 1.308 1.236.723 0 1.308-.553 1.308-1.236 0-.682-.585-1.235-1.308-1.235Zm-.981-2.78v-.773c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.773l-4.412 4.45a1.504 1.504 0 0 0-.494 1.107v1.239c0 .682.586 1.235 1.309 1.235h.327v.772c0 .427.366.773.817.773.452 0 .818-.346.818-.773v-.772h8.504v.772c0 .427.366.773.818.773.451 0 .817-.346.817-.773v-.772h.327c.723 0 1.309-.553 1.309-1.236v-1.238c0-.433-.19-.825-.494-1.106l-4.412-4.451v-.773c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.773H8.52ZM9.5 7.882c1.446 0 2.617 1.106 2.617 2.471 0 1.366-1.171 2.472-2.617 2.472s-2.617-1.106-2.617-2.472c0-1.365 1.171-2.47 2.617-2.47Z" />
-              </svg>
+              <div class="user-list__icon-wrapper">
+                <svg class="user-list__icon phone-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Номер телефона.">
+                  <path d="M9.5 1.086c-2.796 0-5.6.473-6.617 1.415-.844.782-1.125 2.162-1.22 3.037 0 0-.013.086-.013.123 0 .343.295.618.654.618.043 0 1.616-.12 2.565-.195.022-.003.045-.006.068-.012.353-.01.638-.281.638-.618l.003-1.217c0-.377.324-.68.723-.68H12.7c.399 0 .723.303.723.68l.003 1.217c0 .337.285.609.638.618.022.006.045.01.069.012.948.074 2.521.195 2.564.195.36 0 .654-.275.654-.618 0-.037-.013-.123-.013-.123-.095-.875-.376-2.255-1.22-3.037-1.017-.942-3.82-1.415-6.617-1.415Zm0 8.032c-.723 0-1.308.553-1.308 1.235 0 .683.585 1.236 1.308 1.236.723 0 1.308-.553 1.308-1.236 0-.682-.585-1.235-1.308-1.235Zm-.981-2.78v-.773c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.773l-4.412 4.45a1.504 1.504 0 0 0-.494 1.107v1.239c0 .682.586 1.235 1.309 1.235h.327v.772c0 .427.366.773.817.773.452 0 .818-.346.818-.773v-.772h8.504v.772c0 .427.366.773.818.773.451 0 .817-.346.817-.773v-.772h.327c.723 0 1.309-.553 1.309-1.236v-1.238c0-.433-.19-.825-.494-1.106l-4.412-4.451v-.773c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.773H8.52ZM9.5 7.882c1.446 0 2.617 1.106 2.617 2.471 0 1.366-1.171 2.472-2.617 2.472s-2.617-1.106-2.617-2.472c0-1.365 1.171-2.47 2.617-2.47Z" />
+                </svg>
+              </div>
+              <span class="user-list__link-text">8 800 555-86-28</span>
             </a>
           </li>
           <li class="user-list__item user-item">
             <a class="user-list__link user-list__link--email" href="mailto:mail@htmlacademy.ru">
-              <span class="visually-hidden">mail@htmlacademy.ru</span>
-              <svg class="user-list__icon e-mail-icon" aria-hidden="true" focusable="false" width="18" height="13"
-                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="e-mail.">
-                <path
-                  d="M16.14 10.466 11.808 6.5l4.33-3.966-.59-.631L9.25 7.672l-6.299-5.77-.59.632L6.69 6.5l-4.33 3.966.59.631 4.38-4.011L9.25 8.844l1.92-1.758 4.379 4.011.59-.63ZM1.575.25C.767.25.111.949.111 1.808v9.384c0 .86.65 1.558 1.465 1.558h15.348c.81 0 1.465-.699 1.465-1.558V1.808c0-.86-.65-1.558-1.465-1.558H1.576Z" />
-              </svg>
+              <div class="user-list__icon-wrapper">
+                <svg class="user-list__icon" aria-hidden="true" focusable="false" width="18" height="13" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="e-mail.">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.14 10.466 11.808 6.5l4.33-3.966-.59-.631L9.25 7.672l-6.299-5.77-.59.632L6.69 6.5l-4.33 3.966.59.631 4.38-4.011 1.92 1.758 1.92-1.758 4.379 4.011.59-.63ZM1.575.25C.767.25.111.949.111 1.808v9.384c0 .86.65 1.558 1.465 1.558h15.348c.81 0 1.465-.699 1.465-1.558V1.808c0-.86-.65-1.558-1.465-1.558H1.576Z" />
+                </svg>
+              </div>
+              <span class="user-list__link-text">mail@htmlacademy.ru</span>
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="main-nav__social-wrapper social-nav">
-        <ul class="social-nav__list social-list">
+      <div class="main-nav__social-wrapper main-nav__wrapper social-nav">
+        <ul class="main-nav__list page-header__list page-header__list--closed pade-header__list--row social-nav__list main-nav__list--social social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фэйсбук</span>
@@ -99,6 +113,35 @@
         </ul>
       </div>
     </nav>
+    <div class="social page-header__social">
+      <ul class="social__list">
+        <li class="social__item page-header__item--closed">
+          <a class="social__link social__link--header social__link--first protocol__link--phone" href="#">
+            <span class="visually-hidden">Контактный телефон</span>
+            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Контактный телефон.">
+              <path
+                d="M9.774 8.224c0 .189.154.337.342.337a.7.7 0 0 1 .703.696.34.34 0 0 0 .341.337.34.34 0 0 0 .342-.337 1.38 1.38 0 0 0-1.386-1.37.34.34 0 0 0-.342.337Zm5.558 1.37a.338.338 0 0 0 .341-.337c0-3.031-2.492-5.495-5.557-5.495a.34.34 0 0 0-.342.338.34.34 0 0 0 .342.337c2.69 0 4.875 2.164 4.875 4.82a.34.34 0 0 0 .34.337Z" />
+              <path
+                d="M12.905 9.257a.34.34 0 0 0 .341.337.34.34 0 0 0 .341-.337c0-1.894-1.556-3.433-3.471-3.433a.34.34 0 0 0-.342.338c0 .189.154.337.342.337 1.54 0 2.789 1.239 2.789 2.758ZM10.115 1.7a.34.34 0 0 0-.34.337.34.34 0 0 0 .34.338c3.841 0 6.965 3.088 6.965 6.882 0 .185.15.337.341.337a.34.34 0 0 0 .341-.337c0-4.168-3.43-7.557-7.646-7.557Zm3.336 11.114-.447.24c-.755.408-1.342 1.527-2.273.684L8.301 11.3 6.2 9.257c-1.055-1.334.126-1.65.54-2.4l.242-.439c.273-.5.372-1.06.29-1.62a2.557 2.557 0 0 0-.744-1.475 2.636 2.636 0 0 0-1.868-.762c-.706 0-1.372.27-1.87.762l-.174.176c-.922.911-1.028 2.48-.3 4.424C3 9.78 4.383 11.791 6.2 13.587c2.769 2.737 5.851 4.313 8.063 4.313.874 0 1.615-.246 2.14-.766l.178-.176c.495-.489.772-1.144.775-1.85a2.636 2.636 0 0 0-.775-1.845 2.683 2.683 0 0 0-3.13-.45Z" />
+            </svg>
+          </a>
+        </li>
+        <li class="social__item page-header__item--closed">
+          <a class="social__link social__link--header social__link--second" href="#">
+            <span class="visually-hidden">Контактный e-mail</span>
+            <svg width="18" height="16" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Контактный e-mail.">
+              <path
+                d="m2.017 3.325 6.75 4.23c.226.142.52.21.815.21.295 0 .589-.068.815-.21l6.75-4.23c.44-.276.856-1.35.049-1.35H1.969c-.807 0-.392 1.074.048 1.35Zm15.335 2.313-6.955 4.229c-.306.187-.52.209-.815.209-.295 0-.51-.022-.815-.21-.306-.186-6.42-3.925-6.92-4.229-.35-.214-.347.037-.347.23v7.658c0 .441.51 1.05.9 1.05h14.4c.39 0 .9-.609.9-1.05V5.868c0-.193.004-.444-.348-.23Z" />
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="button social__link  social__link--header  social__link--authentication" href="#">Авторизация</a>
+        </li>
+      </ul>
+    </div>
   </header>
 
   <main class="page-main">
@@ -108,251 +151,409 @@
     <section class="protocol">
       <h2 class="visually-hidden">Порядок поиска попутчиклв</h2>
       <p class="protocol__slogan">В путешествие с крутыми попутчиками!</p>
-      <img class="protocol__img" src="img/protocol-img/traveller-illustration.png" alt="Путешественник с чемоданом">
-      <ul class="protocol__list">
-        <li class="protocol__item">
-          <a class="protocol__link protocol__link--phone" href="#">
-            <span class="visually-hidden">Контактный телефон</span>
-            <svg class="protocol-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" role="img"
-              aria-label="Контактный телефон.">
-              <path
-                d="M9.774 8.224c0 .189.154.337.342.337a.7.7 0 0 1 .703.696.34.34 0 0 0 .341.337.34.34 0 0 0 .342-.337 1.38 1.38 0 0 0-1.386-1.37.34.34 0 0 0-.342.337Zm5.558 1.37a.338.338 0 0 0 .341-.337c0-3.031-2.492-5.495-5.557-5.495a.34.34 0 0 0-.342.338.34.34 0 0 0 .342.337c2.69 0 4.875 2.164 4.875 4.82a.34.34 0 0 0 .34.337Z" />
-              <path
-                d="M12.905 9.257a.34.34 0 0 0 .341.337.34.34 0 0 0 .341-.337c0-1.894-1.556-3.433-3.471-3.433a.34.34 0 0 0-.342.338c0 .189.154.337.342.337 1.54 0 2.789 1.239 2.789 2.758ZM10.115 1.7a.34.34 0 0 0-.34.337.34.34 0 0 0 .34.338c3.841 0 6.965 3.088 6.965 6.882 0 .185.15.337.341.337a.34.34 0 0 0 .341-.337c0-4.168-3.43-7.557-7.646-7.557Zm3.336 11.114-.447.24c-.755.408-1.342 1.527-2.273.684L8.301 11.3 6.2 9.257c-1.055-1.334.126-1.65.54-2.4l.242-.439c.273-.5.372-1.06.29-1.62a2.557 2.557 0 0 0-.744-1.475 2.636 2.636 0 0 0-1.868-.762c-.706 0-1.372.27-1.87.762l-.174.176c-.922.911-1.028 2.48-.3 4.424C3 9.78 4.383 11.791 6.2 13.587c2.769 2.737 5.851 4.313 8.063 4.313.874 0 1.615-.246 2.14-.766l.178-.176c.495-.489.772-1.144.775-1.85a2.636 2.636 0 0 0-.775-1.845 2.683 2.683 0 0 0-3.13-.45Z" />
-            </svg>
-          </a>
-        </li>
-        <li class="protocol__item">
-          <a class="protocol__link protocol__link--email" href="#">
-            <span class="visually-hidden">Контактный e-mail</span>
-            <svg class="protocol-icon" width="18" height="16" xmlns="http://www.w3.org/2000/svg" role="img"
-              aria-label="Контактный e-mail.">
-              <path
-                d="m2.017 3.325 6.75 4.23c.226.142.52.21.815.21.295 0 .589-.068.815-.21l6.75-4.23c.44-.276.856-1.35.049-1.35H1.969c-.807 0-.392 1.074.048 1.35Zm15.335 2.313-6.955 4.229c-.306.187-.52.209-.815.209-.295 0-.51-.022-.815-.21-.306-.186-6.42-3.925-6.92-4.229-.35-.214-.347.037-.347.23v7.658c0 .441.51 1.05.9 1.05h14.4c.39 0 .9-.609.9-1.05V5.868c0-.193.004-.444-.348-.23Z" />
-            </svg>
-          </a>
-        </li>
-        <li class="protocol__item">
-          <a class="protocol__link button protocol__link--authentication" href="#">Авторизация</a>
-        </li>
-      </ul>
+      <div class="protocol__social social">
+        <ul class="protocol__list  protocol__list--row social__list">
+          <li class="protocol__item social__item">
+            <a class="protocol__link social__link social__link--first protocol__link--phone" href="#">
+              <span class="visually-hidden">Контактный телефон</span>
+              <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Контактный телефон.">
+                <path
+                  d="M9.774 8.224c0 .189.154.337.342.337a.7.7 0 0 1 .703.696.34.34 0 0 0 .341.337.34.34 0 0 0 .342-.337 1.38 1.38 0 0 0-1.386-1.37.34.34 0 0 0-.342.337Zm5.558 1.37a.338.338 0 0 0 .341-.337c0-3.031-2.492-5.495-5.557-5.495a.34.34 0 0 0-.342.338.34.34 0 0 0 .342.337c2.69 0 4.875 2.164 4.875 4.82a.34.34 0 0 0 .34.337Z" />
+                <path
+                  d="M12.905 9.257a.34.34 0 0 0 .341.337.34.34 0 0 0 .341-.337c0-1.894-1.556-3.433-3.471-3.433a.34.34 0 0 0-.342.338c0 .189.154.337.342.337 1.54 0 2.789 1.239 2.789 2.758ZM10.115 1.7a.34.34 0 0 0-.34.337.34.34 0 0 0 .34.338c3.841 0 6.965 3.088 6.965 6.882 0 .185.15.337.341.337a.34.34 0 0 0 .341-.337c0-4.168-3.43-7.557-7.646-7.557Zm3.336 11.114-.447.24c-.755.408-1.342 1.527-2.273.684L8.301 11.3 6.2 9.257c-1.055-1.334.126-1.65.54-2.4l.242-.439c.273-.5.372-1.06.29-1.62a2.557 2.557 0 0 0-.744-1.475 2.636 2.636 0 0 0-1.868-.762c-.706 0-1.372.27-1.87.762l-.174.176c-.922.911-1.028 2.48-.3 4.424C3 9.78 4.383 11.791 6.2 13.587c2.769 2.737 5.851 4.313 8.063 4.313.874 0 1.615-.246 2.14-.766l.178-.176c.495-.489.772-1.144.775-1.85a2.636 2.636 0 0 0-.775-1.845 2.683 2.683 0 0 0-3.13-.45Z" />
+              </svg>
+              </a>
+          </li>
+          <li class="protocol__item social__item">
+            <a class="protocol__link social__link social__link--second protocol__link--email" href="#">
+              <span class="visually-hidden">Контактный e-mail</span>
+              <svg class="protocol-icon" width="18" height="16" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Контактный e-mail.">
+                <path
+                  d="m2.017 3.325 6.75 4.23c.226.142.52.21.815.21.295 0 .589-.068.815-.21l6.75-4.23c.44-.276.856-1.35.049-1.35H1.969c-.807 0-.392 1.074.048 1.35Zm15.335 2.313-6.955 4.229c-.306.187-.52.209-.815.209-.295 0-.51-.022-.815-.21-.306-.186-6.42-3.925-6.92-4.229-.35-.214-.347.037-.347.23v7.658c0 .441.51 1.05.9 1.05h14.4c.39 0 .9-.609.9-1.05V5.868c0-.193.004-.444-.348-.23Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="protocol__item social__item">
+            <a class="protocol__link button social__link social__link--authentication" href="#">Авторизация</a>
+          </li>
+        </ul>
+      </div>
       <figure class="protocol__quote">
-        <blockquote class="protocol__quote-text">
-          «Лучшее приложение, что я видел в жизни!»
-        </blockquote>
-        <figcaption class="protocol__auther">
-          Мурат Эльтазин главный редактор газеты «гаджетлайф»
-        </figcaption>
+          <blockquote class="protocol__text">
+            «Лучшее приложение, что я видел в жизни!»
+          </blockquote>
+          <figcaption class="protocol__auther">
+            Мурат Эльтазин<br> главный редактор газеты «гаджетлайф»
+          </figcaption>
       </figure>
-      <ol class="protocol__list">
-        <li class="protocol__item protocol__item--first">
-          <p class="protocol__text">Выберите направление</p>
-          <span class="protocol__number">1</span>
-        </li>
-        <li class="protocol__item protocol__item--second">
-          <p class="protocol__text">Изучите идеи путешественников</p>
-          <span class="protocol__number">2</span>
-        </li>
-        <li class="protocol__item protocol__item--third">
-          <p class="protocol__text">Находите тех, кто похож на вас</p>
-          <span class="protocol__number">3</span>
-        </li>
-        <li class="protocol__item protocol__item--fourth">
-          <p class="protocol__text">Путешествуйте вместе!</p>
-          <span class="protocol__number">4</span>
-        </li>
+      <ol class="protocol__list protocol-list">
+            <li class="protocol__item protocol__item--first protocol-list__item">
+              <p class="protocol__item-text">Выберите<br> направление</p>
+              <span class="protocol__number">1</span>
+            </li>
+            <li class="protocol__item protocol__item--second protocol-list__item">
+              <p class="protocol__item-text">Изучите идеи<br> путешественников</p>
+              <span class="protocol__number">2</span>
+            </li>
+            <li class="protocol__item protocol__item--third protocol-list__item">
+              <p class="protocol__item-text">Находите тех,<br> кто похож на вас</p>
+              <span class="protocol__number">3</span>
+            </li>
+            <li class="protocol__item protocol__item--fourth protocol__item--last protocol-list__item">
+              <p class="protocol__item-text">Путешествуйте<br> вместе!</p>
+              <span class="protocol__number">4</span>
+            </li>
       </ol>
     </section>
 
-    <section class="about-us">
-      <h2 class="about-us__title">О сервисе</h2>
-      <p class="about-us__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими
-        идеями путешествий и черпайте вдохновение в чужих.</p>
-      <p class="about-us__text about-us__text--advice">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
-      <button class="button about-us__button" type="submit">Подробнее</button>
-    </section>
+      <section class="about-us">
+        <div class="about-us__header about-us__header--open white-theme">
+          <header class="page-header">
+            <a class="page-header__logo" href="#">
+              <svg class="page-header__logo-icon" width="96" height="15" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Логотип Погнали.">
+                <path
+                  d="M94.911 6.189C95.637 5.727 96 5.016 96 4.055c0-1.255-.523-2.242-1.568-2.96C93.416.366 92.22 0 90.84 0c-1.35 0-2.584.397-3.701 1.192-1.104.781-1.655 1.825-1.655 3.132 0 .487.152.89.457 1.211.305.308.74.462 1.307.462.551 0 .972-.154 1.263-.462.304-.32.457-.724.457-1.21-.03-.372.094-.75.37-1.135.276-.397.777-.595 1.502-.595.61.012 1.046.166 1.307.46.276.296.4.59.37.885 0 .205-.073.41-.218.615a2.031 2.031 0 0 1-.457.48c-.145.116-.385.282-.718.5-.334.218-.567.372-.697.462-.755.55-1.133 1.28-1.133 2.19 0 .449.16.827.48 1.135.333.294.776.442 1.328.442.551 0 .987-.148 1.306-.442.334-.308.501-.686.501-1.134 0-.193.036-.372.109-.539.073-.166.189-.32.348-.46.175-.142.32-.257.436-.347.13-.09.32-.205.566-.346.261-.14.443-.243.544-.307ZM76.305 10.235l3.857-4.771c.395-.577.932-.897 1.61-.963.678-.078 1.271.085 1.78.491.509.406.749.95.72 1.63v6.834c0 .432-.169.799-.508 1.1-.325.288-.72.432-1.187.432-.466 0-.868-.144-1.207-.432a1.443 1.443 0 0 1-.488-1.1V9.214l-3.856 4.772c-.396.576-.933.897-1.61.962-.679.079-1.272-.085-1.78-.49-.51-.406-.75-.95-.721-1.63V6.013c0-.432.162-.798.487-1.1.34-.3.742-.451 1.208-.451.466 0 .862.15 1.187.452.339.3.508.667.508 1.1v4.221Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M58.967 13.389V5.975c0-.426-.178-.793-.535-1.1a1.725 1.725 0 0 0-1.219-.479 1.7 1.7 0 0 0-1.198.48c-.342.306-.513.673-.513 1.099v-.18c-.171-.4-.513-.74-1.027-1.019-.513-.293-1.097-.44-1.753-.44-1.284 0-2.467.473-3.55 1.42C48.115 6.7 47.588 8 47.588 9.651c0 1.692.52 3.004 1.56 3.937 1.042.932 2.232 1.399 3.573 1.399.656 0 1.233-.12 1.732-.36.5-.253.863-.553 1.09-.9.086.36.286.66.6.9.313.226.67.34 1.07.34.47 0 .876-.154 1.218-.46.357-.306.535-.68.535-1.12Zm-5.47-1.362c1.169 0 2.116-1.026 2.116-2.291 0-1.266-.947-2.291-2.116-2.291S51.38 8.47 51.38 9.735c0 1.266.948 2.292 2.117 2.292Z" />
+                <path
+                  d="M43.081 8.237V6.094c0-.435.177-.804.53-1.108a1.793 1.793 0 0 1 1.236-.475c.47 0 .882.159 1.235.475.353.304.53.673.53 1.108v7.343c0 .435-.177.804-.53 1.108-.338.303-.75.455-1.235.455-.486 0-.905-.152-1.258-.455a1.434 1.434 0 0 1-.508-1.108v-2.175h-3.817v2.175c0 .435-.177.804-.53 1.108-.338.303-.75.455-1.235.455-.486 0-.905-.152-1.258-.455a1.434 1.434 0 0 1-.508-1.108V6.094c0-.435.177-.804.53-1.108a1.793 1.793 0 0 1 1.236-.475c.47 0 .882.159 1.235.475.353.304.53.673.53 1.108v2.143h3.817ZM33.962 4.511c.346 0 .642.131.89.394.247.262.37.867.37 1.234 0 .368-.123.747-.37 1.01-.247.262-.544.354-.89.354h-2.958v5.971c0 1.13-.994 1.526-1.99 1.526-.924 0-1.807-.5-1.807-1.515l.03-8.974h6.725ZM12.855 0v13.332c0 .44-.239.812-.57 1.118-.317.307-.815.46-1.27.46-.455 0-1.113-.153-1.444-.46a1.497 1.497 0 0 1-.476-1.118V3.008H3.772v10.322c0 .44-.165.813-.496 1.12-.317.306-.963.46-1.418.46-.455 0-1.051-.154-1.382-.46A1.497 1.497 0 0 1 0 13.33V0h12.855ZM24.637 13.365c-1.076 1.01-2.517 1.516-4.322 1.516-1.804 0-3.237-.505-4.298-1.516-1.092-1.026-1.638-2.308-1.638-3.847 0-1.554.546-2.836 1.638-3.847 1.06-1.01 2.494-1.516 4.298-1.516 1.805 0 3.246.505 4.322 1.516 1.077 1.026 1.615 2.308 1.615 3.847 0 1.539-.538 2.821-1.614 3.847Zm-2.802-5.43a1.835 1.835 0 0 0-1.116-.567 2.288 2.288 0 0 0-1.235.114c-.38.15-.704.407-.973.769-.254.362-.364.784-.333 1.267 0 .634.198 1.162.594 1.584.412.407.926.611 1.543.611.634 0 1.148-.196 1.544-.588.396-.408.594-.943.594-1.607 0-.633-.206-1.161-.618-1.584ZM64.022 4.462c2.024 0 7.417.03 7.417.03s.004 6.591.004 8.894c0 .443-.182.824-.546 1.145-.347.305-.662.457-1.191.457-.53 0-.8.04-1.164-.265-.347-.32-.667-.894-.667-1.337v-5.95H65.42c0 4.266 0 5.203-1.57 6.728-.58.55-1.325.824-2.235.824-.546 0-.867-.13-1.214-.436-.347-.32-.617-.832-.617-1.304 0-1.018.213-1.423.76-2.088 1.566 0 1.498-.38 1.4-3.266v-1.83c.017-.443.098-1.602.098-1.602h1.98ZM93.16 12.745c0 1.239-1.05 2.243-2.345 2.243-1.295 0-2.344-1.005-2.344-2.243s1.05-2.242 2.344-2.242c1.295 0 2.345 1.004 2.345 2.242Z" />
+              </svg>
+            </a>
+            <div class="page-header__button-wrapper">
+              <button class="page-header__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
+            <nav class="main-nav page-header__nav main-nav--closed main-nav--nojs">
+              <div class="main-nav__wrapper">
+                <ul class="main-nav__list page-header__list main-nav__list--closed site-list">
+                  <li class="main-nav__item site-list__item">
+                    <a class="main-nav__link site-list__link" href="#">
+                      <span class="main-nav__link-regular" data-hover="О сервисе">О сервисе</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item site-list__item">
+                    <a class="main-nav__link site-list__link" href="direction.html">
+                      <span class="main-nav__link-regular" data-hover="Направления">Направления</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item site-list__item">
+                    <a class="main-nav__link site-list__link" href="companion.html">
+                      <span class="main-nav__link-regular" data-hover="Попутчики">Попутчики</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="main-nav__user-wrapper main-nav__wrapper">
+                <ul class="main-nav__list page-header__list page-header__list--closed main-nav__list--user user-list">
+                  <li class="user-list__item user-list__item--open user-item">
+                    <a class="user-list__link button main-nav__button user-list__link--authentication" href="#">Авторизация</a>
+                  </li>
+                  <li class="user-list__item user-item">
+                    <a class="user-list__link user-list__link--phone" href="tel:+78005558628">
+                      <div class="user-list__icon-wrapper">
+                        <svg class="user-list__icon phone-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Номер телефона.">
+                          <path d="M9.5 1.086c-2.796 0-5.6.473-6.617 1.415-.844.782-1.125 2.162-1.22 3.037 0 0-.013.086-.013.123 0 .343.295.618.654.618.043 0 1.616-.12 2.565-.195.022-.003.045-.006.068-.012.353-.01.638-.281.638-.618l.003-1.217c0-.377.324-.68.723-.68H12.7c.399 0 .723.303.723.68l.003 1.217c0 .337.285.609.638.618.022.006.045.01.069.012.948.074 2.521.195 2.564.195.36 0 .654-.275.654-.618 0-.037-.013-.123-.013-.123-.095-.875-.376-2.255-1.22-3.037-1.017-.942-3.82-1.415-6.617-1.415Zm0 8.032c-.723 0-1.308.553-1.308 1.235 0 .683.585 1.236 1.308 1.236.723 0 1.308-.553 1.308-1.236 0-.682-.585-1.235-1.308-1.235Zm-.981-2.78v-.773c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.773l-4.412 4.45a1.504 1.504 0 0 0-.494 1.107v1.239c0 .682.586 1.235 1.309 1.235h.327v.772c0 .427.366.773.817.773.452 0 .818-.346.818-.773v-.772h8.504v.772c0 .427.366.773.818.773.451 0 .817-.346.817-.773v-.772h.327c.723 0 1.309-.553 1.309-1.236v-1.238c0-.433-.19-.825-.494-1.106l-4.412-4.451v-.773c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.773H8.52ZM9.5 7.882c1.446 0 2.617 1.106 2.617 2.471 0 1.366-1.171 2.472-2.617 2.472s-2.617-1.106-2.617-2.472c0-1.365 1.171-2.47 2.617-2.47Z" />
+                        </svg>
+                      </div>
+                      <span class="user-list__link-text">8 800 555-86-28</span>
+                    </a>
+                  </li>
+                  <li class="user-list__item user-item">
+                    <a class="user-list__link user-list__link--email" href="mailto:mail@htmlacademy.ru">
+                      <div class="user-list__icon-wrapper">
+                        <svg class="user-list__icon" aria-hidden="true" focusable="false" width="18" height="13" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="e-mail.">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.14 10.466 11.808 6.5l4.33-3.966-.59-.631L9.25 7.672l-6.299-5.77-.59.632L6.69 6.5l-4.33 3.966.59.631 4.38-4.011 1.92 1.758 1.92-1.758 4.379 4.011.59-.63ZM1.575.25C.767.25.111.949.111 1.808v9.384c0 .86.65 1.558 1.465 1.558h15.348c.81 0 1.465-.699 1.465-1.558V1.808c0-.86-.65-1.558-1.465-1.558H1.576Z" />
+                        </svg>
+                      </div>
+                      <span class="user-list__link-text">mail@htmlacademy.ru</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="main-nav__social-wrapper main-nav__wrapper social-nav">
+                <ul class="main-nav__list page-header__list page-header__list--closed pade-header__list--row social-nav__list main-nav__list--social social-list">
+                  <li class="social-list__item">
+                    <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">
+                      <span class="visually-hidden">Фэйсбук</span>
+                      <svg class="social-icon" width="14" height="28" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-label="Фэйсбук.">
+                        <path
+                          d="M9.53 27.75H2.71v-12.9H0V8.47h2.63c-.2-2.89.3-5 1.52-6.44A6.21 6.21 0 0 1 8.74 0h4.78v6.15H9.76a6.55 6.55 0 0 0-.25 2.32h4v6.38h-4l.02 12.9Zm-5.31-1.5H8v-12.9h4V10H8v-.76c0-2 0-3.79 1-4.46l.19-.13H12V1.5H8.78A4.67 4.67 0 0 0 5.29 3c-1 1.23-1.41 3.29-1.1 6.14l.1.83H1.5v3.38h2.72v12.9Z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a class="social-list__link social-list__link--vk" href="https://www.vk.com/htmlacademy">
+                      <span class="visually-hidden">Вконтакте</span>
+                      <svg class="social-icon" width="31" height="16" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-label="Фэйсбук.">
+                        <path
+                          d="M23.946 15.777a4.05 4.05 0 0 1-2.08-.63 10.17 10.17 0 0 1-1.78-1.53c-.44-.44-1.17-1.18-1.45-1.18s-.48.92-.47 1.57a1.75 1.75 0 0 1-.47 1.21 2.26 2.26 0 0 1-1.22.5h-1.92a11.32 11.32 0 0 1-7.43-3c-3.68-3.37-6.84-9.81-6.97-10.09a1.34 1.34 0 0 1 .15-1.48 2.07 2.07 0 0 1 1.36-.48h4.2c.338.05.661.169.95.35.272.183.49.435.63.73a22.09 22.09 0 0 0 1.48 2.67c1.31 2 1.89 2.46 2.1 2.56.234-.937.298-1.91.19-2.87a2.702 2.702 0 0 0-.21-1.28 1.33 1.33 0 0 0-.77-.29l-.73-.69c-.14-.66.59-1.23 1.1-1.45a8.69 8.69 0 0 1 3.15-.38h.71a9.11 9.11 0 0 1 2.15.2c1.7.36 1.64 1.73 1.57 3.31 0 .46-.05 1-.05 1.62v.48c-.04.436-.009.875.09 1.3a9.09 9.09 0 0 0 2.07-2.48 20.396 20.396 0 0 0 1.52-2.8 1.58 1.58 0 0 1 1.6-.95h4.28a2 2 0 0 1 .38 0c1 0 1.59.29 1.83.85s.17 1.66-2.36 4.61l-1 1.13a7.34 7.34 0 0 0-1.24 1.59c.379.431.809.814 1.28 1.14 1.15.867 2.16 1.902 3 3.07a1.6 1.6 0 0 1 .26 1.68 2.3 2.3 0 0 1-1.88 1l-3.79.05-.23-.04Zm-5.31-4.84c.9 0 1.68.79 2.51 1.62.448.49.952.926 1.5 1.3a2.51 2.51 0 0 0 1.4.42h.1l3.8-.05c.188-.01.371-.058.54-.14l-.1-.16a13.221 13.221 0 0 0-2.68-2.72c-1.19-1-1.8-1.47-1.87-2.24-.07-.77.49-1.44 1.61-2.71l1-1.11a10.731 10.731 0 0 0 2.05-2.95 5.66 5.66 0 0 0-.67 0h-4.37a.55.55 0 0 0-.24 0 20.507 20.507 0 0 1-1.65 3.05c-1.89 2.82-2.78 3.2-3.41 3.2a1.19 1.19 0 0 1-.56-.14c-1-.57-1-1.84-.94-2.76v-.43c0-.65 0-1.21.05-1.69.08-1.68 0-1.69-.38-1.78a8.561 8.561 0 0 0-1.86-.16h-.69a13 13 0 0 0-1.9.1c.096.07.18.155.25.25.413.65.618 1.41.59 2.18.13 1.65.06 3.8-1 4.32a1.38 1.38 0 0 1-.6.13c-.93 0-1.85-.88-3.42-3.26a23.42 23.42 0 0 1-1.61-2.85l-.08-.1a1.21 1.21 0 0 0-.32-.11h-4.07c.59 1.22 3.39 6.62 6.52 9.45a10 10 0 0 0 6.42 2.63h1.85a.999.999 0 0 0 .27-.1v-.09c0-.27 0-2.6 1.58-3 .122-.048.25-.081.38-.1Z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a class="social-list__link social-list__link--current social-list__link--instagram"
+                      href="https://www.instagram.com/htmlacademy/">
+                      <span class="visually-hidden">Инстаграм</span>
+                      <svg class="social-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-label="Инстаграм.">
+                        <path
+                          d="M17.28 2.4a4.33 4.33 0 0 1 4.32 4.32v10.56a4.33 4.33 0 0 1-4.32 4.32H6.72a4.33 4.33 0 0 1-4.31-4.32V6.72A4.33 4.33 0 0 1 6.72 2.4h10.56Zm0-1.44H6.72A5.76 5.76 0 0 0 .96 6.72v10.56a5.76 5.76 0 0 0 5.76 5.76h10.56a5.76 5.76 0 0 0 5.76-5.76V6.72A5.76 5.76 0 0 0 17.28.96Z" />
+                        <path
+                          d="M12.01 7.756a4.253 4.253 0 1 1-4.254 4.253 4.243 4.243 0 0 1 4.253-4.253Zm0-1.44a5.693 5.693 0 1 0 5.682 5.693 5.681 5.681 0 0 0-5.683-5.693ZM17.904 7.413a1.286 1.286 0 1 0 0-2.573 1.286 1.286 0 0 0 0 2.573Z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="social page-header__social">
+              <ul class="social__list">
+                <li class="social__item page-header__item--closed">
+                  <a class="social__link social__link--header social__link--first protocol__link--phone" href="#">
+                    <span class="visually-hidden">Контактный телефон</span>
+                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" role="img"
+                      aria-label="Контактный телефон.">
+                      <path
+                        d="M9.774 8.224c0 .189.154.337.342.337a.7.7 0 0 1 .703.696.34.34 0 0 0 .341.337.34.34 0 0 0 .342-.337 1.38 1.38 0 0 0-1.386-1.37.34.34 0 0 0-.342.337Zm5.558 1.37a.338.338 0 0 0 .341-.337c0-3.031-2.492-5.495-5.557-5.495a.34.34 0 0 0-.342.338.34.34 0 0 0 .342.337c2.69 0 4.875 2.164 4.875 4.82a.34.34 0 0 0 .34.337Z" />
+                      <path
+                        d="M12.905 9.257a.34.34 0 0 0 .341.337.34.34 0 0 0 .341-.337c0-1.894-1.556-3.433-3.471-3.433a.34.34 0 0 0-.342.338c0 .189.154.337.342.337 1.54 0 2.789 1.239 2.789 2.758ZM10.115 1.7a.34.34 0 0 0-.34.337.34.34 0 0 0 .34.338c3.841 0 6.965 3.088 6.965 6.882 0 .185.15.337.341.337a.34.34 0 0 0 .341-.337c0-4.168-3.43-7.557-7.646-7.557Zm3.336 11.114-.447.24c-.755.408-1.342 1.527-2.273.684L8.301 11.3 6.2 9.257c-1.055-1.334.126-1.65.54-2.4l.242-.439c.273-.5.372-1.06.29-1.62a2.557 2.557 0 0 0-.744-1.475 2.636 2.636 0 0 0-1.868-.762c-.706 0-1.372.27-1.87.762l-.174.176c-.922.911-1.028 2.48-.3 4.424C3 9.78 4.383 11.791 6.2 13.587c2.769 2.737 5.851 4.313 8.063 4.313.874 0 1.615-.246 2.14-.766l.178-.176c.495-.489.772-1.144.775-1.85a2.636 2.636 0 0 0-.775-1.845 2.683 2.683 0 0 0-3.13-.45Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item page-header__item--closed">
+                  <a class="social__link social__link--header social__link--second" href="#">
+                    <span class="visually-hidden">Контактный e-mail</span>
+                    <svg width="18" height="16" xmlns="http://www.w3.org/2000/svg" role="img"
+                      aria-label="Контактный e-mail.">
+                      <path
+                        d="m2.017 3.325 6.75 4.23c.226.142.52.21.815.21.295 0 .589-.068.815-.21l6.75-4.23c.44-.276.856-1.35.049-1.35H1.969c-.807 0-.392 1.074.048 1.35Zm15.335 2.313-6.955 4.229c-.306.187-.52.209-.815.209-.295 0-.51-.022-.815-.21-.306-.186-6.42-3.925-6.92-4.229-.35-.214-.347.037-.347.23v7.658c0 .441.51 1.05.9 1.05h14.4c.39 0 .9-.609.9-1.05V5.868c0-.193.004-.444-.348-.23Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="button social__link  social__link--header  social__link--authentication" href="#">Авторизация</a>
+                </li>
+              </ul>
+            </div>
+          </header>
+        </div>
+        <h2 class="about-us__title">О сервисе</h2>
+        <p class="about-us__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими
+          идеями путешествий и черпайте вдохновение в чужих.</p>
+        <p class="about-us__text-advice">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+        <button class="button about-us__button about-us__button--closed" type="submit">Подробнее</button>
+      </section>
 
     <section class="travel-direction">
-      <h2 class="travel-direction__title">Направления</h2>
-      <p class="travel-direction__desc">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда
+        <h2 class="travel-direction__title">Направления</h2>
+        <p class="travel-direction__desc">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда
         хотели бы отправиться и чем можно там заняться.</p>
-      <ul class="travel-direction__list card-list">
-        <li class="travel-direction__item card-item">
-          <img class="travel-direction__img" src="img/travel-direction-img/thailand.jpg"
+        <ul class="travel-direction__list card-list">
+          <li class="travel-direction__item card-country">
+            <img class="card-country__img" src="img/travel-direction-img/thailand.jpg"
             alt="Две скалы в море рядом с пляжем в Таиланде Пхукет." width="270" height="110">
-          <div class="travel-direction__block country">
-            <img class="country__flag" src="img/country/thailand.jpg" alt="флаг Таиланда." width="35" height="24">
-            <h3 class="travel-direction__heading country__heading">Таиланд</h3>
-            <p class="travel-direction__text country__desc">Джунгли зовут!</p>
-            <span class="country__visiter">18321</span>
-          </div>
-        </li>
-        <li class="travel-direction__item card-item">
-          <img class="travel-direction__img" src="img/travel-direction-img/france.jpg" alt="Париж улица авеню Сегюр."
+            <div class="card-country__block country">
+              <img class="card-country__img-flag" src="img/country/thailand.jpg" alt="флаг Таиланда." width="35" height="24">
+              <h3 class="card-country__heading country__heading">Таиланд</h3>
+              <p class="card-country__text country__desc">Джунгли зовут!</p>
+              <span class="card-country__small">18321</span>
+            </div>
+          </li>
+          <li class="travel-direction__item card-country">
+            <img class="card-country__img" src="img/travel-direction-img/france.jpg" alt="Париж улица авеню Сегюр."
             width="270" height="110">
-          <div class="travel-direction__block country">
-            <img class="country__flag" src="img/country/france.jpg" alt="флаг Франции." width="35" height="24">
-            <h3 class="country__heading">Франция</h3>
-            <p class="country__desc">Трэ бьен, манифик!</p>
-            <span class="country__visiter">12518</span>
-          </div>
-        </li>
-        <li class="travel-direction__item card-item">
-          <img class="travel-direction__img" src="img/travel-direction-img/czech.jpg"
+            <div class="card-country__block country">
+              <img class="card-country__img-flag" src="img/country/france.jpg" alt="флаг Франции." width="35" height="24">
+              <h3 class="card-country__heading">Франция</h3>
+              <p class="card-country__text">Трэ бьен, манифик!</p>
+              <span class="card-country__small">12518</span>
+            </div>
+          </li>
+          <li class="travel-direction__item card-country">
+            <img class="card-country__img" src="img/travel-direction-img/czech.jpg"
             alt="Лодка на реке Влтаве на фоне Карлова моста в Праге." width="270" height="110">
-          <div class="travel-direction__block country">
-            <img class="country__flag" src="img/country/czech.jpg" alt="флаг Чехии." width="35" height="24">
-            <h3 class="country__heading">Чехия</h3>
-            <p class="country__desc">Закоулки старой Европы</p>
-            <span class="country__visiter">5326</span>
-          </div>
-        </li>
-      </ul>
-      <button class="button travel-direction__button" type="submit">Подробнее</button>
+            <div class="card-country__block country">
+              <img class="card-country__img-flag" src="img/country/czech.jpg" alt="флаг Чехии." width="35" height="24">
+              <h3 class="card-country__heading">Чехия</h3>
+              <p class="card-country__text">Закоулки старой Европы</p>
+              <span class="card-country__small">5326</span>
+            </div>
+          </li>
+        </ul>
+        <button class="button travel-direction__button" type="submit">Показать все</button>
+      </div>
     </section>
 
     <section class="companion">
       <h2 class="companion__title">Попутчики</h2>
 
       <p class="companion__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
-        коктейль, а другому маршрут для хайкинга.</p>
+          коктейль, а другому маршрут для хайкинга.</p>
       <p class="companion__text companion__text--slogan">Теперь можно легко найти единомышленников!</p>
-      <div class="companion__card companion-card">
-        <div class="companion-card__desc">
-          <h3 class="companion-card__name companion__name">Таня Фирсова</h3>
-          <div class="companion-card__small companion-card__small--active" >
-            <span class="visually-hidden">Статус активности в сети</span>
+
+      <div class="companion__list">
+        <section class="companion__item companion-card">
+            <h3 class="visually-hidden">Карточка попутчика</h3>
+            <div class="companion-card__block-img companion-img">
+                <img class="companion-card__picture" src="img/companion/firsova.jpg"
+                  alt="Девушка в бассейне на надовном матрасе" width="270" height="270">
+                <div class="companion-img__small companion-card__small level">
+                  <p class="level__number">99</p>
+                  <p class="level__desc">level</p>
+                </div>
+            </div>
+            <div class="companion-card__desc">
+              <div class="companion-card__wrapper">
+                <div class="companion-card__online" >
+                  <span class="visually-hidden">Статус активности в сети</span>
+                </div>
+                <h4 class="companion-card__name companion__name">Таня Фирсова</h4>
+              </div>
+              <div class="companion-card__list-wrapper">
+                <ul class="companion-card__list flag-list">
+                  <li class="companion-card__item-country flag-list__item">
+                    <span class="visually-hidden">Шриланка</span>
+                    <img class="companion-card__img-flag" src="img/flag-list/sri-lanka.jpg" alt="флаг Шри-Ланки." width="35" height="25">
+                  </li>
+                  <li class="companion-card__item-country">
+                    <span class="visually-hidden">Таиланд</span>
+                    <img class="companion-card__img-flag" src="img/flag-list/thailand.jpg" alt="флаг Таиланда." width="35" height="25">
+                  </li>
+                  <li class="companion-card__item-country">
+                    <span class="visually-hidden">Сейшеллы</span>
+                    <img class="companion-card__img-flag" src="img/flag-list/seychelles.jpg" alt="флаг Сейшеллы." width="35" height="25">
+                  </li>
+                </ul>
+              </div>
+              <ul class="companion-card__list companion-card__list-hashtag">
+                <li class="companion-card__item-hashtag">#ЗОЖ</li>
+                <li class="companion-card__item-hashtag">#ПП</li>
+                <li class="companion-card__item-hashtag">#Фитнес</li>
+                <li class="companion-card__item-hashtag">#пляж</li>
+                <li class="companion-card__item-hashtag">#авокадо</li>
+                <li class="companion-card__item-hashtag">#смузи</li>
+              </ul>
+              <ul class="companion-card__list companion-card__list-last companion-card__list-way list-way">
+                <li class="companion-card__item-way list-way__item">
+                  <span class="visually-hidden">Самолет</span>
+                  <svg class="list-way__icon list-way__icon--current" width="21" height="21"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка самолета.">
+                    <path
+                      d="M16.783 2.093c-.728.173-1.46.347-1.733.824l-2.107 4.199L1.63 9.806l-.458 1.341 8.658.82-1.47 3.634-3.283.78-.824 1.43 2.369.256.27 1.169c.12.414.545.69.908.604l1.095-.26 1.268 2.163.825-1.428-.81-3.505 2.377-3.03 4.536 7.961.914-1.038L15.213 8.63l2.563-3.895c.276-.477.096-1.255-.085-2.036-.09-.387-.545-.691-.908-.605Z" />
+                  </svg>
+                </li>
+                <li class="companion-card__item-way list-way__item">
+                  <span class="visually-hidden">Автобус</span>
+                  <svg class="list-way__icon" width="17" height="19" xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-label="Иконка автобуса.">
+                    <path
+                      d="M4.34 13.948a1.3 1.3 0 0 0-.415-.97 1.392 1.392 0 0 0-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 0 0-.416.97c0 .38.138.702.416.97a1.39 1.39 0 0 0 1.003.402c.392 0 .726-.134 1.004-.402.277-.268.415-.59.415-.97Zm11.356 0a1.3 1.3 0 0 0-.416-.97 1.392 1.392 0 0 0-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 0 0-.416.97c0 .38.139.702.416.97a1.39 1.39 0 0 0 1.003.402c.392 0 .727-.134 1.004-.402a1.3 1.3 0 0 0 .416-.97Zm-.51-4.242-.799-4.115a.695.695 0 0 0-.25-.401.698.698 0 0 0-.449-.156H3.508a.692.692 0 0 0-.448.156.695.695 0 0 0-.25.401l-.798 4.115a.661.661 0 0 0 .155.568c.14.164.322.246.543.246h11.777a.682.682 0 0 0 .543-.246.661.661 0 0 0 .155-.568Zm-2.507-6.558a.488.488 0 0 0-.155-.364.523.523 0 0 0-.377-.15H5.05a.523.523 0 0 0-.377.15.488.488 0 0 0-.155.364.523.523 0 0 0 .532.514h7.097c.148 0 .274-.05.377-.15a.488.488 0 0 0 .155-.364Zm4.436 7.768v6.461h-1.42v1.372a1.3 1.3 0 0 1-.415.97 1.392 1.392 0 0 1-1.004.4c-.392 0-.726-.133-1.003-.4a1.3 1.3 0 0 1-.416-.97v-1.372H4.34v1.372c0 .378-.138.701-.415.97a1.392 1.392 0 0 1-1.004.4c-.392 0-.726-.133-1.003-.4a1.3 1.3 0 0 1-.416-.97v-1.372H.082v-6.46c0-.8.093-1.597.278-2.39l1.142-4.864c.066-.557.427-1.047 1.08-1.468.655-.422 1.505-.74 2.551-.954C6.18 1.027 7.335.92 8.6.92c1.264 0 2.419.107 3.465.321 1.046.215 1.896.532 2.55.954.655.421 1.015.91 1.082 1.468l1.164 4.864c.17.729.255 1.525.255 2.39Z" />
+                  </svg>
+                </li>
+                <li class="companion-card__item-way list-way__item">
+                  <span class="visually-hidden">Велосипед</span>
+                  <svg class="list-way__icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-label="Иконка велосипеда.">
+                    <path
+                      d="M18.308 21a4.21 4.21 0 0 1-2.363-.727 4.3 4.3 0 0 1-1.566-1.935 4.368 4.368 0 0 1-.242-2.492 4.332 4.332 0 0 1 1.163-2.208 4.235 4.235 0 0 1 2.178-1.18 4.198 4.198 0 0 1 2.457.245 4.27 4.27 0 0 1 1.908 1.589 4.356 4.356 0 0 1-.53 5.443A4.227 4.227 0 0 1 18.308 21Zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 0 0-1.022 1.262 2.85 2.85 0 0 0-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 0 0 3.023.61 2.776 2.776 0 0 0 1.243-1.036 2.84 2.84 0 0 0-.345-3.55 2.758 2.758 0 0 0-1.96-.825ZM6.105 21a4.21 4.21 0 0 1-2.363-.727 4.3 4.3 0 0 1-1.566-1.935 4.369 4.369 0 0 1-.242-2.492 4.331 4.331 0 0 1 1.164-2.208 4.235 4.235 0 0 1 2.177-1.18 4.198 4.198 0 0 1 2.457.245 4.27 4.27 0 0 1 1.908 1.589 4.356 4.356 0 0 1-.53 5.443A4.227 4.227 0 0 1 6.105 21Zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 0 0-1.022 1.262 2.85 2.85 0 0 0-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 0 0 3.022.61c.507-.213.94-.573 1.245-1.036a2.84 2.84 0 0 0-.346-3.55 2.758 2.758 0 0 0-1.96-.825ZM15.164 6a1.456 1.456 0 0 0 1.05-.44 1.497 1.497 0 0 0 .43-1.065 1.5 1.5 0 0 0-.426-1.06A1.457 1.457 0 0 0 15.174 3a1.461 1.461 0 0 0-1.048.436 1.501 1.501 0 0 0-.436 1.06 1.518 1.518 0 0 0 .43 1.061A1.478 1.478 0 0 0 15.164 6Z" />
+                    <path
+                      d="M17.362 9H15.34a.183.183 0 0 1-.163-.097L13.71 6.176a1.447 1.447 0 0 0-.435-.511 1.422 1.422 0 0 0-1.847.148l-3.23 3.3c-.27.28-.425.656-.43 1.05 0 .815.583 1.106.856 1.27 1.317.77 2.245 1.332 2.754 1.645a.186.186 0 0 1 .088.16v3.24c0 .404.306.75.704.77a.732.732 0 0 0 .546-.206.75.75 0 0 0 .23-.542v-4.031a.759.759 0 0 0-.308-.61l-1.71-1.247a.187.187 0 0 1-.077-.134.19.19 0 0 1 .05-.147l1.941-2.1a.184.184 0 0 1 .239-.027.186.186 0 0 1 .058.064l1.008 1.846a.745.745 0 0 0 .647.386h2.59a.73.73 0 0 0 .535-.232A.751.751 0 0 0 17.362 9Z" />
+                  </svg>
+                </li>
+                <li class="companion-card__item-way list-way__item">
+                  <span class="visually-hidden">Пешком</span>
+                  <svg class="list-way__icon" width="21" height="23" xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-label="Иконка идущего человека.">
+                    <path
+                      d="M14.976 5.76c.95 0 1.721-.86 1.721-1.92s-.77-1.92-1.721-1.92c-.95 0-1.721.86-1.721 1.92s.77 1.92 1.72 1.92Zm-1.053 4.77c.198.329.481.581.812.724.33.142.693.168 1.037.073l2.854-.796-.416-1.862-2.854.796L14.17 7.48a1.735 1.735 0 0 0-1.094-.82l-3.31-.739a1.56 1.56 0 0 0-1.094.158c-.34.185-.614.49-.783.867l-1.427 3.183 1.54.86 1.427-3.185 1.692.378-4.377 8.138H2.928v1.92h3.815c.601 0 1.167-.357 1.476-.932L9.87 14.24l4.448.992 1.563 5.231 1.632-.607-1.562-5.23a1.955 1.955 0 0 0-.495-.833 1.665 1.665 0 0 0-.801-.444l-2.615-.583 1.525-2.836.358.6Z" />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+        </section>
+
+        <section class="companion__item companion-card">
+            <h3 class="visually-hidden">Карточка попутчика</h3>
+            <div class="companion-card__block-img companion-img">
+              <img class="companion-card__picture" src="img/companion/demin.jpg"
+                alt="Петр Демин" width="270" height="270">
+              <div class="companion-img__small companion-card__small level">
+                <p class="level__number">80</p>
+                <p class="level__desc">level</p>
+              </div>
           </div>
-          <ul class="companion-card__list-hashtag">
-            <li class="companion-card__item-hashtag">#ЗОЖ</li>
-            <li class="companion-card__item-hashtag">#ПП</li>
-            <li class="companion-card__item-hashtag">#Фитнес</li>
-            <li class="companion-card__item-hashtag">#пляж</li>
-            <li class="companion-card__item-hashtag">#авокадо</li>
-            <li class="companion-card__item-hashtag">#смузи</li>
-          </ul>
-          <ul class="companion-card__list list-way">
-            <li class="list-way__item">
-              <span class="visually-hidden">Самолет</span>
-              <svg class="list-way__icon list-way__icon--current" width="21" height="21"
-                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка самолета.">
-                <path
-                  d="M16.783 2.093c-.728.173-1.46.347-1.733.824l-2.107 4.199L1.63 9.806l-.458 1.341 8.658.82-1.47 3.634-3.283.78-.824 1.43 2.369.256.27 1.169c.12.414.545.69.908.604l1.095-.26 1.268 2.163.825-1.428-.81-3.505 2.377-3.03 4.536 7.961.914-1.038L15.213 8.63l2.563-3.895c.276-.477.096-1.255-.085-2.036-.09-.387-.545-.691-.908-.605Z" />
-              </svg>
-            </li>
-            <li class="list-way__item">
-              <span class="visually-hidden">Автобус</span>
-              <svg class="list-way__icon" width="17" height="19" xmlns="http://www.w3.org/2000/svg" role="img"
-                aria-label="Иконка автобуса.">
-                <path
-                  d="M4.34 13.948a1.3 1.3 0 0 0-.415-.97 1.392 1.392 0 0 0-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 0 0-.416.97c0 .38.138.702.416.97a1.39 1.39 0 0 0 1.003.402c.392 0 .726-.134 1.004-.402.277-.268.415-.59.415-.97Zm11.356 0a1.3 1.3 0 0 0-.416-.97 1.392 1.392 0 0 0-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 0 0-.416.97c0 .38.139.702.416.97a1.39 1.39 0 0 0 1.003.402c.392 0 .727-.134 1.004-.402a1.3 1.3 0 0 0 .416-.97Zm-.51-4.242-.799-4.115a.695.695 0 0 0-.25-.401.698.698 0 0 0-.449-.156H3.508a.692.692 0 0 0-.448.156.695.695 0 0 0-.25.401l-.798 4.115a.661.661 0 0 0 .155.568c.14.164.322.246.543.246h11.777a.682.682 0 0 0 .543-.246.661.661 0 0 0 .155-.568Zm-2.507-6.558a.488.488 0 0 0-.155-.364.523.523 0 0 0-.377-.15H5.05a.523.523 0 0 0-.377.15.488.488 0 0 0-.155.364.523.523 0 0 0 .532.514h7.097c.148 0 .274-.05.377-.15a.488.488 0 0 0 .155-.364Zm4.436 7.768v6.461h-1.42v1.372a1.3 1.3 0 0 1-.415.97 1.392 1.392 0 0 1-1.004.4c-.392 0-.726-.133-1.003-.4a1.3 1.3 0 0 1-.416-.97v-1.372H4.34v1.372c0 .378-.138.701-.415.97a1.392 1.392 0 0 1-1.004.4c-.392 0-.726-.133-1.003-.4a1.3 1.3 0 0 1-.416-.97v-1.372H.082v-6.46c0-.8.093-1.597.278-2.39l1.142-4.864c.066-.557.427-1.047 1.08-1.468.655-.422 1.505-.74 2.551-.954C6.18 1.027 7.335.92 8.6.92c1.264 0 2.419.107 3.465.321 1.046.215 1.896.532 2.55.954.655.421 1.015.91 1.082 1.468l1.164 4.864c.17.729.255 1.525.255 2.39Z" />
-              </svg>
-            </li>
-            <li class="list-way__item">
-              <span class="visually-hidden">Велосипед</span>
-              <svg class="list-way__icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" role="img"
-                aria-label="Иконка велосипеда.">
-                <path
-                  d="M18.308 21a4.21 4.21 0 0 1-2.363-.727 4.3 4.3 0 0 1-1.566-1.935 4.368 4.368 0 0 1-.242-2.492 4.332 4.332 0 0 1 1.163-2.208 4.235 4.235 0 0 1 2.178-1.18 4.198 4.198 0 0 1 2.457.245 4.27 4.27 0 0 1 1.908 1.589 4.356 4.356 0 0 1-.53 5.443A4.227 4.227 0 0 1 18.308 21Zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 0 0-1.022 1.262 2.85 2.85 0 0 0-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 0 0 3.023.61 2.776 2.776 0 0 0 1.243-1.036 2.84 2.84 0 0 0-.345-3.55 2.758 2.758 0 0 0-1.96-.825ZM6.105 21a4.21 4.21 0 0 1-2.363-.727 4.3 4.3 0 0 1-1.566-1.935 4.369 4.369 0 0 1-.242-2.492 4.331 4.331 0 0 1 1.164-2.208 4.235 4.235 0 0 1 2.177-1.18 4.198 4.198 0 0 1 2.457.245 4.27 4.27 0 0 1 1.908 1.589 4.356 4.356 0 0 1-.53 5.443A4.227 4.227 0 0 1 6.105 21Zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 0 0-1.022 1.262 2.85 2.85 0 0 0-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 0 0 3.022.61c.507-.213.94-.573 1.245-1.036a2.84 2.84 0 0 0-.346-3.55 2.758 2.758 0 0 0-1.96-.825ZM15.164 6a1.456 1.456 0 0 0 1.05-.44 1.497 1.497 0 0 0 .43-1.065 1.5 1.5 0 0 0-.426-1.06A1.457 1.457 0 0 0 15.174 3a1.461 1.461 0 0 0-1.048.436 1.501 1.501 0 0 0-.436 1.06 1.518 1.518 0 0 0 .43 1.061A1.478 1.478 0 0 0 15.164 6Z" />
-                <path
-                  d="M17.362 9H15.34a.183.183 0 0 1-.163-.097L13.71 6.176a1.447 1.447 0 0 0-.435-.511 1.422 1.422 0 0 0-1.847.148l-3.23 3.3c-.27.28-.425.656-.43 1.05 0 .815.583 1.106.856 1.27 1.317.77 2.245 1.332 2.754 1.645a.186.186 0 0 1 .088.16v3.24c0 .404.306.75.704.77a.732.732 0 0 0 .546-.206.75.75 0 0 0 .23-.542v-4.031a.759.759 0 0 0-.308-.61l-1.71-1.247a.187.187 0 0 1-.077-.134.19.19 0 0 1 .05-.147l1.941-2.1a.184.184 0 0 1 .239-.027.186.186 0 0 1 .058.064l1.008 1.846a.745.745 0 0 0 .647.386h2.59a.73.73 0 0 0 .535-.232A.751.751 0 0 0 17.362 9Z" />
-              </svg>
-            </li>
-            <li class="list-way__item">
-              <span class="visually-hidden">Пешком</span>
-              <svg class="list-way__icon" width="21" height="23" xmlns="http://www.w3.org/2000/svg" role="img"
-                aria-label="Иконка идущего человека.">
-                <path
-                  d="M14.976 5.76c.95 0 1.721-.86 1.721-1.92s-.77-1.92-1.721-1.92c-.95 0-1.721.86-1.721 1.92s.77 1.92 1.72 1.92Zm-1.053 4.77c.198.329.481.581.812.724.33.142.693.168 1.037.073l2.854-.796-.416-1.862-2.854.796L14.17 7.48a1.735 1.735 0 0 0-1.094-.82l-3.31-.739a1.56 1.56 0 0 0-1.094.158c-.34.185-.614.49-.783.867l-1.427 3.183 1.54.86 1.427-3.185 1.692.378-4.377 8.138H2.928v1.92h3.815c.601 0 1.167-.357 1.476-.932L9.87 14.24l4.448.992 1.563 5.231 1.632-.607-1.562-5.23a1.955 1.955 0 0 0-.495-.833 1.665 1.665 0 0 0-.801-.444l-2.615-.583 1.525-2.836.358.6Z" />
-              </svg>
-            </li>
-          </ul>
-        </div>
-        <ul class="companion-card__list flag-list">
-          <li class="flag-list__item">
-            <span class="visually-hidden">Шриланка</span>
-            <img class="flag-list__img" src="img/flag-list/sri-lanka.jpg" alt="флаг Шри-Ланки." width="35" height="25">
-          </li>
-          <li class="companion-card__item-country">
-            <span class="visually-hidden">Таиланд</span>
-            <img class="flag-list__img" src="img/flag-list/thailand.jpg" alt="флаг Таиланда." width="35" height="25">
-          </li>
-          <li class="companion-card__item-country">
-            <span class="visually-hidden">Сейшеллы</span>
-            <img class="flag-list__img" src="img/flag-list/seychelles.jpg" alt="флаг Сейшеллы." width="35" height="25">
-          </li>
-        </ul>
-        <div class="companion-card__block-img companion-img">
-          <img class="companion-img__picture" src="img/companion/firsova.jpg"
-            alt="Девушка в бассейне на надовном матрасе" width="270" height="270">
-          <div class="companion-img__small companion-card__small">
-            <p>99</p>
-            <p class="companion-card__small--desc">level</p>
+          <div class="companion-card__desc">
+            <div class="companion-card__wrapper">
+              <div class="companion-card__online" >
+                <span class="visually-hidden">Статус активности в сети</span>
+              </div>
+              <h4 class="companion-card__name companion__name">Петя Демин</h4>
+            </div>
+            <div class="companion-card__list-wrapper">
+              <ul class="companion-card__list flag-list">
+                <li class="companion-card__item-country flag-list__item">
+                  <span class="visually-hidden">Бельгия</span>
+                  <img class="companion-card__img-flag" src="img/flag-list/belgium.jpg" alt="флаг Бельгия." width="35" height="25">
+                </li>
+                <li class="companion-card__item-country">
+                  <span class="visually-hidden">Чехия</span>
+                  <img class="companion-card__img-flag" src="img/flag-list/czech.jpg" alt="флаг Чехия." width="35" height="25">
+                </li>
+              </ul>
+            </div>
+            <ul class="companion-card__list companion-card__list-hashtag">
+              <li class="companion-card__item-hashtag">#бургер</li>
+              <li class="companion-card__item-hashtag">#бар</li>
+              <li class="companion-card__item-hashtag">#футбол</li>
+              <li class="companion-card__item-hashtag">#концерт</li>
+              <li class="companion-card__item-hashtag">#крафт</li>
+            </ul>
+            <ul class="companion-card__list companion-card__list-last companion-card__list-way list-way">
+              <li class="companion-card__item-way list-way__item">
+                <span class="visually-hidden">Самолет</span>
+                <svg class="list-way__icon list-way__icon--current" width="21" height="21"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка самолета.">
+                  <path
+                    d="M16.783 2.093c-.728.173-1.46.347-1.733.824l-2.107 4.199L1.63 9.806l-.458 1.341 8.658.82-1.47 3.634-3.283.78-.824 1.43 2.369.256.27 1.169c.12.414.545.69.908.604l1.095-.26 1.268 2.163.825-1.428-.81-3.505 2.377-3.03 4.536 7.961.914-1.038L15.213 8.63l2.563-3.895c.276-.477.096-1.255-.085-2.036-.09-.387-.545-.691-.908-.605Z" />
+                </svg>
+              </li>
+              <li class="companion-card__item-way list-way__item">
+                <span class="visually-hidden">Автобус</span>
+                <svg class="list-way__icon" width="17" height="19" xmlns="http://www.w3.org/2000/svg" role="img"
+                  aria-label="Иконка автобуса.">
+                  <path
+                    d="M4.34 13.948a1.3 1.3 0 0 0-.415-.97 1.392 1.392 0 0 0-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 0 0-.416.97c0 .38.138.702.416.97a1.39 1.39 0 0 0 1.003.402c.392 0 .726-.134 1.004-.402.277-.268.415-.59.415-.97Zm11.356 0a1.3 1.3 0 0 0-.416-.97 1.392 1.392 0 0 0-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 0 0-.416.97c0 .38.139.702.416.97a1.39 1.39 0 0 0 1.003.402c.392 0 .727-.134 1.004-.402a1.3 1.3 0 0 0 .416-.97Zm-.51-4.242-.799-4.115a.695.695 0 0 0-.25-.401.698.698 0 0 0-.449-.156H3.508a.692.692 0 0 0-.448.156.695.695 0 0 0-.25.401l-.798 4.115a.661.661 0 0 0 .155.568c.14.164.322.246.543.246h11.777a.682.682 0 0 0 .543-.246.661.661 0 0 0 .155-.568Zm-2.507-6.558a.488.488 0 0 0-.155-.364.523.523 0 0 0-.377-.15H5.05a.523.523 0 0 0-.377.15.488.488 0 0 0-.155.364.523.523 0 0 0 .532.514h7.097c.148 0 .274-.05.377-.15a.488.488 0 0 0 .155-.364Zm4.436 7.768v6.461h-1.42v1.372a1.3 1.3 0 0 1-.415.97 1.392 1.392 0 0 1-1.004.4c-.392 0-.726-.133-1.003-.4a1.3 1.3 0 0 1-.416-.97v-1.372H4.34v1.372c0 .378-.138.701-.415.97a1.392 1.392 0 0 1-1.004.4c-.392 0-.726-.133-1.003-.4a1.3 1.3 0 0 1-.416-.97v-1.372H.082v-6.46c0-.8.093-1.597.278-2.39l1.142-4.864c.066-.557.427-1.047 1.08-1.468.655-.422 1.505-.74 2.551-.954C6.18 1.027 7.335.92 8.6.92c1.264 0 2.419.107 3.465.321 1.046.215 1.896.532 2.55.954.655.421 1.015.91 1.082 1.468l1.164 4.864c.17.729.255 1.525.255 2.39Z" />
+                </svg>
+              </li>
+              <li class="companion-card__item-way list-way__item">
+                <span class="visually-hidden">Велосипед</span>
+                <svg class="list-way__icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" role="img"
+                  aria-label="Иконка велосипеда.">
+                  <path
+                    d="M18.308 21a4.21 4.21 0 0 1-2.363-.727 4.3 4.3 0 0 1-1.566-1.935 4.368 4.368 0 0 1-.242-2.492 4.332 4.332 0 0 1 1.163-2.208 4.235 4.235 0 0 1 2.178-1.18 4.198 4.198 0 0 1 2.457.245 4.27 4.27 0 0 1 1.908 1.589 4.356 4.356 0 0 1-.53 5.443A4.227 4.227 0 0 1 18.308 21Zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 0 0-1.022 1.262 2.85 2.85 0 0 0-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 0 0 3.023.61 2.776 2.776 0 0 0 1.243-1.036 2.84 2.84 0 0 0-.345-3.55 2.758 2.758 0 0 0-1.96-.825ZM6.105 21a4.21 4.21 0 0 1-2.363-.727 4.3 4.3 0 0 1-1.566-1.935 4.369 4.369 0 0 1-.242-2.492 4.331 4.331 0 0 1 1.164-2.208 4.235 4.235 0 0 1 2.177-1.18 4.198 4.198 0 0 1 2.457.245 4.27 4.27 0 0 1 1.908 1.589 4.356 4.356 0 0 1-.53 5.443A4.227 4.227 0 0 1 6.105 21Zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 0 0-1.022 1.262 2.85 2.85 0 0 0-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 0 0 3.022.61c.507-.213.94-.573 1.245-1.036a2.84 2.84 0 0 0-.346-3.55 2.758 2.758 0 0 0-1.96-.825ZM15.164 6a1.456 1.456 0 0 0 1.05-.44 1.497 1.497 0 0 0 .43-1.065 1.5 1.5 0 0 0-.426-1.06A1.457 1.457 0 0 0 15.174 3a1.461 1.461 0 0 0-1.048.436 1.501 1.501 0 0 0-.436 1.06 1.518 1.518 0 0 0 .43 1.061A1.478 1.478 0 0 0 15.164 6Z" />
+                  <path
+                    d="M17.362 9H15.34a.183.183 0 0 1-.163-.097L13.71 6.176a1.447 1.447 0 0 0-.435-.511 1.422 1.422 0 0 0-1.847.148l-3.23 3.3c-.27.28-.425.656-.43 1.05 0 .815.583 1.106.856 1.27 1.317.77 2.245 1.332 2.754 1.645a.186.186 0 0 1 .088.16v3.24c0 .404.306.75.704.77a.732.732 0 0 0 .546-.206.75.75 0 0 0 .23-.542v-4.031a.759.759 0 0 0-.308-.61l-1.71-1.247a.187.187 0 0 1-.077-.134.19.19 0 0 1 .05-.147l1.941-2.1a.184.184 0 0 1 .239-.027.186.186 0 0 1 .058.064l1.008 1.846a.745.745 0 0 0 .647.386h2.59a.73.73 0 0 0 .535-.232A.751.751 0 0 0 17.362 9Z" />
+                </svg>
+              </li>
+              <li class="companion-card__item-way list-way__item">
+                <span class="visually-hidden">Пешком</span>
+                <svg class="list-way__icon" width="21" height="23" xmlns="http://www.w3.org/2000/svg" role="img"
+                  aria-label="Иконка идущего человека.">
+                  <path
+                    d="M14.976 5.76c.95 0 1.721-.86 1.721-1.92s-.77-1.92-1.721-1.92c-.95 0-1.721.86-1.721 1.92s.77 1.92 1.72 1.92Zm-1.053 4.77c.198.329.481.581.812.724.33.142.693.168 1.037.073l2.854-.796-.416-1.862-2.854.796L14.17 7.48a1.735 1.735 0 0 0-1.094-.82l-3.31-.739a1.56 1.56 0 0 0-1.094.158c-.34.185-.614.49-.783.867l-1.427 3.183 1.54.86 1.427-3.185 1.692.378-4.377 8.138H2.928v1.92h3.815c.601 0 1.167-.357 1.476-.932L9.87 14.24l4.448.992 1.563 5.231 1.632-.607-1.562-5.23a1.955 1.955 0 0 0-.495-.833 1.665 1.665 0 0 0-.801-.444l-2.615-.583 1.525-2.836.358.6Z" />
+                </svg>
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <div class="companion__card companion-card">
-        <div class="companion-card__desc">
-          <h3 class="companion-card__name">Петя Демин</h3>
-          <ul class="companion-card__list-hashtag">
-            <li class="companion-card__item-hashtag">#бургер</li>
-            <li class="companion-card__item-hashtag">#бар</li>
-            <li class="companion-card__item-hashtag">#футбол</li>
-            <li class="companion-card__item-hashtag">#концерт</li>
-            <li class="companion-card__item-hashtag">#крафт</li>
-          </ul>
-          <ul class="companion-card__list list-way">
-            <li class="list-way__item">
-              <span class="visually-hidden">Самолет</span>
-              <svg class="list-way__icon list-way__icon--current" width="21" height="21"
-                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка самолета.">
-                <path
-                  d="M16.783 2.093c-.728.173-1.46.347-1.733.824l-2.107 4.199L1.63 9.806l-.458 1.341 8.658.82-1.47 3.634-3.283.78-.824 1.43 2.369.256.27 1.169c.12.414.545.69.908.604l1.095-.26 1.268 2.163.825-1.428-.81-3.505 2.377-3.03 4.536 7.961.914-1.038L15.213 8.63l2.563-3.895c.276-.477.096-1.255-.085-2.036-.09-.387-.545-.691-.908-.605Z" />
-              </svg>
-            </li>
-            <li class="list-way__item">
-              <span class="visually-hidden">Автобус</span>
-              <svg class="list-way__icon list-way__icon--current" width="17" height="19"
-                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка автобуса.">
-                <path
-                  d="M4.34 13.948a1.3 1.3 0 0 0-.415-.97 1.392 1.392 0 0 0-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 0 0-.416.97c0 .38.138.702.416.97a1.39 1.39 0 0 0 1.003.402c.392 0 .726-.134 1.004-.402.277-.268.415-.59.415-.97Zm11.356 0a1.3 1.3 0 0 0-.416-.97 1.392 1.392 0 0 0-1.004-.4c-.392 0-.726.133-1.003.4a1.3 1.3 0 0 0-.416.97c0 .38.139.702.416.97a1.39 1.39 0 0 0 1.003.402c.392 0 .727-.134 1.004-.402a1.3 1.3 0 0 0 .416-.97Zm-.51-4.242-.799-4.115a.695.695 0 0 0-.25-.401.698.698 0 0 0-.449-.156H3.508a.692.692 0 0 0-.448.156.695.695 0 0 0-.25.401l-.798 4.115a.661.661 0 0 0 .155.568c.14.164.322.246.543.246h11.777a.682.682 0 0 0 .543-.246.661.661 0 0 0 .155-.568Zm-2.507-6.558a.488.488 0 0 0-.155-.364.523.523 0 0 0-.377-.15H5.05a.523.523 0 0 0-.377.15.488.488 0 0 0-.155.364.523.523 0 0 0 .532.514h7.097c.148 0 .274-.05.377-.15a.488.488 0 0 0 .155-.364Zm4.436 7.768v6.461h-1.42v1.372a1.3 1.3 0 0 1-.415.97 1.392 1.392 0 0 1-1.004.4c-.392 0-.726-.133-1.003-.4a1.3 1.3 0 0 1-.416-.97v-1.372H4.34v1.372c0 .378-.138.701-.415.97a1.392 1.392 0 0 1-1.004.4c-.392 0-.726-.133-1.003-.4a1.3 1.3 0 0 1-.416-.97v-1.372H.082v-6.46c0-.8.093-1.597.278-2.39l1.142-4.864c.066-.557.427-1.047 1.08-1.468.655-.422 1.505-.74 2.551-.954C6.18 1.027 7.335.92 8.6.92c1.264 0 2.419.107 3.465.321 1.046.215 1.896.532 2.55.954.655.421 1.015.91 1.082 1.468l1.164 4.864c.17.729.255 1.525.255 2.39Z" />
-              </svg>
-            </li>
-            <li class="list-way__item">
-              <span class="visually-hidden">Велосипед</span>
-              <svg class="list-way__icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" role="img"
-                aria-label="Иконка велосипеда.">
-                <path
-                  d="M18.308 21a4.21 4.21 0 0 1-2.363-.727 4.3 4.3 0 0 1-1.566-1.935 4.368 4.368 0 0 1-.242-2.492 4.332 4.332 0 0 1 1.163-2.208 4.235 4.235 0 0 1 2.178-1.18 4.198 4.198 0 0 1 2.457.245 4.27 4.27 0 0 1 1.908 1.589 4.356 4.356 0 0 1-.53 5.443A4.227 4.227 0 0 1 18.308 21Zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 0 0-1.022 1.262 2.85 2.85 0 0 0-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 0 0 3.023.61 2.776 2.776 0 0 0 1.243-1.036 2.84 2.84 0 0 0-.345-3.55 2.758 2.758 0 0 0-1.96-.825ZM6.105 21a4.21 4.21 0 0 1-2.363-.727 4.3 4.3 0 0 1-1.566-1.935 4.369 4.369 0 0 1-.242-2.492 4.331 4.331 0 0 1 1.164-2.208 4.235 4.235 0 0 1 2.177-1.18 4.198 4.198 0 0 1 2.457.245 4.27 4.27 0 0 1 1.908 1.589 4.356 4.356 0 0 1-.53 5.443A4.227 4.227 0 0 1 6.105 21Zm0-7.125c-.549 0-1.085.165-1.541.474a2.804 2.804 0 0 0-1.022 1.262 2.85 2.85 0 0 0-.158 1.625c.107.546.372 1.047.76 1.44a2.738 2.738 0 0 0 3.022.61c.507-.213.94-.573 1.245-1.036a2.84 2.84 0 0 0-.346-3.55 2.758 2.758 0 0 0-1.96-.825ZM15.164 6a1.456 1.456 0 0 0 1.05-.44 1.497 1.497 0 0 0 .43-1.065 1.5 1.5 0 0 0-.426-1.06A1.457 1.457 0 0 0 15.174 3a1.461 1.461 0 0 0-1.048.436 1.501 1.501 0 0 0-.436 1.06 1.518 1.518 0 0 0 .43 1.061A1.478 1.478 0 0 0 15.164 6Z" />
-                <path
-                  d="M17.362 9H15.34a.183.183 0 0 1-.163-.097L13.71 6.176a1.447 1.447 0 0 0-.435-.511 1.422 1.422 0 0 0-1.847.148l-3.23 3.3c-.27.28-.425.656-.43 1.05 0 .815.583 1.106.856 1.27 1.317.77 2.245 1.332 2.754 1.645a.186.186 0 0 1 .088.16v3.24c0 .404.306.75.704.77a.732.732 0 0 0 .546-.206.75.75 0 0 0 .23-.542v-4.031a.759.759 0 0 0-.308-.61l-1.71-1.247a.187.187 0 0 1-.077-.134.19.19 0 0 1 .05-.147l1.941-2.1a.184.184 0 0 1 .239-.027.186.186 0 0 1 .058.064l1.008 1.846a.745.745 0 0 0 .647.386h2.59a.73.73 0 0 0 .535-.232A.751.751 0 0 0 17.362 9Z" />
-              </svg>
-            </li>
-            <li class="list-way__item">
-              <span class="visually-hidden">Пешком</span>
-              <svg class="list-way__icon list-way__icon--current" width="21" height="23"
-                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка идущего человека.">
-                <path
-                  d="M14.976 5.76c.95 0 1.721-.86 1.721-1.92s-.77-1.92-1.721-1.92c-.95 0-1.721.86-1.721 1.92s.77 1.92 1.72 1.92Zm-1.053 4.77c.198.329.481.581.812.724.33.142.693.168 1.037.073l2.854-.796-.416-1.862-2.854.796L14.17 7.48a1.735 1.735 0 0 0-1.094-.82l-3.31-.739a1.56 1.56 0 0 0-1.094.158c-.34.185-.614.49-.783.867l-1.427 3.183 1.54.86 1.427-3.185 1.692.378-4.377 8.138H2.928v1.92h3.815c.601 0 1.167-.357 1.476-.932L9.87 14.24l4.448.992 1.563 5.231 1.632-.607-1.562-5.23a1.955 1.955 0 0 0-.495-.833 1.665 1.665 0 0 0-.801-.444l-2.615-.583 1.525-2.836.358.6Z" />
-              </svg>
-            </li>
-          </ul>
-        </div>
-        <ul class="companion-card__list flag-list">
-          <li class="flag-list__item">
-            <span class="visually-hidden">Бельгия</span>
-            <img class="flag-list__img" src="img/flag-list/belgium.jpg" alt="флаг Бельгии." width="35" height="25">
-          </li>
-          <li class="companion-card__item-country">
-            <span class="visually-hidden">Таиланд</span>
-            <img class="flag-list__img" src="img/flag-list/czech.jpg" alt="флаг Чехии." width="35" height="25">
-          </li>
-        </ul>
-        <div class="companion-card__block-img companion-img">
-          <img class="companion-img__picture" src="img/companion/demin.jpg"
-            alt="Девушка в бассейне на надовном матрасе" width="270" height="270">
-          <span class="companion-img__small">80 level</span>
-        </div>
+        </section>
       </div>
       <button class="companion__button button" type="submit">Показать всех</button>
     </section>
@@ -362,126 +563,135 @@
       <p class="tariff__slogan">Добавьте свой профиль</p>
       <div class="tariff__rates tariff-payment">
         <span class="visually-hidden">Оплата тарифа</span>
-        <span class="tariff-payment__coin">&#8381;</span>
       </div>
       <ol class="tariff__list tariff-list">
         <li class="tariff-list__item tariff__item">
-          <p>Базовое размещение</p>
-          <p>Бесплатно</p>
-          <span class="tariff-list__number tariff__number">1</span>
+          <dl class="tariff-list__wrapper">
+            <dt class="tariff-list__text tariff-list__text-therm">Базовое размещение</dt>
+            <dd class="tariff-list__text tariff-list__text-definition tariff-list__text-definition--first">Бесплатно</dd>
+          </dl>
+          <span class="tariff-list__number tariff-list__number--first tariff__number">1</span>
         </li>
         <li class="tariff-list__item tariff__item">
-          <p>Вывод на первых позициях</p>
-          <p>99 руб./мес</p>
-          <span class="tariff-list__number tariff__number">2</span>
+          <dl class="tariff-list__wrapper">
+            <dt class="tariff-list__text tariff-list__text-therm">Вывод на первых позициях</dt>
+            <dd class="tariff-list__text tariff-list__text-definition">99 руб./мес</dd>
+          </dl>
+          <span class="tariff-list__number tariff-list__number--second tariff__number">2</span>
         </li>
         <li class="tariff-list__item tariff__item">
-          <p>Кастомный цвет карточки</p>
-          <p>59 руб./мес</p>
-          <span class="tariff-list__number tariff__number">3</span>
+          <dl class="tariff-list__wrapper">
+          <dt class="tariff-list__text tariff-list__text-therm">Кастомный цвет карточки</dt>
+          <dd class="tariff-list__text tariff-list__text-definition  tariff-list__text-definition--last">59 руб./мес</dd>
+          </dl>
+          <span class="tariff-list__number tariff-list__number--third tariff__number">3</span>
         </li>
       </ol>
 
       <div class="tariff__business-block business-block">
-        <a class="business-block__link business-tariff">
-          <p class="business-block__desc">Показать тарифы для бизнеса</p>
-          <span class="business-block__small">
-            <svg class="business-block__icon" width="27" height="27" xmlns="http://www.w3.org/2000/svg" role="img"
+        <a class="tariff__link tariff__business business-block__link business-tariff">
+          <span class="tariff__business-small">
+            <svg class="tariff__business-icon" width="27" height="27" xmlns="http://www.w3.org/2000/svg" role="img"
               aria-label="Иконка человека">
               <path
                 d="M23.376 23.242v-3.349c0-.937-.134-1.875-.67-2.812-.536-.938-1.205-1.742-2.143-2.277-.938-.67-2.947-.804-3.884-.804l-2.143 2.277.803 1.741v4.018L14 23.51l-1.34-1.474v-4.018l.938-1.741L11.321 14c-1.071 0-3.08.134-4.018.804-.938.535-1.473 1.339-2.009 2.277-.536.937-.67 1.74-.67 2.812v3.349S8.107 24.715 14 24.715c5.893 0 9.376-1.473 9.376-1.473ZM14 3.419c-2.545 0-4.018 2.41-3.616 5.09.401 2.678 1.74 4.554 3.616 4.554 1.875 0 3.215-1.876 3.616-4.554.402-2.813-1.071-5.09-3.616-5.09Z" />
             </svg>
           </span>
+          <p class="tariff__business-desc">Показать тарифы для бизнеса</p>
         </a>
         <div class="business-block__popover business-popover">
-          <div class="business-popover__content">
-            <h2 class="business-popover__title">Бизнес-тарифы</h2>
-            <dl class="business-block__list">
-              <dt class="business-block__desc">Реклама у блоггера</dt>
-              <dd class="business-block__desc">300 000 руб./пост</dd>
-              <dt class="business-block__desc">Накрутка подписчиков</dt>
-              <dd class="business-block__desc">от 1 руб./шт.</dd>
-              <dt class="business-block__desc">Лайки от ботов</dt>
-              <dd class="business-block__desc">от 20 коп./лайк</dd>
-              <dt class="business-block__desc">Ваш продакт-плейсмент </dt>
-              <dd class="business-block__desc">Индивидуально</dd>
-            </dl>
-            <button class="business-popover__button" type="button">Закрыть окно</button>
-          </div>
+        <div class="business-popover__content">
+          <h2 class="business-popover__title">Бизнес-тарифы</h2>
+          <dl class="business-block__list">
+            <dt class="business-block__desc">Реклама у блоггера</dt>
+            <dd class="business-block__desc">300 000 руб./пост</dd>
+            <dt class="business-block__desc">Накрутка подписчиков</dt>
+            <dd class="business-block__desc">от 1 руб./шт.</dd>
+            <dt class="business-block__desc">Лайки от ботов</dt>
+            <dd class="business-block__desc">от 20 коп./лайк</dd>
+            <dt class="business-block__desc">Ваш продакт-плейсмент </dt>
+            <dd class="business-block__desc">Индивидуально</dd>
+          </dl>
+          <button class="business-popover__button" type="button">Закрыть окно</button>
+        </div>
         </div>
       </div>
     </section>
+
     <section class="interested">
-      <h2 class="interested__title">Заинтересовались?</h2>
-      <p class="interested__desc">Зарегистрируйтесь, это быстро и бесплатно!</p>
-      <p class="interested__desc">Уже зарегистрированы?</p>
-      <p class="interested__desc">Тогда скорее <a class="interested__link" href="#">авторизуйтесь</a> .</p>
-      <form class="interested__form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="newsletter-email">Email.</label>
-        <input class="interested__field field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email"
-          id="newsletter-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-        <button class="button interested__button" type="submit">
-          <span class="visually-hidden">Подписаться</span>
-        </button>
-      </form>
-      <p class="interested__desc">Остались вопросы?</p>
-      <p class="interested__desc">Мы с радостью на них ответим!</p>
-      <a class="interested__link phone-link" href="tel:+78005558628">
-        <span class="phone-link__img">
-          <svg class="phone-link__icon" width="18" height="17" xmlns="http://www.w3.org/2000/svg" role="img"
-            aria-label="иконка телефона.">
-            <path
-              d="M9.5 1.086c-2.796 0-5.6.473-6.617 1.415-.844.781-1.125 2.162-1.22 3.036 0 0-.013.087-.013.124 0 .343.294.618.654.618.043 0 1.616-.12 2.565-.195.022-.003.045-.006.068-.012.353-.01.638-.281.638-.618l.003-1.217c0-.377.324-.68.723-.68H12.7c.399 0 .723.303.723.68l.003 1.217c0 .337.285.608.638.618.022.006.045.009.069.012.948.074 2.521.195 2.564.195.36 0 .654-.275.654-.618 0-.037-.013-.124-.013-.124-.095-.874-.376-2.255-1.22-3.036-1.017-.942-3.82-1.415-6.617-1.415Zm0 8.032c-.723 0-1.308.552-1.308 1.235S8.777 11.59 9.5 11.59c.723 0 1.308-.553 1.308-1.236 0-.683-.585-1.235-1.308-1.235Zm-.981-2.78v-.773c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.772L2.471 10.79a1.504 1.504 0 0 0-.494 1.106v1.238c0 .683.586 1.236 1.308 1.236h.328v.772c0 .427.366.772.817.772.452 0 .818-.345.818-.772v-.772h8.504v.772c0 .427.366.772.818.772.451 0 .817-.345.817-.772v-.772h.327c.723 0 1.309-.553 1.309-1.236v-1.238c0-.433-.19-.825-.494-1.106l-4.412-4.452v-.772c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.772H8.52ZM9.5 7.881c1.446 0 2.617 1.106 2.617 2.471 0 1.366-1.171 2.471-2.617 2.471s-2.617-1.105-2.617-2.47c0-1.366 1.171-2.472 2.617-2.472Z" />
-          </svg>
-        </span>
-        <span class="phone-link__desc">8 800 555-86-28</span>
-      </a>
-      <a class="interested__link email-link" href="mailto:mail@htmlacademy.ru">
-        <span class="email-link__img">
-          <svg class="email-link__icon" width="18" height="12.5" xmlns="http://www.w3.org/2000/svg" role="img"
-            aria-label="иконка e-mail.">
-            <path
-              d="M16.14 10.466 11.808 6.5l4.33-3.966-.59-.631L9.25 7.672l-6.299-5.77-.59.632L6.69 6.5l-4.33 3.966.59.631 4.38-4.011L9.25 8.844l1.92-1.758 4.379 4.011.59-.63ZM1.575.25C.766.25.111.949.111 1.808v9.384c0 .86.65 1.558 1.465 1.558h15.348c.809 0 1.465-.699 1.465-1.558V1.808c0-.86-.65-1.558-1.465-1.558H1.576Z" />
-          </svg>
-        </span>
-        <span class="email-link__desc">mail@htmlacademy.ru</span>
-      </a>
+        <h2 class="interested__title">Заинтересовались?</h2>
+        <p class="interested__desc">Зарегистрируйтесь, это быстро и бесплатно!</p>
+        <p class="interested__desc">Уже зарегистрированы? Тогда скорее&#160;<a class="interested__link" href="#">авторизуйтесь</a> .</p>
+        <form class="interested__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="newsletter-email">Email.</label>
+          <input class="interested__input field-email" placeholder="E-mail" type="email" name="newsletter-email"
+            id="newsletter-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+          <button class="button interested__button" type="submit">
+            <span class="visually-hidden">Подписаться</span>
+          </button>
+        </form>
+        <div class="interested__desc">
+          <p class="interested__desc--wrapper">Остались вопросы? Мы с радостью на них ответим!</p>
+        </div>
+        <div class="interested__link-conteiner">
+          <a class="interested__link interested__link-contacts phone-link" href="tel:+78005558628">
+            <span class="interested__img phone-link__img">
+              <svg class="interested__icon phone-link__icon" width="18" height="17" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="иконка телефона.">
+                <path
+                  d="M9.5 1.086c-2.796 0-5.6.473-6.617 1.415-.844.781-1.125 2.162-1.22 3.036 0 0-.013.087-.013.124 0 .343.294.618.654.618.043 0 1.616-.12 2.565-.195.022-.003.045-.006.068-.012.353-.01.638-.281.638-.618l.003-1.217c0-.377.324-.68.723-.68H12.7c.399 0 .723.303.723.68l.003 1.217c0 .337.285.608.638.618.022.006.045.009.069.012.948.074 2.521.195 2.564.195.36 0 .654-.275.654-.618 0-.037-.013-.124-.013-.124-.095-.874-.376-2.255-1.22-3.036-1.017-.942-3.82-1.415-6.617-1.415Zm0 8.032c-.723 0-1.308.552-1.308 1.235S8.777 11.59 9.5 11.59c.723 0 1.308-.553 1.308-1.236 0-.683-.585-1.235-1.308-1.235Zm-.981-2.78v-.773c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.772L2.471 10.79a1.504 1.504 0 0 0-.494 1.106v1.238c0 .683.586 1.236 1.308 1.236h.328v.772c0 .427.366.772.817.772.452 0 .818-.345.818-.772v-.772h8.504v.772c0 .427.366.772.818.772.451 0 .817-.345.817-.772v-.772h.327c.723 0 1.309-.553 1.309-1.236v-1.238c0-.433-.19-.825-.494-1.106l-4.412-4.452v-.772c0-.426-.367-.772-.818-.772-.451 0-.818.346-.818.772v.772H8.52ZM9.5 7.881c1.446 0 2.617 1.106 2.617 2.471 0 1.366-1.171 2.471-2.617 2.471s-2.617-1.105-2.617-2.47c0-1.366 1.171-2.472 2.617-2.472Z" />
+              </svg>
+            </span>
+            <span class="interested__link-desc">8 800 555-86-28</span>
+          </a>
+          <a class="interested__link interested__link-contacts email-link" href="mailto:mail@htmlacademy.ru">
+            <span class="interested__img email-link__img">
+              <svg class="interested__icon email-link__icon" width="18" height="12.5" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="иконка e-mail.">
+                <path
+                path fill-rule="evenodd" clip-rule="evenodd" d="m16.1 10.5-4.3-4 4.3-4-.6-.6-6.3 5.8L3 1.9l-.6.6 4.3 4-4.3 4 .6.6 4.3-4 2 1.7 1.9-1.7 4.3 4 .6-.6ZM1.6.2C.8.3 0 1 0 1.9v9.4c0 .9.7 1.6 1.5 1.6h15.3c.8 0 1.5-.7 1.5-1.6V1.8c0-.9-.7-1.6-1.5-1.6H1.6Z" />
+              </svg>
+            </span>
+            <span class="interested__link-desc">mail@htmlacademy.ru</span>
+          </a>
+        </div>
     </section>
+
     <section class="location">
       <h2 class="visually-hidden">Местонахождение</h2>
-      <div class="location__desc location-adress">
-        <p class="location-adress__text">ул. Большая Конюшенная, 19/8</p>
-        <span class="location-adress__img">
-          <svg class="location-adress__icon" width="21" height="21" xmlns="http://www.w3.org/2000/svg" role="img"
-            aria-label="иконка геолокации.">
-            <path
-              d="M10.5 0a7.876 7.876 0 0 0-7.875 7.875c0 5.058 3.803 7.27 4.644 8.279C9.29 18.577 9.403 21 10.5 21s1.211-2.423 3.23-4.846c.841-1.01 4.645-3.22 4.645-8.279A7.876 7.876 0 0 0 10.5 0Zm0 13.125a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 0 1 0 10.5Zm0-7.875a2.626 2.626 0 0 0 0 5.25 2.626 2.626 0 0 0 0-5.25Z" />
-          </svg>
-        </span>
+      <div class="location__desc-container location-adress">
+        <div class="location__desc">
+          <span class="location__img">
+            <svg class="location__icon" width="21" height="21" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="иконка геолокации.">
+              <path
+                d="M10.5 0a7.876 7.876 0 0 0-7.875 7.875c0 5.058 3.803 7.27 4.644 8.279C9.29 18.577 9.403 21 10.5 21s1.211-2.423 3.23-4.846c.841-1.01 4.645-3.22 4.645-8.279A7.876 7.876 0 0 0 10.5 0Zm0 13.125a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 0 1 0 10.5Zm0-7.875a2.626 2.626 0 0 0 0 5.25 2.626 2.626 0 0 0 0-5.25Z" />
+            </svg>
+          </span>
+          <p class="location__text">ул. Большая Конюшенная, 19/8</p>
+        </div>
         <button class="location__button button">Проложить маршрут</button>
       </div>
-      <img class="location__cart" src="img/location/background_map.jpg" alt="Карта с указанием адреса нахождения офиса"
-        width="320" height="424">
+      <div class="location__cart">
+        <span class="visually-hidden">Карта</span>
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo logo-footer" href="#">
-        <svg class="logo-footer__icon" width="96" height="15" xmlns="http://www.w3.org/2000/svg" role="img"
+        <svg class="page-footer__icon" width="96" height="15" xmlns="http://www.w3.org/2000/svg" role="img"
           aria-label="иконка погнали.">
-          <path
-            d="M94.911 6.189C95.637 5.727 96 5.016 96 4.055c0-1.255-.523-2.242-1.568-2.96C93.416.366 92.22 0 90.84 0c-1.35 0-2.584.397-3.701 1.192-1.104.781-1.655 1.825-1.655 3.132 0 .487.152.89.457 1.211.305.308.74.462 1.307.462.551 0 .972-.154 1.263-.462.304-.32.457-.724.457-1.21-.03-.372.094-.75.37-1.135.276-.397.777-.595 1.502-.595.61.012 1.046.166 1.307.46.276.296.4.59.37.885 0 .205-.073.41-.218.615a2.031 2.031 0 0 1-.457.48c-.145.116-.385.282-.718.5-.334.218-.567.372-.697.462-.755.55-1.133 1.28-1.133 2.19 0 .449.16.827.48 1.135.333.294.776.442 1.328.442.551 0 .987-.148 1.306-.442.334-.308.501-.686.501-1.134 0-.193.036-.372.109-.539.073-.166.189-.32.348-.46.175-.142.32-.257.436-.347.13-.09.32-.205.566-.346.261-.14.443-.243.544-.307ZM76.305 10.235l3.857-4.771c.395-.577.932-.897 1.61-.963.678-.078 1.271.085 1.78.491.509.406.749.95.72 1.63v6.834c0 .432-.169.799-.508 1.1-.325.288-.72.432-1.187.432-.466 0-.868-.144-1.207-.432a1.443 1.443 0 0 1-.488-1.1V9.214l-3.856 4.772c-.396.576-.933.897-1.61.962-.679.079-1.272-.085-1.78-.49-.51-.406-.75-.95-.721-1.63V6.013c0-.432.162-.798.487-1.1a1.758 1.758 0 0 1 1.208-.451c.466 0 .862.15 1.187.452.339.3.508.667.508 1.1v4.221Z" />
-          <path
-            d="M58.967 13.389V5.975c0-.426-.178-.793-.535-1.1a1.725 1.725 0 0 0-1.219-.479 1.7 1.7 0 0 0-1.198.48c-.342.306-.513.673-.513 1.099v-.18c-.171-.4-.513-.74-1.027-1.019-.513-.293-1.097-.44-1.753-.44-1.284 0-2.467.473-3.55 1.42C48.115 6.7 47.588 8 47.588 9.651c0 1.692.52 3.004 1.56 3.937 1.042.932 2.232 1.399 3.573 1.399.656 0 1.233-.12 1.732-.36.5-.253.863-.553 1.09-.9.086.36.286.66.6.9.313.226.67.34 1.07.34.47 0 .876-.154 1.218-.46.357-.306.535-.68.535-1.12Zm-5.47-1.362c1.169 0 2.116-1.026 2.116-2.291 0-1.266-.947-2.291-2.116-2.291S51.38 8.47 51.38 9.735c0 1.266.948 2.292 2.117 2.292Z" />
-          <path
-            d="M43.081 8.237V6.094c0-.435.177-.804.53-1.108a1.793 1.793 0 0 1 1.236-.475c.47 0 .882.159 1.235.475.353.304.53.673.53 1.108v7.343c0 .435-.177.804-.53 1.108-.338.303-.75.455-1.235.455-.486 0-.905-.152-1.258-.455a1.434 1.434 0 0 1-.508-1.108v-2.175h-3.817v2.175c0 .435-.177.804-.53 1.108-.338.303-.75.455-1.235.455-.486 0-.905-.152-1.258-.455a1.434 1.434 0 0 1-.508-1.108V6.094c0-.435.177-.804.53-1.108a1.793 1.793 0 0 1 1.236-.475c.47 0 .882.159 1.235.475.353.304.53.673.53 1.108v2.143h3.817ZM33.962 4.511c.346 0 .642.131.89.394.247.262.37.867.37 1.234 0 .368-.123.747-.37 1.01-.247.262-.544.354-.89.354h-2.958v5.971c0 1.13-.994 1.526-1.99 1.526-.924 0-1.807-.5-1.807-1.515l.03-8.974h6.725ZM12.855 0v13.332c0 .44-.239.812-.57 1.118-.317.307-.815.46-1.27.46-.455 0-1.113-.153-1.444-.46a1.497 1.497 0 0 1-.476-1.118V3.008H3.772v10.322c0 .44-.165.813-.496 1.12-.317.306-.963.46-1.418.46-.455 0-1.051-.154-1.382-.46A1.497 1.497 0 0 1 0 13.33V0h12.855ZM24.637 13.365c-1.076 1.01-2.517 1.516-4.322 1.516-1.804 0-3.237-.505-4.298-1.516-1.092-1.026-1.638-2.308-1.638-3.847 0-1.554.546-2.836 1.638-3.847 1.06-1.01 2.494-1.516 4.298-1.516 1.805 0 3.246.505 4.322 1.516 1.077 1.026 1.615 2.308 1.615 3.847 0 1.539-.538 2.821-1.614 3.847Zm-2.802-5.43a1.835 1.835 0 0 0-1.116-.567 2.288 2.288 0 0 0-1.235.114c-.38.15-.704.407-.973.769-.254.362-.364.784-.333 1.267 0 .634.198 1.162.594 1.584.412.407.926.611 1.543.611.634 0 1.148-.196 1.544-.588.396-.408.594-.943.594-1.607 0-.633-.206-1.161-.618-1.584ZM64.022 4.462c2.024 0 7.417.03 7.417.03s.004 6.591.004 8.894c0 .443-.182.824-.546 1.145-.347.305-.662.457-1.191.457-.53 0-.8.04-1.164-.265-.347-.32-.667-.894-.667-1.337v-5.95H65.42c0 4.266 0 5.203-1.57 6.728-.58.55-1.325.824-2.235.824-.546 0-.867-.13-1.214-.436-.347-.32-.617-.832-.617-1.304 0-1.018.213-1.423.76-2.088 1.566 0 1.498-.38 1.4-3.266v-1.83c.017-.443.098-1.602.098-1.602h1.98ZM93.16 12.745c0 1.239-1.05 2.243-2.345 2.243-1.295 0-2.344-1.005-2.344-2.243s1.05-2.242 2.344-2.242c1.295 0 2.345 1.004 2.345 2.242Z" />
+          <path d="M95 6.2c.6-.5 1-1.2 1-2.1 0-1.3-.5-2.3-1.6-3A6 6 0 0 0 90.8 0c-1.3 0-2.5.4-3.7 1.2a3.7 3.7 0 0 0-1.6 3.1c0 .5.1 1 .4 1.2.3.3.8.5 1.3.5.6 0 1-.2 1.3-.5.3-.3.5-.7.5-1.2 0-.3 0-.7.3-1.1.3-.4.8-.6 1.5-.6.6 0 1 .2 1.3.5.3.3.4.5.4.8 0 .2 0 .5-.2.7a2 2 0 0 1-.5.4 10.5 10.5 0 0 1-1.4 1c-.7.5-1.1 1.3-1.1 2.2 0 .4.2.8.5 1.1.3.3.7.5 1.3.5.6 0 1-.2 1.3-.5.3-.3.5-.7.5-1.1l.1-.6.4-.4a25.2 25.2 0 0 1 1-.7l.5-.3ZM76.3 10.2l3.9-4.7c.4-.6.9-1 1.6-1 .7 0 1.2 0 1.8.5.5.4.7 1 .7 1.6v6.9c0 .4-.2.8-.5 1-.4.3-.8.5-1.2.5-.5 0-.9-.2-1.2-.4-.4-.3-.5-.7-.5-1.1V9.2L77 14a2.3 2.3 0 0 1-3.4.5c-.5-.4-.7-1-.7-1.7V6c0-.4.2-.8.5-1 .3-.4.7-.5 1.2-.5s.9.1 1.2.4c.3.3.5.7.5 1.1v4.2Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M59 13.4V6c0-.5-.2-.8-.6-1.1a1.7 1.7 0 0 0-2.4 0c-.3.3-.5.6-.5 1v-.1c-.2-.4-.5-.7-1-1-.5-.3-1.1-.5-1.8-.5-1.3 0-2.4.5-3.5 1.5a5 5 0 0 0-1.6 3.9c0 1.6.5 3 1.5 3.9 1 1 2.3 1.4 3.6 1.4a4 4 0 0 0 1.8-.4c.5-.2.8-.5 1-.9.1.4.3.7.6 1 .4.2.7.3 1.1.3.5 0 .9-.2 1.2-.5.4-.3.6-.7.6-1.1ZM53.5 12c1.2 0 2.1-1 2.1-2.3 0-1.2-1-2.3-2.1-2.3-1.2 0-2.1 1-2.1 2.3 0 1.3 1 2.3 2.1 2.3Z" />
+          <path d="M43 8.2V6.1c0-.4.3-.8.6-1.1.4-.3.8-.5 1.2-.5.5 0 1 .2 1.3.5.3.3.5.7.5 1v7.4c0 .5-.2.8-.5 1.1-.4.3-.8.5-1.3.5-.4 0-.9-.2-1.2-.5-.3-.3-.5-.6-.5-1v-2.2h-3.8v2.1c0 .5-.2.8-.6 1.1-.3.3-.7.5-1.2.5s-1-.2-1.3-.5c-.3-.3-.5-.6-.5-1V6c0-.4.2-.8.6-1.1.3-.3.7-.5 1.2-.5s.9.2 1.2.5c.4.3.6.7.6 1v2.2H43ZM34 4.5c.3 0 .6.1.9.4.2.3.3.9.3 1.2 0 .4-.1.8-.3 1-.3.3-.6.4-1 .4H31v6c0 1.1-1 1.5-2 1.5s-1.8-.5-1.8-1.5v-9H34ZM12.9 0v13.3c0 .5-.3.8-.6 1.2-.3.3-.8.4-1.3.4-.4 0-1.1-.1-1.4-.4-.3-.4-.5-.7-.5-1.2V3H3.8v10.3c0 .5-.2.8-.5 1.2-.3.3-1 .4-1.4.4-.5 0-1-.1-1.4-.4-.3-.4-.5-.7-.5-1.2V0h12.9ZM24.6 13.4a6 6 0 0 1-4.3 1.5 6 6 0 0 1-4.3-1.5 5 5 0 0 1-1.6-3.9A5 5 0 0 1 16 5.7a6 6 0 0 1 4.3-1.5 6 6 0 0 1 4.3 1.5 5 5 0 0 1 1.7 3.8 5 5 0 0 1-1.7 3.9Zm-2.8-5.5c-.3-.3-.6-.5-1-.5h-1.3c-.4.2-.7.5-1 .9a2 2 0 0 0-.3 1.2c0 .7.2 1.2.6 1.6.4.4.9.6 1.5.6s1.2-.2 1.6-.6c.4-.4.6-1 .6-1.6 0-.6-.3-1.1-.7-1.6ZM64 4.5h7.4v8.9c0 .4-.1.8-.5 1.1-.4.3-.7.5-1.2.5s-.8 0-1.2-.3c-.3-.3-.6-.9-.6-1.3v-6h-2.5c0 4.3 0 5.2-1.6 6.8-.5.5-1.3.8-2.2.8-.5 0-.9-.1-1.2-.4-.3-.4-.6-.9-.6-1.4 0-1 .2-1.4.7-2 1.6 0 1.5-.4 1.4-3.3V6l.1-1.6h2ZM93.2 12.7c0 1.3-1 2.3-2.4 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.2 2.3-2.2 1.3 0 2.4 1 2.4 2.2Z" />
         </svg>
       </a>
     </div>
     <ul class="page-footer__list social">
       <li class="social__item">
-        <a class href="https://www.facebook.com/htmlacademy">
+        <a class="page-footer__link-social" href="https://www.facebook.com/htmlacademy">
           <span class="visually-hidden">Фэйсбук</span>
           <svg class="social-icon" width="11" height="21" xmlns="http://www.w3.org/2000/svg" role="img"
             aria-label="Фэйсбук.">
@@ -491,7 +701,7 @@
         </a>
       </li>
       <li class="social__item">
-        <a class href="https://www.facebook.com/htmlacademy">
+        <a class="page-footer__link-social" href="https://www.facebook.com/htmlacademy">
           <span class="visually-hidden">Вконтакте</span>
           <svg class="social-icon" width="23" height="12" xmlns="http://www.w3.org/2000/svg" role="img"
             aria-label="Вконтакте.">
@@ -501,7 +711,7 @@
         </a>
       </li>
       <li class="social__item">
-        <a class href="https://www.facebook.com/htmlacademy">
+        <a class="page-footer__link-social" href="https://www.facebook.com/htmlacademy">
           <span class="visually-hidden">Инстаграмм</span>
           <svg class="social-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" role="img"
             aria-label="Инстаграмм.">
@@ -515,7 +725,7 @@
     </ul>
 
     <div class="page-footer__developed developed">
-      <p class="developed__text">Разработано</p>
+      <p class="page-footer__developed-text">Разработано</p>
       <a class href="https://htmlacademy.ru/">
         <span class="visually-hidden">htmlacademy</span>
         <svg class="social-icon" width="27" height="33" xmlns="http://www.w3.org/2000/svg" role="img"
