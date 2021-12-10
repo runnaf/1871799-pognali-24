@@ -49,18 +49,17 @@
     border-radius: 1.5px;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:hover::after {
     content: "";
-    top: 16px;
+    top: 50%;
     transform: rotate(-45deg);
     background-color: hsla(0, 0%, 80%, 1);
   }
 
   &:hover::after {
     content: "";
-    bottom: 14px;
     transform: rotate(45deg);
-    background-color: hsla(0, 0%, 80%, 1);
   }
 
   &:focus::before {
@@ -132,7 +131,6 @@
   }
 
   .page-header__toggle {
-
     &::before {
       content: "";
       position: absolute;

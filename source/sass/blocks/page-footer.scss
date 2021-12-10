@@ -84,7 +84,7 @@
     padding-bottom: 28px;
     justify-content: space-between;
     border-top-left-radius: 57px;
-  border-top-right-radius: 57px;
+    border-top-right-radius: 57px;
   }
 
   .page-footer__wrapper {
@@ -132,4 +132,8 @@
     margin-right: 25px;
     padding: 0;
   }
+}
+
+.page-footer--companion {
+  margin-top: 0;
 }

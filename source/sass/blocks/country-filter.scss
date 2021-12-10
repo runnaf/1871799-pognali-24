@@ -6,8 +6,53 @@
   line-height: 18px;
   font-weight: 700;
   color: hsla(229, 46%, 18%, 0.3);
+  box-sizing: border-box;
+  margin-top: $mobile-stats-shift;
+  padding-top: -$mobile-stats-shift;
+  padding-left: 24px;
+  padding-right: 25px;
+  padding-bottom: 2px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.country-filter__wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.country-filter__link {
+  color: hsla(229, 46%, 18%, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.country-filter__icon {
+  fill: hsla(229, 46%, 18%, 1);
+  margin-right: 12px;
+}
+
+.country-filter__link-desc {
+  margin: 0;
+  flex-grow: 1;
 }
 
 .country-filter__link--current {
   color: $darkfont-color;
 }
+
+
+.country-filter__list {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+

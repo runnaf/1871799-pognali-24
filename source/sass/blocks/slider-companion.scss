@@ -1,15 +1,22 @@
 .slider-companion {
   width: 100%;
   background-color: $lightgrey;
+  padding-right: 26px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  padding-bottom: 45px;
+}
 
- }
-
- .slider-companion__card {
+.slider-companion__card {
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;
   font-weight: 400;
-  color: hsla(0, 0%, 27%, 1);
+  margin-bottom: 9px
+}
+
+.slider-companion__card:last-of-type {
+  margin-bottom: 20px;
 }
 
 .slider-companion__name {
@@ -41,6 +48,40 @@
   font-weight: 700;
   font-style: 17px;
   line-height: 30px;
+  cursor: pointer;
 }
 
+.slider-companion__wrapper-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
+.slider-companion__link-more {
+  position: relative;
+  padding-left: 34px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  color: hsla(224, 52%, 24%, 1);
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 18px;
+    height: 2px;
+    background-color: hsla(224, 52%, 24%, 1);
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
+}
