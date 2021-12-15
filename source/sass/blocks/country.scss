@@ -1,0 +1,18 @@
+.country {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.country__item-alphabet {
+  display: flex;
+}
+
+.country__link-alphabet {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.country--closed {
+  display: none;
+}

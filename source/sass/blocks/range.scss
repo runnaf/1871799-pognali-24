@@ -29,4 +29,9 @@
   right: 144px;
 }
 
+@media (min-width: $desktop-width) {
+  .range__bar {
+    right: -171px;
+  }
 
+}

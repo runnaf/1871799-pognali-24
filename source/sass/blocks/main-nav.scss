@@ -17,19 +17,6 @@
   min-height: 210px;
 }
 
-// .main-nav__list {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   flex-wrap: wrap;
-//   width: 193px;
-//   margin: 0;
-//   padding: 10px;
-//   list-style-type: none;
-//   width: fit-content;
-// }
-
 .main-nav__list--user {
   align-items: flex-start;
 }
@@ -80,6 +67,7 @@
   margin-top: 51px;
   margin-bottom: 51px;
   border-radius: 25px;
+  background-color: hsla(47, 100%, 65%, 1);
 }
 
 @media (min-width: $desktop-width) {

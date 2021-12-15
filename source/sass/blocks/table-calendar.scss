@@ -1,0 +1,43 @@
+.table-calendar {
+  font-size: 14px;
+  line-height: 18px;
+  color: hsla(224, 52%, 24%, 1);
+  background-color: transparent;
+  border-collapse: collapse;
+}
+
+.table-calendar__cell-day {
+  color: hsla(0, 0%, 27%, 1);
+  border: none;
+  background-color: transparent;
+}
+
+.table-calendar__cell-weekend {
+  color: hsla(16, 100%, 57%, 1);
+  border: none;
+  background-color: transparent;
+}
+
+.table-calendar__cell {
+  font-weight: 500;
+  height: 100%;
+  border: 2px solid hsla(227, 16%, 82%, 1);
+  text-align: center;
+  background-color: hsla(229, 24%, 87%, 1);
+}
+
+.table-calendar__cell--hover {
+  outline: 2px solid #FF5C23;
+}
+
+.table-calendar__cell--active {
+  color: $white;
+  background-color: hsla(224, 52%, 24%, 1);
+}
+
+.table-calendar__cell--inactive {
+  background-color: transparent;
+  color: hsla(0, 0%, 27%, 0.3);
+  font-weight: 400;
+}
+

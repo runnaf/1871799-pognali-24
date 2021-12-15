@@ -1,0 +1,124 @@
+.form-step {
+  position: relative;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  color: hsla(224, 52%, 24%, 1);
+}
+
+.form-step__field-group {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto min-content;
+  margin-bottom: 20px;
+}
+
+.form-step__field-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.form-step__label {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.form-stem__field-wrapper {
+  position: relative;
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+  border: 1px solid hsla(227, 16%, 82%, 1);
+  border-radius: 4px;
+  margin-top: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+}
+
+.form-step__button {
+  position: relative;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  display: block;
+  width: 14px;
+  height: 14px;
+
+  &::after,
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: hsla(0, 0%, 80%, 1);
+    content: "";
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
+}
+
+.form-step__button-reduce {
+  &::before {
+    display: none;
+  }
+}
+
+.form-step__field {
+  flex-grow: 1;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+  height: 43px;
+
+  &::placeholder {
+    font-family: "Blogger Sans", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  -moz-appearance: textfield;
+}
+
+.form-step__small {
+  color: hsla(224, 52%, 24%, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  line-height: 1;
+  font-weight: 500;
+}
+
+@media (min-width: $desktop-width) {
+  .form-step {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .form-step__field-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-step__small {
+    order: 1;
+  }
+
+  .form-step__field-group {
+    grid-column: 1/2;
+  }
+
+  .form-step__field-group--child {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
