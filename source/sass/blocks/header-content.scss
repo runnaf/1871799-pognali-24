@@ -1,0 +1,105 @@
+.header-content {
+  position: relative;
+  width: 100%;
+  background-color: $darkgrey;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: $lightfont-color;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 13px;
+  box-sizing: border-box;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.header-content__title {
+  position: relative;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  width: fit-content;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    border-radius: 4px;
+    content: "";
+    height: 5px;
+    background-color: hsla(27, 100%, 59%, 1);
+  }
+}
+
+.header-content__link {
+  display: none;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: hsla(0, 0%, 100%, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 9px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.header-content__home-icon {
+  fill: $white;
+}
+
+.header-content__link-desc {
+  padding-right: 28px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .header-content {
+    background-color: hsla(229, 48%, 18%, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-top: 92px;
+    padding-bottom: 78px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .header-content__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 20px;
+
+    &::after {
+      height: 8px;
+      bottom: -97px;
+    }
+  }
+
+  .header-content__link {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-content {
+    padding-left: 125px;
+    padding-right: 92px;
+    padding-top: 107px;
+    padding-bottom: 60px;
+  }
+
+  .header-content__link {
+    padding: 30px;
+  }
+}
+

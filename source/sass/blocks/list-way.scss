@@ -1,0 +1,25 @@
+.list-way {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.list-way__icon {
+  fill: hsla(224, 52%, 24%, 0.15);
+}
+
+.list-way--current .list-way__icon {
+  fill: hsla(224, 52%, 24%, 1);
+}
+
+@media (min-width: $tablet-width) {
+  .list-way {
+    width: 43px;
+    height: 43px;
+  }
+}

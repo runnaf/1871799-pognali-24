@@ -8,32 +8,38 @@
   color: $darkfont-color;
 }
 
+.calendar__button-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar__button {
+  border: none;
+  background-color: transparent;
+  width: 43px;
+  height: 43px;
+  background-image: url("../../img/calendar/arow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.calendar__button--forward {
+  transform: rotate(180deg);
+}
+
 .calendar__caption {
   font-weight: 700;
-  font-style: 20px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 1;
+  color: hsla(224, 52%, 24%, 1);
+  margin: 0;
 }
 
-.calendar__cell {
-  color: hsla(0, 0%, 27%, 1);
+.calendar__table {
+  width: 100%;
+  margin-bottom: 22px;
 }
 
-.calendar__cell--weekend {
-  color: hsla(16, 100%, 57%, 1);
-}
 
-.calendar__cell--inactive {
-  color: hsla(0, 0%, 27%, 0.3);
-}
-
-.calendar__cell--active {
-  color: $lightfont-color;
-}
-
-.calendar__cell--hover {
-  border: 2px solid hsla(16, 100%, 57%, 1);
-}
-
-.calendar__cell-number {
-  color: $darkfont-color;
-}

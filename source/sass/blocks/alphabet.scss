@@ -1,0 +1,38 @@
+.alphabet {
+  display: none;
+}
+
+.alphabet--open {
+  display: block;
+}
+
+.alphabet__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.alphabet__item {
+  background-color: transparent;
+}
+
+.alphabet__link {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: hsla(0, 0%, 27%, 1);
+  text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
+  .alphabet {
+    display: block;
+  }
+
+  .alphabet__link {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}

@@ -1,17 +1,17 @@
 .step {
-  width: 80%;
   background-color: $white;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  color: $darkfont-color;
+  color: hsla(224, 52%, 24%, 1);
 }
 
 .step__subtitle {
   font-weight: 700;
-  font-style: 20px;
+  font-size: 20px;
   line-height: 20px;
+  color: hsla(224, 52%, 24%, 1);
 }
 
 .step__text {
