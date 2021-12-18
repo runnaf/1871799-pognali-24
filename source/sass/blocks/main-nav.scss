@@ -1,8 +1,10 @@
 .main-nav {
+  position: relative;
   font-size: 30px;
   font-weight: 500;
   line-height: 35px;
   background-color: inherit;
+  z-index: 20;
 }
 
 .main-nav__wrapper {

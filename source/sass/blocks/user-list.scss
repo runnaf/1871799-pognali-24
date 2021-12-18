@@ -10,9 +10,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $darkfont-color;
+  color: hsla(229, 46%, 18%, 1);
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    color: hsla(229, 46%, 18%, 0.6);
+
+    & .user-list__icon {
+      fill: hsla(41, 100%, 59%, 1);
+    }
+  }
+
+  &:focus,
+  &:active {
+    color: hsla(229, 46%, 18%, 0.3);
+
+    & .user-list__icon {
+      fill: hsla(47, 100%, 65%, 0.3);
+    }
+  }
 }
 
 .user-list__icon-wrapper {

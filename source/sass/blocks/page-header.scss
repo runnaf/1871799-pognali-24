@@ -59,11 +59,7 @@
       top: 50%;
       transform: rotate(-45deg);
     }
-  }
 
-  &:hover,
-  &:focus,
-  &:active {
     &::before {
       transform: rotate(45deg);
     }
@@ -106,6 +102,13 @@
 
   .page-header__toggle {
     margin-left: 52px;
+
+    &::before,
+    &::after {
+      width: 25px;
+      height: 3px;
+      border-radius: 1.5px;
+    }
   }
 
   .page-header__logo {
@@ -116,15 +119,6 @@
 
   .page-header__logo-icon {
     transform: scale(1.11);
-  }
-
-  .page-header__toggle {
-    &::before,
-    &::after {
-      width: 25px;
-      height: 3px;
-      border-radius: 1.5px;
-    }
   }
 
   .page-header__social {
