@@ -9,10 +9,6 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 16px;
-
-  &:focus-within {
-    background-color: $white;
-  }
 }
 
 .page-header--direction {
@@ -24,18 +20,21 @@
 }
 
 .page-header__toggle {
+  position: relative;
   width: 57px;
   height: 57px;
   padding: 0;
   border: 1px solid transparent;
   background-color: inherit;
-  border: 2px solid red;
+  cursor: pointer;
+  outline: none;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     left: 28%;
-    top: 38%;
+    top: 45%;
     width: 25px;
     height: 3px;
     background-color: hsla(0, 0%, 100%, 1);
@@ -43,41 +42,23 @@
   }
 
   &::after {
-    content: "";
-    position: absolute;
-    left: 28%;
-    bottom: 42%;
-    width: 25px;
-    height: 3px;
-    background-color: hsla(0, 0%, 100%, 1);
-    border-radius: 1.5px;
+    top: 65%;
   }
 
-  &:hover::before,
-  &:hover::after {
-    content: "";
-    top: 50%;
-    transform: rotate(-45deg);
-    background-color: hsla(0, 0%, 80%, 1);
+  &:hover,
+  &:focus {
+    &::after,
+    &::before {
+      top: 50%;
+      transform: rotate(-45deg);
+    }
   }
 
-  &:hover::after {
-    content: "";
-    transform: rotate(45deg);
-  }
-
-  &:focus::before {
-    content: "";
-    top: 16px;
-    transform: rotate(-45deg);
-    background-color: hsla(0, 0%, 80%, 1);
-  }
-
-  &:focus::after {
-    content: "";
-    bottom: 14px;
-    transform: rotate(45deg);
-    background-color: hsla(0, 0%, 80%, 1);
+  &:hover,
+  &:focus {
+    &::before {
+      transform: rotate(45deg);
+    }
   }
 }
 
@@ -135,54 +116,11 @@
   }
 
   .page-header__toggle {
-    &::before {
-      content: "";
-      position: absolute;
-      left: 28%;
-      top: 36%;
-      width: 25px;
-      height: 3px;
-      border-radius: 1.5px;
-      background-color: hsla(0, 0%, 100%, 1);
-    }
-
+    &::before,
     &::after {
-      content: "";
-      position: absolute;
-      left: 28%;
-      top: 50%;
       width: 25px;
       height: 3px;
       border-radius: 1.5px;
-      background-color: hsla(0, 0%, 100%, 1);
-    }
-
-    &:hover::before {
-      content: "";
-      top: 50%;
-      transform: rotate(-45deg);
-      background-color: hsla(0, 0%, 80%, 1);
-    }
-
-    &:hover::after {
-      content: "";
-      bottom: 14px;
-      transform: rotate(45deg);
-      background-color: hsla(0, 0%, 80%, 1);
-    }
-
-    &:focus::before {
-      content: "";
-      top: 16px;
-      transform: rotate(-45deg);
-      background-color: hsla(0, 0%, 80%, 1);
-    }
-
-    &:focus::after {
-      content: "";
-      bottom: 14px;
-      transform: rotate(45deg);
-      background-color: hsla(0, 0%, 80%, 1);
     }
   }
 
@@ -250,7 +188,6 @@
 
   .page-header__logo {
     background-image: url("../../img/page-header/logo-desctop.svg");
-    background-repeat: no-repeat;
     padding-left: 88px;
   }
 

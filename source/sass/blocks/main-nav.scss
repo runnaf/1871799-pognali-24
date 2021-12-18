@@ -1,6 +1,5 @@
 .main-nav {
   font-size: 30px;
-  font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 500;
   line-height: 35px;
   background-color: inherit;
@@ -11,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .main-nav__wrapper {
   display: flex;
   justify-content: center;
@@ -34,6 +34,7 @@
   color: $darkfont-color;
   text-decoration: none;
   text-transform: uppercase;
+
   &:hover {
     outline: none;
   }
@@ -56,7 +57,7 @@
     position: absolute;
     top: 100%;
     color: $lightorange;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
   }
 }
 

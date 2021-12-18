@@ -24,10 +24,32 @@
 
 .social__link--first {
   background-color: $darkorange;
+
+  &:hover,
+  &:focus {
+    background-color: hsla(20, 89%, 55%, 1);
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--second {
   background-color: $midlorange;
+
+  &:hover,
+  &:focus {
+    background-color: hsla(27, 100%, 59%, 1);
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--header {
@@ -43,6 +65,16 @@
   padding-top: 11px;
   padding-bottom: 7px;
   background-color: hsla(47, 100%, 65%, 1);
+
+  &:hover,
+  &:focus {
+    background-color: hsla(41, 100%, 59%, 1);
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -1,29 +1,14 @@
 .interested {
-  width: 100%;
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 700;
-  color: $lightfont-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 98px;
+  width: 85%;
+  padding-top: 70px;
   padding-bottom: 30px;
-  padding-left: 25px;
-  padding-right: 25px;
-  box-sizing: border-box;
-  margin-top: -28px;
-  z-index: -5;
-  background-color: hsla(229, 46%, 18%, 1);
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  margin: 0 auto;
 }
 
 .interested__title {
   color: $orangefont;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   margin: 0;
   margin-bottom: 19px;
   text-align: center;
@@ -37,8 +22,38 @@
 }
 
 .interested__link {
+  position: relative;
   color: hsla(47, 100%, 65%, 1);
   text-decoration: none;
+}
+
+.interested__link--login {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: hsla(47, 100%, 65%, 1);
+  }
+
+  &:hover,
+  &:focus {
+    color: hsla(27, 100%, 59%, 1);
+
+    &::after {
+      background-color: hsla(27, 100%, 59%, 1);
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 .interested__form {
@@ -50,13 +65,12 @@
 
 .interested__input {
   height: 62px;
-  width: 220px;
+  flex-grow: 1;
   box-sizing: border-box;
   border: 1px solid transparent;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 22px 22px 22px 25px;
-  box-sizing: border-box;
 
   &::placeholder {
     font-size: 18px;
@@ -70,6 +84,13 @@
   height: 62px;
   margin-left: -15px;
   border-radius: 10px;
+  background-color: $orange-background;
+}
+
+.interested__button-small {
+  display: none;
+  font-size: 24px;
+  line-height: 1;
 }
 
 .interested__link-conteiner {
@@ -82,6 +103,23 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    color: hsla(41, 100%, 59%, 1);
+
+    & .interested__icon {
+      fill: hsla(41, 100%, 59%, 1);
+    }
+  }
+
+  &:active {
+    color: hsla(41, 100%, 59%, 0.3);
+
+    & .interested__icon {
+      fill: hsla(41, 100%, 59%, 0.3);
+    }
+  }
 }
 
 .interested__img {
@@ -101,25 +139,25 @@
 
 @media (min-width: $tablet-width) {
   .interested {
-    margin-top: -60px;
-    padding-top: 132px;
-    padding-left: 76px;
-    padding-right: 76px;
+    width: 80%;
+    padding-top: 69px;
     padding-bottom: 60px;
-    border-bottom-right-radius: 57px;
-    border-bottom-left-radius: 57px;
   }
 
   .interested__title {
     font-size: 45px;
     line-height: 45px;
-    margin-bottom: 59px;
+    margin-bottom: 61px;
   }
 
   .interested__desc {
     width: 100%;
     font-size: 28px;
     line-height: 32px;
+
+    & br {
+      display: none;
+    }
   }
 
   .interested__form {
@@ -171,25 +209,50 @@
 
 @media (min-width: $desktop-width) {
   .interested {
-    padding-right: 133px;
-    padding-left: 133px;
+    width: 81.5%;
+    padding-top: 104px;
+    padding-bottom: 103px;
+  }
+
+  .interested__title {
+    margin-bottom: 58px;
+  }
+
+  .interested__desc--shift {
+    padding-left: 14px;
+  }
+
+  .interested__form {
+    margin-top: 61px;
+    margin-bottom: 68px;
   }
 
   .interested__button {
     width: 330px;
   }
 
+  .interested__button-small {
+    display: block;
+  }
+
   .interested__link-conteiner {
     flex-direction: row;
+    margin-top: 44px;
   }
 
   .interested__link {
     flex-grow: 1;
   }
 
+  .interested__link-phone {
+    margin-right: 110px;
+    justify-content: flex-end;
+  }
+
   .interested__img {
     width: 90px;
     height: 90px;
+    margin-right: 29px;
   }
 
   .interested__icon {

@@ -16,23 +16,23 @@
 }
 
 .companion-card__picture {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: auto;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
 }
 
 .companion-card__small {
   position: absolute;
-  top: 23px;
-  left: 25px;
+  top: 18px;
+  left: 20px;
 }
 
 .companion-card__desc {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 27px;
+  padding-top: 22px;
   background-color: transparent;
 }
 

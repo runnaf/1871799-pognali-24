@@ -1,20 +1,17 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   width: 100%;
   background-color: $white;
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   font-weight: 400;
   color: hsla(0, 0%, 27%, 1);
-  margin-top: -110px;
+  margin-top: -130px;
   padding-top: 37px;
   padding-bottom: 17px;
   box-sizing: border-box;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  z-index: 20;
+  z-index: 10;
 }
 
 .page-footer__wrapper {
@@ -49,6 +46,38 @@
   box-sizing: border-box;
   border: 1px solid transparent;
   background-color: $orange-background;
+
+  &:hover,
+  &:focus {
+    background-color: hsla(41, 100%, 59%, 1);
+    outline: none;
+  }
+
+  &:active {
+    &:active {
+      fill: hsla(229, 46%, 18%, 0.3);
+    }
+  }
+}
+
+.page-footer__link {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  color: hsla(0, 0%, 27%, 1);
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__developed {
@@ -73,12 +102,13 @@
 
 .page-footer__developed-text {
   margin: 0;
+
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     margin-top: -70px;
-    flex-direction: row;
+    display: flex;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 45px;
@@ -137,4 +167,11 @@
 
 .page-footer--companion {
   margin-top: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }

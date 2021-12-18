@@ -1,19 +1,9 @@
 .travel-direction {
-  width: 100%;
-  background-color: $lightgrey;
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 700;
+  width: 85%;
   color: hsla(0, 0%, 27%, 1);
-  margin-top: -25px;
-  z-index: -2;
-  padding-right: 25px;
-  padding-left: 25px;
+  margin: 0 auto;
   padding-bottom: 36px;
-  padding-top: 95px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  padding-top: 70px;
   box-sizing: border-box;
 }
 
@@ -24,7 +14,6 @@
   color: $orangefont;
   font-size: 24px;
   line-height: 24px;
-
 }
 
 .travel-direction__desc {
@@ -63,22 +52,15 @@
   padding-right: 40px;
   padding-top: 22px;
   padding-bottom: 18px;
-  border: 1px solid transparent;
   border-radius: 10px;
+  background-color: $orange-background;
 }
 
 @media (min-width: $tablet-width) {
   .travel-direction {
-    margin-top: -52px;
-    padding-top: 123px;
-    padding-left: 73px;
-    padding-right: 73px;
+    width: 81%;
+    padding-top: 70px;
     padding-bottom: 81px;
-    border-bottom-left-radius: 57px;
-    border-bottom-right-radius: 57px;
-    background-image: url(../../img/travel-direction-img/background__tablet.png);
-    background-repeat: no-repeat;
-    background-position: 41px 134px;
   }
 
   .travel-direction__list {
@@ -106,7 +88,8 @@
     line-height: 33px;
     margin: 0;
     padding: 0;
-    margin-top: 60px;
+    margin-left: 2px;
+    margin-top: 58px;
     margin-bottom: 106px;
   }
 
@@ -125,10 +108,8 @@
     grid-template-columns: 559px 1fr;
     grid-template-rows: min-content;
     column-gap: 171px;
-    padding-left: 131px;
-    padding-right: 131px;
-    padding-top: 212px;
-    padding-bottom: 107px;
+    padding-top: 162px;
+    padding-bottom: 101px;
   }
 
   .travel-direction__title {
@@ -140,7 +121,6 @@
     grid-column: 2/3;
     grid-row: 2/3;
     margin: 0;
-
   }
 
   .travel-direction__list {
@@ -152,6 +132,8 @@
     grid-column: 2/3;
     grid-row: 3/4;
     align-self: center;
-    min-width: 275px;
+    width: fit-content;
+    padding-right: 100px;
+    border-radius: 20px;
   }
 }
