@@ -141,13 +141,27 @@
   }
 
   .page-header__list {
+    position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
     color: $white;
     padding: 0;
+    margin-left: 40px;
+    padding-left: 105px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: $white;
+    }
   }
 
   .page-header__list--closed {

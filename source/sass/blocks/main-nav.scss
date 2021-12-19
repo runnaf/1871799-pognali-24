@@ -108,7 +108,31 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    width: auto;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  .main-nav--closed {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav__wrapper-contact {
     display: none;
+  }
+
+  .main-nav__social-wrapper {
+    display: none;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    line-height: 1;
+    color: $white;
+    padding-left: 17px;
+    padding-right: 17px;
   }
 }
 
