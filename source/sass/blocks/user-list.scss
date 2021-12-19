@@ -4,11 +4,13 @@
   line-height: 18px;
   font-size: 16px;
   background-color: inherit;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .user-list__link {
   display: flex;
-  justify-content: center;
   align-items: center;
   color: hsla(229, 46%, 18%, 1);
   text-decoration: none;
@@ -36,8 +38,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   border: 1px solid transparent;
   box-sizing: border-box;
@@ -55,4 +57,22 @@
 
 .user-list__link--authentication {
   width: 100%;
+  justify-content: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list__icon-wrapper {
+    width: 68px;
+    height: 68px;
+  }
+
+  .user-list__link-text {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 700;
+    padding: 0;
+    margin-left: 25px;
+  }
 }

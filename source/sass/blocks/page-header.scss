@@ -1,16 +1,13 @@
 .page-header {
-  width: 100%;
+  width: 84%;
   box-sizing: border-box;
-  background-color: $darkgrey;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 16px;
-}
-
-.page-header--direction {
-  background-color: hsla(229, 48%, 18%, 1);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-header__toggle {
@@ -23,17 +20,12 @@
   cursor: pointer;
   outline: none;
 
-  & + .page-header__nav {
-    display: none;
-    background-color: $white;
-  }
-
   &::before,
   &::after {
     content: "";
     position: absolute;
-    left: 28%;
-    top: 45%;
+    right: 0;
+    top: 42%;
     width: 25px;
     height: 3px;
     background-color: hsla(0, 0%, 100%, 1);
@@ -41,33 +33,17 @@
   }
 
   &::after {
-    top: 65%;
+    top: 58%;
   }
+}
 
-  &:hover,
-  &:focus,
-  &:active {
-    & + .page-header__nav {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-    }
-
-    &::after,
-    &::before {
-      top: 50%;
-      transform: rotate(-45deg);
-    }
-
-    &::before {
-      transform: rotate(45deg);
-    }
-  }
+.page-header--direction {
+  background-color: hsla(229, 48%, 18%, 1);
 }
 
 .page-header__logo {
   padding: 15px;
+  padding-left: 0;
 }
 
 .page-header__logo-icon {
@@ -85,7 +61,7 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -95,9 +71,12 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    padding: 40px;
-    padding-bottom: 35px;
-    background-color: $darkfont-color;
+    width: 90%;
+    padding-top: 40px;
+  }
+
+  .page-header__list {
+    align-items: flex-start;
   }
 
   .page-header__toggle {
@@ -128,6 +107,10 @@
   .page-header__item--closed {
     display: none;
   }
+
+  .page-header--opened {
+    background-color: $white;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -137,6 +120,12 @@
     padding-left: 60px;
     padding-right: 60px;
     background-color: transparent;
+  }
+
+  .page-header--opened {
+    & .page-header__logo-icon {
+      fill: $white;
+    }
   }
 
   .page-header--direction {
@@ -149,24 +138,6 @@
 
   .page-header__toggle {
     display: none;
-  }
-
-  .page-header__nav {
-    position: relative;
-    display: flex;
-    flex-grow: 1;
-    padding-left: 95px;
-    background-color: inherit;
-
-    &::before {
-      position: absolute;
-      left: -11px;
-      top: 50%;
-      content: "";
-      width: 60px;
-      height: 2px;
-      background-color: $white;
-    }
   }
 
   .page-header__list {
