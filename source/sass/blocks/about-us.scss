@@ -1,21 +1,8 @@
 .about-us {
-  display: flex;
-  flex-direction: column;
+  width: 70%;
   min-height: 321px;
-  padding-left: 49px;
-  padding-right: 60px;
+  margin: 0 auto;
   padding-top: 42px;
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 700;
-  color: $lightfont-color;
-  background-color: $darkgrey;
-  background-image: url(../../img/protocol/about-mobile.png);
-  background-repeat: no-repeat;
-  background-position: 20px 10px;
-  border-bottom-left-radius: 33px;
-  border-bottom-right-radius: 33px;
 }
 
 .about-us__title {
@@ -27,7 +14,7 @@
 
 .about-us__text {
   font-weight: 300;
-  width: 100%;
+  width: 95%;
   margin: 0;
   padding: 0;
   padding-top: 19px;
@@ -53,9 +40,10 @@
   padding-left: 32px;
   padding-right: 50px;
   border-radius: 18px;
-  background-image: url(../../img/about-us/arrow_right.svg);
+  background-image: url("../../img/about-us/arrow_right.svg");
   background-repeat: no-repeat;
   background-position: 90% 50%;
+  background-color: $orange-background;
 }
 
 .about-us__button--closed {
@@ -64,15 +52,9 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
+    width: 81%;
     padding-bottom: 90px;
-    border-bottom-left-radius: 58px;
-    border-bottom-right-radius: 58px;
-    padding-left: 73px;
     padding-top: 41px;
-    background-image: url(../../img/protocol/background__tablet-bottom.png);
-    background-repeat: no-repeat;
-    background-position: 40px 3px;
-    background-color: $darkfont-color;
   }
 
   .about-us__title {
@@ -86,6 +68,10 @@
     width: 301px;
     margin-top: 41px;
     padding: 0;
+
+    & br:first-of-type {
+      display: none;
+    }
   }
 
   .about-us__text-advice {
@@ -100,8 +86,8 @@
   }
 
   .about-us__button {
-    margin-top: 32px;
-    width: 274px;
+    margin-top: 56px;
+    min-width: 274px;
   }
 }
 
@@ -115,15 +101,10 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
+    width: 82%;
     padding: 0;
-    padding-top: 0;
     padding-bottom: 163px;
-    background-image: url(../../img/about-us/background__bottom-desctop.png);
-    background-repeat: no-repeat;
-    background-color: $darkfont-color;
-    background-position: 751px 85px;
-    border-bottom-left-radius: 58px;
-    border-bottom-right-radius: 58px;
+    padding-top: 87px;
   }
 
   .about-us__header--open {
@@ -134,25 +115,23 @@
     font-size: 45px;
     line-height: 45px;
     padding-top: 40px;
-    padding-left: 129px;
   }
 
   .about-us__text {
     font-size: 28px;
-    line-height: 33px;
+    line-height: 34px;
     width: 645px;
     margin: 0;
     padding: 0;
-    padding-left: 129px;
-    margin-top: 60px;
+    margin-top: 56px;
   }
 
   .about-us__text-advice {
     width: 465px;
     font-size: 21px;
     line-height: 25px;
-    margin-top: 43px;
-    padding-left: 131px;
+    margin-top: 39px;
+    margin-bottom: 85px;
   }
 
   .about-us__button {
@@ -161,8 +140,6 @@
     font-size: 24px;
     line-height: 24px;
     display: flex;
-    margin-left: 131px;
-    margin-top: 64px;
     padding-top: 25px;
     padding-bottom: 29px;
     padding-left: 30px;

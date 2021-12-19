@@ -1,28 +1,39 @@
 .main-nav {
+  position: relative;
   font-size: 30px;
-  font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 500;
   line-height: 35px;
   background-color: inherit;
+  padding-top: 50px;
+  z-index: 20;
+  margin: 0;
+  width: 100%;
 }
 
-.page-header__toggle:hover + .main-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.main-nav--closed {
+  display: none;
 }
-.main-nav__wrapper {
-  display: flex;
-  justify-content: center;
-  min-height: 210px;
+
+.main-nav--opened {
+  display: block;
 }
 
 .main-nav__list--user {
-  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.user-list__item--authentication {
+  margin-bottom: 51px;
 }
 
 .main-nav__list--social {
   flex-direction: row;
+}
+
+.main-nav__wrapper-contact {
+  margin-bottom: 26px;
+  margin-top: 54px;
 }
 
 .main-nav__link {
@@ -31,9 +42,12 @@
   justify-content: center;
   overflow: hidden;
   outline: none;
+  font-size: 30px;
+  line-height: 35px;
   color: $darkfont-color;
   text-decoration: none;
   text-transform: uppercase;
+
   &:hover {
     outline: none;
   }
@@ -56,7 +70,7 @@
     position: absolute;
     top: 100%;
     color: $lightorange;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -64,26 +78,61 @@
   min-width: 270px;
   font-size: 17px;
   line-height: 30px;
-  margin-top: 51px;
-  margin-bottom: 51px;
   border-radius: 25px;
   background-color: hsla(47, 100%, 65%, 1);
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav__item:not(:last-of-type) {
-    margin-right: 33px;
-  }
-
-  .main-nav__wrapper {
-    min-height: fit-content;
+@media (min-width: $tablet-width) {
+  .main-nav {
+    order: 1;
+    padding-top: 85px;
+    margin-left: 62px;
   }
 
   .main-nav__link {
-    font-weight: 500;
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  .main-nav--opened {
+    & .user-list__item--authentication {
+      display: none;
+    }
+  }
+
+  .main-nav__wrapper-contact {
+    margin-top: 132px;
+    margin-bottom: 119px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: auto;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  .main-nav--closed {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav__wrapper-contact {
+    display: none;
+  }
+
+  .main-nav__social-wrapper {
+    display: none;
+  }
+
+  .main-nav__link {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1;
     color: $white;
+    padding-left: 17px;
+    padding-right: 17px;
   }
 }
 
