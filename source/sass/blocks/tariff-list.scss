@@ -109,8 +109,19 @@
 
 @media (min-width: $desktop-width) {
   .tariff-list__text-definition {
-    min-width: fit-content;
-    margin-right: 74px;
+    min-width: auto;
+  }
+
+  .tariff-list__text-therm {
+    padding: 0;
+  }
+
+  .tariff-list__number {
+    margin-right: 23px;
+  }
+
+  .tariff-list__item:last-of-type .tariff-list__wrapper {
+    margin-bottom: 8px;
   }
 }
 

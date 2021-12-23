@@ -1,16 +1,9 @@
 .plans {
-  width: 100%;
-  background-color: $grey;
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-size: 16px;
+  width: 85%;
   line-height: 16px;
   font-weight: 700;
   color: hsla(224, 52%, 24%, 1);
-  padding-bottom: 118px;
-  padding-top: 57px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  margin-top: -42px;
+  margin: 0 auto;
   z-index: 2;
 }
 
@@ -22,6 +15,7 @@
 
 .plans__title {
   margin: 0;
+  margin-bottom: 31px;
   font-size: 24px;
   line-height: 1;
 }
@@ -30,7 +24,17 @@
   letter-spacing: 0.1em;
 }
 
+.plans__country,
+.plans__text {
+  margin: 0;
+  padding: 0;
+}
+
 .plans__data {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
@@ -38,17 +42,21 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .plans__desc-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .plans__item {
   margin: 0;
-  background-color: $white;
   margin-bottom: 11px;
+  padding-top: 23px;
+  padding-left: 24px;
+  background-color: $white;
   border-radius: 10px;
 }
 
@@ -56,10 +64,16 @@
   margin-bottom: 0;
 }
 
-.plans__country,
-.plans__text {
-  margin: 0;
-  padding: 0;
+.plans__quontity-companion {
+  letter-spacing: 0.06em;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: hsla(224, 52%, 24%, 1);
+}
+
+.plans__number {
+  margin-right: 5px;
 }
 
 .plans__button {
@@ -73,17 +87,22 @@
   color: hsla(0, 0%, 0%, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  padding-left: 0;
+  padding-right: 25px;
+  padding-top: 23px;
+  padding-bottom: 25px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
   .plans {
-    padding-left: 75px;
-    padding-right: 75px;
-    box-sizing: border-box;
+    width: 81%;
+    margin-top: 4px;
+    margin-bottom: 69px;
   }
 
   .plans__title {
-    margin-bottom: 48px;
+    margin-bottom: 51px;
     font-size: 36px;
     font-weight: 700;
   }
@@ -91,15 +110,13 @@
   .plans__item {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 20px;
+    grid-template-columns: 177px 177px 1fr;
     font-size: 20px;
     line-height: 1;
     font-weight: 500;
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-bottom: 14px;
-    padding-right: 40px;
+    padding-top: 38px;
+    padding-left: 42px;
+    padding-right: 33px;
     box-sizing: border-box;
   }
 
@@ -109,7 +126,8 @@
     justify-content: space-between;
     font-weight: 700;
     font-size: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 34px;
+    margin-bottom: 0;
 
     &::after {
       content: "";
@@ -122,18 +140,51 @@
     }
   }
 
+  .plans__text {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    align-self: center;
+    width: max-content;
+  }
+
+  .plans__data {
+    justify-self: end;
+    margin: 0;
+    letter-spacing: 0.06em;
+  }
+
   .plans__number {
     order: 1;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .plans__button {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 9px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: end;
+    letter-spacing: 0.1em;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .plans {
+    width: 92%;
+    margin-top: 0;
+    padding-left: 66px;
+    margin-bottom: 55px;
+    box-sizing: border-box;
+  }
+
   .plans__item {
-    grid-template-columns: 1fr max-content 32px max-content 116px max-content;
-    padding-top: 40px;
-    padding-bottom: 38px;
-    padding-right: 40px;
-    padding-left: 43px;
+    grid-template-columns: 585px max-content 27px max-content auto max-content;
+    padding-top: 19px;
+    padding-bottom: 23px;
+    padding-right: 25px;
+    margin-bottom: 15px;
     column-gap: 0;
   }
 
@@ -147,8 +198,14 @@
     }
   }
 
+  .plans__title {
+    padding: 0;
+    margin-left: 7px;
+    margin-bottom: 53px;
+  }
+
   .plans__country {
-    margin-left: 32px;
+    margin-left: 35px;
   }
 
   .plans__number {
@@ -158,11 +215,14 @@
   .plans__text {
     grid-column: 2/3;
     grid-row: 1/2;
+    min-width: 150px;
+    letter-spacing: 0.1em;
   }
 
   .plans__data {
     grid-column: 4/5;
     grid-row: 1/2;
+    letter-spacing: 0.06em;
   }
 
   .plans__button {
@@ -170,6 +230,7 @@
     grid-row: 1/2;
     font-size: 20px;
     letter-spacing: 0.08em;
+    padding-right: 19px;
   }
 }
 

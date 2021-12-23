@@ -13,6 +13,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 17px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: hsla(229, 24%, 87%, 1);
+    content: "";
+  }
+
+  &::after {
+    top: 0;
+  }
 }
 
 .calendar__button {
@@ -22,7 +38,7 @@
   height: 43px;
   background-image: url("../../img/calendar/arow.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
 }
 
 .calendar__button--forward {
@@ -39,5 +55,25 @@
 
 .calendar__table {
   width: 100%;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
+
+@media (min-width: $tablet-width) {
+  .calendar__caption {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .calendar__button-wrapper {
+    padding-top: 21px;
+    padding-bottom: 23px;
+    margin-bottom: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .calendar__button-wrapper {
+    margin-bottom: 0;
+  }
+}
+

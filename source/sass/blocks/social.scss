@@ -58,6 +58,18 @@
   height: 50px;
 }
 
+.social__phone-icon {
+  fill: hsla(228, 41%, 15%, 1);
+  width: 16px;
+  height: 16px;
+}
+
+.social__mail-icon {
+  fill: hsla(228, 41%, 15%, 1);
+  width: 18px;
+  height: 16px;
+}
+
 .social__link--authentication {
   min-width: 189px;
   height: fit-content;
@@ -78,13 +90,21 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social__item {
-    margin-bottom: 5px;
-  }
-
   .social__link--authentication {
     padding-top: 14px;
     padding-bottom: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__phone-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .social__mail-icon {
+    width: 16px;
+    height: 14px;
   }
 }
 

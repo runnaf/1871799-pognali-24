@@ -63,6 +63,16 @@
   padding-bottom: 9px;
 }
 
+.user-list__icon-email {
+  width: 19px;
+  height: 17px;
+}
+
+.user-list__icon-phone {
+  width: 19px;
+  height: 17px;
+}
+
 @media (min-width: $tablet-width) {
   .user-list__icon-wrapper {
     width: 68px;

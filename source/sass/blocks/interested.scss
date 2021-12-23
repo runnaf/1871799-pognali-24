@@ -80,6 +80,7 @@
 }
 
 .interested__button {
+  position: relative;
   width: 60px;
   height: 62px;
   margin-left: -15px;
@@ -91,6 +92,14 @@
   display: none;
   font-size: 24px;
   line-height: 1;
+}
+
+.interested__button-icon {
+  fill: $darkfont-color;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 21px;
+  height: 18px;
 }
 
 .interested__link-conteiner {
@@ -133,8 +142,16 @@
   background-color: hsla(228, 50%, 14%, 1);
 }
 
-.interested__icon {
+.interested__phone-icon {
   fill: $orange-background;
+  width: 19px;
+  height: 17px;
+}
+
+.interested__email-icon {
+  fill: $orange-background;
+  width: 18px;
+  height: 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -202,15 +219,21 @@
     margin-right: 21px;
   }
 
-  .interested__icon {
-    transform: scale(1.5);
+  .interested__phone-icon {
+    width: 24px;
+    height: 23px;
+  }
+
+  .interested__email-icon {
+    width: 28px;
+    height: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .interested {
     width: 81.5%;
-    padding-top: 104px;
+    padding-top: 105px;
     padding-bottom: 103px;
   }
 
@@ -228,7 +251,12 @@
   }
 
   .interested__button {
-    width: 330px;
+    width: 325px;
+    padding-left: 36px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
   }
 
   .interested__button-small {
@@ -257,6 +285,25 @@
 
   .interested__icon {
     transform: scale(2);
+  }
+
+  .interested__link--login::after {
+    bottom: 2px;
+  }
+
+  .interested__input {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .interested__desc--wrapper {
+    letter-spacing: 0.01em;
+  }
+
+  .interested__button-icon {
+    right: 30px;
+    width: 14px;
+    height: 16px;
   }
 }
 

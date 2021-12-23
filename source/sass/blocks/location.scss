@@ -30,6 +30,8 @@
 
 .location__icon {
   fill: $orange-background;
+  width: 24px;
+  height: 32px;
 }
 
 .location__text {
@@ -41,6 +43,7 @@
 }
 
 .location__button {
+  position: relative;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 700;
   color: hsla(224, 52%, 24%, 1);
@@ -63,11 +66,27 @@
     background-color: hsla(229, 46%, 18%, 1);
     color: $white;
     outline: none;
+
+    & .location__button-icon {
+      fill: $white;
+    }
   }
 
   &:active {
     color: hsla(0, 0%, 100%, 0.3);
+
+    & .location__button-icon {
+      fill: hsla(0, 0%, 100%, 0.3);
+    }
   }
+}
+
+.location__button-icon {
+  fill: $darkfont-color;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 20px;
+  height: 18px;
 }
 
 .location__cart {
@@ -123,43 +142,55 @@
     margin-top: -47px;
   }
 
-  @media (min-width: $desktop-width) {
-    .location__desc-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      padding-top: 55px;
-      padding-bottom: 56px;
-      width: 81%;
-    }
-
-    .location__desc {
-      margin: 0;
-      flex-grow: 1;
-      justify-content: flex-end;
-    }
-
-    .location__button {
-      margin-left: 147px;
-      min-width: 325px;
-      width: auto;
-      align-self: center;
-    }
-
-    .location__img {
-      width: 90px;
-      height: 90px;
-      margin-right: 30px;
-    }
-
-    .location__cart {
-      height: 584px;
-      margin-top: -118px;
-    }
-
-    .location__text {
-      width: auto;
-      flex-grow: 0;
-    }
+  .location__icon {
+    width: 100%;
+    height: 100%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .location__desc-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 55px;
+    padding-bottom: 56px;
+    width: 81%;
+  }
+
+  .location__desc {
+    margin: 0;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  .location__button {
+    margin-left: 147px;
+    min-width: 325px;
+    width: auto;
+    align-self: center;
+  }
+
+  .location__img {
+    width: 90px;
+    height: 90px;
+    margin-right: 30px;
+  }
+
+  .location__cart {
+    height: 584px;
+    margin-top: -118px;
+  }
+
+  .location__text {
+    width: auto;
+    flex-grow: 0;
+  }
+
+  .location__button-icon {
+    right: 30px;
+    width: 14px;
+    height: 16px;
+  }
+}
+

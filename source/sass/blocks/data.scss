@@ -1,0 +1,25 @@
+.data__from {
+  position: relative;
+  padding-right: 20px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 2px;
+    width: 14px;
+    background-color: hsla(224, 52%, 24%, 1);
+    content: "";
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .data__from {
+    padding-right: 28px;
+
+    &::before {
+      width: 19px;
+      top: calc(50% + 2px);
+    }
+  }
+}
