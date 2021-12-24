@@ -181,10 +181,37 @@
 
   .direction__filter-group,
   .direction__legend,
-  .direction__list {
+  .direction__list,
+  .direction__field {
     transform: rotate(180deg);
     margin: 0;
     padding: 0;
+  }
+
+  .direction__field {
+    font-family: "Blogger Sans", sans-serif, "Arial";
+    font-size: 20px;
+    line-height: 1;
+    color: hsla(0, 0%, 27%, 1);
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding-top: 30px;
+    padding-left: 37px;
+    padding-bottom: 24px;
+    padding-right: 34px;
+    box-sizing: border-box;
+    border: none;
+    vertical-align: top;
+
+    &::placeholder {
+      color: hsla(0, 0%, 27%, 0.6);
+    }
+
+    &:active {
+      border: none;
+      outline: none;
+    }
   }
 
   .direction__filter-group {

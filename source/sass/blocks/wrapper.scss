@@ -131,6 +131,11 @@
     padding-top: -$desctop-stats-shift;
   }
 
+  .wrapper--stats-inner {
+    margin-top: $desctop-stats-shift;
+    padding-top: -$desctop-stats-shift;
+  }
+
   .wrapper--border {
     border-bottom-left-radius: $desctop-border-shift;
     border-bottom-right-radius: $desctop-border-shift;
@@ -160,5 +165,9 @@
 
   .wrapper--add-plan {
     padding-bottom: 77px;
+  }
+
+  .wrapper--plans {
+    padding-bottom: 62px;
   }
 }

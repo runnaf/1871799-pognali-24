@@ -31,6 +31,13 @@
   background-color: hsla(229, 24%, 87%, 1);
 }
 
+
+.table-calendar__cell-number {
+  & .table-calendar__cell-mounth {
+    display: none;
+  }
+}
+
 .table-calendar__cell-check-in {
   display: none;
 }
@@ -64,11 +71,6 @@
   font-weight: 400;
 }
 
-.table-calendar__cell-number {
-  & .table-calendar__cell-mounth {
-    display: none;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .table-calendar {

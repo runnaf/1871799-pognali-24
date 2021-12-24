@@ -290,7 +290,6 @@
 
     & .form-step-second__flag-container {
       display: flex;
-      width: 147px;
       padding: 0;
     }
 
@@ -308,6 +307,9 @@
     & .form-step-second__button {
       background-image: none;
       border: none;
+      top: 38%;
+      right: 0;
+      position: absolute;
 
       &::after,
       &::before {

@@ -55,10 +55,6 @@
   color: $darkfont-color;
   text-decoration: none;
   text-transform: uppercase;
-
-  &:hover {
-    outline: none;
-  }
 }
 
 .main-nav__link:hover .main-nav__link-regular {

@@ -46,7 +46,6 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: 0.1em;
     color: hsla(224, 52%, 24%, 1);
     letter-spacing: 0.09em;
     text-transform: uppercase;
@@ -138,8 +137,6 @@
     position: absolute;
     top: -21%;
     right: -22%;
-    width: 21px;
-    height: 21px;
     border-radius: 50%;
     background-color: hsla(227, 33%, 95%, 1);
     border: none;
@@ -220,6 +217,8 @@
   & .form-step-second__button {
     background-image: none;
     border: none;
+    width: 21px;
+    height: 21px;
 
     &::after,
     &::before {
@@ -242,7 +241,6 @@
     padding-top: 43px;
   }
 
-
   .form-step-second__lists {
     padding: 0;
     padding-left: 24px;
@@ -255,7 +253,7 @@
   }
 
   .form-step-second__flag-container {
-    width: auto;
+    width: 100%;
     height: 100%;
     padding-left: 25px;
     padding-right: 40px;
@@ -293,6 +291,10 @@
     height: 13px;
     right: -3px;
   }
+  .form-step-second__button {
+    width: 50px;
+    height: 50px;
+  }
 
   .form-step-second__flag-icon {
     width: 70px;
@@ -303,8 +305,6 @@
     top: 38%;
     right: 0;
     background-color: transparent;
-    width: 18px;
-    height: 18px;
 
     &::after,
     &::before {
