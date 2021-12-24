@@ -17,11 +17,23 @@
 }
 
 .table__cell--current {
+  position: relative;
   background-color: hsla(224, 52%, 24%, 1);
-}
 
-.table__link--current {
-  color: $white;
+  &::after {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    content: "";
+    background-color: inherit;
+  }
+
+  & .table__link {
+    position: relative;
+    color: $white;
+  }
 }
 
 .table__link {
@@ -35,6 +47,7 @@
   padding: 14px;
   text-decoration: none;
   text-transform: uppercase;
+  z-index: 20;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,6 +77,12 @@
   .table__link--current {
     color: $white;
   }
+
+  .country-nav__cell--current {
+    & .table__link {
+      color: hsla(229, 46%, 18%, 1);
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -78,5 +97,9 @@
     display: block;
   }
 
-
+  .country-nav {
+    & .table {
+      margin-bottom: 49px;
+    }
+  }
 }

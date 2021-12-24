@@ -39,39 +39,39 @@
   }
 }
 
-.country-nav--closed .country-nav__wrapper {
-  display: none;
-}
-
-.country-nav--closed .country-nav__tablet-wrapper {
-  display: none;
-}
-
-.country-nav--opened .country-nav__toggle {
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 43%;
-    left: 0;
-    width: 19px;
-    height: 2px;
-    background-color: hsla(229, 46%, 18%, 1);
-    border-radius: 10px;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
+.country-nav--closed {
+  & .country-nav__container {
+    display: none;
   }
 }
 
-.country-nav--opened .country-nav__wrapper {
-  display: block;
+.country-nav--opened {
+  & .country-nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 43%;
+      left: 0;
+      width: 19px;
+      height: 2px;
+      background-color: hsla(229, 46%, 18%, 1);
+      border-radius: 10px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  & .country-nav__container {
+    display: block;
+  }
 }
 
 .country-nav__list {
@@ -170,13 +170,23 @@
 
 .country-nav__table {
   display: flex;
-  justify-content: center;
+  margin-left: 42px;
   margin-bottom: 10px;
+
+  & .table__wrapper {
+    background-color: $white;
+  }
 }
 
+
 .country-nav__lists {
-  padding-left: 28px;
+  padding: 0;
   margin-bottom: 31px;
+}
+
+.country-nav__list-alphabet {
+  padding: 0;
+  margin: 0;
 }
 
 .country-nav__wrapper {
@@ -191,49 +201,72 @@
 }
 
 @media (min-width: $tablet-width) {
-  .country-nav__link-wrapper {
-    display: none;
+  .country-nav--closed {
+    & .country-nav__wrapper {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      width: 100%;
+      padding-left: 33px;
+      padding-right: 72px;
+      box-sizing: border-box;
+      column-gap: 32px;
+      row-gap: 16px;
+    }
+
+    & .country-nav__list {
+      display: flex;
+    }
   }
 
-  .country-nav--closed .country-nav__wrapper {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    width: 100%;
-    padding-left: 33px;
-    padding-right: 72px;
-    box-sizing: border-box;
-    column-gap: 32px;
-    row-gap: 16px;
-  }
+  .country-nav--opened {
+    & .country-nav__link-wrapper {
+      display: none;
+    }
 
-  .country-nav--closed .country-nav__list {
-    display: flex;
-  }
+    & .country-nav__wrapper {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      width: 100%;
+      padding-left: 33px;
+      padding-right: 72px;
+      margin-bottom: 29px;
+      box-sizing: border-box;
+      column-gap: 32px;
+      row-gap: 16px;
+    }
 
-  .country-nav--opened .country-nav__wrapper {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    width: 100%;
-    padding-left: 33px;
-    padding-right: 72px;
-    margin-bottom: 29px;
-    box-sizing: border-box;
-    column-gap: 32px;
-    row-gap: 16px;
-  }
+    & .country-nav__list {
+      display: flex;
+    }
 
-  .country-nav--opened .country-nav__list {
-    display: flex;
-  }
-
-  .country-nav--opened .country-nav__tablet-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 150px;
+    & .country-nav__table-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 150px;
+    }
   }
 
   .country-nav__table {
     grid-column: 1/2;
     justify-content: start;
+    border: none;
+
+    & .table__wrapper {
+      background-color: inherit;
+      border: none;
+    }
+
+    & .table__cell {
+      width: 79px;
+      height: 100px;
+      border: none;
+    }
+
+    & .table__link {
+      font-size: 60px;
+      line-height: 1;
+      font-weight: 700;
+      color: hsla(229, 46%, 18%, 0.3);
+    }
   }
 
   .country-nav__lists {
@@ -416,8 +449,24 @@
     min-width: fit-content;
   }
 
-  .country-nav__tablet-wrapper {
+  .country-nav__table-wrapper {
     width: 100%;
+  }
+
+  .country-nav__table {
+    grid-column: 1/-1;
+    table-layout: fixed;
+    width: 100%;
+
+    & .table__cell {
+      vertical-align: baseline;
+      text-align: left;
+      width: 20%;
+    }
+
+    & .table__link {
+      color: hsla(229, 46%, 18%, 1);
+    }
   }
 
   .country-nav__button-list {
@@ -461,7 +510,7 @@
     display: none;
   }
 
-  .country-nav--opened .country-nav__tablet-wrapper {
+  .country-nav--opened .country-nav__table-wrapper {
     grid-template-columns: 100%;
   }
 }
