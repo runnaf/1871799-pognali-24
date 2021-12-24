@@ -1,8 +1,8 @@
 .slider-companion {
-  width: 100%;
+  width: 84%;
+  min-width: 270px;
   background-color: $lightgrey;
-  padding-right: 26px;
-  padding-left: 25px;
+  margin: 0 auto;
   box-sizing: border-box;
   padding-bottom: 45px;
 }
@@ -15,9 +15,7 @@
   margin-bottom: 9px;
 }
 
-.slider-companion__card:last-of-type {
-  margin-bottom: 20px;
-}
+
 
 .slider-companion__name {
   font-weight: 700;
@@ -89,10 +87,16 @@
 @media (min-width: $tablet-width) {
   .slider-companion {
     padding: 0;
+    padding-bottom: 133px;
+    width: 90%;
   }
 
   .slider-companion__card {
     margin-top: 41px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
   }
 
   .slider-companion__wrapper-link {
@@ -121,8 +125,7 @@
   }
 
   .slider-companion__pagination-wrapper {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0;
     padding-top: 25px;
     padding-bottom: 25px;
     display: flex;

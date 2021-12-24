@@ -158,7 +158,6 @@
   }
 
   & .form-step-second__field-button {
-    position: relative;
     display: block;
     background-color: hsla(224, 52%, 24%, 1);
     background-image: none;
@@ -186,8 +185,6 @@
   }
 
   & .form-step-second__field {
-    width: auto;
-    flex-grow: 1;
     color: $white;
     background-color: hsla(224, 52%, 24%, 1);
     border-top-left-radius: 4px;
@@ -198,14 +195,6 @@
       color: $white;
       letter-spacing: 0.02em;
     }
-  }
-
-  & .form-step-second__button {
-    display: none;
-  }
-
-  & .form-step-second__small {
-    display: none;
   }
 }
 
@@ -293,6 +282,47 @@
       width: 35px;
       height: 35px;
       top: -8px;
+    }
+  }
+
+  .form-step__field-group--active-select {
+    background-color: transparent;
+
+    & .form-step-second__flag-container {
+      display: flex;
+      width: 147px;
+      padding: 0;
+    }
+
+    & .form-step-second__country-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 208px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 25px;
+      box-sizing: border-box;
+      box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
+      background-color: $white;
+    }
+
+    & .form-step-second__button {
+      background-image: none;
+      border: none;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        top: 50%;
+        height: 2px;
+        background-color: hsla(0, 0%, 0%, 0.3);
+        transform: rotate(45deg);
+      }
+
+      &::before {
+        transform: rotate(135deg);
+      }
     }
   }
 }

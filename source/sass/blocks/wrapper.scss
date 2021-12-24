@@ -79,6 +79,11 @@
     padding-top: -$tablet-stats-shift;
   }
 
+  .wrapper--stats-inner {
+    margin-top: $tablet-stats-shift;
+    padding-top: -$tablet-stats-shift;
+  }
+
   .wrapper--border {
     border-bottom-left-radius: $tablet-border-shift;
     border-bottom-right-radius: $tablet-border-shift;
@@ -90,6 +95,16 @@
     background-position: 40px 3px;
   }
 
+  .wrapper--plans {
+    padding-bottom: 59px;
+  }
+
+  .wrapper--add-plan {
+    margin-top: -50px;
+    padding-top: 50px;
+    padding-bottom: 68px;
+  }
+
   .wrapper--travel-direction {
     background-image: url("../../img/travel-direction-img/background__tablet.png");
     background-repeat: no-repeat;
@@ -99,10 +114,6 @@
   .wrapper--companion {
     background-image: url("../../img/companion/background__tablet.png");
     background-position: 41px 94px;
-  }
-
-  .wrapper--add-plan {
-    padding-bottom: 150px;
   }
 }
 

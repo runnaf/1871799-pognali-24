@@ -135,7 +135,6 @@
     padding-right: 40px;
     padding-top: 45px;
     padding-bottom: 28px;
-    justify-content: space-between;
     align-items: center;
     border-top-left-radius: 57px;
     border-top-right-radius: 57px;
@@ -146,7 +145,7 @@
   }
 
   .page-footer__logo-icon {
-    width: 280px;
+    width: 246px;
   }
 
   .page-footer__icon {
@@ -155,6 +154,8 @@
 
   .page-footer__list {
     margin: 0;
+    margin-left: 5px;
+    margin-right: auto;
   }
 
   .page-footer__link-social {

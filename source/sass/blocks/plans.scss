@@ -98,7 +98,7 @@
   .plans {
     width: 81%;
     margin-top: 4px;
-    margin-bottom: 69px;
+    margin-bottom: 66px;
   }
 
   .plans__title {
@@ -117,6 +117,7 @@
     padding-top: 38px;
     padding-left: 42px;
     padding-right: 33px;
+    margin-bottom: 10px;
     box-sizing: border-box;
   }
 
@@ -126,7 +127,7 @@
     justify-content: space-between;
     font-weight: 700;
     font-size: 24px;
-    padding-bottom: 34px;
+    padding-bottom: 36px;
     margin-bottom: 0;
 
     &::after {
@@ -163,8 +164,8 @@
     font-size: 20px;
     padding-left: 10px;
     padding-right: 9px;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    padding-top: 18px;
+    padding-bottom: 17px;
     text-align: end;
     letter-spacing: 0.1em;
   }

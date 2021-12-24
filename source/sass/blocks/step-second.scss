@@ -13,6 +13,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .step-second {
+    padding-left: 45px;
+    padding-right: 0;
+    padding-bottom: 68px;
+    margin-bottom: 52px;
+  }
+
   .step-second .add-plan__text {
     & br {
       display: none;
@@ -28,7 +35,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  // .step-second .add-plan__text {
-  //   width: 200px;
-  // }
+  .step-second {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 96px;
+
+  }
 }

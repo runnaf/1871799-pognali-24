@@ -114,6 +114,8 @@
 }
 
 .add-plan__button {
+  display: flex;
+  align-items: center;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 700;
   width: 100%;
@@ -135,8 +137,12 @@
   }
 }
 
-.add-plan__button--inactive {
+.add-plan__button-back {
   background-color: transparent;
+  justify-content: flex-end;
+  padding-right: 0;
+  padding-left: 50px;
+  min-width: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -153,11 +159,12 @@
   }
 
   .add-plan__subtitle {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
 
   .add-plan__button-wrapper {
     display: flex;
+    justify-content: space-between;
   }
 
   .add-plan__button-group-header {
@@ -174,13 +181,12 @@
     padding-bottom: 56px;
     padding-left: 42px;
     padding-right: 42px;
-    margin-bottom: 38px;
   }
 
   .add-plan__step--second {
     padding-right: 0;
     padding-left: 45px;
-    padding-top: 46px;
+    padding-top: 44px;
   }
 
   .add-plan__text {
@@ -211,16 +217,28 @@
   }
 
   .add-plan__button {
+    align-self: center;
     width: auto;
+    min-width: 286px;
+    min-height: 80px;
     font-size: 24px;
     line-height: 1;
     font-weight: 700;
     text-transform: none;
-    padding-left: 31px;
-    padding-top: 26px;
-    padding-bottom: 28px;
-    padding-right: 75px;
+    padding-left: 34px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
     border-radius: 22px;
+    box-sizing: border-box;
+  }
+
+  .add-plan__button-back {
+    min-width: auto;
+    padding: 0;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 21px;
   }
 }
 

@@ -10,9 +10,9 @@
   padding-top: -$mobile-stats-shift;
   position: relative;
   margin-top: $mobile-stats-shift;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   padding-bottom: 2px;
-  z-index: -2;
+  z-index: 2;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -32,9 +32,9 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  padding-top: 15px;
+  padding-top: 13px;
   padding-bottom: 15px;
-  padding-left: 23px;
+  padding-left: 25px;
   padding-right: 10px;
   cursor: pointer;
 }

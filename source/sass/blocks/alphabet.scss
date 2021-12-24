@@ -27,6 +27,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .alphabet__item {
+    margin-bottom: 7px;
+  }
+
   .alphabet__link {
     font-size: 20px;
     line-height: 1;
