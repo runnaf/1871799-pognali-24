@@ -438,15 +438,14 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    grid-template-columns: 285px 54px min-content 50px auto min-content min-content 43px;
-    grid-template-rows: 43px min-content 20px auto min-content 48px;
-    width: 92%;
+    grid-template-columns: 285px 52px min-content 50px 1fr min-content 40px min-content 43px;
+    grid-template-rows: 43px min-content 20px min-content 35px min-content 41px;
     padding: 0;
     margin: 0;
   }
 
   .card__link-transport {
-    grid-row: 5/6;
+    grid-row: 6/7;
     grid-column: 6/7;
   }
 
@@ -454,6 +453,7 @@
     grid-column: 2/6;
     grid-row: 2/3;
     justify-content: start;
+    margin-left: 21px;
   }
 
   .card__small {
@@ -464,12 +464,14 @@
   .card__name {
     width: 300px;
     padding-left: 18px;
+    margin: 0;
   }
 
   .card__text {
     grid-column: 5/6;
-    grid-row: 5/6;
+    grid-row: 6/7;
     margin: 0;
+    margin-left: 5px;
   }
 
   .card__picture {
@@ -482,7 +484,7 @@
 
   .card__link-favorite {
     grid-column: 4/5;
-    grid-row: 5/6;
+    grid-row: 6/7;
     width: 50px;
     height: 50px;
   }
@@ -502,16 +504,22 @@
   }
 
   .card__list-country {
+    margin: 0;
+    margin-top: 6px;
     display: block;
   }
 
   .card__item-country {
     display: flex;
+
+    &:not(:last-of-type) {
+      margin-bottom: 13px;
+    }
   }
 
   .card__wrapper-transport {
     grid-column: 6/7;
-    grid-row: 5/6;
+    grid-row: 6/7;
     align-self: center;
   }
 
@@ -521,17 +529,22 @@
   }
 
   .card__wrapper-level {
-    grid-column: 7/8;
-    grid-row: 5/6;
+    grid-column: 8/9;
+    grid-row: 6/7;
   }
 
   .card__button {
     grid-column: 3/4;
-    grid-row: 5/6;
+    grid-row: 6/7;
     min-width: 150px;
   }
 
   .card__item-transport {
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  .card__item-country {
     margin: 0;
   }
 }

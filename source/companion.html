@@ -963,8 +963,7 @@
           <form class="selection-companion__form selection-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="selection-companion__filter-group--checkbox">
               <fieldset class="selection-companion__filter-group selection-form__filter-group hobby">
-                <legend
-                  class="selection-companion__legend hobby__title selection-form__title selection-companion--filter-closed">
+                <legend class="selection-companion__legend selection-companion__legend--checkbox hobby__title selection-form__title selection-companion--filter-closed">
                   <a class="hobby__link selection-companion__link">хобби</a>
                   <button class="selection-companion__button-filter selection-companion__button-filter--closed"
                     type="button">
@@ -1004,9 +1003,8 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="selection-companion__filter-group selection-form__filter-group music">
-                <legend
-                  class="selection-companion__legend music__title selection-form__title selection-companion--filter-opened">
+              <fieldset class="selection-companion__filter-group selection-companion__filter-group--opened selection-form__filter-group music">
+                <legend class="selection-companion__legend selection-companion__legend--checkbox music__title selection-form__title selection-companion--filter-opened">
                   <a class="music__link selection-companion__link">музыка</a>
                   <button class="selection-companion__button-filter selection-companion__button-filter--opened"
                     type="button">
@@ -1048,7 +1046,7 @@
               </fieldset>
               <fieldset class="selection-companion__filter-group selection-form__filter-group meal">
                 <legend
-                  class="selection-companion__legend meal__title selection-form__title selection-companion--filter-closed">
+                  class="selection-companion__legend selection-companion__legend--checkbox meal__title selection-form__title selection-companion--filter-closed">
                   <a class="meal__link selection-companion__link">Еда</a>
                   <button class="selection-companion__button-filter selection-companion__button-filter--closed"
                     type="button">
@@ -1089,9 +1087,9 @@
               </fieldset>
             </div>
 
-            <fieldset class="selection-companion__filter-group selection-form__filter-group transport">
+            <fieldset class="selection-companion__filter-group selection-companion__filter-group--opened selection-form__filter-group transport">
               <legend
-                class="selection-companion__legend transport__title selection-form__title selection-companion--filter-opened">
+                class="selection-companion__legend selection-companion__legend--transport selection-form__title selection-companion--filter-opened">
                 <a class="transport__link selection-companion__link">Транспорт</a>
                 <button class="selection-companion__button-filter selection-companion__button-filter--opened"
                   type="button">
@@ -1144,7 +1142,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="selection-companion__filter-group selection-form__filter-group">
+            <fieldset class="selection-companion__filter-group selection-companion__filter-group--opened selection-form__filter-group">
               <legend class="selection-companion__legend selection-form__title selection-companion--filter-opened">
                 <a class="selection-companion__link">Левел</a>
                 <button class="selection-companion__button-filter selection-companion__button-filter--opened"
@@ -1178,7 +1176,9 @@
               </div>
             </fieldset>
           </form>
-          <button class="button selection-companion__button-form" type="submit">Показать</button>
+          <div class="selection-companion__button-wrapper">
+            <button class="button selection-companion__button-form" type="submit">Показать</button>
+          </div>
         </div>
       </section>
 

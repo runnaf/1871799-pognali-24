@@ -140,5 +140,18 @@
     grid-column: 1/2;
     grid-row: 1/-1;
     grid-template-columns: 949px 86px 285px;
+    width: 100%;
+    padding-bottom: 149px;
+  }
+
+  .slider-companion__card {
+    margin: 0;
+    margin-bottom: 31px;
+  }
+
+  .slider-companion__wrapper-link {
+    margin-top: 49px;
+    margin-bottom: 57px;
   }
 }
+
