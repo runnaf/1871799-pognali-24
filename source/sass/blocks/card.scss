@@ -72,6 +72,12 @@
   }
 }
 
+.card__small--active {
+  &::after {
+    background-color: hsla(90, 78%, 50%, 1);
+  }
+}
+
 .card__block-img {
   position: relative;
   grid-column: 1/2;
@@ -564,6 +570,7 @@
 
   .card__item-country {
     display: flex;
+    margin: 0;
 
     &:not(:last-of-type) {
       margin-bottom: 13px;
@@ -595,9 +602,5 @@
   .card__item-transport {
     margin: 0;
     margin-right: 10px;
-  }
-
-  .card__item-country {
-    margin: 0;
   }
 }

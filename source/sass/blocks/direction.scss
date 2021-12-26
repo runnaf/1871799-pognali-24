@@ -11,26 +11,6 @@
   grid-template-rows: min-content 24px min-content 19px min-content 32px min-content 17px min-content;
   padding-bottom: 58px;
 
-  & .list-way {
-    &:hover {
-      filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
-
-      & .list-way__icon {
-        opacity: 0.7;
-      }
-    }
-
-    &:focus,
-    &:active {
-      background-color: hsla(228, 35%, 92%, 1);
-      filter: none;
-
-      & .list-way__icon {
-        opacity: 0.3;
-      }
-    }
-  }
-
   & .button {
     &:hover {
       background-color: hsla(225, 35%, 87%, 1);
@@ -226,6 +206,10 @@
   padding-top: 7px;
   padding-bottom: 15px;
   box-sizing: border-box;
+}
+
+.direction__item-way {
+  position: relative;
 }
 
 .direction__hashtag-list {

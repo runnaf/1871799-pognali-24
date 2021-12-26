@@ -594,15 +594,15 @@
       display: flex;
     }
 
-    .country-nav__container {
+    & .country-nav__container {
       display: block;
     }
 
-    .country-nav__table-wrapper {
+    & .country-nav__table-wrapper {
       display: none;
     }
 
-    .country-filter__link {
+    & .country-filter__link {
       display: flex;
       padding: 0;
       margin: 0;
@@ -611,6 +611,10 @@
 
     & .country-nav__list-header {
       margin-right: auto;
+    }
+
+    & .country-nav__toggle {
+      display: none;
     }
   }
 

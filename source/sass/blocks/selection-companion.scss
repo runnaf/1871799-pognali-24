@@ -15,7 +15,7 @@
   padding-bottom: 22px;
 
   & .button:hover {
-    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.14));
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.14));
     background-color: $white;
   }
 
@@ -298,7 +298,7 @@
     -webkit-appearance: none;
   }
 
-  &[type='number'] {
+  &[type="number"] {
     -moz-appearance: textfield;
   }
 }
@@ -325,8 +325,6 @@
   padding-top: 13px;
   padding-bottom: 10px;
 }
-
-
 
 @media (min-width: $tablet-width) {
   .selection-companion {

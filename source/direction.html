@@ -200,14 +200,20 @@
                   <use href="img/sprite.svg#icon-plane"></use>
                 </svg>
               </button>
+              <div class="popover popover--plane">
+                <p class="popover__desc">Авиаперелет</p>
+              </div>
             </li>
             <li class="direction__item-way">
               <button class="list-way list-way--current" type="button">
-                <span class="visually-hidden">Способ путешествия автобусом.</span>
+                <span class="visually-hidden">Способ путешествия автотранспортом.</span>
                 <svg class="list-way__icon" width="18" height="21">
                   <use href="img/sprite.svg#icon-bus"></use>
                 </svg>
               </button>
+              <div class="popover popover--bus">
+                <p class="popover__desc">Автотранспорт</p>
+              </div>
             </li>
             <li class="direction__item-way">
               <button class="list-way" type="button">
@@ -216,6 +222,9 @@
                   <use href="img/sprite.svg#icon-bycicle"></use>
                 </svg>
               </button>
+              <div class="popover popover--bike">
+                <p class="popover__desc">Велосипед</p>
+              </div>
             </li>
             <li class="direction__item-way">
               <button class="list-way list-way--current" type="button">
@@ -224,6 +233,9 @@
                   <use href="img/sprite.svg#icon-run"></use>
                 </svg>
               </button>
+              <div class="popover popover--run">
+                <p class="popover__desc">Пешком</p>
+              </div>
             </li>
           </ul>
         </fieldset>
@@ -300,7 +312,8 @@
                 <span class="add-plan__button-desc">Развлечения</span>
               </button>
             </div>
-            <p class="add-plan__text step__text">Укажите предпочтительное количество попутчиков, которых<br> вы хотели бы
+            <p class="add-plan__text step__text">Укажите предпочтительное количество попутчиков, которых<br> вы хотели
+              бы
               позвать в поездку, и ее предполагаемую длительность.</p>
             <form class="add-plan__form form-step add-plan__form-step-first" action="https://echo.htmlacademy.ru/"
               method="post">
@@ -440,11 +453,11 @@
               </table>
             </div>
             <button class="add-plan__button">
-                <span class="add-plan__desc-button">Следующий шаг</span>
-                <svg class="add-plan__button-icon" width="13" height="13">
-                  <use href="img/sprite.svg#icon-arrow"></use>
-                </svg>
-              </button>
+              <span class="add-plan__desc-button">Следующий шаг</span>
+              <svg class="add-plan__button-icon" width="13" height="13">
+                <use href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
           </section>
         </div>
 
@@ -478,8 +491,13 @@
                   <div class="form-step-second__small form-step-second__small--active">
                     <span class="visually-hidden">активное поле</span>
                   </div>
-                  <img class="form-step-second__flag-icon" width="35" height="24" alt="Босния и Герцеговина"
-                    src="img/flag/bosnia-and-herzegovina.jpg">
+                  <div class="form-step-second__img-container">
+                    <img class="form-step-second__flag-icon" width="35" height="24" alt="Босния и Герцеговина"
+                      src="img/flag/bosnia-and-herzegovina.jpg">
+                    <div class="popover popover--flag">
+                      <p class="popover__desc">Босния и Герцеговина</p>
+                    </div>
+                  </div>
                   <button class="form-step-second__button" type="button">
                     <span class="visually-hidden">Закрыть поле страны для посещения</span>
                   </button>
@@ -498,7 +516,13 @@
                   <div class="form-step-second__small form-step-second__small--active">
                     <span class="visually-hidden">активное поле</span>
                   </div>
-                  <img class="form-step-second__flag-icon" width="35" height="24" alt="Чехия" src="img/flag/czech.jpg">
+                  <div class="form-step-second__img-container">
+                    <img class="form-step-second__flag-icon" width="35" height="24" alt="Чехия"
+                      src="img/flag/czech.jpg">
+                    <div class="popover popover--flag">
+                      <p class="popover__desc">Чехия</p>
+                    </div>
+                  </div>
                   <button class="form-step-second__button" type="button">
                     <span class="visually-hidden">Закрыть поле страны для посещения</span>
                   </button>
@@ -1055,8 +1079,8 @@
               <p>Можно писать в свободной форме и ставить тэги.</p>
             </div>
 
-            <form class="step-third__form form-step form-step__last add-plan__form " action="https://echo.htmlacademy.ru/"
-              method="post">
+            <form class="step-third__form form-step form-step__last add-plan__form "
+              action="https://echo.htmlacademy.ru/" method="post">
               <div class="step-third__field-group ">
                 <div class="step-third__wrapper">
                   <label class="step-third__filter-label" for="Bosnia-and-Herzegovina-area">Босния и Герцеговина</label>
@@ -1078,7 +1102,8 @@
                     <img class="step-third__flag" src="img/flag/Czech.jpg" width="35" height="24" alt="Флаг Чехии">
                   </div>
                 </div>
-                <textarea class="step-third__input" id="Czech" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                <textarea class="step-third__input" id="Czech"
+                  placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </div>
             </form>
             <div class="add-plan__button-wrapper">
