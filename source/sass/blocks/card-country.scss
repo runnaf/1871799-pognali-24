@@ -50,27 +50,28 @@
   line-height: 18px;
 }
 
+.card-country__small-wrapper {
+  display: flex;
+  margin-top: 2px;
+}
+
 .card-country__small {
   position: relative;
   grid-column: 2;
   font-weight: 500;
   line-height: 20px;
-  padding-left: 18px;
-
-  &::after {
-    position: absolute;
-    left: 0;
-    top: 21%;
-    content: "";
-    width: 11px;
-    height: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../../img/card-list/man.svg");
-    background-repeat: no-repeat;
-  }
+  padding-left: 4px;
 }
+
+
+.card-country__small-icon {
+  fill: hsla(229, 46%, 18%, 1);
+  opacity: 0.1;
+  align-self: center;
+  width: 12px;
+  height: 12px;
+}
+
 
 @media (min-width: $tablet-width) {
   .card-country {
@@ -104,25 +105,21 @@
     height: 140px;
   }
 
+  .card-country__small-wrapper {
+    margin-top: auto;
+  }
+
   .card-country__small {
     font-size: 20px;
     line-height: 20px;
-    margin-top: 21px;
-    padding-left: 29px;
+    padding-left: 12px;
+  }
 
-    &::after {
-      position: absolute;
-      left: 0;
-      top: 0;
-      content: "";
-      width: 18px;
-      height: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url("../../img/card-list/man_tablet.svg");
-      background-repeat: no-repeat;
-    }
+  .card-country__small-icon {
+    fill: hsla(229, 46%, 18%, 1);
+    opacity: 0.1;
+    width: 18px;
+    height: 20px;
   }
 
   .card-country__img-flag {

@@ -1,10 +1,8 @@
 .step {
-  background-color: $white;
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
+  width: 80%;
   font-weight: 400;
   color: hsla(224, 52%, 24%, 1);
+  margin: 0 auto;
 }
 
 .step__subtitle {
@@ -39,9 +37,8 @@
   .step__subtitle {
     font-size: 36px;
   }
+
+  .step {
+    width: 86%;
+  }
 }
-
-@media (min-width: $desktop-width) {
-
-}
-

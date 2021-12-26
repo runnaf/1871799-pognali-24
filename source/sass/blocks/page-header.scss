@@ -36,8 +36,11 @@
     &::after,
     &::before {
       background-color: hsla(0, 0%, 80%, 1);
-      top: 43%;
-      right: 10px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
       transform: rotate(-45deg);
     }
 
@@ -61,8 +64,8 @@
   &::after {
     content: "";
     position: absolute;
-    right: 36%;
-    top: 45%;
+    right: calc(50% - 12px);
+    top: calc(50% - 5px);
     width: 25px;
     height: 3px;
     background-color: hsla(0, 0%, 100%, 1);

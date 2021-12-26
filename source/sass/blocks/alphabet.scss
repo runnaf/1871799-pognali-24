@@ -24,6 +24,15 @@
   line-height: 22px;
   color: hsla(0, 0%, 27%, 1);
   text-decoration: none;
+
+  &:hover {
+    color: hsla(224, 52%, 24%, 1);
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

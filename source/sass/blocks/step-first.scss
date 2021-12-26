@@ -1,13 +1,9 @@
 .step-first {
-  padding-left: 26px;
-  padding-right: 26px;
   padding-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
   .step-first {
-    padding-left: 42px;
-    padding-right: 42px;
     padding-bottom: 56px;
     margin-bottom: 40px;
   }
@@ -15,8 +11,6 @@
 
 @media (min-width: $desktop-width) {
   .step-first {
-    padding-left: 159px;
-    padding-right: 159px;
     padding-bottom: 102px;
     margin-bottom: 44px;
   }

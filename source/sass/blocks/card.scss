@@ -31,6 +31,17 @@
   height: fit-content;
   display: flex;
   justify-content: space-between;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .card__name {
@@ -80,6 +91,11 @@
   margin-top: 2px;
 }
 
+.card__favorite-icon {
+  fill: #192144;
+  opacity: 0.3;
+}
+
 .card__link-favorite {
   grid-column: 1/2;
   grid-row: 2/3;
@@ -91,15 +107,51 @@
   background-color: hsla(229, 38%, 92%, 1);
   border-radius: 50%;
   justify-self: end;
-  z-index: 2;
+  cursor: pointer;
+  z-index: 1;
+
+  &:hover {
+    background-color: hsla(229, 38%, 92%, 1);
+
+    & .card__favorite-icon {
+      opacity: 0.5;
+    }
+  }
+
+  &:active,
+  &:focus {
+    & .card__favorite-icon {
+      opacity: 0.1;
+    }
+  }
+}
+
+.card__favorite-icon-current {
+  fill: hsla(0, 87%, 54%, 1);
+  display: none;
 }
 
 .card__link-favorite--current {
   background-color: hsla(0, 56%, 95%, 1);
-}
 
-.card__link-favorite--current .card__icon-favorite {
-  fill: hsla(0, 87%, 54%, 1);
+  & .card__favorite-icon {
+    display: none;
+  }
+
+  & .card__favorite-icon-current {
+    display: block;
+  }
+
+  &:hover {
+    background-color: hsla(0, 73%, 91%, 1);
+  }
+
+  &:active,
+  &:focus {
+    & .card__favorite-icon-current {
+      opacity: 0.5;
+    }
+  }
 }
 
 .card__icon-favorite {
@@ -190,6 +242,7 @@
 }
 
 .card__level-container {
+  position: relative;
   width: 45px;
   height: 45px;
   border-radius: 50%;

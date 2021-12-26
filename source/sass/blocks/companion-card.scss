@@ -106,6 +106,10 @@
 @media (min-width: $tablet-width) {
   .companion-card {
     width: 285px;
+
+    & .list-way {
+      width: 34px;
+    }
   }
 
   .companion-card__picture {
@@ -114,12 +118,15 @@
   }
 
   .companion-card__desc {
+    padding: 0;
     padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
   }
 
   .companion-card__wrapper {
-    margin-left: 48px;
-    justify-content: start;
+    margin-bottom: 25px;
   }
 
   .companion-card__online {
@@ -131,7 +138,8 @@
   .companion-card__name {
     font-size: 24px;
     line-height: 22px;
-    padding-right: 18px;
+    padding: 0;
+    margin: 0;
   }
 
   .companion-card__list-hashtag {
@@ -139,23 +147,18 @@
     font-size: 20px;
     line-height: 23px;
     margin: 0;
-    margin-top: 24px;
-    padding-right: 26px;
-    padding-left: 31px;
     box-sizing: border-box;
     text-align: center;
-  }
-
-  .companion-card__item-hashtag:not(:last-of-type) {
-    margin-right: 4px;
+    margin-bottom: 14px;
   }
 
   .companion-card__list-way {
-    margin-top: 28px;
+    margin: 0;
+    margin-left: 3px;
   }
 
   .companion-card__item-way:not(:last-of-type) {
-    margin-right: 12px;
+    margin-right: 0;
   }
 
   .companion-card__list-last {

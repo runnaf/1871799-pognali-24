@@ -61,8 +61,21 @@
 }
 
 .table-calendar__cell--active {
+  position: relative;
   color: $white;
   background-color: hsla(224, 52%, 24%, 1);
+
+  &:hover {
+    &::after {
+      position: absolute;
+      top: -2px;
+      bottom: -2px;
+      left: -2px;
+      right: -2px;
+      content: "";
+      border: 2px solid #FF5C23;
+    }
+  }
 }
 
 .table-calendar__cell--inactive {
@@ -142,9 +155,7 @@
       display: block;
       margin-top: 8px;
     }
-  }
 
-  .table-calendar__cell--active {
     & .table-calendar__cell-departure {
       display: block;
       margin-top: 8px;

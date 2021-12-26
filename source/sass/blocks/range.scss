@@ -23,11 +23,27 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 20;
+  z-index: 1;
+
+  &:hover {
+    width: 16px;
+    height: 16px;
+    top: -8px;
+    right: -4px;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.24);
+  }
 }
 
 .range__toggle--min {
   right: 144px;
+
+  &:hover {
+    right: calc(144px - 4px)
+  }
 }
 
 @media (min-width: $tablet-width) {

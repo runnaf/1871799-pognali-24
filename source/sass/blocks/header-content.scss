@@ -50,6 +50,15 @@
   padding-left: 20px;
   box-sizing: border-box;
   justify-content: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .header-content__home-icon {

@@ -116,6 +116,7 @@
 .add-plan__button {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 700;
   width: 100%;
@@ -135,14 +136,40 @@
   &:not(:last-of-type) {
     margin-bottom: 5px;
   }
+
+  &:hover {
+    background-color: hsla(41, 100%, 59%, 1);
+  }
+
+  &:active,
+  &:focus {
+    & .add-plan__button-icon {
+      opacity: 0.3;
+    }
+
+    & .add-plan__desc-button {
+      opacity: 0.3;
+    }
+  }
+}
+
+.add-plan__button-icon {
+  display: none;
 }
 
 .add-plan__button-back {
   background-color: transparent;
-  justify-content: flex-end;
-  padding-right: 0;
-  padding-left: 50px;
-  min-width: none;
+  min-width: auto;
+
+  &:hover {
+    background-color: transparent;
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -179,13 +206,9 @@
     border-radius: 32px;
     padding-top: 45px;
     padding-bottom: 56px;
-    padding-left: 42px;
-    padding-right: 42px;
   }
 
   .add-plan__step--second {
-    padding-right: 0;
-    padding-left: 45px;
     padding-top: 44px;
   }
 
@@ -225,12 +248,21 @@
     line-height: 1;
     font-weight: 700;
     text-transform: none;
-    padding-left: 34px;
+    padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 50px;
+    padding-right: 10px;
     border-radius: 22px;
     box-sizing: border-box;
+  }
+
+  .add-plan__button-icon {
+    display: block;
+    fill: hsla(224, 52%, 24%, 1);
+  }
+
+  .add-plan__desc-button {
+    padding-right: 25px;
   }
 
   .add-plan__button-back {
@@ -239,6 +271,15 @@
     padding-left: 50px;
     padding-top: 15px;
     padding-bottom: 21px;
+
+    & .add-plan__button-icon {
+     transform: rotate(180deg);
+    }
+  }
+
+  .add-plan__desc-button-back {
+    padding-left: 25px;
+    order: 1;
   }
 }
 
@@ -255,8 +296,6 @@
   .add-plan__step {
     position: relative;
     padding-top: 99px;
-    padding-right: 159px;
-    padding-left: 159px;
     padding-bottom: 106px;
     margin-bottom: 43px;
     display: grid;

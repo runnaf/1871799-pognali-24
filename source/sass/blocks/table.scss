@@ -29,11 +29,6 @@
     content: "";
     background-color: inherit;
   }
-
-  & .table__link {
-    position: relative;
-    color: $white;
-  }
 }
 
 .table__link {
@@ -48,6 +43,11 @@
   text-decoration: none;
   text-transform: uppercase;
   z-index: 20;
+}
+
+.table__link--current {
+  position: relative;
+  color: $white;
 }
 
 @media (min-width: $tablet-width) {
@@ -99,6 +99,8 @@
 
   .country-nav {
     & .table {
+      margin: 0;
+      padding: 0;
       margin-bottom: 49px;
     }
   }

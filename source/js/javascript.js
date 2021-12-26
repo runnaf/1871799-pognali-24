@@ -28,4 +28,35 @@ var navMain = document.querySelector('.main-nav');
       }
     });
 
-    
+    var filter = document.querySelector('.selection-companion__filter-group');
+    var filterLink = document.querySelector('.selection-companion__link-wrapper');
+
+    filter.classList.remove('selection-companion__filter-group--nojs');
+
+    filterLink.addEventListener('click', function () {
+      if (filter.classList.contains('selection-companion__filter-group--closed')) {
+        filter.classList.remove('selection-companion__filter-group--closed');
+        filter.classList.add('selection-companion__filter-group--opened');
+      } else {
+        filter.classList.add('selection-companion__filter-group--closed');
+        filter.classList.remove('selection-companion__filter-group--opened');
+      }
+    });
+
+    <script>
+    var navCountry = document.querySelector('.country-nav');
+    var linkCountry = document.querySelector('.country-filter__link');
+
+    navCountry.classList.remove('country-nav--nojs');
+
+    linkCountry.addEventListener('click', function () {
+      if (navCountry.classList.contains('country-nav--closed')) {
+        navCountry.classList.remove('country-nav--closed');
+        navCountry.classList.add('country-nav--opened');
+      } else {
+        navCountry.classList.add('country-nav--closed');
+        navCountry.classList.remove('country-nav--opened');
+      }
+    });
+
+  </script>

@@ -25,25 +25,20 @@
   background-color: $white;
   border: none;
   cursor: pointer;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 39%;
-    width: 0;
-    height: 0;
-    border-bottom: 13px solid hsla(224, 52%, 24%, 1);
-    border-left: 13px solid transparent;
-    transform: rotate(-45deg);
-  }
+.pagination__button-icon {
+  width: 10px;
+  height: 18px;
+  fill: hsla(224, 52%, 24%, 1);
 }
 
 .pagination__button-backward {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 
-  &::after {
-    transform: rotate(135deg);
+  .pagination__button-icon {
+    transform: rotate(180deg);
   }
 }
 
@@ -58,7 +53,6 @@
 
 @media (min-width: $tablet-width) {
   .pagination__wrapper {
-    margin-right: 5px;
     width: fit-content;
   }
 
@@ -85,30 +79,51 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    &:hover[href] {
+      opacity: 0.6;
+    }
+
+    &[href]:focus,
+    &[href]:active {
+      background-color: hsla(47, 100%, 65%, 1);
+      opacity: 1;
+    }
   }
 
   .pagination__link--current {
     background-color: hsla(47, 100%, 65%, 1);
+    cursor: auto;
   }
 
   .pagination__button {
     width: 48px;
     margin-left: 8px;
 
-    &::after {
-      content: "";
-      top: 38%;
-      left: 0;
-      right: 0;
-      bottom: 0;
+    &:hover .pagination__button-icon{
+      opacity: 0.6;
+    }
+
+    &:focus,
+    &:active {
+      opacity: 0.3;
     }
   }
 
-  .pagination__button-backward::after {
-    left: 50%;
+  .pagination__button-icon {
+    width: 20px;
+    height: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pagination__button-icon {
+    width: 17px;
+    height: 18px;
   }
 
-  .pagination__button-forward::after {
-    right: 50%;
+  .pagination__button {
+    width: 45px;
+    margin: 0;
   }
 }
