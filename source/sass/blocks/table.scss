@@ -11,24 +11,31 @@
 .table__cell {
   width: 20%;
   height: 41px;
-  border: 1px solid;
+  border: 1px solid hsla(227, 16%, 82%, 1);
+  border-radius: 4px;
   box-sizing: border-box;
   text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    outline: 1px solid hsla(228, 16%, 64%, 1);
+    border-radius: 4px;
+  }
+
+  &:active,
+  &:focus {
+    border-color: inherit;
+    background-color: hsla(224, 52%, 24%, 1);
+
+    & .table__link {
+      color: $white;
+    }
+  }
 }
 
 .table__cell--current {
   position: relative;
   background-color: hsla(224, 52%, 24%, 1);
-
-  &::after {
-    position: absolute;
-    top: -1px;
-    bottom: -1px;
-    right: -1px;
-    left: -1px;
-    content: "";
-    background-color: inherit;
-  }
 }
 
 .table__link {
