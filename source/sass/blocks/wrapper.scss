@@ -73,6 +73,20 @@
   padding-top: 28px;
 }
 
+.wrapper__step {
+  background-color: $white;
+  border-radius: 32px;
+  margin-bottom: 51px;
+
+  &:first-of-type {
+    margin-bottom: 39px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .wrapper--stats {
     margin-top: $tablet-stats-shift;
@@ -114,6 +128,10 @@
   .wrapper--companion {
     background-image: url("../../img/companion/background__tablet.png");
     background-position: 41px 94px;
+  }
+
+  .wrapper__step {
+    border-radius: 32px;
   }
 }
 

@@ -1,20 +1,15 @@
 .country-filter {
   width: 100%;
-  background-color: $grey;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   color: hsla(229, 46%, 18%, 0.3);
   box-sizing: border-box;
-  padding-top: -$mobile-stats-shift;
   position: relative;
-  margin-top: $mobile-stats-shift;
   margin-bottom: 17px;
   padding-bottom: 2px;
   z-index: 2;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
 }
 
 .country-filter__wrapper {
@@ -74,6 +69,8 @@
 @media (min-width: $desktop-width) {
   .country-filter__link {
     padding: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1;

@@ -92,6 +92,15 @@
   padding-top: 23px;
   padding-bottom: 25px;
   cursor: pointer;
+
+  &:hover {
+    color: hsla(0, 0%, 0%, 0.6);
+  }
+
+  &:focus,
+  &:active {
+    color: hsla(0, 0%, 0%, 0.1);
+  }
 }
 
 @media (min-width: $tablet-width) {
