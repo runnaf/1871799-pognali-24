@@ -2,13 +2,14 @@
   width: 85%;
   color: hsla(0, 0%, 27%, 1);
   margin: 0 auto;
-  padding-bottom: 36px;
-  padding-top: 70px;
+  padding-bottom: 37px;
+  padding-top: 69px;
   box-sizing: border-box;
 }
 
 .travel-direction__title {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   padding-left: 25px;
   color: $orangefont;
@@ -20,7 +21,6 @@
   width: 200px;
   font-weight: 300;
   margin: 0;
-  margin-top: 19px;
   margin-bottom: 61px;
   padding: 0;
   padding-left: 25px;
@@ -43,6 +43,7 @@
 }
 
 .travel-direction__button {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   width: 100%;
@@ -54,6 +55,14 @@
   padding-bottom: 18px;
   border-radius: 10px;
   background-color: $orange-background;
+}
+
+.travel-direction__button-icon {
+  fill: $darkfont-color;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 21px;
+  height: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -107,9 +116,10 @@
     display: grid;
     grid-template-columns: 559px 1fr;
     grid-template-rows: min-content;
-    column-gap: 171px;
-    padding-top: 162px;
-    padding-bottom: 101px;
+    column-gap: 173px;
+    width: 82%;
+    padding-top: 161px;
+    padding-bottom: 105px;
   }
 
   .travel-direction__title {
@@ -135,5 +145,11 @@
     width: fit-content;
     padding-right: 100px;
     border-radius: 20px;
+  }
+
+  .travel-direction__button-icon {
+    right: 30px;
+    width: 14px;
+    height: 16px;
   }
 }

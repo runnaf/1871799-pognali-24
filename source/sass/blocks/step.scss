@@ -10,7 +10,7 @@
 .step__subtitle {
   font-weight: 700;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1;
   color: hsla(224, 52%, 24%, 1);
 }
 
@@ -33,5 +33,15 @@
   font-weight: 500;
   font-style: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .step__subtitle {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }
 

@@ -14,6 +14,7 @@
 
 .alphabet__item {
   background-color: transparent;
+  margin-bottom: 4px;
 }
 
 .alphabet__link {
@@ -25,6 +26,17 @@
   text-decoration: none;
 }
 
+@media (min-width: $tablet-width) {
+  .alphabet__item {
+    margin-bottom: 7px;
+  }
+
+  .alphabet__link {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .alphabet {
     display: block;
@@ -34,5 +46,9 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
+  }
+
+  .alphabet__item {
+    margin-bottom: 0;
   }
 }

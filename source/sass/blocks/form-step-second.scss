@@ -1,28 +1,44 @@
 .form-step-second__field-group {
-  display: flex;
+  display: grid;
   position: relative;
-  align-items: center;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .form-step-second__field-wrapper {
-  display: flex;
   position: relative;
-  flex-grow: 1;
-  border: 1px solid hsla(227, 16%, 82%, 1);
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border-right: none;
 }
 
+.form-step-second__field-country {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 30px;
+    height: 80%;
+    width: 10%;
+    background-image: linear-gradient(to left, rgb(255,255,255), 87%, rgba(255,255,255,0));
+  }
+}
+
 .form-step-second__field {
+  position: relative;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+  letter-spacing: 0.1em;
   color: hsla(224, 52%, 24%, 1);
   height: 42px;
   width: 100%;
-  padding: 13px 20px 13px 10px;
+  padding: 13px 30px 13px 10px;
   box-sizing: border-box;
   border-color: transparent;
 
@@ -36,38 +52,32 @@
   }
 }
 
-.form-step-second__field-group--active .form-step-second__field {
-  border: 1px solid hsla(227, 16%, 82%, 1);
-  border-radius: 4px;
-}
-
 .form-step-second__field-button {
   display: none;
   position: absolute;
   right: 0;
-  left: 77%;
+  top: 0;
   border: none;
   background-color: transparent;
   padding: 0;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 100%;
   background-image: url("../../img/form-step-second/arrow-bottom.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.form-step-second__field-group--active .form-step-second__field-button {
-  display: block;
+  cursor: pointer;
 }
 
 .form-step-second__small {
   position: absolute;
-  right: 49px;
-  width: 8px;
-  height: 8px;
+  left: -6px;
+  top: calc(50% - 4px);
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background-color: $white;
   border: 1px solid hsla(227, 16%, 82%, 1);
+  z-index: 20;
 }
 
 .form-step-second__small--active {
@@ -94,9 +104,11 @@
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-left: none;
+  cursor: pointer;
 }
 
 .form-step-second__flag-container {
+  position: relative;
   display: none;
   border: 1px solid hsla(227, 16%, 82%, 1);
   border-radius: 4px;
@@ -106,41 +118,50 @@
   justify-content: center;
 }
 
-.form-step-second__field-group--active .form-step-second__flag-container {
-  display: flex;
-}
-
-.form-step-second__field-group--active .form-step-second__flag-icon {
-  display: block;
-}
-
-.form-step-second__field-group--active .form-step-second__button {
-  display: block;
-  position: absolute;
-  top: -21%;
-  right: -5%;
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  background-color: hsla(227, 33%, 95%, 1);
-  border: none;
-  padding: 0;
-  background-image: none;
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    width: 10px;
-    height: 1px;
-    transform: rotate(45deg);
-    background-color: hsla(230, 4%, 70%, 1);
+.form-step-second__field-group--active {
+  & .form-step-second__field {
+    border: 1px solid hsla(227, 16%, 82%, 1);
+    border-radius: 4px;
   }
 
-  &::before {
-    transform: rotate(135deg);
+  & .form-step-second__flag-container {
+    display: flex;
+  }
+
+  & .form-step-second__flag-icon {
+    display: block;
+  }
+
+  & .form-step-second__button {
+    display: block;
+    position: absolute;
+    top: -21%;
+    right: -22%;
+    border-radius: 50%;
+    background-color: hsla(227, 33%, 95%, 1);
+    border: none;
+    padding: 0;
+    background-image: none;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      width: 10px;
+      height: 1px;
+      transform: rotate(45deg);
+      background-color: hsla(230, 4%, 70%, 1);
+    }
+
+    &::before {
+      transform: rotate(135deg);
+    }
+  }
+
+  & .form-step-second__field-button {
+    display: block;
   }
 }
 
@@ -148,116 +169,235 @@
   border-color: hsla(227, 16%, 82%, 1);
 }
 
-.form-step__field-group--active-select .table__cell--current {
-  background-color: hsla(227, 33%, 95%, 1);
-}
-
-.form-step__field-group--active-select .table__link--current {
-  color: hsla(224, 52%, 24%, 1);
-}
-
 .form-step-second__lists {
-
   width: 100%;
-  padding: 19px;
+  padding-bottom: 13px;
+  padding-right: 19px;
+  padding-top: 17px;
+  padding-left: 21px;
   box-sizing: border-box;
-}
-
-.form-step__field-group--active-select {
-  flex-direction: column;
-}
-
-.form-step__field-group--active-select .form-step-second__field-wrapper {
-  width: 100%;
-}
-
-.form-step__field-group--active-select .form-step-second__field--hover {
-  width: 100%;
-}
-
-.form-step__field-group--active-select .form-step-second__small {
-  display: none;
-}
-
-.form-step__field-group--active-select .form-step-second__flag-container {
-  display: none;
-}
-
-.form-step__field-group--active-select .form-step-second__field-button {
-  position: absolute;
-  display: block;
-  background-image: none;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 10px;
-    height: 1px;
-    background-color: $white;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(135deg);
-  }
 }
 
 .form-step-second__country-wrapper {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 21;
+  background-color: $white;
 }
 
-.form-step__field-group--active-select .form-step-second__country-wrapper {
-  display: block;
+.form-step-second__table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.form-step__field-group--active-select .form-step-second__field {
-  background-color: hsla(224, 52%, 24%, 1);
-  color: $white;
-
-  &::placeholder {
-    color: $white;
-  }
-}
-
-.form-step__field-group--active-select .form-step-second__button {
-  display: none;
+.form-step-second__alphabet {
+  margin: 0;
+  padding: 0;
 }
 
 .form-step-second__field-group--inactive {
   background-color: hsla(227, 33%, 95%, 1);
-}
 
-.form-step-second__field-group--inactive .form-step-second__field {
-  background-color: hsla(227, 33%, 95%, 1);
-}
-
-.form-step-second__field-group--inactive .form-step-second__small {
-  background-color: hsla(227, 33%, 95%, 1);
-}
-
-.form-step-second__field-group--inactive .form-step-second__button {
-  background-image: none;
-
-  &::after,
-  &::before {
-    content: "";
-    top: 50%;
-    position: absolute;
-    width: 15px;
-    height: 2px;
-    background-color: hsla(223, 6%, 77%, 1);
+  & .form-step-second__flag-container {
+    display: block;
+    border: none;
   }
 
-  &::before {
-    transform: rotate(90deg);
+  & .form-step-second__field {
+    background-color: hsla(227, 33%, 95%, 1);
+  }
+
+  & .form-step-second__small {
+    background-color: hsla(227, 33%, 95%, 1);
+  }
+
+  & .form-step-second__button {
+    background-image: none;
+    border: none;
+    width: 21px;
+    height: 21px;
+
+    &::after,
+    &::before {
+      content: "";
+      top: 50%;
+      position: absolute;
+      width: 15px;
+      height: 2px;
+      background-color: hsla(223, 6%, 77%, 1);
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
-  .form-step__field-group--active-select .form-step-second__country-wrapper {
-    display: flex;
+  .form-step-second {
+    padding-top: 43px;
+  }
+
+  .form-step-second__lists {
+    padding: 0;
+    padding-left: 24px;
+  }
+
+  .form-step-second__field-group {
+    margin-bottom: 16px;
+    grid-template-columns: 1fr 181px;
+    column-gap: 27px;
+  }
+
+  .form-step-second__flag-container {
+    width: 100%;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 40px;
+    border-color: transparent;
+  }
+
+  .form-step-second__field {
+    height: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    padding-left: 25px;
+    padding-right: 60px;
+
+    &::placeholder {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .form-step-second__field-button {
+    right: 0;
+    width: 72px;
+  }
+
+  .form-step-second__field-country::after {
+    display: none;
+  }
+
+  .form-step-second__small {
+    width: 13px;
+    height: 13px;
+    right: -3px;
+  }
+  .form-step-second__button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .form-step-second__flag-icon {
+    width: 70px;
+    height: 47px;
+  }
+
+  .form-step-second__field-group--active .form-step-second__button {
+    top: 38%;
+    right: 0;
+    background-color: transparent;
+
+    &::after,
+    &::before {
+      width: 20px;
+      left: 0;
+    }
+  }
+
+  .form-step-second__table {
+    width: 76%;
+    min-width: 260px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-step-second {
+    position: relative;
+    padding-top: 61px;
+  }
+
+  .form-step-second__field-group {
+    grid-template-columns: 1fr 227px;
+    column-gap: 41px;
+  }
+
+  .form-step-second__field-wrapper {
+    margin-right: 0;
+  }
+
+  .form-step-second__field-country {
+    &::after {
+      display: none;
+    }
+  }
+
+  .form-step__field-group--active-select {
+    & .form-step-second__country-wrapper {
+      grid-column: 1/2;
+      grid-template-columns: 1fr 244px;
+      padding-top: 22px;
+      padding-left: 11px;
+      padding-bottom: 23px;
+      box-sizing: border-box;
+    }
+
+    & .table__cell--current {
+      background-color: hsla(224, 52%, 24%, 1);
+    }
+
+    & .table__link--current {
+      color: $white;
+    }
+  }
+
+  .form-step-second__table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 14px;
+    padding-right: 88px;
+  }
+
+  .form-step-second__alphabet {
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-step-second__field-button {
+    width: 71px;
+    right: 44px;
+  }
+
+  .form-step-second__field {
+    height: 69px;
+  }
+
+  .form-step-second__lists {
+    padding-top: 9px;
+    padding-left: 26px;
+  }
+
+  .form-step-second__field-group--inactive {
+    background-color: transparent;
+
+    & .form-step-second__flag-container {
+      display: none;
+    }
+
+    & .form-step-second__field-button {
+      display: block;
+    }
+  }
+
+  .form-step-second__small {
+    right: -49px;
   }
 }

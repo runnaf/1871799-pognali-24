@@ -1,7 +1,6 @@
 .card-country {
   color: hsla(0, 0%, 27%, 0.3);
-  display: flex;
-  flex-direction: column;
+  background-color: $white;
 }
 
 .card-country__img {
@@ -23,8 +22,8 @@
   padding-right: 14px;
   padding-top: 25px;
   padding-bottom: 5px;
-  background-color: $white;
   border-radius: 10px;
+  background-color: $white;
 }
 
 .card-country__img-flag {
@@ -75,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .card-country {
-    flex-direction: row;
+    display: flex;
   }
 
   .card-country__block {
@@ -88,10 +87,6 @@
     padding-top: 28px;
     padding-left: 31px;
     padding-bottom: 23px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
   }
 
   .card-country__heading {
@@ -133,5 +128,30 @@
   .card-country__img-flag {
     top: 29px;
     left: 418px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card-country {
+    border-radius: 20px;
+  }
+
+  .card-country__img {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+  .card-country__heading {
+    margin-bottom: 4px;
+  }
+
+  .card-country__text {
+    margin: 0;
+    margin-bottom: 27px;
+  }
+
+  .card-country__small {
+    margin: 0;
+    margin-left: 2px;
   }
 }

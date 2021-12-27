@@ -23,15 +23,43 @@
   border: none;
   cursor: pointer;
   padding: 0;
+  z-index: 20;
 }
 
 .range__toggle--min {
   right: 144px;
 }
 
-@media (min-width: $desktop-width) {
-  .range__bar {
-    right: -171px;
+@media (min-width: $tablet-width) {
+  .range__scale {
+    margin: 0;
   }
 
+  .range__bar {
+    width: 173px;
+    right: 0;
+  }
+
+  .range__toggle {
+    width: 13px;
+    height: 13px;
+    top: -6px;
+    right: -3px;
+  }
+
+  .range__toggle--min {
+    left: -4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range__bar {
+    width: 126px;
+    height: 4px;
+  }
+
+  .range__scale {
+    right: 0;
+    height: 4px;
+  }
 }

@@ -10,6 +10,7 @@
   font-size: 24px;
   line-height: 24px;
   margin: 0;
+  margin-bottom: 19px;
 }
 
 .about-us__text {
@@ -17,7 +18,10 @@
   width: 95%;
   margin: 0;
   padding: 0;
-  padding-top: 19px;
+}
+
+.about-us__mobile {
+  display: inline-block;
 }
 
 .about-us__text-advice {
@@ -30,6 +34,7 @@
 }
 
 .about-us__button {
+  position: relative;
   min-width: 277px;
   font-size: 24px;
   line-height: 24px;
@@ -40,14 +45,18 @@
   padding-left: 32px;
   padding-right: 50px;
   border-radius: 18px;
-  background-image: url("../../img/about-us/arrow_right.svg");
-  background-repeat: no-repeat;
-  background-position: 90% 50%;
   background-color: $orange-background;
 }
 
 .about-us__button--closed {
   display: none;
+}
+
+.about-us__button-icon {
+  fill: $darkfont-color;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,13 +69,14 @@
   .about-us__title {
     font-size: 45px;
     line-height: 45px;
+    margin-bottom: 41px;
   }
 
   .about-us__text {
     font-size: 28px;
     line-height: 33px;
     width: 301px;
-    margin-top: 41px;
+    margin-bottom: 31px;
     padding: 0;
 
     & br:first-of-type {
@@ -78,7 +88,7 @@
     width: 49%;
     font-size: 21px;
     line-height: 25px;
-    margin-top: 31px;
+    margin-bottom: 56px;
   }
 
   .about-us__button--closed {
@@ -86,7 +96,6 @@
   }
 
   .about-us__button {
-    margin-top: 56px;
     min-width: 274px;
   }
 }
@@ -104,7 +113,7 @@
     width: 82%;
     padding: 0;
     padding-bottom: 163px;
-    padding-top: 87px;
+    padding-top: 86px;
   }
 
   .about-us__header--open {
@@ -113,8 +122,9 @@
 
   .about-us__title {
     font-size: 45px;
-    line-height: 45px;
+    line-height: 50px;
     padding-top: 40px;
+    margin-bottom: 55px;
   }
 
   .about-us__text {
@@ -122,15 +132,14 @@
     line-height: 34px;
     width: 645px;
     margin: 0;
+    margin-bottom: 38px;
     padding: 0;
-    margin-top: 56px;
   }
 
   .about-us__text-advice {
     width: 465px;
     font-size: 21px;
     line-height: 25px;
-    margin-top: 39px;
     margin-bottom: 85px;
   }
 
@@ -140,10 +149,16 @@
     font-size: 24px;
     line-height: 24px;
     display: flex;
-    padding-top: 25px;
+    padding-top: 26px;
     padding-bottom: 29px;
-    padding-left: 30px;
-    padding-right: 50px;
+    padding-left: 33px;
+    padding-right: 60px;
     border-radius: 18px;
+  }
+
+  .about-us__button-icon {
+    right: 30px;
+    width: 14px;
+    height: 16px;
   }
 }

@@ -1,13 +1,15 @@
 .main-nav {
-  position: relative;
+  position: absolute;
+  top: 100%;
+  left: 0;
   font-size: 30px;
   font-weight: 500;
   line-height: 35px;
   background-color: inherit;
   padding-top: 50px;
-  z-index: 20;
   margin: 0;
   width: 100%;
+  z-index: 20;
 }
 
 .main-nav--closed {
@@ -16,6 +18,12 @@
 
 .main-nav--opened {
   display: block;
+  background-color: $white;
+}
+
+.main-nav__wrapper {
+  width: 84%;
+  margin: 0 auto;
 }
 
 .main-nav__list--user {
@@ -47,10 +55,6 @@
   color: $darkfont-color;
   text-decoration: none;
   text-transform: uppercase;
-
-  &:hover {
-    outline: none;
-  }
 }
 
 .main-nav__link:hover .main-nav__link-regular {
@@ -86,7 +90,6 @@
   .main-nav {
     order: 1;
     padding-top: 85px;
-    margin-left: 62px;
   }
 
   .main-nav__link {
@@ -107,16 +110,26 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav--closed {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
   .main-nav {
+    position: relative;
+    padding: 0;
+    padding-left: 28px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    margin: 0;
     width: auto;
     order: 0;
     flex-grow: 1;
   }
 
-  .main-nav--closed {
-    display: block;
+  .main-nav__wrapper {
     margin: 0;
-    padding: 0;
   }
 
   .main-nav__wrapper-contact {
