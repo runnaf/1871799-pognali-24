@@ -48,6 +48,7 @@
   box-sizing: border-box;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 
   &::placeholder {
     font-weight: 500;
@@ -58,6 +59,16 @@
     text-transform: uppercase;
   }
 }
+
+// .form-step-second__field--inactive {
+//   &:hover {
+//     background-color: hsla(226, 36%, 91%, 1);
+
+//     & + .form-step-second__field-button {
+//       background-color: hsla(226, 36%, 91%, 1);
+//     }
+//   }
+// }
 
 .form-step-second__small {
   position: absolute;
@@ -260,10 +271,6 @@
     border: none;
   }
 
-  & .form-step-second__field {
-    background-color: hsla(227, 33%, 95%, 1);
-  }
-
   & .form-step-second__small {
     background-color: hsla(227, 33%, 95%, 1);
   }
@@ -289,6 +296,26 @@
 
     &::before {
       transform: rotate(90deg);
+    }
+  }
+
+  &:hover {
+    background-color: hsla(226, 36%, 91%, 1);
+
+    & .form-step-second__small {
+      background-color: hsla(226, 36%, 91%, 1);
+    }
+
+    & .form-step-second__button::after,
+    & .form-step-second__button::before {
+      background-color: hsla(0, 0%, 0%, 0.3);
+    }
+  }
+
+  &:focus-within {
+    & .form-step-second__button::after,
+    & .form-step-second__button::before {
+      background-color: hsla(0, 0%, 0%, 0.1);
     }
   }
 }
@@ -379,6 +406,40 @@
     &::after {
       border-color: hsla(0, 0%, 0%, 0.05);
       opacity: 0.05;
+    }
+  }
+}
+
+.form-step-second__button--active-select {
+  &:hover {
+    &::after,
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  &:focus {
+    &::after,
+    &::before {
+      background-color: hsla(0, 0%, 100%, 0.1);
+    }
+  }
+}
+.form-step__checkbox-icon {
+  position: absolute;
+  left: 7px;
+  top: 5px;
+  display: none;
+  z-index: 10;
+
+  &:active {
+    fill-opacity: 0.6;
+
+    & ~ .form-step__label-child {
+      &::before {
+        background-color: hsla(228, 35%, 92%, 1);
+        border-color: transparent;
+      }
     }
   }
 }

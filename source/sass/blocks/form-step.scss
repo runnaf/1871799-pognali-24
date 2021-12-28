@@ -118,6 +118,14 @@
   }
 
   -moz-appearance: textfield;
+
+  &:hover {
+    border-color: hsla(228, 16%, 64%, 1);
+  }
+
+  &:focus {
+    border-color: hsla(228, 41%, 15%, 1);
+  }
 }
 
 .form-step__small {
@@ -156,6 +164,18 @@
   left: 7px;
   top: 5px;
   display: none;
+  z-index: 10;
+
+  &:active {
+    fill-opacity: 0.6;
+
+    & ~ .form-step__label-child {
+      &::before {
+        background-color: hsla(228, 35%, 92%, 1);
+        border-color: transparent;
+      }
+    }
+  }
 }
 
 .form-step__input[type="checkbox"]:checked {

@@ -77,6 +77,35 @@
     line-height: 18px;
     color: hsla(0, 0%, 27%, 0.3);
   }
+
+  &:hover {
+    background-color: hsla(227, 33%, 95%, 1);
+
+    &::placeholder {
+      color: hsla(0, 0%, 27%, 1);
+    }
+  }
+
+  &:focus {
+    border: 4px solid $white;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: $white;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  &:focus:invalid {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(0, 100%, 50%, 1);
+    border: none;
+
+    &::placeholder {
+      color: hsla(0, 100%, 50%, 1);
+    }
+  }
 }
 
 .interested__button {

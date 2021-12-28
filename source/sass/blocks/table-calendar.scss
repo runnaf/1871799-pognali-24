@@ -1,12 +1,9 @@
 .table-calendar {
-  font-size: 14px;
-  line-height: 18px;
-  color: hsla(224, 52%, 24%, 1);
   background-color: transparent;
   border-collapse: collapse;
 }
 
-.table-calendar__row-desctop {
+.table-calendar__button-desc--desctop {
   display: none;
 }
 
@@ -24,11 +21,48 @@
 }
 
 .table-calendar__cell {
-  font-weight: 500;
   height: 27px;
   border: 2px solid hsla(227, 16%, 82%, 1);
   text-align: center;
   background-color: hsla(229, 24%, 87%, 1);
+}
+
+.table-calendar__button {
+  font-family: "Blogger Sans", sans-serif, "Arial";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: hsla(224, 52%, 24%, 1);
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  
+}
+
+.table-calendar__button--selected {
+  &:hover {
+    position: relative;
+    background-color: hsla(224, 52%, 24%, 1);
+    color: $white;
+
+    &::after {
+      position: absolute;
+      top: -2px;
+      bottom: -2px;
+      left: -2px;
+      right: -2px;
+      content: "";
+      border: 2px solid #FF5C23;
+    }
+  }
+
+  &:active,
+  &:focus {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 
@@ -46,7 +80,7 @@
   display: none;
 }
 
-.table-calendar__cell--hover {
+.table-calendar__button--hover {
   position: relative;
 
   &::after {
@@ -60,22 +94,10 @@
   }
 }
 
-.table-calendar__cell--active {
+.table-calendar__button--active {
   position: relative;
   color: $white;
   background-color: hsla(224, 52%, 24%, 1);
-
-  &:hover {
-    &::after {
-      position: absolute;
-      top: -2px;
-      bottom: -2px;
-      left: -2px;
-      right: -2px;
-      content: "";
-      border: 2px solid #FF5C23;
-    }
-  }
 }
 
 .table-calendar__cell--inactive {
@@ -111,8 +133,8 @@
     display: none;
   }
 
-  .table-calendar__row-desctop {
-    display: table-row;
+  .table-calendar__button-desc--desctop {
+    display: block;
   }
 
   .table-calendar__cell-day {
@@ -128,10 +150,8 @@
     width: 142px;
     text-align: left;
     font-size: 18px;
-    padding-left: 14px;
     box-sizing: border-box;
     vertical-align: top;
-    padding-top: 12px;
   }
 
   .table-calendar__cell-weekend {
@@ -146,7 +166,7 @@
     }
   }
 
-  .table-calendar__cell--active {
+  .table-calendar__button--active {
     line-height: 20px;
     font-weight: 400;
     padding-top: 8px;
