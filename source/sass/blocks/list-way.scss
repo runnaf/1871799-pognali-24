@@ -1,4 +1,5 @@
 .list-way {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +22,6 @@
     }
   }
 
-  &:focus,
   &:active {
     background-color: hsla(228, 35%, 92%, 1);
     filter: none;

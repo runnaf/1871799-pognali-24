@@ -4,10 +4,15 @@
   margin: 0 auto;
   padding-bottom: 29px;
   padding-top: 16px;
-  background-image: url("../../img/protocol/background__mobile.jpg");
+  background-image: url("../../img/protocol/globe-back-mobile.jpg");
   background-color: hsla(228, 41%, 15%, 1);
-  background-position: 0 -73px;
+  background-position: 0 -75px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/protocol/globe-back-mobile@2x.jpg");
+    background-size: 640px auto;
+  }
 }
 
 .protocol__social {
@@ -120,15 +125,21 @@
 @media (min-width: $tablet-width) {
   .protocol {
     background-color: hsla(229, 48%, 18%, 1);
-    background-image: url("../../img/protocol/background__tablet.jpg");
+    background-image: url("../../img/protocol/globe-back-tablet.jpg");
     background-repeat: no-repeat;
     background-position: 0 252px;
     padding: 0;
     padding-bottom: 96px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/protocol/globe-back-mobile@2x.jpg");
+      background-size: 1536px auto;
+    }
   }
 
   .protocol__list--step {
-    width: 90%;
+    width: 89%;
+    min-width: 688px;
   }
 
   .protocol__slogan {
@@ -181,7 +192,7 @@
     flex-direction: column;
     padding-left: 32px;
     padding-top: 29px;
-    padding-bottom: 31px;
+    padding-bottom: 23px;
   }
 
   .protocol__item--first {
@@ -212,8 +223,9 @@
 
   .protocol__number {
     font-size: 30px;
-    line-height: 30px;
+    line-height: 1;
     padding: 0;
+    margin-top: 10px;
   }
 }
 
@@ -226,16 +238,21 @@
 @media (min-width: $desktop-width) {
   .protocol {
     background-color: hsla(228, 40%, 15%, 1);
-    background-image: url("../../img/protocol/background__desctop.png");
+    background-image: url("../../img/protocol/globe-back-desktop.png");
     background-repeat: no-repeat;
     background-position: bottom;
-    padding-top: 98px;
+    padding-top: 97px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 122px;
     display: grid;
     grid-template-columns: 1fr 286px;
-    grid-row-gap: 101px;
+    grid-row-gap: 102px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/protocol/globe-back-desktop@2x.png");
+      background-size: 2880px auto;
+    }
   }
 
   .protocol__slogan {
@@ -247,7 +264,7 @@
     line-height: 70px;
     text-align: start;
     margin: 0;
-    margin-left: 68px;
+    margin-left: 67px;
     padding: 0;
     background-image: none;
   }
@@ -296,10 +313,10 @@
     flex-direction: row;
     padding: 0;
     padding-top: 28px;
-    padding-bottom: 32px;
+    padding-bottom: 31px;
     border-radius: 23px;
     padding-right: 33px;
-    padding-left: 31px;
+    padding-left: 30px;
 
     &:not(:last-of-type)::after {
       content: "";
@@ -310,6 +327,10 @@
       height: 100%;
       background-color: inherit;
     }
+
+    &:first-of-type {
+      padding-left: 33px;
+    }
   }
 
   .protocol__item-text {
@@ -318,5 +339,10 @@
     & br {
       display: inline-block;
     }
+  }
+
+  .protocol__number {
+    font-size: 24px;
+    margin: 0;
   }
 }

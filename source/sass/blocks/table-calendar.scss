@@ -14,12 +14,6 @@
   height: 30px;
 }
 
-.table-calendar__cell-weekend {
-  color: hsla(16, 100%, 57%, 1);
-  border: none;
-  background-color: transparent;
-}
-
 .table-calendar__cell {
   height: 27px;
   border: 2px solid hsla(227, 16%, 82%, 1);
@@ -37,7 +31,10 @@
   height: 100%;
   border: none;
   background-color: transparent;
-  
+}
+
+.table-calendar__button-weekend {
+  color: hsla(16, 100%, 57%, 1);
 }
 
 .table-calendar__button--selected {
@@ -58,7 +55,7 @@
   }
 
   &:active,
-  &:focus {
+  &:focus-visible {
     &::after {
       display: none;
     }

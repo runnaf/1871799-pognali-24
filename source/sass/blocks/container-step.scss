@@ -1,0 +1,31 @@
+.container-step {
+  background-color: $white;
+  border-radius: 11px;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.container-step__second {
+  margin-left: 2px;
+
+  & .add-plan__subtitle {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  & .add-plan__text {
+    margin-bottom: 22px;
+  }
+}
+
+.container-step__third {
+  margin-left: 2px;
+
+  // & .step {
+  //   min-width: 231px;
+  // }
+}
+

@@ -1,7 +1,8 @@
 .companion {
-  width: 85%;
+  width: 84%;
+  min-width: 270px;
   font-weight: 300;
-  padding-top: 68px;
+  padding-top: 66px;
   padding-bottom: 31px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -17,7 +18,7 @@
 }
 
 .companion__list {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .companion__text {
@@ -33,7 +34,7 @@
 
 .companion__text--slogan {
   font-weight: 700;
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 
   & br {
     display: none;
@@ -42,41 +43,43 @@
 
 .companion__item {
   border-radius: 11px;
-  background-color: $white;
+}
+
+.companion__item:not(:last-of-type) {
+  margin-bottom: 9px;
 }
 
 .companion__button {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   min-width: 270px;
+  min-height: 61px;
   border-radius: 10px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 18px;
   text-align: start;
-  padding: 21px;
-  padding-right: 40px;
+  padding-left: 22px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 8px;
   background-color: $orange-background;
 }
 
 .companion__button-icon {
   fill: $darkfont-color;
-  position: absolute;
-  top: calc(50% - 6px);
-  right: 19px;
-  width: 13px;
-  height: 16px;
-}
-
-@media (max-width: $mobile-width-only) {
-  .companion__item:not(:last-of-type) {
-    margin-bottom: 9px;
-  }
+  width: 12px;
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 @media (min-width: $tablet-width) {
   .companion {
-    width: 81%;
-    padding-top: 136px;
+    width: 80%;
+    min-width: 620px;
+    padding-top: 137px;
     padding-bottom: 87px;
     box-sizing: border-box;
   }
@@ -100,20 +103,20 @@
   }
 
   .companion__text--slogan {
-    width: 255px;
+    width: 300px;
     margin: 0;
     font-size: 21px;
     line-height: 24px;
     font-weight: 700;
-    margin-top: 41px;
-    margin-bottom: 59px;
+    margin-top: 39px;
+    margin-bottom: 61px;
 
     & br {
-      display: inline-block;
+      display: none;
     }
 
     & .desktop {
-      display: none;
+      display: inline-block;
     }
   }
 
@@ -122,7 +125,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 80px;
+    margin-bottom: 81px;
   }
 
   .companion__item {
@@ -130,31 +133,39 @@
     border-radius: 20px;
   }
 
+  .companion__item:not(:last-of-type) {
+    margin: 0;
+  }
+
   .companion__button {
-    width: 100%;
     font-size: 24px;
     line-height: 24px;
     margin: 0;
-    padding-right: 25px;
-    padding-left: 32px;
-    padding-top: 25px;
-    padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 31px;
+    padding-top: 24px;
+    padding-bottom: 28px;
     border-radius: 20px;
     text-align: left;
+  }
+
+  .companion__button-icon {
+    margin-top: 6px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .companion {
-    width: 92%;
+    width: 91%;
+    min-width: 1320px;
     display: grid;
-    grid-template-columns: 1fr 633px;
-    grid-template-rows: min-content 55px min-content 42px min-content auto min-content;
+    grid-template-columns: 1fr 631px;
+    grid-template-rows: min-content 57px min-content 42px min-content auto min-content;
     column-gap: 190px;
     padding-top: 126px;
     padding-bottom: 134px;
-    padding-left: 71px;
+    padding-left: 69px;
   }
 
   .companion__title {
@@ -169,10 +180,12 @@
     grid-row: 3/4;
     width: fit-content;
     margin: 0;
+    line-height: 33px;
   }
 
   .companion__text--slogan {
     grid-row: 5/6;
+    line-height: 24px;
 
     & br {
       display: none;
@@ -188,7 +201,6 @@
     grid-row: 1/-1;
     margin: 0;
     margin-top: 8px;
-    margin-right: 3px;
     justify-content: space-between;
   }
 
@@ -197,13 +209,14 @@
   }
 
   .companion__button {
-    width: 280px;
+    min-width: 280px;
     grid-row: -2/-1;
     grid-column: 1/2;
-    padding-right: 50px;
+    padding-right: 32px;
     padding-top: 26px;
     padding-bottom: 28px;
     margin-left: 2px;
+    margin-right: auto;
   }
 
   .companion__button-icon {

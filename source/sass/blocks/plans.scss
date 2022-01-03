@@ -35,7 +35,8 @@
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
+  padding-left: 2px;
 }
 
 .plans__list {
@@ -53,7 +54,7 @@
 
 .plans__item {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
   padding-top: 23px;
   padding-left: 24px;
   background-color: $white;
@@ -65,11 +66,12 @@
 }
 
 .plans__quontity-companion {
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
   color: hsla(224, 52%, 24%, 1);
+  padding-left: 2px;
 }
 
 .plans__number {
@@ -89,6 +91,7 @@
   letter-spacing: 0.03em;
   padding-left: 0;
   padding-right: 25px;
+  padding-left: 2px;
   padding-top: 23px;
   padding-bottom: 25px;
   cursor: pointer;
@@ -97,10 +100,14 @@
     color: hsla(0, 0%, 0%, 0.6);
   }
 
-  &:focus,
+  &:focus-visible,
   &:active {
     color: hsla(0, 0%, 0%, 0.1);
   }
+}
+
+.plans__desc--shift {
+  padding-left: 2px;
 }
 
 @media (min-width: $tablet-width) {

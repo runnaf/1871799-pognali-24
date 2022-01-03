@@ -18,6 +18,14 @@
 .card__container {
   background-color: $white;
   border-radius: 25px;
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+
+    & .card__img {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .card__name-wrapper {
@@ -39,7 +47,7 @@
   }
 
   &:active,
-  &:focus {
+  &:focus-visible {
     opacity: 0.3;
   }
 }
@@ -88,13 +96,21 @@
 }
 
 .card__picture {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
   position: relative;
   grid-column: 1/2;
   grid-row: 1/3;
   margin-top: 2px;
+  width: fit-content;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transition: 1s;
 }
 
 .card__favorite-icon {
@@ -125,7 +141,7 @@
   }
 
   &:active,
-  &:focus {
+  &:focus-visible {
     & .card__favorite-icon {
       opacity: 0.1;
     }
@@ -153,7 +169,7 @@
   }
 
   &:active,
-  &:focus {
+  &:focus-visible {
     & .card__favorite-icon-current {
       opacity: 0.5;
     }
@@ -236,6 +252,10 @@
 
 .card__list-transport {
   display: flex;
+}
+
+.card__item-transport {
+  position: relative;
 }
 
 .card__link-transport {
@@ -337,6 +357,10 @@
   .card__picture {
     grid-column: 2/3;
     grid-row: 1/6;
+    border-radius: 20px;
+  }
+
+  .card__img {
     width: 190px;
     height: 190px;
     border-radius: 20px;
@@ -535,9 +559,18 @@
   .card__picture {
     grid-column: 1/2;
     grid-row: 1/-1;
+    margin: 0;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .card__img {
     width: 285px;
     height: 285px;
-    margin: 0;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   .card__link-favorite {
@@ -553,7 +586,7 @@
   }
 
   .card__wrapper-country {
-    grid-column: 6/8;
+    grid-column: 6/9;
     grid-row: 2/5;
   }
 

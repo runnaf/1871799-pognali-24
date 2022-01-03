@@ -9,7 +9,7 @@
   background-color: hsla(47, 100%, 65%, 1);
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: hsla(41, 100%, 59%, 1);
     outline: none;
   }

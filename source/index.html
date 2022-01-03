@@ -210,7 +210,7 @@
           &#171;Лучшее приложение, что я видел в жизни!&#187;
         </blockquote>
         <figcaption class="protocol__auther">
-          Мурат Эльтазин<br> главный редактор газеты &#160;&#171;гаджетлайф&#187;
+          Мурат Эльтазин<br> главный редактор газеты &laquo;гаджетлайф&#187;
         </figcaption>
       </figure>
       <ol class="protocol__list protocol__list--step">
@@ -237,7 +237,7 @@
       <section class="about-us">
         <h2 class="about-us__title">О сервисе</h2>
         <p class="about-us__text">Любое путешествие веселее <br> с попутчиками, которые на одной волне с тобой! Делитесь
-          своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          своими идеями путешествий<br class="about-us__transfer-tablet"> и черпайте вдохновение в чужих.</p>
         <p class="about-us__text-advice">А если найдете кого-то близкого по духу &#8212; скорее зовите в совместный
           трип!</p>
         <button class="button about-us__button about-us__button--closed" type="submit">
@@ -256,55 +256,101 @@
           куда хотели бы отправиться и чем можно там заняться.</p>
         <ul class="travel-direction__list card-list">
           <li class="travel-direction__item card-country">
-            <picture class="card-country__img">
-              <source media="(min-width: 768px)"
-                srcset="img/travel-direction-img/thailand/thailand-desktop.png 1x, img/travel-direction-img/thailand\thailand-desktop@2x.png 2x">
-              <source media="(min-width: 320px)"
-                srcset="img/travel-direction-img/thailand/thailand-mobile.png 1x, img/travel-direction-img/thailand/thailand-mobile@2x.png 2x">
-              <img class="card-country__img" src="img/travel-direction-img/thailand.jpg"
-                alt="Две скалы в море рядом с пляжем в Таиланде Пхукет." width="559" height="140">
-            </picture>
-            <div class="card-country__block country">
-              <img class="card-country__img-flag" src="img/country/thailand.jpg" alt="флаг Таиланда." width="35"
-                height="24">
-              <h3 class="card-country__heading country__heading">Таиланд</h3>
-              <p class="card-country__text country__desc">Джунгли зовут!</p>
-              <div class="card-country__small-wrapper">
-                <svg class="card-country__small-icon" width="12" height="12">
-                  <use href="img/sprite.svg#icon-user"></use>
-                </svg>
-                <span class="card-country__small">18321</span>
+            <div class="card-country__img-container">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="img/country__img/thailand-tablet.jpg 1x, img/country__img/thailand-tablet@2x.jpg 2x">
+                <img class="card-country__img" src="img/country__img/thailand-mobile.jpg"
+                  srcset="img/country__img/thailand-mobile.jpg 2x" alt="флаг Чехии">
+              </picture>
+            </div>
+            <div class="card-country__desc">
+              <div class="card-country__flag-wrapper">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/flag__img/70_47/Thailand.jpg 1x, img/flag__img/70_47/Thailand@2x.jpg 2x">
+                  <img class="card-country__img-flag" src="img/flag__img/35_24/Thailand.jpg"
+                    srcset="img/flag__img/35_24/Thailand@2x.jpg 2x" alt="флаг Таиланда">
+                </picture>
+                <div class="popover popover--flag">
+                  <p class="popover__desc">Таиланд</p>
+                </div>
+              </div>
+              <div class="card-country__block country">
+                <h3 class="card-country__heading country__heading">Таиланд</h3>
+                <p class="card-country__text country__desc">Джунгли зовут!</p>
+                <div class="card-country__small-wrapper">
+                  <svg class="card-country__small-icon" width="12" height="12">
+                    <use href="img/sprite.svg#icon-user"></use>
+                  </svg>
+                  <span class="card-country__small">18321</span>
+                </div>
               </div>
             </div>
           </li>
           <li class="travel-direction__item card-country">
-            <img class="card-country__img" src="img/travel-direction-img/france.jpg" alt="Париж улица авеню Сегюр."
-              width="270" height="110">
-            <div class="card-country__block country">
-              <img class="card-country__img-flag" src="img/country/france.jpg" alt="флаг Франции." width="35"
-                height="24">
-              <h3 class="card-country__heading">Франция</h3>
-              <p class="card-country__text">Трэ бьен, манифик!</p>
-              <div class="card-country__small-wrapper">
-                <svg class="card-country__small-icon" width="12" height="12">
-                  <use href="img/sprite.svg#icon-user"></use>
-                </svg>
-                <span class="card-country__small">12518</span>
+            <div class="card-country__img-container">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="img/country__img/france-tablet.jpg 1x, img/country__img/france-tablet@2x.jpg 2x">
+                <img class="card-country__img" src="img/country__img/france-mobile.jpg"
+                  srcset="img/country__img/france-mobile.jpg 2x" alt="флаг Чехии">
+              </picture>
+            </div>
+            <div class="card-country__desc">
+              <div class="card-country__flag-wrapper">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/flag__img/70_47/France.jpg 1x, img/flag__img/70_47/France@2x.jpg 2x">
+                  <img class="card-country__img-flag" src="img/flag__img/35_24/France.jpg"
+                    srcset="img/flag__img/35_24/France@2x.jpg 2x" alt="флаг Таиланда">
+                </picture>
+                <div class="popover popover--flag">
+                  <p class="popover__desc">Франция</p>
+                </div>
+              </div>
+              <div class="card-country__block country">
+                <h3 class="card-country__heading">Франция</h3>
+                <p class="card-country__text">Трэ бьен, манифик!</p>
+                <div class="card-country__small-wrapper">
+                  <svg class="card-country__small-icon" width="12" height="12">
+                    <use href="img/sprite.svg#icon-user"></use>
+                  </svg>
+                  <span class="card-country__small">12518</span>
+                </div>
               </div>
             </div>
           </li>
           <li class="travel-direction__item card-country">
-            <img class="card-country__img" src="img/travel-direction-img/czech.jpg"
-              alt="Лодка на реке Влтаве на фоне Карлова моста в Праге." width="270" height="110">
-            <div class="card-country__block country">
-              <img class="card-country__img-flag" src="img/country/czech.jpg" alt="флаг Чехии." width="35" height="24">
-              <h3 class="card-country__heading">Чехия</h3>
-              <p class="card-country__text">Закоулки старой Европы</p>
-              <div class="card-country__small-wrapper">
-                <svg class="card-country__small-icon" width="12" height="12">
-                  <use href="img/sprite.svg#icon-user"></use>
-                </svg>
-                <span class="card-country__small">5326</span>
+            <div class="card-country__img-container">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="img/country__img/czech-tablet.jpg 1x, img/country__img/czech-tablet@2x.jpg 2x">
+                <img class="card-country__img" src="img/country__img/czech-mobile.jpg"
+                  srcset="img/country__img/czech-mobile.jpg 2x" alt="флаг Чехии">
+              </picture>
+            </div>
+            <div class="card-country__desc">
+              <div class="card-country__flag-wrapper">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/flag__img/70_47/Czech.jpg 1x, img/flag__img/70_47/Czech@2x.jpg 2x">
+                  <img class="card-country__img-flag" src="img/flag__img/35_24/Czech.jpg"
+                    srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Таиланда">
+                </picture>
+                <div class="popover popover--flag">
+                  <p class="popover__desc">Чехии</p>
+                </div>
+              </div>
+              <div class="card-country__block country">
+                <h3 class="card-country__heading">Чехия</h3>
+                <p class="card-country__text">Закоулки старой Европы</p>
+                <div class="card-country__small-wrapper">
+                  <svg class="card-country__small-icon" width="12" height="12">
+                    <use href="img/sprite.svg#icon-user"></use>
+                  </svg>
+                  <span class="card-country__small">5326</span>
+                </div>
               </div>
             </div>
           </li>
@@ -315,7 +361,6 @@
             <use href="img/sprite.svg#icon-arrow"></use>
           </svg>
         </button>
-    </div>
     </section>
     </div>
 
@@ -332,8 +377,14 @@
           <section class="companion__item companion-card">
             <h3 class="visually-hidden">Карточка попутчика</h3>
             <div class="companion-card__block-img companion-img">
-              <img class="companion-card__picture" src="img/companion/firsova.jpg"
-                alt="Девушка в бассейне на надовном матрасе" width="270" height="270">
+              <div class="companion-card__picture">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/user/tania_firsova/firsova-desktop.jpg, img/user/tania_firsova/firsova-desktop@2x.jpg 2x">
+                  <img class="companion-card__img" src="img/user/tania_firsova/firsova-mobile_270.jpg"
+                    srcset="img/user/tania_firsova/firsova-mobile_270@2x.jpg 2x" alt="Татьяна Фирсова">
+                </picture>
+              </div>
               <div class="companion-img__small companion-card__small level">
                 <p class="level__number">99</p>
                 <p class="level__desc">level</p>
@@ -351,20 +402,47 @@
               </div>
               <div class="companion-card__list-wrapper">
                 <ul class="companion-card__list flag-list">
-                  <li class="companion-card__item-country flag-list__item">
+                  <li class="companion-card__item-country">
                     <span class="visually-hidden">Шриланка</span>
-                    <img class="companion-card__img-flag" src="img/flag-list/sri-lanka.jpg" alt="флаг Шри-Ланки."
-                      width="35" height="25">
+                    <div class="companion-cardy__flag-wrapper">
+                      <div class="companion-card__img-container">
+                        <picture>
+                          <img class="companion-card__flag-img" src="img/flag__img/35_24/SriLanka.jpg"
+                            srcset="img/flag__img/35_24/SriLanka@2x.jpg 2x" alt="флаг Шри-Ланки">
+                        </picture>
+                      </div>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Шри-Ланка</p>
+                      </div>
+                    </div>
                   </li>
                   <li class="companion-card__item-country">
                     <span class="visually-hidden">Таиланд</span>
-                    <img class="companion-card__img-flag" src="img/flag-list/thailand.jpg" alt="флаг Таиланда."
-                      width="35" height="25">
+                    <div class="companion-cardy__flag-wrapper">
+                      <div class="companion-card__img-container">
+                        <picture>
+                          <img class="companion-card__flag-img" src="img/flag__img/35_24/Thailand.jpg"
+                            srcset="img/flag__img/35_24/Thailand@2x.jpg 2x" alt="флаг Таиланда">
+                        </picture>
+                      </div>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Таиланд</p>
+                      </div>
+                    </div>
                   </li>
                   <li class="companion-card__item-country">
                     <span class="visually-hidden">Сейшеллы</span>
-                    <img class="companion-card__img-flag" src="img/flag-list/seychelles.jpg" alt="флаг Сейшеллы."
-                      width="35" height="25">
+                    <div class="companion-cardy__flag-wrapper">
+                      <div class="companion-card__img-container">
+                        <picture>
+                          <img class="companion-card__flag-img" src="img/flag__img/35_24/Seychelles.jpg"
+                            srcset="img/flag__img/35_24/Seychelles@2x.jpg 2x" alt="флаг Сейшеллы">
+                        </picture>
+                      </div>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Сейшелы</p>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -382,24 +460,36 @@
                   <svg class="list-way__icon" width="21" height="23">
                     <use href="img/sprite.svg#icon-plane"></use>
                   </svg>
+                  <div class="popover popover--plane">
+                    <p class="popover__desc">Авиаперелет</p>
+                  </div>
                 </li>
                 <li class="companion-card__item-way list-way">
-                  <span class="visually-hidden">Способ путешествия автобусом.</span>
+                  <span class="visually-hidden">Способ путешествия автотранспортом.</span>
                   <svg class="list-way__icon" width="18" height="21">
                     <use href="img/sprite.svg#icon-bus"></use>
                   </svg>
+                  <div class="popover popover--bus">
+                    <p class="popover__desc">Автотранспорт</p>
+                  </div>
                 </li>
                 <li class="companion-card__item-way list-way">
                   <span class="visually-hidden">Способ путешествия на велосипеде.</span>
                   <svg class="list-way__icon" width="25" height="24">
                     <use href="img/sprite.svg#icon-bycicle"></use>
                   </svg>
+                  <div class="popover popover--bike">
+                    <p class="popover__desc">Велосипед</p>
+                  </div>
                 </li>
                 <li class="companion-card__item-way list-way">
                   <span class="visually-hidden">Способ путешествия пешком.</span>
                   <svg class="list-way__icon" width="21" height="24">
                     <use href="img/sprite.svg#icon-run"></use>
                   </svg>
+                  <div class="popover popover--run">
+                    <p class="popover__desc">Пешком</p>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -408,8 +498,14 @@
           <section class="companion__item companion-card">
             <h3 class="visually-hidden">Карточка попутчика</h3>
             <div class="companion-card__block-img companion-img">
-              <img class="companion-card__picture" src="img/companion/demin.jpg" alt="Петр Демин" width="270"
-                height="270">
+              <div class="companion-card__picture">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/user/petr_demin/demin-desktop.jpg, img/user/petr_demin/demin-desktop@2x.jpg 2x">
+                  <img class="companion-card__img" src="img/user/petr_demin/demin-mobile_270.jpg"
+                    srcset="img/user/petr_demin/demin-mobile_270@2x.jpg 2x" alt="Татьяна Фирсова">
+                </picture>
+              </div>
               <div class="companion-img__small companion-card__small level">
                 <p class="level__number">80</p>
                 <p class="level__desc">level</p>
@@ -429,13 +525,31 @@
                 <ul class="companion-card__list flag-list">
                   <li class="companion-card__item-country flag-list__item">
                     <span class="visually-hidden">Бельгия</span>
-                    <img class="companion-card__img-flag" src="img/flag-list/belgium.jpg" alt="флаг Бельгия." width="35"
-                      height="25">
+                    <div class="companion-cardy__flag-wrapper">
+                      <div class="companion-card__img-container">
+                        <picture>
+                          <img class="companion-card__flag-img" src="img/flag__img/35_24/Belgium.jpg"
+                            srcset="img/flag__img/35_24/Belgium@2x.jpg 2x" alt="флаг Бельгии">
+                        </picture>
+                      </div>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Бельгия</p>
+                      </div>
+                    </div>
                   </li>
                   <li class="companion-card__item-country">
                     <span class="visually-hidden">Чехия</span>
-                    <img class="companion-card__img-flag" src="img/flag-list/czech.jpg" alt="флаг Чехия." width="35"
-                      height="25">
+                    <div class="companion-cardy__flag-wrapper">
+                      <div class="companion-card__img-container">
+                        <picture>
+                          <img class="companion-card__flag-img" src="img/flag__img/35_24/Czech.jpg"
+                            srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии">
+                        </picture>
+                      </div>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Чехия</p>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -452,35 +566,47 @@
                   <svg class="list-way__icon" width="21" height="23">
                     <use href="img/sprite.svg#icon-plane"></use>
                   </svg>
+                  <div class="popover popover--plane">
+                    <p class="popover__desc">Авиаперелет</p>
+                  </div>
                 </li>
                 <li class="companion-card__item-way list-way">
-                  <span class="visually-hidden">Способ путешествия автобусом.</span>
+                  <span class="visually-hidden">Способ путешествия автотранспортом.</span>
                   <svg class="list-way__icon" width="18" height="21">
                     <use href="img/sprite.svg#icon-bus"></use>
                   </svg>
+                  <div class="popover popover--bus">
+                    <p class="popover__desc">Автотранспорт</p>
+                  </div>
                 </li>
                 <li class="companion-card__item-way list-way">
                   <span class="visually-hidden">Способ путешествия на велосипеде.</span>
                   <svg class="list-way__icon" width="25" height="24">
                     <use href="img/sprite.svg#icon-bycicle"></use>
                   </svg>
+                  <div class="popover popover--bike">
+                    <p class="popover__desc">Велосипед</p>
+                  </div>
                 </li>
                 <li class="companion-card__item-way list-way">
                   <span class="visually-hidden">Способ путешествия пешком.</span>
                   <svg class="list-way__icon" width="21" height="24">
                     <use href="img/sprite.svg#icon-run"></use>
                   </svg>
+                  <div class="popover popover--run">
+                    <p class="popover__desc">Пешком</p>
+                  </div>
                 </li>
               </ul>
             </div>
           </section>
         </div>
-        <button class="companion__button button" type="submit">
-          <span>Показать всех</span>
-          <svg class="companion__button-icon" width="13" height="13">
-            <use href="img/sprite.svg#icon-arrow"></use>
-          </svg>
-        </button>
+          <button class="companion__button button" type="submit">
+            <span>Показать всех</span>
+            <svg class="companion__button-icon" width="13" height="13">
+              <use href="img/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
       </section>
     </div>
 
@@ -520,8 +646,8 @@
         <div class="tariff__business-block business-block">
           <a class="tariff__link tariff__business business-block__link business-tariff">
             <span class="tariff__business-small">
-              <svg class="tariff__business-icon" width="27" height="27">
-                <use href="img/sprite.svg#icon-user"></use>
+              <svg class="tariff__business-icon" width="28" height="28">
+                <use href="img/sprite.svg#icon-businessman"></use>
               </svg>
             </span>
             <p class="tariff__business-desc">Показать тарифы для бизнеса</p>
@@ -549,9 +675,9 @@
     <div class="wrapper wrapper--interested wrapper--stats wrapper--border">
       <section class="interested">
         <h2 class="interested__title">Заинтересовались?</h2>
-        <p class="interested__desc">Зарегистрируйтесь, <br>это быстро и бесплатно!</p>
+        <p class="interested__desc interested__desc--shift">Зарегистрируйтесь, <br>это быстро и бесплатно!&nbsp</p>
         <p class="interested__desc interested__desc--shift">Уже зарегистрированы? Тогда скорее&#160;<a
-            class="interested__link interested__link--login" href="#">авторизуйтесь</a> .</p>
+            class="interested__link interested__link--login" href="#">авторизуйтесь</a>.</p>
         <form class="interested__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email.</label>
           <input class="interested__input field-email" placeholder="E-mail" type="email" name="newsletter-email"
@@ -563,8 +689,8 @@
             </svg>
           </button>
         </form>
-        <div class="interested__desc">
-          <p class="interested__desc--wrapper">Остались вопросы?<br> Мы с радостью на них ответим!</p>
+        <div class="interested__desc--wrapper">
+          <p class="interested__desc">Остались вопросы?<br> Мы с радостью на них ответим!</p>
         </div>
         <div class="interested__link-conteiner">
           <a class="interested__link interested__link-contacts interested__link-phone" href="tel:+78005558628">
@@ -617,86 +743,88 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
-        <svg class="page-footer__logo-icon logo" width="300" height="50" xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 300 50" role="img" aria-label="Логотип 'Погнали'.">
-          <g class="logo__bag">
-            <path d="M94 12.6 53.9 50 39.3 2.1 94 12.6Z" fill="#FF8D30" />
-            <ellipse cx="94.7" cy="33.9" rx="4.4" ry="4.3" fill="#88BFEB" />
-            <ellipse cx="111.9" cy="21.5" rx="15.2" ry="14.8" fill="#EB9898" />
-            <path fill="#72A73E" d="m103 23.3 52.7-19 10 26.2-52.8 19z" />
-            <ellipse cx="110" cy="40.6" rx="2.6" ry="2.5" fill="#FFBD30" />
-            <ellipse rx="22.8" ry="9" transform="matrix(.97092 .2394 -.25022 .96819 159 33.4)" fill="#8EC7F5" />
-            <ellipse cx="176.4" cy="12.2" rx="2.6" ry="2.5" fill="#FFBD30" />
-            <ellipse cx="184.5" cy="9.2" rx="2.6" ry="2.5" fill="#FFBD30" />
-            <path d="M4 42h6v3c0 .6-.4 1-1 1H5a1 1 0 0 1-1-1v-3ZM41.2 42h6v3c0 .6-.4 1-1 1h-4a1 1 0 0 1-1-1v-3Z"
-              fill="#1D2959" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M28.8 3.5a10 10 0 0 0-3.4-.8c-.8 0-2 .4-3.1.8l-1.8.9c-.7.3-1.6 0-2-.6-.4-.7-.1-1.5.6-1.9a18.2 18.2 0 0 1 2-1C22.4.5 24 0 25.5 0s3.2.4 4.5.9l2.2 1c.7.4 1 1.2.6 1.9s-1.3 1-2 .6a15.6 15.6 0 0 0-1.9-.9Z"
-              fill="#8A4A38" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M19.3 1.7c-.7 0-1.2.5-1.2 1.2v.7c0 .5.4 1 1 1v3.6h1V4.5H20a1.4 1.4 0 0 0-.3-2.8h-.3ZM32 1.7c.6 0 1.1.5 1.1 1.2v.7c0 .5-.4 1-1 1v3.6h-1V4.5h.2a1.4 1.4 0 0 1 .3-2.8h.3Z"
-              fill="#F6EF3E" />
-            <path d="M0 16.8c0-5 4-9 9-9h33.3c5 0 9 4 9 9V42H0V16.8Z" fill="#8A4A38" />
-            <ellipse cx="8.1" cy="33.2" rx="5" ry="4.9" fill="#EF9A9A" />
-            <ellipse rx="4.8" ry="9.3" transform="matrix(.7051 -.7091 .72546 .68826 39.5 33.4)" fill="#93C6EB" />
-            <path fill="#C2DEA3" d="M19.8 21.3 31 9.5l6.7 6.1-11.3 11.9z" />
-            <rect width="8.3" height="6.2" rx="1" transform="matrix(.73793 .67488 -.69199 .7219 10.6 13.3)"
-              fill="#C49A6C" />
-            <path fill="#F57B20" d="M10 23.1h7.1v20H10z" />
-            <path d="M10 6.5h7.1v17.3a3.5 3.5 0 0 1-7 0V6.5Z" fill="#F6A725" />
-            <path fill="#F6EF3E" d="M9.1 21.5h9v2h-9z" />
-            <path fill="#F57B20" d="M34.2 23.1h7.1v20h-7.1z" />
-            <path d="M34.2 6.5h7v17.3a3.5 3.5 0 0 1-7 0V6.5Z" fill="#F6A725" />
-            <path fill="#F6EF3E" d="M33.2 21.5h9v2h-9z" />
-          </g>
-          <g class="logo__pognaly">
-            <path
-              d="M198.5 22.7c1-.6 1.5-1.5 1.5-2.8 0-1.7-.7-3-2.1-3.9-1.4-1-3-1.4-4.8-1.4-1.8 0-3.5.5-5 1.5a4.8 4.8 0 0 0-2.2 4.1c0 .7.2 1.2.6 1.6.4.4 1 .6 1.8.6.7 0 1.3-.2 1.7-.6.4-.4.6-1 .6-1.6 0-.4.1-1 .5-1.4.3-.6 1-.8 2-.8.8 0 1.4.2 1.7.6.4.4.6.8.5 1.1 0 .3 0 .6-.3.8l-.6.7a14 14 0 0 1-1.9 1.2c-1 .8-1.5 1.7-1.5 3 0 .5.2 1 .7 1.4.4.4 1 .6 1.7.6.8 0 1.4-.2 1.8-.6.4-.4.7-1 .7-1.5l.1-.7.5-.6a31 31 0 0 1 1.3-1c.4 0 .6-.2.7-.3ZM173.6 28l5.2-6.3c.5-.7 1.2-1.1 2.1-1.2 1-.1 1.7 0 2.4.6s1 1.3 1 2.2v9c0 .5-.2 1-.7 1.3-.4.4-1 .6-1.6.6-.6 0-1.1-.2-1.6-.6-.4-.3-.7-.8-.7-1.4v-5.6l-5.1 6.3c-.6.8-1.3 1.2-2.2 1.3-.9 0-1.7-.2-2.4-.7-.6-.5-1-1.2-1-2.1v-9c0-.5.3-1 .7-1.4.5-.4 1-.6 1.6-.6.7 0 1.2.2 1.6.6.5.4.7.9.7 1.5V28Z" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M150.4 32.1v-9.7c0-.6-.3-1-.7-1.4-.5-.5-1-.7-1.7-.7-.6 0-1.1.2-1.6.7-.4.4-.7.8-.7 1.4v-.2c-.2-.6-.6-1-1.3-1.4-.7-.3-1.5-.5-2.4-.5-1.7 0-3.3.6-4.7 1.8a6.4 6.4 0 0 0-2.2 5.1c0 2.2.7 4 2.1 5.2a7 7 0 0 0 4.8 1.8c.9 0 1.7-.1 2.3-.5.7-.3 1.2-.7 1.5-1.1.1.4.4.8.8 1.1.4.3.9.5 1.4.5.7 0 1.2-.2 1.7-.6.4-.4.7-1 .7-1.5Zm-7.3-1.8a3 3 0 0 0 2.8-3 3 3 0 0 0-2.8-3 3 3 0 0 0-2.9 3 3 3 0 0 0 2.9 3Z" />
-            <path
-              d="M129.1 25.4v-2.8c0-.6.2-1 .7-1.5.5-.4 1-.6 1.7-.6.6 0 1.1.2 1.6.6.5.4.7.9.7 1.5v9.6c0 .6-.2 1-.7 1.4-.4.4-1 .6-1.6.6-.7 0-1.3-.2-1.7-.6-.5-.4-.7-.8-.7-1.4v-2.9H124v2.9c0 .6-.3 1-.7 1.4-.5.4-1 .6-1.7.6-.6 0-1.2-.2-1.7-.6-.4-.4-.6-.8-.6-1.4v-9.6c0-.6.2-1 .7-1.5.4-.4 1-.6 1.6-.6.6 0 1.2.2 1.7.6.4.4.7.9.7 1.5v2.8h5.1ZM116.9 20.5c.4 0 .8.2 1.2.5.3.3.5 1.1.5 1.6s-.2 1-.5 1.3c-.4.4-.8.5-1.2.5h-4v7.8c0 1.5-1.3 2-2.7 2-1.2 0-2.4-.6-2.4-2V20.5h9ZM88.6 14.6V32c0 .6-.3 1.1-.8 1.5-.4.4-1 .6-1.7.6-.6 0-1.5-.2-1.9-.6a2 2 0 0 1-.6-1.5V18.5h-7.2V32c0 .6-.2 1.1-.6 1.5-.5.4-1.3.6-2 .6a3 3 0 0 1-1.8-.6 2 2 0 0 1-.6-1.5V14.6h17.2ZM104.4 32a8.2 8.2 0 0 1-5.8 2c-2.4 0-4.3-.6-5.8-2a6.6 6.6 0 0 1-2.2-5c0-2 .8-3.7 2.2-5 1.5-1.3 3.4-2 5.8-2s4.3.7 5.8 2c1.4 1.4 2.1 3 2.1 5s-.7 3.7-2.1 5Zm-3.8-7c-.4-.4-.9-.7-1.5-.8-.5 0-1 0-1.6.2a3 3 0 0 0-1.3 1c-.4.5-.5 1-.5 1.6 0 .9.3 1.6.8 2.1.6.6 1.3.8 2 .8 1 0 1.6-.2 2.2-.7.5-.6.8-1.3.8-2.2 0-.8-.3-1.5-.9-2ZM157.2 20.4h9.9v11.7c0 .6-.2 1-.7 1.5-.5.4-1 .6-1.6.6-.7 0-1.1 0-1.6-.3-.5-.5-.9-1.2-.9-1.8v-7.8H159c0 5.6 0 6.8-2 8.8-.9.8-1.9 1.1-3 1.1-.8 0-1.2-.2-1.7-.6-.5-.4-.8-1-.8-1.7 0-1.3.3-1.8 1-2.7 2 0 2-.5 1.9-4.3v-2.4l.1-2h2.7ZM196.2 31.3c0 1.6-1.4 3-3.1 3-1.8 0-3.2-1.4-3.2-3s1.4-3 3.2-3c1.7 0 3 1.4 3 3Z" />
-          </g>
-        </svg>
-      </a>
-    </div>
-    <ul class="page-footer__list social">
-      <li class="social__item">
-        <a class="page-footer__link-social" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">Фэйсбук</span>
-          <svg class="page-footer__icon page-footer__icon-facebook" width="11" height="21">
-            <use href="img/sprite.svg#icon-facebook"></use>
+    <div class="page-footer__container">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <svg class="page-footer__logo-icon logo" width="300" height="50" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 300 50" role="img" aria-label="Логотип 'Погнали'.">
+            <g class="logo__bag">
+              <path d="M94 12.6 53.9 50 39.3 2.1 94 12.6Z" fill="#FF8D30" />
+              <ellipse cx="94.7" cy="33.9" rx="4.4" ry="4.3" fill="#88BFEB" />
+              <ellipse cx="111.9" cy="21.5" rx="15.2" ry="14.8" fill="#EB9898" />
+              <path fill="#72A73E" d="m103 23.3 52.7-19 10 26.2-52.8 19z" />
+              <ellipse cx="110" cy="40.6" rx="2.6" ry="2.5" fill="#FFBD30" />
+              <ellipse rx="22.8" ry="9" transform="matrix(.97092 .2394 -.25022 .96819 159 33.4)" fill="#8EC7F5" />
+              <ellipse cx="176.4" cy="12.2" rx="2.6" ry="2.5" fill="#FFBD30" />
+              <ellipse cx="184.5" cy="9.2" rx="2.6" ry="2.5" fill="#FFBD30" />
+              <path d="M4 42h6v3c0 .6-.4 1-1 1H5a1 1 0 0 1-1-1v-3ZM41.2 42h6v3c0 .6-.4 1-1 1h-4a1 1 0 0 1-1-1v-3Z"
+                fill="#1D2959" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M28.8 3.5a10 10 0 0 0-3.4-.8c-.8 0-2 .4-3.1.8l-1.8.9c-.7.3-1.6 0-2-.6-.4-.7-.1-1.5.6-1.9a18.2 18.2 0 0 1 2-1C22.4.5 24 0 25.5 0s3.2.4 4.5.9l2.2 1c.7.4 1 1.2.6 1.9s-1.3 1-2 .6a15.6 15.6 0 0 0-1.9-.9Z"
+                fill="#8A4A38" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M19.3 1.7c-.7 0-1.2.5-1.2 1.2v.7c0 .5.4 1 1 1v3.6h1V4.5H20a1.4 1.4 0 0 0-.3-2.8h-.3ZM32 1.7c.6 0 1.1.5 1.1 1.2v.7c0 .5-.4 1-1 1v3.6h-1V4.5h.2a1.4 1.4 0 0 1 .3-2.8h.3Z"
+                fill="#F6EF3E" />
+              <path d="M0 16.8c0-5 4-9 9-9h33.3c5 0 9 4 9 9V42H0V16.8Z" fill="#8A4A38" />
+              <ellipse cx="8.1" cy="33.2" rx="5" ry="4.9" fill="#EF9A9A" />
+              <ellipse rx="4.8" ry="9.3" transform="matrix(.7051 -.7091 .72546 .68826 39.5 33.4)" fill="#93C6EB" />
+              <path fill="#C2DEA3" d="M19.8 21.3 31 9.5l6.7 6.1-11.3 11.9z" />
+              <rect width="8.3" height="6.2" rx="1" transform="matrix(.73793 .67488 -.69199 .7219 10.6 13.3)"
+                fill="#C49A6C" />
+              <path fill="#F57B20" d="M10 23.1h7.1v20H10z" />
+              <path d="M10 6.5h7.1v17.3a3.5 3.5 0 0 1-7 0V6.5Z" fill="#F6A725" />
+              <path fill="#F6EF3E" d="M9.1 21.5h9v2h-9z" />
+              <path fill="#F57B20" d="M34.2 23.1h7.1v20h-7.1z" />
+              <path d="M34.2 6.5h7v17.3a3.5 3.5 0 0 1-7 0V6.5Z" fill="#F6A725" />
+              <path fill="#F6EF3E" d="M33.2 21.5h9v2h-9z" />
+            </g>
+            <g class="logo__pognaly">
+              <path
+                d="M198.5 22.7c1-.6 1.5-1.5 1.5-2.8 0-1.7-.7-3-2.1-3.9-1.4-1-3-1.4-4.8-1.4-1.8 0-3.5.5-5 1.5a4.8 4.8 0 0 0-2.2 4.1c0 .7.2 1.2.6 1.6.4.4 1 .6 1.8.6.7 0 1.3-.2 1.7-.6.4-.4.6-1 .6-1.6 0-.4.1-1 .5-1.4.3-.6 1-.8 2-.8.8 0 1.4.2 1.7.6.4.4.6.8.5 1.1 0 .3 0 .6-.3.8l-.6.7a14 14 0 0 1-1.9 1.2c-1 .8-1.5 1.7-1.5 3 0 .5.2 1 .7 1.4.4.4 1 .6 1.7.6.8 0 1.4-.2 1.8-.6.4-.4.7-1 .7-1.5l.1-.7.5-.6a31 31 0 0 1 1.3-1c.4 0 .6-.2.7-.3ZM173.6 28l5.2-6.3c.5-.7 1.2-1.1 2.1-1.2 1-.1 1.7 0 2.4.6s1 1.3 1 2.2v9c0 .5-.2 1-.7 1.3-.4.4-1 .6-1.6.6-.6 0-1.1-.2-1.6-.6-.4-.3-.7-.8-.7-1.4v-5.6l-5.1 6.3c-.6.8-1.3 1.2-2.2 1.3-.9 0-1.7-.2-2.4-.7-.6-.5-1-1.2-1-2.1v-9c0-.5.3-1 .7-1.4.5-.4 1-.6 1.6-.6.7 0 1.2.2 1.6.6.5.4.7.9.7 1.5V28Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M150.4 32.1v-9.7c0-.6-.3-1-.7-1.4-.5-.5-1-.7-1.7-.7-.6 0-1.1.2-1.6.7-.4.4-.7.8-.7 1.4v-.2c-.2-.6-.6-1-1.3-1.4-.7-.3-1.5-.5-2.4-.5-1.7 0-3.3.6-4.7 1.8a6.4 6.4 0 0 0-2.2 5.1c0 2.2.7 4 2.1 5.2a7 7 0 0 0 4.8 1.8c.9 0 1.7-.1 2.3-.5.7-.3 1.2-.7 1.5-1.1.1.4.4.8.8 1.1.4.3.9.5 1.4.5.7 0 1.2-.2 1.7-.6.4-.4.7-1 .7-1.5Zm-7.3-1.8a3 3 0 0 0 2.8-3 3 3 0 0 0-2.8-3 3 3 0 0 0-2.9 3 3 3 0 0 0 2.9 3Z" />
+              <path
+                d="M129.1 25.4v-2.8c0-.6.2-1 .7-1.5.5-.4 1-.6 1.7-.6.6 0 1.1.2 1.6.6.5.4.7.9.7 1.5v9.6c0 .6-.2 1-.7 1.4-.4.4-1 .6-1.6.6-.7 0-1.3-.2-1.7-.6-.5-.4-.7-.8-.7-1.4v-2.9H124v2.9c0 .6-.3 1-.7 1.4-.5.4-1 .6-1.7.6-.6 0-1.2-.2-1.7-.6-.4-.4-.6-.8-.6-1.4v-9.6c0-.6.2-1 .7-1.5.4-.4 1-.6 1.6-.6.6 0 1.2.2 1.7.6.4.4.7.9.7 1.5v2.8h5.1ZM116.9 20.5c.4 0 .8.2 1.2.5.3.3.5 1.1.5 1.6s-.2 1-.5 1.3c-.4.4-.8.5-1.2.5h-4v7.8c0 1.5-1.3 2-2.7 2-1.2 0-2.4-.6-2.4-2V20.5h9ZM88.6 14.6V32c0 .6-.3 1.1-.8 1.5-.4.4-1 .6-1.7.6-.6 0-1.5-.2-1.9-.6a2 2 0 0 1-.6-1.5V18.5h-7.2V32c0 .6-.2 1.1-.6 1.5-.5.4-1.3.6-2 .6a3 3 0 0 1-1.8-.6 2 2 0 0 1-.6-1.5V14.6h17.2ZM104.4 32a8.2 8.2 0 0 1-5.8 2c-2.4 0-4.3-.6-5.8-2a6.6 6.6 0 0 1-2.2-5c0-2 .8-3.7 2.2-5 1.5-1.3 3.4-2 5.8-2s4.3.7 5.8 2c1.4 1.4 2.1 3 2.1 5s-.7 3.7-2.1 5Zm-3.8-7c-.4-.4-.9-.7-1.5-.8-.5 0-1 0-1.6.2a3 3 0 0 0-1.3 1c-.4.5-.5 1-.5 1.6 0 .9.3 1.6.8 2.1.6.6 1.3.8 2 .8 1 0 1.6-.2 2.2-.7.5-.6.8-1.3.8-2.2 0-.8-.3-1.5-.9-2ZM157.2 20.4h9.9v11.7c0 .6-.2 1-.7 1.5-.5.4-1 .6-1.6.6-.7 0-1.1 0-1.6-.3-.5-.5-.9-1.2-.9-1.8v-7.8H159c0 5.6 0 6.8-2 8.8-.9.8-1.9 1.1-3 1.1-.8 0-1.2-.2-1.7-.6-.5-.4-.8-1-.8-1.7 0-1.3.3-1.8 1-2.7 2 0 2-.5 1.9-4.3v-2.4l.1-2h2.7ZM196.2 31.3c0 1.6-1.4 3-3.1 3-1.8 0-3.2-1.4-3.2-3s1.4-3 3.2-3c1.7 0 3 1.4 3 3Z" />
+            </g>
           </svg>
         </a>
-      </li>
-      <li class="social__item">
-        <a class="page-footer__link-social" href="https://www.vk.com/htmlacademy">
-          <span class="visually-hidden">Вконтакте</span>
-          <svg class="page-footer__icon page-footer__icon-vkontakte" width="23" height="12">
-            <use href="img/sprite.svg#icon-vkontakte"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="page-footer__link-social" href="https://www.instagram.com/htmlacademy/">
-          <span class="visually-hidden">Инстаграмм</span>
-          <svg class="page-footer__icon page-footer__icon-instagram" width="18" height="18">
-            <use href="img/sprite.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+      </div>
+      <ul class="page-footer__list social">
+        <li class="social__item">
+          <a class="page-footer__link-social" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Фэйсбук</span>
+            <svg class="page-footer__icon page-footer__icon-facebook" width="11" height="21">
+              <use href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="page-footer__link-social" href="https://www.vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+            <svg class="page-footer__icon page-footer__icon-vkontakte" width="23" height="12">
+              <use href="img/sprite.svg#icon-vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="page-footer__link-social" href="https://www.instagram.com/htmlacademy/">
+            <span class="visually-hidden">Инстаграмм</span>
+            <svg class="page-footer__icon page-footer__icon-instagram" width="18" height="18">
+              <use href="img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
 
-    <div class="page-footer__developed developed">
-      <a class="page-footer__link" href="https://htmlacademy.ru/">
-        <p class="page-footer__developed-text">Разработано</p>
-        <span class="visually-hidden">htmlacademy</span>
-        <svg class="page-footer__icon-htmlacademy page-footer__icon" width="27" height="34">
-          <use href="img/sprite.svg#icon-html_logo"></use>
-        </svg>
-      </a>
+      <div class="page-footer__developed developed">
+        <a class="page-footer__link" href="https://htmlacademy.ru/">
+          <p class="page-footer__developed-text">Разработано</p>
+          <span class="visually-hidden">htmlacademy</span>
+          <svg class="page-footer__icon-htmlacademy page-footer__icon" width="27" height="34">
+            <use href="img/sprite.svg#icon-html_logo"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
   <script>

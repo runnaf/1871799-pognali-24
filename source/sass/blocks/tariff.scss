@@ -1,42 +1,49 @@
 .tariff {
   position: relative;
-  width: 85%;
+  width: 84%;
+  min-width: 270px;
   line-height: 16px;
   color: $darkfont-color;
   display: grid;
   grid-template-columns: 1fr min-content;
-  padding-top: 35px;
+  grid-template-rows: 14px min-content 30px min-content 14px min-content;
+  padding-top: 37px;
   padding-bottom: 23px;
-  padding-left: 25px;
+  padding-left: 24px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 .tariff__slogan {
   grid-column: 1/2;
+  grid-row: 2/3;
   width: 107px;
   color: $orangefont;
   font-size: 24px;
   line-height: 1;
   margin: 0;
-  margin-top: 15px;
+  margin-left: 1px;
 }
 
 .tariff__rates {
   grid-column: 2/3;
+  grid-row: 1/3;
   width: 100px;
   height: 100px;
-  background-image: url("../../img/tariff/rates.png");
+  background-image: url("../../img/tariff/rates-mobile.png");
   background-repeat: no-repeat;
   background-color: inherit;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/tariff/rates-mobile@2x.png");
+    background-size: 200px auto;
+  }
 }
 
 .tariff__list {
   grid-column: 1/3;
-  grid-row: 2/3;
+  grid-row: 4/5;
   margin: 0;
-  margin-top: 29px;
-  margin-bottom: 13px;
   padding: 0;
   list-style: none;
   box-sizing: border-box;
@@ -45,6 +52,7 @@
 .tariff__item {
   font-weight: 300;
   color: hsla(0, 0%, 27%, 1);
+  margin-bottom: 1px;
 }
 
 .tariff__number {
@@ -54,6 +62,7 @@
 
 .tariff__business-block {
   grid-column: 1/3;
+  grid-row: 6/7;
   display: flex;
   justify-content: flex-start;
 }
@@ -84,9 +93,9 @@
   cursor: pointer;
 
   &:hover .tariff__business-desc,
-  &:focus .tariff__business-desc,
+  &:focus-visible .tariff__business-desc,
   &:hover .tariff__business-icon,
-  &:focus .tariff__business-icon {
+  &:focus-visible .tariff__business-icon {
     opacity: 0.7;
   }
 
@@ -98,34 +107,39 @@
 
 @media (min-width: $tablet-width) {
   .tariff {
-    width: 90%;
+    width: 88%;
+    min-width: 689px;
     padding: 0;
-    padding-top: 55px;
-    padding-bottom: 47px;
+    padding-top: 70px;
+    padding-bottom: 45px;
+    grid-template-rows: min-content 36px 38px min-content 45px min-content;
   }
 
   .tariff__slogan {
     grid-column: 1/-1;
+    grid-row: 1/2;
     font-size: 45px;
     line-height: 45px;
     width: 100%;
     text-align: center;
+    margin: 0;
   }
 
   .tariff__rates {
-    grid-row: 3/4;
+    grid-row: 7/8;
     margin-right: 47px;
     margin-top: -23px;
   }
 
   .tariff__list {
-    margin-top: 31px;
-    padding-top: 41px;
-    padding-bottom: 41px;
+    grid-row: 3/6;
+    margin: 0;
+    padding-top: 39px;
+    padding-bottom: 39px;
   }
 
   .tariff__business-block {
-    grid-row: 3/4;
+    grid-row: 7/8;
     grid-column: 1/2;
     margin-top: -27px;
   }
@@ -135,8 +149,7 @@
     align-items: center;
     font-size: 20px;
     line-height: 20px;
-    font-weight: 700px;
-    color: hsla(229, 72%, 27%, 1);
+    font-weight: 700;
   }
 
   .tariff__business-small {
@@ -147,47 +160,67 @@
   .tariff__business-desc {
     margin: 0;
   }
+
+  .tariff__business-icon {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .tariff {
-    width: 82%;
+    width: 81%;
+    min-width: 1182px;
     padding-bottom: 165px;
     padding-top: 103px;
-  }
-
-  .tariff__slogan {
-    margin: 0;
-    margin-bottom: 87px;
+    grid-template-rows: min-content 86px min-content 45px min-content;
   }
 
   .tariff__list {
     grid-column: 1/2;
+    grid-row: 3/4;
     margin: 0;
     padding-top: 48px;
-    padding-bottom: 50px;
-    padding-right: 79px;
+    padding-bottom: 46px;
+    padding-right: 72px;
 
     &::after {
       width: 446px;
-      right: -83px;
+      right: -88px;
     }
   }
 
   .tariff__rates {
     margin: 0;
+    margin-right: 6px;
     width: 198px;
     height: 198px;
-    grid-row: 2/3;
+    grid-row: 3/4;
     align-self: center;
     justify-self: center;
+    background-image: url("../../img/tariff/rates-desctop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/tariff/rates-desctop@2x.png");
+      background-size: 396px auto;
+    }
   }
 
   .tariff__business-block {
     margin-top: -20px;
+    grid-row: 4/5;
   }
 
   .tariff__business-desc {
     margin-right: 22px;
+  }
+
+  .tariff__business-small {
+    margin-right: 22px;
+  }
+
+  .tariff__business-icon {
+    margin-left: 3px;
+    margin-bottom: 2px;
   }
 }

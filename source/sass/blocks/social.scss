@@ -26,7 +26,7 @@
   background-color: $darkorange;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: hsla(20, 89%, 55%, 1);
     border: none;
     outline: none;
@@ -41,7 +41,7 @@
   background-color: $midlorange;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: hsla(27, 100%, 59%, 1);
     border: none;
     outline: none;
@@ -74,12 +74,15 @@
   min-width: 189px;
   height: fit-content;
   border-radius: 25px;
-  padding-top: 11px;
-  padding-bottom: 7px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 13px;
+  padding-right: 10px;
   background-color: hsla(47, 100%, 65%, 1);
+  box-sizing: border-box;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: hsla(41, 100%, 59%, 1);
     outline: none;
   }

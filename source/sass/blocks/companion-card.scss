@@ -1,28 +1,40 @@
 .companion-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: hsla(0, 0%, 100%, 1);
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   color: $darkfont-color;
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+
+    .companion-card__img {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.companion-card:first-of-type {
+  z-index: 1;
 }
 
 .companion-card__block-img {
   position: relative;
-  background-color: $white;
-  border-top-right-radius: 11px;
+  display: inline-block;
+  overflow: hidden;
   border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  background-color: hsla(229, 46%, 18%, 1);
 }
 
-.companion-card__picture {
+.companion-card__img {
+  transition: 1s;
   width: 100%;
-  height: auto;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
 }
 
 .companion-card__small {
@@ -34,13 +46,15 @@
 .companion-card__desc {
   position: relative;
   display: flex;
+  background-color: $white;
   flex-direction: column;
-  padding-top: 22px;
-  padding-left: 40px;
+  padding-top: 25px;
+  padding-left: 41px;
   padding-right: 40px;
   padding-bottom: 18px;
   align-items: center;
-  background-color: transparent;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
 }
 
 .companion-card__wrapper {
@@ -62,12 +76,12 @@
   font-size: 21px;
   line-height: 21px;
   margin: 0;
-  margin-right: 18px;
+  margin-right: 16px;
 }
 
 .companion-card__list-wrapper {
   position: absolute;
-  top: -12px;
+  top: -10px;
   width: 100%;
 }
 
@@ -98,8 +112,7 @@
   margin-right: 20px;
 }
 
-.companion-card__img-flag {
-  height: fit-content;
+.companion-card__flag-img {
   border-radius: 4px;
 }
 
@@ -112,27 +125,32 @@
     }
   }
 
-  .companion-card__picture {
-    width: 285px;
-    height: 285px;
+  .companion-card__small {
+    top: 21px;
+    left: 23px;
   }
 
   .companion-card__desc {
     padding: 0;
-    padding-top: 30px;
+    padding-top: 28px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .companion-card__wrapper {
     margin-bottom: 25px;
+    align-self: flex-start;
+    margin-left: 21px;
   }
 
   .companion-card__online {
     width: 8px;
     height: 8px;
     margin-right: 14px;
+    margin-top: 2px;
   }
 
   .companion-card__name {
@@ -140,6 +158,10 @@
     line-height: 22px;
     padding: 0;
     margin: 0;
+  }
+
+  .companion-card__list-wrapper {
+    top: -13px;
   }
 
   .companion-card__list-hashtag {
@@ -164,9 +186,18 @@
   .companion-card__list-last {
     margin-bottom: 0;
   }
+
+  .companion-card__block-img {
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .companion-card {
+    width: 285px;
+  }
+
   .companion-card__desc {
     padding-bottom: 19px;
     padding-right: 12px;
@@ -175,7 +206,7 @@
 
   .companion-card__wrapper {
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
     margin-left: 34px;
     padding: 0;
     justify-content: flex-start;
@@ -198,5 +229,19 @@
   .companion-card__small {
     top: 22px;
     left: 24px;
+  }
+
+  .companion-card__img {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+
+  .companion-card__item-hashtag:not(:first-of-type) {
+    margin-left: 6px;
+  }
+
+  .companion-card__item-hashtag:last-of-type {
+    margin-right: 6px;
   }
 }
