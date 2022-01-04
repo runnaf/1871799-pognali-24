@@ -225,6 +225,11 @@
 }
 
 .form-step__field-group--active-select {
+  border: 1px solid hsla(227, 16%, 82%, 1);
+  background-color: hsla(224, 52%, 24%, 1);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
   & .table__cell--current {
     background-color: hsla(227, 33%, 95%, 1);
   }
@@ -232,13 +237,6 @@
   & .table__link--current {
     color: hsla(224, 52%, 24%, 1);
   }
-}
-
-.form-step__field-group--active-select {
-  border: 1px solid hsla(227, 16%, 82%, 1);
-  background-color: hsla(224, 52%, 24%, 1);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
 
   & .form-step-second__field {
     color: $white;
