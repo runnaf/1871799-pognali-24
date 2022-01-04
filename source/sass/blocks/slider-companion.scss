@@ -77,7 +77,7 @@
   }
 
   &:active,
-  &:focus {
+  &:focus-visible {
     & .slider-companion__link-more--wrapper {
       &::after,
       &::before {

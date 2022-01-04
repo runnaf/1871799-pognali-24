@@ -56,7 +56,7 @@
   }
 
   &:active,
-  &:focus {
+  &:focus-visible {
     opacity: 0.3;
   }
 }

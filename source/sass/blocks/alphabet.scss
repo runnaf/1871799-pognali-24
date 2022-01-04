@@ -14,7 +14,7 @@
 
 .alphabet__item {
   background-color: transparent;
-  margin-bottom: 4px;
+  margin-bottom: 3.9px;
 }
 
 .alphabet__link {
@@ -24,12 +24,15 @@
   line-height: 22px;
   color: hsla(0, 0%, 27%, 1);
   text-decoration: none;
+  width: 100%;
+  height: auto;
+  display: block;
 
   &:hover {
     color: hsla(224, 52%, 24%, 1);
   }
 
-  &:focus,
+  &:focus-visible,
   &:active {
     opacity: 0.3;
   }
@@ -59,5 +62,6 @@
 
   .alphabet__item {
     margin-bottom: 0;
+    text-align: left;
   }
 }

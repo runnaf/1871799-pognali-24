@@ -17,7 +17,12 @@
   font-weight: 300;
   width: 95%;
   margin: 0;
+  margin-bottom: 19px;
   padding: 0;
+}
+
+.about-us__transfer-tablet {
+  display: none;
 }
 
 .about-us__mobile {
@@ -25,8 +30,8 @@
 }
 
 .about-us__text-advice {
+  margin: 0;
   width: 100%;
-  margin-top: 19px;
 }
 
 .about-us__header {
@@ -39,7 +44,6 @@
   font-size: 24px;
   line-height: 24px;
   display: flex;
-  margin-top: 56px;
   padding-top: 25px;
   padding-bottom: 28px;
   padding-left: 32px;
@@ -57,13 +61,16 @@
   position: absolute;
   top: calc(50% - 7px);
   right: 25px;
+  width: 13px;
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {
   .about-us {
-    width: 81%;
+    width: 80%;
+    min-width: 621px;
     padding-bottom: 90px;
-    padding-top: 41px;
+    padding-top: 37px;
   }
 
   .about-us__title {
@@ -76,19 +83,24 @@
     font-size: 28px;
     line-height: 33px;
     width: 301px;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
     padding: 0;
+    margin-left: 2px;
 
     & br:first-of-type {
       display: none;
     }
   }
 
+  .about-us__transfer-tablet {
+    display: inline-block;
+  }
+
   .about-us__text-advice {
     width: 49%;
     font-size: 21px;
     line-height: 25px;
-    margin-bottom: 56px;
+    margin-bottom: 54px;
   }
 
   .about-us__button--closed {
@@ -96,16 +108,14 @@
   }
 
   .about-us__button {
-    min-width: 274px;
+    min-width: 276px;
   }
-}
 
-.about-us__header .page-header {
-  padding: 0;
-  padding-left: 60px;
-  padding-top: 19px;
-  padding-right: 60px;
-  padding-bottom: 15px;
+  .about-us__button-icon {
+    width: 14px;
+    top: calc(50% - 6px);
+    right: 32px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -113,7 +123,7 @@
     width: 82%;
     padding: 0;
     padding-bottom: 163px;
-    padding-top: 86px;
+    padding-top: 128px;
   }
 
   .about-us__header--open {
@@ -123,7 +133,6 @@
   .about-us__title {
     font-size: 45px;
     line-height: 50px;
-    padding-top: 40px;
     margin-bottom: 55px;
   }
 
@@ -136,16 +145,20 @@
     padding: 0;
   }
 
+  .about-us__transfer-tablet {
+    display: none;
+  }
+
   .about-us__text-advice {
     width: 465px;
     font-size: 21px;
-    line-height: 25px;
-    margin-bottom: 85px;
+    line-height: 24px;
+    margin-bottom: 87px;
   }
 
   .about-us__button {
     width: 0;
-    min-width: 274px;
+    min-width: 275px;
     font-size: 24px;
     line-height: 24px;
     display: flex;
@@ -153,11 +166,12 @@
     padding-bottom: 29px;
     padding-left: 33px;
     padding-right: 60px;
-    border-radius: 18px;
+    border-radius: 23px;
   }
 
   .about-us__button-icon {
-    right: 30px;
+    right: 31px;
+    top: calc(50% - 8px);
     width: 14px;
     height: 16px;
   }

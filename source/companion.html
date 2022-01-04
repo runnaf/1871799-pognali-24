@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Погнали</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon32.ico"> <!-- 32×32 -->
+  <link rel="icon" href="favicon16.ico"> <!-- 16×16 -->
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/favicon152.png"> <!-- 152×152 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="js/javascript.js"></script>
 </head>
 
@@ -63,7 +68,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list page-header__list main-nav__list--closed site-list">
           <li class="main-nav__item site-list__item">
-            <a class="main-nav__link site-list__link">
+            <a class="main-nav__link site-list__link" href="index.html">
               <span class="main-nav__link-regular" data-hover="О сервисе">О сервисе</span>
             </a>
           </li>
@@ -73,7 +78,7 @@
             </a>
           </li>
           <li class="main-nav__item site-list__item">
-            <a class="main-nav__link site-list__link" href="companion.html">
+            <a class="main-nav__link site-list__link">
               <span class="main-nav__link-regular" data-hover="Попутчики">Попутчики</span>
             </a>
           </li>
@@ -225,8 +230,8 @@
               <table class="country-nav__table table">
                 <tbody class="table__wrapper">
                   <tr class="table__row">
-                    <td class="table__cell table__cell--current country-nav__cell--current">
-                      <a class="table__link country-list__link" href="#">А</a>
+                    <td class="table__cell  country-nav__cell--current">
+                      <button class="table__button table__button--current country-list__link" href="#">А</button>
                       <div class="alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Австралия</a></li>
@@ -244,7 +249,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">Б</a>
+                      <button class="table__button" type="submit">Б</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Багамские Острова</a></li>
@@ -268,7 +273,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">В</a>
+                      <button class="table__button" type="submit">В</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Вануату</a></li>
@@ -281,7 +286,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">Г</a>
+                      <button class="table__button" type="submit">Г</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Габон</a></li>
@@ -302,7 +307,7 @@
                     </td>
 
                     <td class="table__cell">
-                      <a class="table__link" href="#">Д</a>
+                      <button class="table__button" type="submit">Д</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Дания</a></li>
@@ -316,7 +321,7 @@
 
                   <tr class="table__row">
                     <td class="table__cell">
-                      <a class="table__link" href="#">Е</a>
+                      <button class="table__button" type="submit">Е</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Египет</a></li>
@@ -324,7 +329,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">З</a>
+                      <button class="table__button" type="submit">З</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Замбия</a></li>
@@ -333,7 +338,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">И</a>
+                      <button class="table__button" type="submit">И</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Израиль</a></li>
@@ -350,7 +355,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">К</a>
+                      <button class="table__button" type="submit">К</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Кабо-Верде</a></li>
@@ -369,7 +374,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">Л</a>
+                      <button class="table__button" type="submit">Л</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Лаос</a></li>
@@ -387,7 +392,7 @@
                   </tr>
                   <tr class="table__row">
                     <td class="table__cell">
-                      <a class="table__link" href="#">М</a>
+                      <button class="table__button" type="submit">М</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Маврикий</a></li>
@@ -403,7 +408,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">Н</a>
+                      <button class="table__button" type="submit">Н</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Намибия</a></li>
@@ -419,7 +424,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">О</a>
+                      <button class="table__button" type="submit">О</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">ОАЭ</a></li>
@@ -428,7 +433,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">П</a>
+                      <button class="table__button" type="submit">П</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Пакистан</a></li>
@@ -443,7 +448,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">Р</a>
+                      <button class="table__button" type="submit">Р</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Руанда</a></li>
@@ -455,7 +460,7 @@
                   </tr>
                   <tr class="table__row">
                     <td class="table__cell">
-                      <a class="table__link" href="#">С</a>
+                      <button class="table__button" type="submit">С</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Сальвадор</a></li>
@@ -474,7 +479,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">Т</a>
+                      <button class="table__button" type="submit">Т</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Таджикистан</a></li>
@@ -491,7 +496,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">У</a>
+                      <button class="table__button" type="submit">У</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Уганда</a></li>
@@ -502,7 +507,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">Ф</a>
+                      <button class="table__button" type="submit">Ф</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Фиджи</a></li>
@@ -513,7 +518,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">Х</a>
+                      <button class="table__button" type="submit">Х</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Хорватия</a></li>
@@ -523,7 +528,7 @@
                   </tr>
                   <tr class="table__row">
                     <td class="table__cell">
-                      <a class="table__link" href="#">Ч</a>
+                      <button class="table__button" type="submit">Ч</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Чад</a></li>
@@ -534,7 +539,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">Ш</a>
+                      <button class="table__button" type="submit">Ш</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Швейцария</a></li>
@@ -544,7 +549,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">Э</a>
+                      <button class="table__button" type="submit">Э</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Эквадор</a></li>
@@ -556,7 +561,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">Ю</a>
+                      <button class="table__button" type="submit">Ю</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">ЮАР</a></li>
@@ -565,7 +570,7 @@
                       </div>
                     </td>
                     <td class="table__cell">
-                      <a class="table__link" href="#">Я</a>
+                      <button class="table__button" type="submit">Я</button>
                       <div class="direction-country__hidden alphabet">
                         <ol class="alphabet__list">
                           <li class="alphabet__item"><a class="alphabet__link" href="#">Ямайка</a></li>
@@ -971,7 +976,7 @@
           <form class="selection-companion__form selection-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="selection-companion__filter-group--checkbox">
               <fieldset
-                class="selection-companion__filter-group selection-companion__filter-group--opened selection-companion__filter-group--nojs hobby">
+                class="selection-companion__filter-group selection-companion__filter-group--closed selection-companion__filter-group--nojs hobby">
                 <legend
                   class="selection-companion__legend selection-companion__legend--checkbox hobby__title selection-form__title">
                   <div class="selection-companion__link-wrapper">
@@ -992,19 +997,19 @@
                     </svg>
                   </li>
                   <li class="selection-companion__item">
-                    <input class="visually-hidden selection-companion__input" type="checkbox" name="Hookah"
-                      id="Hookah">
-                    <label class="selection-companion__input-desc selection-companion__label" for="Hookah">Кальян</label>
-                    <svg class="selection-companion__checkbox-icon" width="14" height="13" aria-label="Выбрать чекбокс.">
+                    <input class="visually-hidden selection-companion__input" type="checkbox" name="Hookah" id="Hookah">
+                    <label class="selection-companion__input-desc selection-companion__label"
+                      for="Hookah">Кальян</label>
+                    <svg class="selection-companion__checkbox-icon" width="14" height="13"
+                      aria-label="Выбрать чекбокс.">
                       <use href="img/sprite.svg#icon-arrow-checkbox"></use>
                     </svg>
                   </li>
                   <li class="selection-companion__item">
-                    <input class="visually-hidden selection-companion__input" type="checkbox" name="sofa"
-                      id="sofa">
-                    <label class="selection-companion__input-desc selection-companion__label"
-                      for="sofa">Диван</label>
-                    <svg class="selection-companion__checkbox-icon" width="14" height="13" aria-label="Выбрать чекбокс.">
+                    <input class="visually-hidden selection-companion__input" type="checkbox" name="sofa" id="sofa">
+                    <label class="selection-companion__input-desc selection-companion__label" for="sofa">Диван</label>
+                    <svg class="selection-companion__checkbox-icon" width="14" height="13"
+                      aria-label="Выбрать чекбокс.">
                       <use href="img/sprite.svg#icon-arrow-checkbox"></use>
                     </svg>
                   </li>
@@ -1034,7 +1039,8 @@
                   </li>
                   <li class="selection-companion__item">
                     <input class="visually-hidden selection-companion__input" type="checkbox" name="rap" id="rap">
-                    <label class="selection-companion__input-desc selection-companion__label" for="rap">русский рэп</label>
+                    <label class="selection-companion__input-desc selection-companion__label" for="rap">русский
+                      рэп</label>
                     <svg class="selection-companion__checkbox-icon" width="14" height="13" aria-label="Чекбокс выбран.">
                       <use href="img/sprite.svg#icon-arrow-checkbox"></use>
                     </svg>
@@ -1044,7 +1050,8 @@
                       id="evrodance">
                     <label class="selection-companion__input-desc selection-companion__label"
                       for="evrodance">евроденс</label>
-                    <svg class="selection-companion__checkbox-icon" width="14" height="13" aria-label="Выбрать чекбокс.">
+                    <svg class="selection-companion__checkbox-icon" width="14" height="13"
+                      aria-label="Выбрать чекбокс.">
                       <use href="img/sprite.svg#icon-arrow-checkbox"></use>
                     </svg>
                   </li>
@@ -1052,7 +1059,7 @@
               </fieldset>
 
               <fieldset
-                class="selection-companion__filter-group selection-companion__filter-group--opened selection-companion__filter-group--nojs meal">
+                class="selection-companion__filter-group selection-companion__filter-group--closed selection-companion__filter-group--nojs meal">
                 <legend
                   class="selection-companion__legend selection-companion__legend--checkbox hobby__title selection-form__title">
                   <div class="selection-companion__link-wrapper">
@@ -1066,7 +1073,8 @@
                   <li class="selection-companion__item">
                     <input class="visually-hidden selection-companion__input" type="checkbox" name="meat-eater" checked
                       id="meat-eater">
-                    <label class="selection-companion__input-desc selection-companion__label" for="meat-eater">мясоед</label>
+                    <label class="selection-companion__input-desc selection-companion__label"
+                      for="meat-eater">мясоед</label>
                     <svg class="selection-companion__checkbox-icon" width="14" height="13" aria-label="Чекбокс выбран.">
                       <use href="img/sprite.svg#icon-arrow-checkbox"></use>
                     </svg>
@@ -1074,18 +1082,19 @@
                   <li class="selection-companion__item">
                     <input class="visually-hidden selection-companion__input" type="checkbox" name="proper-nutrition"
                       id="proper-nutrition">
-                    <label class="selection-companion__input-desc selection-companion__label" for="proper-nutrition">сидит на
-                      ПП</label>
-                    <svg class="selection-companion__checkbox-icon" width="14" height="13" aria-label="Выбрать чекбокс.">
+                    <label class="selection-companion__input-desc selection-companion__label"
+                      for="proper-nutrition">сидит на ПП</label>
+                    <svg class="selection-companion__checkbox-icon" width="14" height="13"
+                      aria-label="Выбрать чекбокс.">
                       <use href="img/sprite.svg#icon-arrow-checkbox"></use>
                     </svg>
                   </li>
                   <li class="selection-companion__item">
-                    <input class="visually-hidden selection-companion__input" type="checkbox" name="vegan"
-                      id="vegan">
+                    <input class="visually-hidden selection-companion__input" type="checkbox" name="vegan" id="vegan">
                     <label class="selection-companion__input-desc selection-companion__label"
                       for="vegan">веган-сыроед</label>
-                    <svg class="selection-companion__checkbox-icon" width="14" height="13" aria-label="Выбрать чекбокс.">
+                    <svg class="selection-companion__checkbox-icon" width="14" height="13"
+                      aria-label="Выбрать чекбокс.">
                       <use href="img/sprite.svg#icon-arrow-checkbox"></use>
                     </svg>
                   </li>
@@ -1106,44 +1115,59 @@
                 </div>
               </legend>
               <ul class="selection-companion__list selection-companion__list--avtive selection-companion__list-way">
-                <li class="selection-companion__item-way list-way">
-                  <button class="list-way selection-companion__link-way list-way--current" type="button">
+                <li class="selection-companion__item-way">
+                  <button class="list-way selection-companion__link-way list-way list-way--current list-way--selected"
+                    type="button">
                     <span class="visually-hidden">Способ путешествия самолетом.</span>
                     <svg class="list-way__icon" width="21" height="23">
                       <use href="img/sprite.svg#icon-plane"></use>
                     </svg>
                   </button>
+                  <div class="popover popover--plane">
+                    <p class="popover__desc">Авиаперелет</p>
+                  </div>
                 </li>
-                <li class="companion-card__item-way list-way">
-                  <button class="list-way selection-companion__link-way list-way--current" type="button">
+                <li class="selection-companion__item-way">
+                  <button class="list-way selection-companion__link-way list-way list-way--current list-way--selected"
+                    type="button">
                     <span class="visually-hidden">Способ путешествия автотранспортом.</span>
                     <svg class="list-way__icon" width="18" height="21">
                       <use href="img/sprite.svg#icon-bus"></use>
                     </svg>
                   </button>
+                  <div class="popover popover--bus">
+                    <p class="popover__desc">Автотранспорт</p>
+                  </div>
                 </li>
-                <li class="companion-card__item-way list-way">
-                  <button class="list-way selection-companion__link-way" type="button">
+                <li class="selection-companion__item-way">
+                  <button class="list-way selection-companion__link-way list-way list-way--selected" type="button">
                     <span class="visually-hidden">Способ путешествия на велосипеде.</span>
                     <svg class="list-way__icon" width="25" height="24">
                       <use href="img/sprite.svg#icon-bycicle"></use>
                     </svg>
                   </button>
+                  <div class="popover popover--bike">
+                    <p class="popover__desc">Велосипед</p>
+                  </div>
                 </li>
-                <li class="companion-card__item-way list-way">
-                  <button class="list-way selection-companion__link-way list-way--current" type="button">
+                <li class="selection-companion__item-way">
+                  <button class="list-way selection-companion__link-way list-way list-way--current list-way--selected"
+                    type="button">
                     <span class="visually-hidden">Способ путешествия пешком.</span>
                     <svg class="list-way__icon" width="21" height="24">
                       <use href="img/sprite.svg#icon-run"></use>
                     </svg>
                   </button>
+                  <div class="popover popover--run">
+                    <p class="popover__desc">Пешком</p>
+                  </div>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset
-              class="selection-companion__filter-group selection-companion__filter-group--opened selection-form__filter-group">
-              <legend class="selection-companion__legend selection-form__title selection-companion--filter-opened">
+              class="selection-companion__filter-group selection-companion__filter-group--opened selection-companion__filter-group--nojs">
+              <legend class="selection-companion__legend selection-form__title">
                 <div class="selection-companion__link-wrapper">
                   <a class="selection-companion__link">Левел</a>
                   <button class="selection-companion__button-filter selection-companion__button-filter--opened"
@@ -1194,10 +1218,19 @@
                   <span class="visually-hidden">Статус активности в сети</span>
                 </div>
               </button>
-              <p class="card__text">1,5 М</p>
-              <img class="card__picture" src="img/avatar/firsova.jpg" alt="Девушка в бассейне на надовном матрасе"
-                width="70" height="70">
-              <a class="card__link-favorite favorite-link card__link-favorite--current">
+              <p class="card__text">1500</p>
+              <div class="card__picture">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                    srcset="img/user/tania_firsova/firsova-desktop.jpg 1x, img/user/tania_firsova/firsova-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/user/tania_firsova/firsova-tablet.jpg 1x, img/user/tania_firsova/firsova-tablet@2x.jpg 2x">
+                  <img class="card__img" src="img/user/tania_firsova/firsova-mobile.jpg"
+                    srcset="img/user/tania_firsova/firsova-mobile@2x.jpg 2x" alt="Петр Демин">
+                </picture>
+              </div>
+
+              <a class="card__link-favorite favorite-link">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="card__favorite-icon" width="13" height="11">
                   <use href="img/sprite.svg#icon-favorite"></use>
@@ -1207,9 +1240,9 @@
                 </svg>
               </a>
               <ul class="card__list card__list-hashtag">
-                <li class="card__item-hashtag">#ЗОЖ</li>
+                <li class="card__item-hashtag">#ЗОЖ </li>
                 <li class="card__item-hashtag">#ПП</li>
-                <li class="card__item-hashtag">#Фитнес</li>
+                <li class="card__item-hashtag">#фитнес</li>
                 <li class="card__item-hashtag">#пляж</li>
                 <li class="card__item-hashtag">#авокадо</li>
                 <li class="card__item-hashtag">#смузи</li>
@@ -1218,48 +1251,95 @@
                 <h3 class="card__title card__title-country">хочет посетить:</h3>
                 <ul class="card__list card__list-country">
                   <li class="card__item card__item-country">
-                    <img class="card__flag-img" src="img/flag-item/sri-lanka.jpg" alt="флаг Шри-Ланки." width="26"
-                      height="18">
-                    <span class="card__item-desc">Шри-ланка</span>
+                    <div class="card__flag-wrapper">
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/flag__img/35_24/SriLanka.jpg 1x, img/flag__img/35_24/SriLanka@2x.jpg 2x">
+                        <img class="card__flag-img" src="img/flag__img/26_18/SriLanka.jpg"
+                          srcset="img/flag__img/26_18/SriLanka@2x.jpg 2x" alt="флаг Шри-Ланки">
+                      </picture>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Шри-Ланка</p>
+                      </div>
+                    </div>
+                    <span class="card__item-desc">Шри-Ланка</span>
                   </li>
                   <li class="card__item card__item-country">
-                    <img class="card__flag-img" src="img/flag-item/thailand.jpg" alt="флаг Таиланда." width="26"
-                      height="18">
+                    <div class="card__flag-wrapper">
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/flag__img/35_24/Thailand.jpg 1x, img/flag__img/35_24/Thailand@2x.jpg 2x">
+                        <img class="card__flag-img" src="img/flag__img/26_18/Thailand.jpg"
+                          srcset="img/flag__img/26_18/Thailand@2x.jpg 2x" alt="флаг Таиланда">
+                      </picture>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Таиланд</p>
+                      </div>
+                    </div>
                     <span class="card__item-desc">Таиланд</span>
                   </li>
                   <li class="card__item card__item-country">
-                    <img class="card__flag-img" src="img/flag-item/seychelles.jpg" alt="флаг Сейшеллы." width="26"
-                      height="18">
-                    <span class="card__item-desc">Сейшелы </span>
+                    <div class="card__flag-wrapper">
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/flag__img/35_24/Seychelles.jpg 1x, img/flag__img/35_24/Seychelles@2x.jpg 2x">
+                        <img class="card__flag-img" src="img/flag__img/26_18/Seychelles.jpg"
+                          srcset="img/flag__img/26_18/Seychelles@2x.jpg 2x" alt="флаг Сейшеллы">
+                      </picture>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Сейшеллы</p>
+                      </div>
+                    </div>
+                    <span class="card__item-desc">Сейшеллы</span>
                   </li>
                 </ul>
               </div>
               <div class="card__wrapper card__wrapper-transport">
                 <h3 class="card__title card__title-transport">транспорт:</h3>
                 <ul class="card__list card__list-transport">
-                  <li class="card__item-transport list-way--current">
-                    <span class="visually-hidden">Способ путешествия самолетом.</span>
-                    <svg class="list-way__icon" width="21" height="23">
-                      <use href="img/sprite.svg#icon-plane"></use>
-                    </svg>
+                  <li class="card__item-transport">
+                    <div class="card__item-transport--container list-way list-way--current">
+                      <span class="visually-hidden">Способ путешествия самолетом.</span>
+                      <svg class="list-way__icon" width="21" height="23">
+                        <use href="img/sprite.svg#icon-plane"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--plane">
+                      <p class="popover__desc">Авиаперелет</p>
+                    </div>
                   </li>
                   <li class="card__item-transport">
-                    <span class="visually-hidden">Способ путешествия автотранспортом</span>
-                    <svg class="list-way__icon" width="18" height="21">
-                      <use href="img/sprite.svg#icon-bus"></use>
-                    </svg>
+                    <div class="card__item-transport--container list-way list-way--current">
+                      <span class="visually-hidden">Способ путешествия автотранспортом.</span>
+                      <svg class="list-way__icon" width="18" height="21">
+                        <use href="img/sprite.svg#icon-bus"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--bus">
+                      <p class="popover__desc">Автотранспорт</p>
+                    </div>
                   </li>
                   <li class="card__item-transport">
-                    <span class="visually-hidden">Способ путешествия на велосипеде.</span>
-                    <svg class="list-way__icon" width="25" height="24">
-                      <use href="img/sprite.svg#icon-bycicle"></use>
-                    </svg>
+                    <div class="card__item-transport--container list-way list-way--current">
+                      <span class="visually-hidden">Способ путешествия на велосипеде.</span>
+                      <svg class="list-way__icon" width="25" height="24">
+                        <use href="img/sprite.svg#icon-bycicle"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--bike">
+                      <p class="popover__desc">Велосипед</p>
+                    </div>
                   </li>
                   <li class="card__item-transport">
-                    <span class="visually-hidden">Способ путешествия пешком.</span>
-                    <svg class="list-way__icon" width="21" height="24">
-                      <use href="img/sprite.svg#icon-run"></use>
-                    </svg>
+                    <div class="card__item-transport--container list-way list-way--current">
+                      <span class="visually-hidden">Способ путешествия пешком.</span>
+                      <svg class="list-way__icon" width="21" height="24">
+                        <use href="img/sprite.svg#icon-run"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--run">
+                      <p class="popover__desc">Пешком</p>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1268,9 +1348,12 @@
                 <div class="card__level-container">
                   <span class="card__level-number">99</span>
                   <span class="card__level">level</span>
+                  <svg class="level-icon">
+                    <use href="img/sprite.svg#icon-level80"></use>
+                  </svg>
                 </div>
               </div>
-              <button class="button card__button">Позвать!</button>
+              <button class="button card__button" type="button">Позвать!</button>
             </div>
           </div>
         </div>
@@ -1285,8 +1368,16 @@
                 </div>
               </button>
               <p class="card__text">1500</p>
-              <img class="card__picture" src="img/avatar/firsova.jpg" alt="Девушка в бассейне на надовном матрасе"
-                width="70" height="70">
+              <div class="card__picture">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                    srcset="img/user/petr_demin/demin-desktop.jpg 1x, img/user/petr_demin/demin-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/user/petr_demin/demin-tablet.jpg, img/user/petr_demin/demin-tablet@2x.jpg 2x">
+                  <img class="card__img" src="img/user/petr_demin/demin-mobile.jpg"
+                    srcset="img/user/petr_demin/demin-mobile@2x.jpg 2x" alt="Петр Демин">
+                </picture>
+              </div>
               <a class="card__link-favorite favorite-link">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="card__favorite-icon" width="13" height="11">
@@ -1307,12 +1398,31 @@
                 <h3 class="card__title card__title-country">хочет посетить:</h3>
                 <ul class="card__list card__list-country">
                   <li class="card__item card__item-country">
-                    <img class="card__flag-img" src="img/flag-item/belgium.jpg" alt="флаг Бельгии." width="26"
-                      height="18">
+                    <div class="card__flag-wrapper">
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/flag__img/35_24/Belgium.jpg 1x, img/flag__img/35_24/Belgium@2x.jpg 2x">
+                        <img class="card__flag-img" src="img/flag__img/26_18/Belgium.jpg"
+                          srcset="img/flag__img/26_18/Belgium@2x.jpg 2x" alt="флаг Бельгии">
+                      </picture>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Бельгия</p>
+                      </div>
+                    </div>
                     <span class="card__item-desc">Бельгия</span>
                   </li>
                   <li class="card__item card__item-country">
-                    <img class="card__flag-img" src="img/flag-item/czech.jpg" alt="флаг Чехии." width="26" height="18">
+                    <div class="card__flag-wrapper">
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/flag__img/35_24/Czech.jpg 1x, img/flag__img/35_24/Czech@2x.jpg 2x">
+                        <img class="card__flag-img" src="img/flag__img/26_18/Czech.jpg"
+                          srcset="img/flag__img/26_18/Czech@2x.jpg 2x" alt="флаг Чехии">
+                      </picture>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Чехия</p>
+                      </div>
+                    </div>
                     <span class="card__item-desc">Чехия</span>
                   </li>
                 </ul>
@@ -1320,29 +1430,49 @@
               <div class="card__wrapper card__wrapper-transport">
                 <h3 class="card__title card__title-transport">транспорт:</h3>
                 <ul class="card__list card__list-transport">
-                  <li class="card__item-transport list-way--current">
-                    <span class="visually-hidden">Способ путешествия самолетом.</span>
-                    <svg class="list-way__icon" width="21" height="23">
-                      <use href="img/sprite.svg#icon-plane"></use>
-                    </svg>
-                  </li>
-                  <li class="card__item-transport list-way--current">
-                    <span class="visually-hidden">Способ путешествия автотранспортом</span>
-                    <svg class="list-way__icon" width="18" height="21">
-                      <use href="img/sprite.svg#icon-bus"></use>
-                    </svg>
+                  <li class="card__item-transport">
+                    <div class="card__item-transport--container list-way list-way--current">
+                      <span class="visually-hidden">Способ путешествия самолетом.</span>
+                      <svg class="list-way__icon" width="21" height="23">
+                        <use href="img/sprite.svg#icon-plane"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--plane">
+                      <p class="popover__desc">Авиаперелет</p>
+                    </div>
                   </li>
                   <li class="card__item-transport">
-                    <span class="visually-hidden">Способ путешествия на велосипеде.</span>
-                    <svg class="list-way__icon" width="25" height="24">
-                      <use href="img/sprite.svg#icon-bycicle"></use>
-                    </svg>
+                    <div class="card__item-transport--container list-way list-way--current">
+                      <span class="visually-hidden">Способ путешествия автотранспортом.</span>
+                      <svg class="list-way__icon" width="18" height="21">
+                        <use href="img/sprite.svg#icon-bus"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--bus">
+                      <p class="popover__desc">Автотранспорт</p>
+                    </div>
                   </li>
-                  <li class="card__item-transport list-way--current">
-                    <span class="visually-hidden">Способ путешествия пешком.</span>
-                    <svg class="list-way__icon" width="21" height="24">
-                      <use href="img/sprite.svg#icon-run"></use>
-                    </svg>
+                  <li class="card__item-transport">
+                    <div class="card__item-transport--container list-way list-way--current">
+                      <span class="visually-hidden">Способ путешествия на велосипеде.</span>
+                      <svg class="list-way__icon" width="25" height="24">
+                        <use href="img/sprite.svg#icon-bycicle"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--bike">
+                      <p class="popover__desc">Велосипед</p>
+                    </div>
+                  </li>
+                  <li class="card__item-transport">
+                    <div class="card__item-transport--container list-way list-way--current">
+                      <span class="visually-hidden">Способ путешествия пешком.</span>
+                      <svg class="list-way__icon" width="21" height="24">
+                        <use href="img/sprite.svg#icon-run"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--run">
+                      <p class="popover__desc">Пешком</p>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1351,9 +1481,12 @@
                 <div class="card__level-container">
                   <span class="card__level-number">80</span>
                   <span class="card__level">level</span>
+                  <svg class="level-icon">
+                    <use href="img/sprite.svg#icon-level80"></use>
+                  </svg>
                 </div>
               </div>
-              <button class="button card__button">Позвать!</button>
+              <button class="button card__button" type="button">Позвать!</button>
             </div>
           </div>
         </div>
@@ -1368,8 +1501,16 @@
                 </div>
               </button>
               <p class="card__text">170</p>
-              <img class="card__picture" src="img/avatar/firsova.jpg" alt="Девушка в бассейне на надовном матрасе"
-                width="70" height="70">
+              <div class="card__picture">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                    srcset="img/user/mark_smolov/smolov-desktop.jpg 1x, img/user/mark_smolov/smolov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/user/mark_smolov/smolov-tablet.jpg 1x, img/user/mark_smolov/smolov-tablet@2x.jpg 2x">
+                  <img class="card__img" src="img/user/mark_smolov/smolov-mobile.jpg"
+                    srcset="img/user/mark_smolov/smolov-mobile@2x.jpg 2x" alt="Петр Демин">
+                </picture>
+              </div>
               <a class="card__link-favorite favorite-link">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="card__favorite-icon" width="13" height="11">
@@ -1390,48 +1531,95 @@
                 <h3 class="card__title card__title-country">хочет посетить:</h3>
                 <ul class="card__list card__list-country">
                   <li class="card__item card__item-country">
-                    <img class="card__flag-img" src="img/flag-item/united-states-of-america.jpg" alt="флаг США."
-                      width="26" height="18">
+                    <div class="card__flag-wrapper">
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/flag__img/35_24/United-States-of-America.jpg 1x, img/flag__img/35_24/United-States-of-America@2x.jpg 2x">
+                        <img class="card__flag-img" src="img/flag__img/26_18/United-States-of-America.jpg"
+                          srcset="img/flag__img/26_18/United-States-of-America@2x.jpg 2x" alt="флаг США">
+                      </picture>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">США</p>
+                      </div>
+                    </div>
                     <span class="card__item-desc">США</span>
                   </li>
                   <li class="card__item card__item-country">
-                    <img class="card__flag-img" src="img/flag-item/australia.jpg" alt="флаг Австралии." width="26"
-                      height="18">
+                    <div class="card__flag-wrapper">
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/flag__img/35_24/Australia.jpg 1x, img/flag__img/35_24/Australia@2x.jpg 2x">
+                        <img class="card__flag-img" src="img/flag__img/26_18/Australia.jpg"
+                          srcset="img/flag__img/26_18/Australia@2x.jpg 2x" alt="флаг Австралии">
+                      </picture>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Австралия</p>
+                      </div>
+                    </div>
                     <span class="card__item-desc">Австралия</span>
                   </li>
                   <li class="card__item card__item-country">
-                    <img class="card__flag-img" src="img/flag-item/dominica.jpg" alt="флаг Доминика." width="26"
-                      height="18">
-                    <span class="card__item-desc">Доминика </span>
+                    <div class="card__flag-wrapper">
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/flag__img/35_24/Dominica.jpg 1x, img/flag__img/35_24/Dominica@2x.jpg 2x">
+                        <img class="card__flag-img" src="img/flag__img/26_18/Dominica.jpg"
+                          srcset="img/flag__img/26_18/Dominica@2x.jpg 2x" alt="флаг Доминиканы">
+                      </picture>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Доминикана</p>
+                      </div>
+                    </div>
+                    <span class="card__item-desc">Доминикана</span>
                   </li>
                 </ul>
               </div>
               <div class="card__wrapper card__wrapper-transport">
                 <h3 class="card__title card__title-transport">транспорт:</h3>
                 <ul class="card__list card__list-transport">
-                  <li class="card__item-transport list-way--current">
-                    <span class="visually-hidden">Способ путешествия самолетом.</span>
-                    <svg class="list-way__icon" width="21" height="23">
-                      <use href="img/sprite.svg#icon-plane"></use>
-                    </svg>
+                  <li class="card__item-transport">
+                    <div class="card__item-transport--container list-way list-way--current">
+                      <span class="visually-hidden">Способ путешествия самолетом.</span>
+                      <svg class="list-way__icon" width="21" height="23">
+                        <use href="img/sprite.svg#icon-plane"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--plane">
+                      <p class="popover__desc">Авиаперелет</p>
+                    </div>
                   </li>
                   <li class="card__item-transport">
-                    <span class="visually-hidden">Способ путешествия автотранспортом</span>
-                    <svg class="list-way__icon" width="18" height="21">
-                      <use href="img/sprite.svg#icon-bus"></use>
-                    </svg>
-                  </li>
-                  <li class="card__item-transport list-way--current">
-                    <span class="visually-hidden">Способ путешествия на велосипеде.</span>
-                    <svg class="list-way__icon" width="25" height="24">
-                      <use href="img/sprite.svg#icon-bycicle"></use>
-                    </svg>
+                    <div class="card__item-transport--container list-way list-way--current">
+                      <span class="visually-hidden">Способ путешествия автотранспортом.</span>
+                      <svg class="list-way__icon" width="18" height="21">
+                        <use href="img/sprite.svg#icon-bus"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--bus">
+                      <p class="popover__desc">Автотранспорт</p>
+                    </div>
                   </li>
                   <li class="card__item-transport">
-                    <span class="visually-hidden">Способ путешествия пешком.</span>
-                    <svg class="list-way__icon" width="21" height="24">
-                      <use href="img/sprite.svg#icon-run"></use>
-                    </svg>
+                    <div class="card__item-transport--container list-way">
+                      <span class="visually-hidden">Способ путешествия на велосипеде.</span>
+                      <svg class="list-way__icon" width="25" height="24">
+                        <use href="img/sprite.svg#icon-bycicle"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--bike">
+                      <p class="popover__desc">Велосипед</p>
+                    </div>
+                  </li>
+                  <li class="card__item-transport">
+                    <div class="card__item-transport--container  list-way">
+                      <span class="visually-hidden">Способ путешествия пешком.</span>
+                      <svg class="list-way__icon" width="21" height="24">
+                        <use href="img/sprite.svg#icon-run"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--run">
+                      <p class="popover__desc">Пешком</p>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1440,9 +1628,12 @@
                 <div class="card__level-container">
                   <span class="card__level-number">25</span>
                   <span class="card__level">level</span>
+                  <svg class="level-icon">
+                    <use href="img/sprite.svg#icon-level25"></use>
+                  </svg>
                 </div>
               </div>
-              <button class="button card__button">Позвать!</button>
+              <button class="button card__button" type="button">Позвать!</button>
             </div>
           </div>
         </div>
@@ -1452,13 +1643,21 @@
             <div class="card">
               <button class="card__name-wrapper" type="button">
                 <p class="card__name">Лариса Роговая</p>
-                <div class="card__small card__small--active">
+                <div class="card__small">
                   <span class="visually-hidden">Статус активности в сети</span>
                 </div>
               </button>
               <p class="card__text">23</p>
-              <img class="card__picture" src="img/avatar/firsova.jpg" alt="Девушка в бассейне на надовном матрасе"
-                width="70" height="70">
+              <div class="card__picture">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                    srcset="img/user/larisa_rogovaya/rogovaya-desktop.jpg, img/user/larisa_rogovaya/rogovaya-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/user/larisa_rogovaya/rogovaya-tablet.jpg, img/user/larisa_rogovaya/rogovaya-tablet@2x.jpg 2x">
+                  <img class="card__img" src="img/user/larisa_rogovaya/rogovaya-mobile.jpg"
+                    srcset="img/user/larisa_rogovaya/rogovaya-mobile@2x.jpg 2x" alt="Лариса Роговая">
+                </picture>
+              </div>
               <a class="card__link-favorite favorite-link">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="card__favorite-icon" width="13" height="11">
@@ -1469,7 +1668,7 @@
                 </svg>
               </a>
               <ul class="card__list card__list-hashtag">
-                <li class="card__item-hashtag">#образование</li>
+                <li class="card__item-hashtag">#образование </li>
                 <li class="card__item-hashtag">#карьера</li>
                 <li class="card__item-hashtag">#учеба</li>
                 <li class="card__item-hashtag">#линкедин</li>
@@ -1478,12 +1677,31 @@
                 <h3 class="card__title card__title-country">хочет посетить:</h3>
                 <ul class="card__list card__list-country">
                   <li class="card__item card__item-country">
-                    <img class="card__flag-img" src="img/flag-item/united-kingdom.jpg" alt="флаг Великобритании">
+                    <div class="card__flag-wrapper">
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/flag__img/35_24/United-States-of-America.jpg 1x, img/flag__img/35_24/United-States-of-America@2x.jpg 2x">
+                        <img class="card__flag-img" src="img/flag__img/26_18/United-States-of-America.jpg"
+                          srcset="img/flag__img/26_18/United-States-of-America@2x.jpg 2x" alt="флаг Великобритании">
+                      </picture>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Великобритания</p>
+                      </div>
+                    </div>
                     <span class="card__item-desc">Великобритания</span>
                   </li>
                   <li class="card__item card__item-country">
-                    <img class="card__flag-img" src="img/flag-item/germany.jpg" alt="флаг Германии." width="26"
-                      height="18">
+                    <div class="card__flag-wrapper">
+                      <picture>
+                        <source media="(min-width: 768px)"
+                          srcset="img/flag__img/35_24/Germany.jpg 1x, img/flag__img/35_24/Germany@2x.jpg 2x">
+                        <img class="card__flag-img" src="img/flag__img/26_18/Germany.jpg"
+                          srcset="img/flag__img/26_18/Germany@2x.jpg 2x" alt="флаг Германии">
+                      </picture>
+                      <div class="popover popover--flag">
+                        <p class="popover__desc">Германия</p>
+                      </div>
+                    </div>
                     <span class="card__item-desc">Германия</span>
                   </li>
                 </ul>
@@ -1491,40 +1709,63 @@
               <div class="card__wrapper card__wrapper-transport">
                 <h3 class="card__title card__title-transport">транспорт:</h3>
                 <ul class="card__list card__list-transport">
-                  <li class="card__item-transport list-way--current">
-                    <span class="visually-hidden">Способ путешествия самолетом.</span>
-                    <svg class="list-way__icon" width="21" height="23">
-                      <use href="img/sprite.svg#icon-plane"></use>
-                    </svg>
-                  </li>
-                  <li class="card__item-transport list-way--current">
-                    <span class="visually-hidden">Способ путешествия автотранспортом</span>
-                    <svg class="list-way__icon" width="18" height="21">
-                      <use href="img/sprite.svg#icon-bus"></use>
-                    </svg>
+                  <li class="card__item-transport">
+                    <div class="card__item-transport--container list-way list-way--current">
+                      <span class="visually-hidden">Способ путешествия самолетом.</span>
+                      <svg class="list-way__icon" width="21" height="23">
+                        <use href="img/sprite.svg#icon-plane"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--plane">
+                      <p class="popover__desc">Авиаперелет</p>
+                    </div>
                   </li>
                   <li class="card__item-transport">
-                    <span class="visually-hidden">Способ путешествия на велосипеде.</span>
-                    <svg class="list-way__icon" width="25" height="24">
-                      <use href="img/sprite.svg#icon-bycicle"></use>
-                    </svg>
+                    <div class="card__item-transport--container list-way list-way--current">
+                      <span class="visually-hidden">Способ путешествия автотранспортом.</span>
+                      <svg class="list-way__icon" width="18" height="21">
+                        <use href="img/sprite.svg#icon-bus"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--bus">
+                      <p class="popover__desc">Автотранспорт</p>
+                    </div>
                   </li>
                   <li class="card__item-transport">
-                    <span class="visually-hidden">Способ путешествия пешком.</span>
-                    <svg class="list-way__icon" width="21" height="24">
-                      <use href="img/sprite.svg#icon-run"></use>
-                    </svg>
+                    <div class="card__item-transport--container list-way">
+                      <span class="visually-hidden">Способ путешествия на велосипеде.</span>
+                      <svg class="list-way__icon" width="25" height="24">
+                        <use href="img/sprite.svg#icon-bycicle"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--bike">
+                      <p class="popover__desc">Велосипед</p>
+                    </div>
+                  </li>
+                  <li class="card__item-transport">
+                    <div class="card__item-transport--container  list-way">
+                      <span class="visually-hidden">Способ путешествия пешком.</span>
+                      <svg class="list-way__icon" width="21" height="24">
+                        <use href="img/sprite.svg#icon-run"></use>
+                      </svg>
+                    </div>
+                    <div class="popover popover--run">
+                      <p class="popover__desc">Пешком</p>
+                    </div>
                   </li>
                 </ul>
               </div>
               <div class="card__wrapper-level level-wrapper">
                 <h3 class="card__title card__title-level level-wrapper__title">левел:</h3>
                 <div class="card__level-container">
-                  <span class="card__level-number">50</span>
+                  <span class="card__level-number">25</span>
                   <span class="card__level">level</span>
+                  <svg class="level-icon">
+                    <use href="img/sprite.svg#icon-level25"></use>
+                  </svg>
                 </div>
               </div>
-              <button class="button card__button">Позвать!</button>
+              <button class="button card__button" type="button">Позвать!</button>
             </div>
           </div>
         </div>
@@ -1581,86 +1822,88 @@
   </main>
 
   <footer class="page-footer page-footer__inner">
-    <div class="page-footer__wrapper">
-      <a class="page-footer__logo" href="index.html">
-        <svg class="page-footer__logo-icon logo" width="300" height="50" xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 300 50" role="img" aria-label="Логотип 'Погнали'.">
-          <g class="logo__bag">
-            <path d="M94 12.6 53.9 50 39.3 2.1 94 12.6Z" fill="#FF8D30" />
-            <ellipse cx="94.7" cy="33.9" rx="4.4" ry="4.3" fill="#88BFEB" />
-            <ellipse cx="111.9" cy="21.5" rx="15.2" ry="14.8" fill="#EB9898" />
-            <path fill="#72A73E" d="m103 23.3 52.7-19 10 26.2-52.8 19z" />
-            <ellipse cx="110" cy="40.6" rx="2.6" ry="2.5" fill="#FFBD30" />
-            <ellipse rx="22.8" ry="9" transform="matrix(.97092 .2394 -.25022 .96819 159 33.4)" fill="#8EC7F5" />
-            <ellipse cx="176.4" cy="12.2" rx="2.6" ry="2.5" fill="#FFBD30" />
-            <ellipse cx="184.5" cy="9.2" rx="2.6" ry="2.5" fill="#FFBD30" />
-            <path d="M4 42h6v3c0 .6-.4 1-1 1H5a1 1 0 0 1-1-1v-3ZM41.2 42h6v3c0 .6-.4 1-1 1h-4a1 1 0 0 1-1-1v-3Z"
-              fill="#1D2959" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M28.8 3.5a10 10 0 0 0-3.4-.8c-.8 0-2 .4-3.1.8l-1.8.9c-.7.3-1.6 0-2-.6-.4-.7-.1-1.5.6-1.9a18.2 18.2 0 0 1 2-1C22.4.5 24 0 25.5 0s3.2.4 4.5.9l2.2 1c.7.4 1 1.2.6 1.9s-1.3 1-2 .6a15.6 15.6 0 0 0-1.9-.9Z"
-              fill="#8A4A38" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M19.3 1.7c-.7 0-1.2.5-1.2 1.2v.7c0 .5.4 1 1 1v3.6h1V4.5H20a1.4 1.4 0 0 0-.3-2.8h-.3ZM32 1.7c.6 0 1.1.5 1.1 1.2v.7c0 .5-.4 1-1 1v3.6h-1V4.5h.2a1.4 1.4 0 0 1 .3-2.8h.3Z"
-              fill="#F6EF3E" />
-            <path d="M0 16.8c0-5 4-9 9-9h33.3c5 0 9 4 9 9V42H0V16.8Z" fill="#8A4A38" />
-            <ellipse cx="8.1" cy="33.2" rx="5" ry="4.9" fill="#EF9A9A" />
-            <ellipse rx="4.8" ry="9.3" transform="matrix(.7051 -.7091 .72546 .68826 39.5 33.4)" fill="#93C6EB" />
-            <path fill="#C2DEA3" d="M19.8 21.3 31 9.5l6.7 6.1-11.3 11.9z" />
-            <rect width="8.3" height="6.2" rx="1" transform="matrix(.73793 .67488 -.69199 .7219 10.6 13.3)"
-              fill="#C49A6C" />
-            <path fill="#F57B20" d="M10 23.1h7.1v20H10z" />
-            <path d="M10 6.5h7.1v17.3a3.5 3.5 0 0 1-7 0V6.5Z" fill="#F6A725" />
-            <path fill="#F6EF3E" d="M9.1 21.5h9v2h-9z" />
-            <path fill="#F57B20" d="M34.2 23.1h7.1v20h-7.1z" />
-            <path d="M34.2 6.5h7v17.3a3.5 3.5 0 0 1-7 0V6.5Z" fill="#F6A725" />
-            <path fill="#F6EF3E" d="M33.2 21.5h9v2h-9z" />
-          </g>
-          <g class="logo__pognaly">
-            <path
-              d="M198.5 22.7c1-.6 1.5-1.5 1.5-2.8 0-1.7-.7-3-2.1-3.9-1.4-1-3-1.4-4.8-1.4-1.8 0-3.5.5-5 1.5a4.8 4.8 0 0 0-2.2 4.1c0 .7.2 1.2.6 1.6.4.4 1 .6 1.8.6.7 0 1.3-.2 1.7-.6.4-.4.6-1 .6-1.6 0-.4.1-1 .5-1.4.3-.6 1-.8 2-.8.8 0 1.4.2 1.7.6.4.4.6.8.5 1.1 0 .3 0 .6-.3.8l-.6.7a14 14 0 0 1-1.9 1.2c-1 .8-1.5 1.7-1.5 3 0 .5.2 1 .7 1.4.4.4 1 .6 1.7.6.8 0 1.4-.2 1.8-.6.4-.4.7-1 .7-1.5l.1-.7.5-.6a31 31 0 0 1 1.3-1c.4 0 .6-.2.7-.3ZM173.6 28l5.2-6.3c.5-.7 1.2-1.1 2.1-1.2 1-.1 1.7 0 2.4.6s1 1.3 1 2.2v9c0 .5-.2 1-.7 1.3-.4.4-1 .6-1.6.6-.6 0-1.1-.2-1.6-.6-.4-.3-.7-.8-.7-1.4v-5.6l-5.1 6.3c-.6.8-1.3 1.2-2.2 1.3-.9 0-1.7-.2-2.4-.7-.6-.5-1-1.2-1-2.1v-9c0-.5.3-1 .7-1.4.5-.4 1-.6 1.6-.6.7 0 1.2.2 1.6.6.5.4.7.9.7 1.5V28Z" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M150.4 32.1v-9.7c0-.6-.3-1-.7-1.4-.5-.5-1-.7-1.7-.7-.6 0-1.1.2-1.6.7-.4.4-.7.8-.7 1.4v-.2c-.2-.6-.6-1-1.3-1.4-.7-.3-1.5-.5-2.4-.5-1.7 0-3.3.6-4.7 1.8a6.4 6.4 0 0 0-2.2 5.1c0 2.2.7 4 2.1 5.2a7 7 0 0 0 4.8 1.8c.9 0 1.7-.1 2.3-.5.7-.3 1.2-.7 1.5-1.1.1.4.4.8.8 1.1.4.3.9.5 1.4.5.7 0 1.2-.2 1.7-.6.4-.4.7-1 .7-1.5Zm-7.3-1.8a3 3 0 0 0 2.8-3 3 3 0 0 0-2.8-3 3 3 0 0 0-2.9 3 3 3 0 0 0 2.9 3Z" />
-            <path
-              d="M129.1 25.4v-2.8c0-.6.2-1 .7-1.5.5-.4 1-.6 1.7-.6.6 0 1.1.2 1.6.6.5.4.7.9.7 1.5v9.6c0 .6-.2 1-.7 1.4-.4.4-1 .6-1.6.6-.7 0-1.3-.2-1.7-.6-.5-.4-.7-.8-.7-1.4v-2.9H124v2.9c0 .6-.3 1-.7 1.4-.5.4-1 .6-1.7.6-.6 0-1.2-.2-1.7-.6-.4-.4-.6-.8-.6-1.4v-9.6c0-.6.2-1 .7-1.5.4-.4 1-.6 1.6-.6.6 0 1.2.2 1.7.6.4.4.7.9.7 1.5v2.8h5.1ZM116.9 20.5c.4 0 .8.2 1.2.5.3.3.5 1.1.5 1.6s-.2 1-.5 1.3c-.4.4-.8.5-1.2.5h-4v7.8c0 1.5-1.3 2-2.7 2-1.2 0-2.4-.6-2.4-2V20.5h9ZM88.6 14.6V32c0 .6-.3 1.1-.8 1.5-.4.4-1 .6-1.7.6-.6 0-1.5-.2-1.9-.6a2 2 0 0 1-.6-1.5V18.5h-7.2V32c0 .6-.2 1.1-.6 1.5-.5.4-1.3.6-2 .6a3 3 0 0 1-1.8-.6 2 2 0 0 1-.6-1.5V14.6h17.2ZM104.4 32a8.2 8.2 0 0 1-5.8 2c-2.4 0-4.3-.6-5.8-2a6.6 6.6 0 0 1-2.2-5c0-2 .8-3.7 2.2-5 1.5-1.3 3.4-2 5.8-2s4.3.7 5.8 2c1.4 1.4 2.1 3 2.1 5s-.7 3.7-2.1 5Zm-3.8-7c-.4-.4-.9-.7-1.5-.8-.5 0-1 0-1.6.2a3 3 0 0 0-1.3 1c-.4.5-.5 1-.5 1.6 0 .9.3 1.6.8 2.1.6.6 1.3.8 2 .8 1 0 1.6-.2 2.2-.7.5-.6.8-1.3.8-2.2 0-.8-.3-1.5-.9-2ZM157.2 20.4h9.9v11.7c0 .6-.2 1-.7 1.5-.5.4-1 .6-1.6.6-.7 0-1.1 0-1.6-.3-.5-.5-.9-1.2-.9-1.8v-7.8H159c0 5.6 0 6.8-2 8.8-.9.8-1.9 1.1-3 1.1-.8 0-1.2-.2-1.7-.6-.5-.4-.8-1-.8-1.7 0-1.3.3-1.8 1-2.7 2 0 2-.5 1.9-4.3v-2.4l.1-2h2.7ZM196.2 31.3c0 1.6-1.4 3-3.1 3-1.8 0-3.2-1.4-3.2-3s1.4-3 3.2-3c1.7 0 3 1.4 3 3Z" />
-          </g>
-        </svg>
-      </a>
-    </div>
-    <ul class="page-footer__list social">
-      <li class="social__item">
-        <a class="page-footer__link-social" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">Фэйсбук</span>
-          <svg class="page-footer__icon page-footer__icon-facebook" width="11" height="21">
-            <use href="img/sprite.svg#icon-facebook"></use>
+    <div class="page-footer__container">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <svg class="page-footer__logo-icon logo" width="300" height="50" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 300 50" role="img" aria-label="Логотип 'Погнали'.">
+            <g class="logo__bag">
+              <path d="M94 12.6 53.9 50 39.3 2.1 94 12.6Z" fill="#FF8D30" />
+              <ellipse cx="94.7" cy="33.9" rx="4.4" ry="4.3" fill="#88BFEB" />
+              <ellipse cx="111.9" cy="21.5" rx="15.2" ry="14.8" fill="#EB9898" />
+              <path fill="#72A73E" d="m103 23.3 52.7-19 10 26.2-52.8 19z" />
+              <ellipse cx="110" cy="40.6" rx="2.6" ry="2.5" fill="#FFBD30" />
+              <ellipse rx="22.8" ry="9" transform="matrix(.97092 .2394 -.25022 .96819 159 33.4)" fill="#8EC7F5" />
+              <ellipse cx="176.4" cy="12.2" rx="2.6" ry="2.5" fill="#FFBD30" />
+              <ellipse cx="184.5" cy="9.2" rx="2.6" ry="2.5" fill="#FFBD30" />
+              <path d="M4 42h6v3c0 .6-.4 1-1 1H5a1 1 0 0 1-1-1v-3ZM41.2 42h6v3c0 .6-.4 1-1 1h-4a1 1 0 0 1-1-1v-3Z"
+                fill="#1D2959" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M28.8 3.5a10 10 0 0 0-3.4-.8c-.8 0-2 .4-3.1.8l-1.8.9c-.7.3-1.6 0-2-.6-.4-.7-.1-1.5.6-1.9a18.2 18.2 0 0 1 2-1C22.4.5 24 0 25.5 0s3.2.4 4.5.9l2.2 1c.7.4 1 1.2.6 1.9s-1.3 1-2 .6a15.6 15.6 0 0 0-1.9-.9Z"
+                fill="#8A4A38" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M19.3 1.7c-.7 0-1.2.5-1.2 1.2v.7c0 .5.4 1 1 1v3.6h1V4.5H20a1.4 1.4 0 0 0-.3-2.8h-.3ZM32 1.7c.6 0 1.1.5 1.1 1.2v.7c0 .5-.4 1-1 1v3.6h-1V4.5h.2a1.4 1.4 0 0 1 .3-2.8h.3Z"
+                fill="#F6EF3E" />
+              <path d="M0 16.8c0-5 4-9 9-9h33.3c5 0 9 4 9 9V42H0V16.8Z" fill="#8A4A38" />
+              <ellipse cx="8.1" cy="33.2" rx="5" ry="4.9" fill="#EF9A9A" />
+              <ellipse rx="4.8" ry="9.3" transform="matrix(.7051 -.7091 .72546 .68826 39.5 33.4)" fill="#93C6EB" />
+              <path fill="#C2DEA3" d="M19.8 21.3 31 9.5l6.7 6.1-11.3 11.9z" />
+              <rect width="8.3" height="6.2" rx="1" transform="matrix(.73793 .67488 -.69199 .7219 10.6 13.3)"
+                fill="#C49A6C" />
+              <path fill="#F57B20" d="M10 23.1h7.1v20H10z" />
+              <path d="M10 6.5h7.1v17.3a3.5 3.5 0 0 1-7 0V6.5Z" fill="#F6A725" />
+              <path fill="#F6EF3E" d="M9.1 21.5h9v2h-9z" />
+              <path fill="#F57B20" d="M34.2 23.1h7.1v20h-7.1z" />
+              <path d="M34.2 6.5h7v17.3a3.5 3.5 0 0 1-7 0V6.5Z" fill="#F6A725" />
+              <path fill="#F6EF3E" d="M33.2 21.5h9v2h-9z" />
+            </g>
+            <g class="logo__pognaly">
+              <path
+                d="M198.5 22.7c1-.6 1.5-1.5 1.5-2.8 0-1.7-.7-3-2.1-3.9-1.4-1-3-1.4-4.8-1.4-1.8 0-3.5.5-5 1.5a4.8 4.8 0 0 0-2.2 4.1c0 .7.2 1.2.6 1.6.4.4 1 .6 1.8.6.7 0 1.3-.2 1.7-.6.4-.4.6-1 .6-1.6 0-.4.1-1 .5-1.4.3-.6 1-.8 2-.8.8 0 1.4.2 1.7.6.4.4.6.8.5 1.1 0 .3 0 .6-.3.8l-.6.7a14 14 0 0 1-1.9 1.2c-1 .8-1.5 1.7-1.5 3 0 .5.2 1 .7 1.4.4.4 1 .6 1.7.6.8 0 1.4-.2 1.8-.6.4-.4.7-1 .7-1.5l.1-.7.5-.6a31 31 0 0 1 1.3-1c.4 0 .6-.2.7-.3ZM173.6 28l5.2-6.3c.5-.7 1.2-1.1 2.1-1.2 1-.1 1.7 0 2.4.6s1 1.3 1 2.2v9c0 .5-.2 1-.7 1.3-.4.4-1 .6-1.6.6-.6 0-1.1-.2-1.6-.6-.4-.3-.7-.8-.7-1.4v-5.6l-5.1 6.3c-.6.8-1.3 1.2-2.2 1.3-.9 0-1.7-.2-2.4-.7-.6-.5-1-1.2-1-2.1v-9c0-.5.3-1 .7-1.4.5-.4 1-.6 1.6-.6.7 0 1.2.2 1.6.6.5.4.7.9.7 1.5V28Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M150.4 32.1v-9.7c0-.6-.3-1-.7-1.4-.5-.5-1-.7-1.7-.7-.6 0-1.1.2-1.6.7-.4.4-.7.8-.7 1.4v-.2c-.2-.6-.6-1-1.3-1.4-.7-.3-1.5-.5-2.4-.5-1.7 0-3.3.6-4.7 1.8a6.4 6.4 0 0 0-2.2 5.1c0 2.2.7 4 2.1 5.2a7 7 0 0 0 4.8 1.8c.9 0 1.7-.1 2.3-.5.7-.3 1.2-.7 1.5-1.1.1.4.4.8.8 1.1.4.3.9.5 1.4.5.7 0 1.2-.2 1.7-.6.4-.4.7-1 .7-1.5Zm-7.3-1.8a3 3 0 0 0 2.8-3 3 3 0 0 0-2.8-3 3 3 0 0 0-2.9 3 3 3 0 0 0 2.9 3Z" />
+              <path
+                d="M129.1 25.4v-2.8c0-.6.2-1 .7-1.5.5-.4 1-.6 1.7-.6.6 0 1.1.2 1.6.6.5.4.7.9.7 1.5v9.6c0 .6-.2 1-.7 1.4-.4.4-1 .6-1.6.6-.7 0-1.3-.2-1.7-.6-.5-.4-.7-.8-.7-1.4v-2.9H124v2.9c0 .6-.3 1-.7 1.4-.5.4-1 .6-1.7.6-.6 0-1.2-.2-1.7-.6-.4-.4-.6-.8-.6-1.4v-9.6c0-.6.2-1 .7-1.5.4-.4 1-.6 1.6-.6.6 0 1.2.2 1.7.6.4.4.7.9.7 1.5v2.8h5.1ZM116.9 20.5c.4 0 .8.2 1.2.5.3.3.5 1.1.5 1.6s-.2 1-.5 1.3c-.4.4-.8.5-1.2.5h-4v7.8c0 1.5-1.3 2-2.7 2-1.2 0-2.4-.6-2.4-2V20.5h9ZM88.6 14.6V32c0 .6-.3 1.1-.8 1.5-.4.4-1 .6-1.7.6-.6 0-1.5-.2-1.9-.6a2 2 0 0 1-.6-1.5V18.5h-7.2V32c0 .6-.2 1.1-.6 1.5-.5.4-1.3.6-2 .6a3 3 0 0 1-1.8-.6 2 2 0 0 1-.6-1.5V14.6h17.2ZM104.4 32a8.2 8.2 0 0 1-5.8 2c-2.4 0-4.3-.6-5.8-2a6.6 6.6 0 0 1-2.2-5c0-2 .8-3.7 2.2-5 1.5-1.3 3.4-2 5.8-2s4.3.7 5.8 2c1.4 1.4 2.1 3 2.1 5s-.7 3.7-2.1 5Zm-3.8-7c-.4-.4-.9-.7-1.5-.8-.5 0-1 0-1.6.2a3 3 0 0 0-1.3 1c-.4.5-.5 1-.5 1.6 0 .9.3 1.6.8 2.1.6.6 1.3.8 2 .8 1 0 1.6-.2 2.2-.7.5-.6.8-1.3.8-2.2 0-.8-.3-1.5-.9-2ZM157.2 20.4h9.9v11.7c0 .6-.2 1-.7 1.5-.5.4-1 .6-1.6.6-.7 0-1.1 0-1.6-.3-.5-.5-.9-1.2-.9-1.8v-7.8H159c0 5.6 0 6.8-2 8.8-.9.8-1.9 1.1-3 1.1-.8 0-1.2-.2-1.7-.6-.5-.4-.8-1-.8-1.7 0-1.3.3-1.8 1-2.7 2 0 2-.5 1.9-4.3v-2.4l.1-2h2.7ZM196.2 31.3c0 1.6-1.4 3-3.1 3-1.8 0-3.2-1.4-3.2-3s1.4-3 3.2-3c1.7 0 3 1.4 3 3Z" />
+            </g>
           </svg>
         </a>
-      </li>
-      <li class="social__item">
-        <a class="page-footer__link-social" href="https://www.vk.com/htmlacademy">
-          <span class="visually-hidden">Вконтакте</span>
-          <svg class="page-footer__icon page-footer__icon-vkontakte" width="23" height="12">
-            <use href="img/sprite.svg#icon-vkontakte"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="page-footer__link-social" href="https://www.instagram.com/htmlacademy/">
-          <span class="visually-hidden">Инстаграмм</span>
-          <svg class="page-footer__icon page-footer__icon-instagram" width="18" height="18">
-            <use href="img/sprite.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+      </div>
+      <ul class="page-footer__list social">
+        <li class="social__item">
+          <a class="page-footer__link-social" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Фэйсбук</span>
+            <svg class="page-footer__icon page-footer__icon-facebook" width="11" height="21">
+              <use href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="page-footer__link-social" href="https://www.vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+            <svg class="page-footer__icon page-footer__icon-vkontakte" width="23" height="12">
+              <use href="img/sprite.svg#icon-vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="page-footer__link-social" href="https://www.instagram.com/htmlacademy/">
+            <span class="visually-hidden">Инстаграмм</span>
+            <svg class="page-footer__icon page-footer__icon-instagram" width="18" height="18">
+              <use href="img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
 
-    <div class="page-footer__developed developed">
-      <a class="page-footer__link" href="https://htmlacademy.ru/">
-        <p class="page-footer__developed-text">Разработано</p>
-        <span class="visually-hidden">htmlacademy</span>
-        <svg class="page-footer__icon-htmlacademy page-footer__icon" width="27" height="34">
-          <use href="img/sprite.svg#icon-html_logo"></use>
-        </svg>
-      </a>
+      <div class="page-footer__developed developed">
+        <a class="page-footer__link" href="https://htmlacademy.ru/">
+          <p class="page-footer__developed-text">Разработано</p>
+          <span class="visually-hidden">htmlacademy</span>
+          <svg class="page-footer__icon-htmlacademy page-footer__icon" width="27" height="34">
+            <use href="img/sprite.svg#icon-html_logo"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 
@@ -1726,41 +1969,47 @@
         navCountry.classList.remove('country-nav--opened');
       }
     });
+
   </script>
 
   <script>
-    var filter = document.querySelector('.selection-companion__filter-group');
-    var filterLink = document.querySelector('.selection-companion__link-wrapper');
+    var filters = document.querySelectorAll('.selection-companion__filter-group');
 
-    filter.classList.remove('selection-companion__filter-group--nojs');
+    filters.forEach(filter => {
+      filter.classList.remove('selection-companion__filter-group--nojs');
 
-    filterLink.addEventListener('click', function () {
-      if (filter.classList.contains('selection-companion__filter-group--closed')) {
-        filter.classList.remove('selection-companion__filter-group--closed');
-        filter.classList.add('selection-companion__filter-group--opened');
-      } else {
-        filter.classList.add('selection-companion__filter-group--closed');
-        filter.classList.remove('selection-companion__filter-group--opened');
-      }
+      var filterLink = filter.querySelector('.selection-companion__link-wrapper');
+
+      filterLink.addEventListener('click', function () {
+        if (filter.classList.contains('selection-companion__filter-group--closed')) {
+          filter.classList.remove('selection-companion__filter-group--closed');
+          filter.classList.add('selection-companion__filter-group--opened');
+        } else {
+          filter.classList.add('selection-companion__filter-group--closed');
+          filter.classList.remove('selection-companion__filter-group--opened');
+        }
+      });
     });
+
   </script>
 
-<script>
-  var navCountry = document.querySelector('.country-nav');
-  var buttonCountry = document.querySelector('.country-nav__button');
+  <script>
+    var navCountry = document.querySelector('.country-nav');
+    var buttonCountry = document.querySelector('.country-nav__button');
 
-  navCountry.classList.remove('country-nav--nojs');
+    navCountry.classList.remove('country-nav--nojs');
 
-  buttonCountry.addEventListener('click', function () {
-    if (navCountry.classList.contains('country-nav--closed')) {
-      navCountry.classList.remove('country-nav--closed');
-      navCountry.classList.add('country-nav--opened');
-    } else {
-      navCountry.classList.add('country-nav--closed');
-      navCountry.classList.remove('country-nav--opened');
-    }
-  });
-</script>
+    buttonCountry.addEventListener('click', function () {
+      if (navCountry.classList.contains('country-nav--closed')) {
+        navCountry.classList.remove('country-nav--closed');
+        navCountry.classList.add('country-nav--opened');
+      } else {
+        navCountry.classList.add('country-nav--closed');
+        navCountry.classList.remove('country-nav--opened');
+      }
+    });
+
+  </script>
 
 </body>
 

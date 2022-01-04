@@ -27,6 +27,8 @@
 
 .add-plan__button-group-header {
   margin-right: 18px;
+  margin-top: 3px;
+  display: flex;
 }
 
 .add-plan__button-header {
@@ -36,7 +38,7 @@
   height: 6px;
   border-radius: 50%;
   padding: 0;
-  margin-left: 9px;
+  margin-left: 15px;
 }
 
 .add-plan__button-group {
@@ -72,10 +74,14 @@
   line-height: 14px;
 }
 
+.add-plan__form-step-first {
+  row-gap: 20px;
+}
+
 .add-plan__step {
   margin-bottom: 9px;
   width: 100%;
-  padding-top: 23px;
+  padding-top: 22px;
   box-sizing: border-box;
   border-radius: 10px;
 
@@ -86,12 +92,15 @@
 
 .add-plan__subtitle {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
+  margin-left: 2px;
 }
 
 .add-plan__text {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 22px;
 
   & p {
     margin: 0;
@@ -113,21 +122,28 @@
   width: 100%;
 }
 
+.add-plan__table {
+  margin-bottom: 22px;
+}
+
 .add-plan__button {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 700;
-  width: 100%;
-  border-radius: 15px;
+  width: 97%;
+  min-width: 220px;
+  border-radius: 23px;
   border: none;
   font-size: 17px;
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 9px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 22px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
   background-color: $lightorange;
   cursor: pointer;
@@ -142,7 +158,7 @@
   }
 
   &:active,
-  &:focus {
+  &:focus-visible {
     & .add-plan__button-icon {
       opacity: 0.3;
     }
@@ -155,6 +171,8 @@
 
 .add-plan__button-icon {
   display: none;
+  width: 13px;
+  height: auto;
 }
 
 .add-plan__button-back {
@@ -167,14 +185,24 @@
   }
 
   &:active,
-  &:focus {
+  &:focus-visible {
     opacity: 0.3;
   }
 }
 
 @media (min-width: $tablet-width) {
   .add-plan {
-    width: 81%;
+    width: 80%;
+    min-width: 619px;
+  }
+
+  .add-plan__form-step-first {
+    row-gap: 0;
+  }
+
+  .add-plan__subtitle {
+    margin-left: 0;
+    margin-bottom: 36px;
   }
 
   .add-plan__header {
@@ -183,10 +211,6 @@
 
   .add-plan__title {
     font-size: 36px;
-  }
-
-  .add-plan__subtitle {
-    margin-bottom: 36px;
   }
 
   .add-plan__button-wrapper {
@@ -199,7 +223,7 @@
   }
 
   .add-plan__button-header {
-    margin-left: 23px;
+    margin-left: 28px;
   }
 
   .add-plan__step {
@@ -240,9 +264,8 @@
   }
 
   .add-plan__button {
-    align-self: center;
     width: auto;
-    min-width: 286px;
+    min-width: 284px;
     min-height: 80px;
     font-size: 24px;
     line-height: 1;
@@ -252,6 +275,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
+    margin-left: 0;
     border-radius: 22px;
     box-sizing: border-box;
   }
@@ -259,10 +283,13 @@
   .add-plan__button-icon {
     display: block;
     fill: hsla(224, 52%, 24%, 1);
+    width: 14px;
+    margin-top: 4px;
+    transform: rotate(180deg);
   }
 
   .add-plan__desc-button {
-    padding-right: 25px;
+    padding-right: 28px;
   }
 
   .add-plan__button-back {
@@ -271,10 +298,6 @@
     padding-left: 50px;
     padding-top: 15px;
     padding-bottom: 21px;
-
-    & .add-plan__button-icon {
-     transform: rotate(180deg);
-    }
   }
 
   .add-plan__desc-button-back {
@@ -416,6 +439,7 @@
 
   .add-plan__form-step-first {
     padding-top: 28px;
+    row-gap: 14px;
   }
 
   .add-plan__table {

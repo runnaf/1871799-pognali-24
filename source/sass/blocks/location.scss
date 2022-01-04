@@ -6,10 +6,11 @@
 }
 
 .location__desc-container {
-  padding-top: 30px;
-  padding-bottom: 34px;
+  padding-top: 31px;
+  padding-bottom: 35px;
   margin: 0 auto;
-  width: 85%;
+  width: 84%;
+  min-width: 270px;
 }
 
 .location__desc {
@@ -30,8 +31,8 @@
 
 .location__icon {
   fill: $orange-background;
-  width: 24px;
-  height: 32px;
+  width: 21px;
+  height: 21px;
 }
 
 .location__text {
@@ -54,7 +55,7 @@
   border: 3px solid hsla(229, 46%, 18%, 1);
   border-radius: 10px;
   background-color: $orange-background;
-  margin-top: 34px;
+  margin-top: 33px;
   text-align: start;
   padding-left: 19px;
   padding-top: 18px;
@@ -62,7 +63,7 @@
   padding-right: 50px;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: hsla(229, 46%, 18%, 1);
     color: $white;
     outline: none;
@@ -84,8 +85,8 @@
 .location__button-icon {
   fill: $darkfont-color;
   position: absolute;
-  top: calc(50% - 7px);
-  right: 20px;
+  top: calc(50% - 8px);
+  right: 18px;
   height: 18px;
 }
 
@@ -109,7 +110,9 @@
   }
 
   .location__desc-container {
-    padding-top: 97px;
+    width: 80%;
+    min-width: 618px;
+    padding-top: 48px;
     padding-bottom: 84px;
     border-bottom-left-radius: 57px;
     border-bottom-right-radius: 57px;
@@ -133,8 +136,13 @@
     line-height: 24px;
     padding-left: 33px;
     padding-top: 25px;
+    padding-right: 63px;
     padding-bottom: 25px;
     border-radius: 19px;
+  }
+
+  .location__button-icon {
+    right: 31px;
   }
 
   .location__cart {
@@ -143,8 +151,8 @@
   }
 
   .location__icon {
-    width: 100%;
-    height: 100%;
+    width: 32px;
+    height:auto;
   }
 }
 
@@ -152,20 +160,25 @@
   .location__desc-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-top: 55px;
     padding-bottom: 56px;
     width: 81%;
+    min-width: 1170px;
   }
 
   .location__desc {
     margin: 0;
+    padding-left: 148px;
     flex-grow: 1;
-    justify-content: flex-end;
   }
 
   .location__button {
-    margin-left: 147px;
+    margin: 0;
+    padding-left: 35px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    min-height: 80px;
     min-width: 325px;
     width: auto;
     align-self: center;
@@ -185,12 +198,17 @@
   .location__text {
     width: auto;
     flex-grow: 0;
+    margin-bottom: 4px;
   }
 
   .location__button-icon {
     right: 30px;
     width: 14px;
     height: 16px;
+  }
+
+  .location__icon {
+    width: 42px;
   }
 }
 

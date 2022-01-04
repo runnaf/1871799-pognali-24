@@ -13,7 +13,7 @@
   }
 
   & .table__cell:active,
-  & .table__cell:focus {
+  & .table__cell:focus-visible {
     background-color: hsla(224, 52%, 24%, 1);
     border-color: hsla(224, 52%, 24%, 1);
 
@@ -149,7 +149,7 @@
   }
 
   &[href]:active,
-  &[href]:focus {
+  &[href]:focus-visible {
     opacity: 1;
   }
 }
@@ -188,7 +188,7 @@
     background-color: hsla(229, 41%, 85%, 1);
   }
 
-  &:focus .country-nav__button-wrapper,
+  &:focus-visible .country-nav__button-wrapper,
   &:active .country-nav__button-wrapper {
     opacity: 0.3;
   }
@@ -335,7 +335,7 @@
     }
 
     & .country-nav__list {
-      display: flex;
+      display: none;
     }
 
     & .country-nav__table-wrapper {
@@ -566,8 +566,12 @@
 
     & .table__cell {
       vertical-align: baseline;
-      text-align: left;
       width: 260px;
+      height: fit-content;
+    }
+
+    & .table__button {
+      text-align: left;
     }
 
     & .table__link {

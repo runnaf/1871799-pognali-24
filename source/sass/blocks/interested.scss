@@ -1,5 +1,6 @@
 .interested {
-  width: 85%;
+  width: 84%;
+  min-width: 270px;
   padding-top: 70px;
   padding-bottom: 30px;
   margin: 0 auto;
@@ -15,10 +16,17 @@
 }
 
 .interested__desc {
-  width: 220px;
   font-weight: 300;
   margin: 0 auto;
   text-align: center;
+}
+
+.interested__desc--shift {
+  padding-right: 5px;
+}
+
+.interested__desc--wrapper {
+  letter-spacing: 0.01em;
 }
 
 .interested__link {
@@ -31,7 +39,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: 0;
     left: 0;
     right: 0;
     height: 1px;
@@ -39,7 +47,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: hsla(27, 100%, 59%, 1);
 
     &::after {
@@ -59,31 +67,68 @@
 .interested__form {
   display: flex;
   justify-content: center;
-  margin-top: 29px;
-  margin-bottom: 29px;
+  margin-top: 31px;
+  margin-bottom: 28px;
 }
 
 .interested__input {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 18px;
   height: 62px;
   flex-grow: 1;
   box-sizing: border-box;
   border: 1px solid transparent;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  padding: 22px 22px 22px 25px;
+  padding: 16px 23px 19px 24px;
 
   &::placeholder {
     font-size: 18px;
     line-height: 18px;
+    font-weight: 700;
     color: hsla(0, 0%, 27%, 0.3);
+  }
+
+  &:hover {
+    background-color: hsla(227, 33%, 95%, 1);
+
+    &::placeholder {
+      color: hsla(0, 0%, 27%, 0.5);
+    }
+  }
+
+  &:focus {
+    border: 4px solid $white;
+    box-sizing: border-box;
+    background-color: hsla(229, 46%, 18%, 1);
+    color: $white;
+
+    input:-webkit-autofill {
+      background: hsla(229, 46%, 18%, 1);
+      color: $white;
+    }
+  }
+
+  &:focus-visible:invalid {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(0, 100%, 50%, 1);
+    border: none;
+
+    &::placeholder {
+      color: hsla(0, 100%, 50%, 1);
+    }
   }
 }
 
 .interested__button {
   position: relative;
-  width: 60px;
-  height: 62px;
-  margin-left: -15px;
+  width: 100%;
+  height: auto;
+  margin-left: -19px;
+  padding: 0;
+  box-sizing: border-box;
   border-radius: 10px;
   background-color: $orange-background;
 }
@@ -98,14 +143,35 @@
   fill: $darkfont-color;
   position: absolute;
   top: calc(50% - 7px);
-  right: 21px;
-  height: 18px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 16px;
+  padding-left: 5px;
 }
 
 .interested__link-conteiner {
   margin-top: 17px;
   display: flex;
   flex-direction: column;
+}
+
+.interested__phone-icon {
+  fill: $orange-background;
+  width: 19px;
+  height: auto;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.interested__email-icon {
+  fill: $orange-background;
+  width: 19px;
+  height: auto;
+  margin-left: 3px;
+  margin-top: 3px;
 }
 
 .interested__link-contacts {
@@ -116,19 +182,23 @@
   &:hover {
     color: hsla(41, 100%, 59%, 1);
 
+    & .interested__email-icon {
+      fill: hsla(41, 100%, 59%, 1);
+    }
+
     & .interested__phone-icon {
       fill: hsla(41, 100%, 59%, 1);
     }
   }
 
   &:active,
-  &:focus {
-    color: hsla(41, 100%, 59%, 0.3);
-
-    & .interested___phone-icon {
-      fill: hsla(41, 100%, 59%, 0.3);
-    }
+  &:focus-visible {
+    opacity: 0.3;
   }
+}
+
+.interested__link-desc {
+  margin-top: 2px;
 }
 
 .interested__img {
@@ -137,27 +207,15 @@
   align-items: center;
   width: 45px;
   height: 45px;
-  margin-right: 16px;
+  margin-right: 17px;
   border-radius: 50%;
   background-color: hsla(228, 50%, 14%, 1);
-}
-
-.interested__phone-icon {
-  fill: $orange-background;
-  width: 19px;
-  height: 17px;
-}
-
-.interested__email-icon {
-  fill: $orange-background;
-  width: 18px;
-  height: 13px;
 }
 
 @media (min-width: $tablet-width) {
   .interested {
     width: 80%;
-    padding-top: 69px;
+    padding-top: 72px;
     padding-bottom: 60px;
   }
 
@@ -165,6 +223,11 @@
     font-size: 45px;
     line-height: 45px;
     margin-bottom: 61px;
+  }
+
+  .interested__desc--wrapper {
+    padding-left: 4px;
+    margin-bottom: 41px;
   }
 
   .interested__desc {
@@ -178,17 +241,17 @@
   }
 
   .interested__form {
-    margin-top: 36px;
-    margin-bottom: 29px;
+    margin-top: 67px;
+    margin-bottom: 57px;
   }
 
   .interested__input {
     flex-grow: 1;
     height: 80px;
     padding-left: 34px;
-    padding-top: 25px;
-    border-top-left-radius: 23px;
-    border-bottom-left-radius: 23px;
+    padding-top: 20px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
 
     &::placeholder {
       font-size: 24px;
@@ -200,12 +263,8 @@
     height: 80px;
     width: 80px;
     border-radius: 0;
-    border-top-right-radius: 23px;
-    border-bottom-right-radius: 23px;
-  }
-
-  .interested__link-conteiner {
-    margin-top: 13px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
   }
 
   .interested__link {
@@ -220,13 +279,19 @@
   }
 
   .interested__phone-icon {
-    width: 24px;
-    height: 23px;
+    width: 29px;
+    margin: 0;
+    margin-right: 2px;
   }
 
   .interested__email-icon {
-    width: 28px;
-    height: 19px;
+    width: 29px;
+    margin: 0;
+    margin-top: 3px;
+  }
+
+  .interested__link--login::after {
+    bottom: 2px;
   }
 }
 
@@ -238,11 +303,16 @@
   }
 
   .interested__title {
-    margin-bottom: 58px;
+    margin-bottom: 60px;
   }
 
   .interested__desc--shift {
-    padding-left: 14px;
+    padding: 0;
+    padding-left: 10px;
+
+    &:first-of-type {
+      padding-left: 4px;
+    }
   }
 
   .interested__form {
@@ -272,15 +342,25 @@
     flex-grow: 1;
   }
 
+  .interested__link-desc {
+    margin: 0;
+    margin-bottom: 2px;
+  }
+
   .interested__link-phone {
     margin-right: 110px;
     justify-content: flex-end;
   }
 
+  .interested__phone-icon {
+    width: 40px;
+    margin: 0;
+  }
+
   .interested__img {
     width: 90px;
     height: 90px;
-    margin-right: 29px;
+    margin-right: 31px;
   }
 
   .interested__icon {
@@ -297,13 +377,24 @@
   }
 
   .interested__desc--wrapper {
-    letter-spacing: 0.01em;
+    padding: 0;
+
+    & .interested__desc {
+      letter-spacing: 0.01em;
+    }
   }
 
   .interested__button-icon {
-    right: 30px;
+    margin: 0;
+    left: 86%;
     width: 14px;
     height: 16px;
+  }
+
+  .interested__email-icon {
+    width: 39px;
+    margin: 0;
+    margin-left: 3px;
   }
 }
 

@@ -2,6 +2,8 @@
   display: none;
   position: absolute;
   top: calc(100% + 7px);
+  left: 50%;
+  transform: translate(-54%);
   background-color: hsla(224, 60%, 16%, 1);
   min-height: 60px;
   text-align: center;
@@ -32,23 +34,19 @@
 .popover--plane {
   padding-left: 20px;
   padding-right: 20px;
-  left: -60px;
 }
 
 .popover--bus {
-  left: -75px;
   padding-left: 25px;
   padding-right: 25px;
 }
 
 .popover--bike {
-  left: -53px;
   padding-left: 20px;
   padding-right: 21px;
 }
 
 .popover--run {
-  left: -44px;
   padding-left: 22px;
   padding-right: 26px;
 }
@@ -57,13 +55,55 @@
   display: block;
 }
 
+.list-way:hover .popover {
+  display: block;
+}
+
 .popover--flag {
-  transform: translateX(calc(-50% + 15px));
   min-width: fit-content;
 }
 
 .form-step-second__img-container:hover {
   .popover {
+    display: block;
+  }
+}
+
+.card__flag-wrapper {
+  position: relative;
+
+  &:hover .popover {
+    display: block;
+  }
+}
+
+
+.card-country__flag-wrapper {
+  &:hover .popover {
+    display: block;
+  }
+}
+
+.companion-cardy__flag-wrapper {
+  position: relative;
+
+  &:hover .popover {
+    display: block;
+  }
+}
+
+.form-step-second__img-container {
+  position: relative;
+
+  &:hover .popover {
+    display: block;
+  }
+}
+
+.step-third__img-container {
+  position: relative;
+
+  &:hover .popover {
     display: block;
   }
 }
