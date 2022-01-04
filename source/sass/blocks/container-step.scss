@@ -23,9 +23,24 @@
 
 .container-step__third {
   margin-left: 2px;
+}
 
-  // & .step {
-  //   min-width: 231px;
-  // }
+@media (min-width: $tablet-width) {
+  .container-step {
+    border-radius: 30px;
+    margin-bottom: 41px;
+  }
+
+  .container-step__second {
+    margin-left: 0;
+
+    & .add-plan__subtitle {
+      margin-bottom: 35px;
+    }
+
+    & .add-plan__text {
+      margin-bottom: 0;
+    }
+  }
 }
 

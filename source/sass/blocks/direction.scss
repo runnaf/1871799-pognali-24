@@ -293,6 +293,34 @@
     }
   }
 
+  .direction__small-number {
+    margin-bottom: 3px;
+    margin-top: 4px;
+
+    &::after {
+      left: 22px;
+      right: 18px;
+      bottom: 35px;
+    }
+  }
+
+  .direction__plane {
+    width: 24px;
+  }
+
+  .direction__bus {
+    width: 23px;
+  }
+
+  .direction__bycicle {
+    width: 25px;
+  }
+
+  .direction__run {
+    width: 20px;
+    margin-top: 2px;
+  }
+
   .direction__filter-group {
     height: 100%;
   }

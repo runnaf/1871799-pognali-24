@@ -112,13 +112,15 @@
 
 @media (min-width: $tablet-width) {
   .plans {
-    width: 81%;
+    width: 80%;
+    min-width: 618px;
     margin-top: 4px;
     margin-bottom: 66px;
   }
 
   .plans__title {
     margin-bottom: 51px;
+    padding: 0;
     font-size: 36px;
     font-weight: 700;
   }
@@ -131,7 +133,7 @@
     line-height: 1;
     font-weight: 500;
     padding-top: 38px;
-    padding-left: 42px;
+    padding-left: 40px;
     padding-right: 33px;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -150,10 +152,10 @@
       content: "";
       position: absolute;
       bottom: 0;
-      left: 0;
-      right: 0;
+      left: -42px;
+      right: -33px;
       height: 1px;
-      background-color: hsla(227, 16%, 82%, 1);
+      background-color: hsla(227, 16%, 82%, 0.3);
     }
   }
 
@@ -162,6 +164,14 @@
     letter-spacing: 0.1em;
     align-self: center;
     width: max-content;
+  }
+
+  .plans__quontity-companion {
+    padding: 0;
+  }
+
+  .plans__desc--shift {
+    padding-left: 0;
   }
 
   .plans__data {
@@ -174,12 +184,14 @@
     order: 1;
     margin: 0;
     font-weight: 500;
+    font-size: 20px;
+    margin-top: 2px;
   }
 
   .plans__button {
     font-size: 20px;
     padding-left: 10px;
-    padding-right: 9px;
+    padding-right: 5px;
     padding-top: 18px;
     padding-bottom: 17px;
     text-align: end;

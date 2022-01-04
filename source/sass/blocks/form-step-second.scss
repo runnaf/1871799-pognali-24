@@ -391,7 +391,7 @@
       width: 1px;
       height: 100%;
       top: 0;
-      right: 178px;
+      right: 138px;
       content: "";
       background-color: hsla(225, 15%, 90%, 1);
     }
@@ -404,7 +404,7 @@
 
   .form-step-second__field-group {
     margin-bottom: 16px;
-    grid-template-columns: 1fr 181px;
+    grid-template-columns: 1fr 136px;
     column-gap: 27px;
   }
 
@@ -423,7 +423,7 @@
   }
 
   .form-step-second__field {
-    height: 70px;
+    height: 69px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1;
@@ -449,12 +449,15 @@
   }
 
   .form-step-second__small {
-    width: 13px;
-    height: 13px;
-    right: -3px;
+    width: 12px;
+    height: 12px;
+    top: calc(50% - 10px);
+    left: -9px;
   }
 
   .form-step-second__field-group--active {
+    padding: 0;
+
     & .form-step-second__flag-container {
       border: none;
     }
@@ -477,12 +480,10 @@
 
       &::after,
       &::before {
-        width: 20px;
-        left: 0;
-        right: 0;
+        width: 25px;
         bottom: 0;
-        top: 0;
-        margin: auto;
+        top: -2px;
+        left: 21px;
       }
     }
   }
@@ -520,72 +521,6 @@
         bottom: 0;
         top: 0;
         margin: auto;
-      }
-    }
-  }
-
-  .form-step__field-group--active-select {
-    background-color: transparent;
-    border: none;
-
-    & .form-step-second__button {
-      &::after,
-      &::before {
-        width: 20px;
-      }
-    }
-
-    & .form-step-second__country-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 208px;
-      padding-top: 32px;
-      padding-bottom: 32px;
-      padding-left: 25px;
-      box-sizing: border-box;
-      box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
-      background-color: $white;
-
-      &::before {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 1px;
-        height: 100%;
-        grid-column: 1/2;
-        background-color: hsla(229, 24%, 87%, 1);
-        content: "";
-      }
-    }
-
-    & .form-step-second__lists {
-      border: none;
-    }
-
-    & .form-step-second__small {
-      display: block;
-    }
-
-    & .form-step-second__field-button {
-      display: block;
-
-      &::before,
-      &::after {
-        width: 20px;
-        border: none;
-        height: 1px;
-        transform: rotate(45deg);
-        background-color: $white;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        margin: auto;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        transform: rotate(-45deg);
       }
     }
   }

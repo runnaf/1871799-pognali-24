@@ -34,12 +34,48 @@
   line-height: 18px;
 }
 
+.step__second {
+  padding-bottom: 8px;
+}
+
+.step__second-form {
+  margin-bottom: 27px;
+  box-sizing: border-box;
+}
+
+.step__second-field-group:last-of-type {
+  margin-bottom: 0;
+}
+
 @media (min-width: $tablet-width) {
   .step__subtitle {
     font-size: 36px;
   }
 
   .step {
-    width: 86%;
+    width: 85%;
+    min-width: 538px;
+  }
+
+  .step__second {
+    min-width: 534px;
+    padding-bottom: 68px;
+    margin-bottom: 52px;
+  }
+
+  .step__second .add-plan__text {
+    padding-right: 100px;
+    padding-bottom: 35px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .step__second {
+    padding-bottom: 96px;
+
   }
 }

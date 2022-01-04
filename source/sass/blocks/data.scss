@@ -18,8 +18,9 @@
     padding-right: 28px;
 
     &::before {
-      width: 19px;
-      top: calc(50% + 2px);
+      width: 18px;
+      top: calc(50% + 1px);
+      right: 2px;
     }
   }
 }

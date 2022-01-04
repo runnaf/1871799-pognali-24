@@ -4,13 +4,13 @@
   margin: 0 auto;
   padding-bottom: 29px;
   padding-top: 16px;
-  background-image: url("../../img/protocol/globe-back-mobile.jpg");
+  background-image: url("../img/protocol/globe-back-mobile.jpg");
   background-color: hsla(228, 41%, 15%, 1);
   background-position: 0 -75px;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/protocol/globe-back-mobile@2x.jpg");
+    background-image: url("../img/protocol/globe-back-mobile@2x.jpg");
     background-size: 640px auto;
   }
 }
@@ -125,14 +125,14 @@
 @media (min-width: $tablet-width) {
   .protocol {
     background-color: hsla(229, 48%, 18%, 1);
-    background-image: url("../../img/protocol/globe-back-tablet.jpg");
+    background-image: url("../img/protocol/globe-back-tablet.jpg");
     background-repeat: no-repeat;
     background-position: 0 252px;
     padding: 0;
     padding-bottom: 96px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/protocol/globe-back-mobile@2x.jpg");
+      background-image: url("../img/protocol/globe-back-mobile@2x.jpg");
       background-size: 1536px auto;
     }
   }
@@ -238,7 +238,7 @@
 @media (min-width: $desktop-width) {
   .protocol {
     background-color: hsla(228, 40%, 15%, 1);
-    background-image: url("../../img/protocol/globe-back-desktop.png");
+    background-image: url("../img/protocol/globe-back-desktop.png");
     background-repeat: no-repeat;
     background-position: bottom;
     padding-top: 97px;
@@ -250,7 +250,7 @@
     grid-row-gap: 102px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/protocol/globe-back-desktop@2x.png");
+      background-image: url("../img/protocol/globe-back-desktop@2x.png");
       background-size: 2880px auto;
     }
   }
