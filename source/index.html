@@ -16,7 +16,8 @@
 
 <body class="page__body">
 
-  <header class="page-header page-header--closed page-header--nojs"> <!-- page-header--fixed фиксированое положение-->
+  <header class="page-header page-header--closed page-header--nojs">
+    <!-- page-header--fixed фиксированое положение-->
     <a class="page-header__logo page-header__logo-white">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo_pognaly/logo_desktop.svg">
@@ -332,7 +333,7 @@
             <use href="img/sprite.svg#icon-arrow"></use>
           </svg>
         </button>
-    </section>
+      </section>
     </div>
 
     <div class="wrapper wrapper--companion wrapper--stats wrapper--border">
@@ -572,81 +573,83 @@
             </div>
           </section>
         </div>
-          <button class="companion__button button" type="submit">
-            <span>Показать всех</span>
-            <svg class="companion__button-icon" width="13" height="13">
-              <use href="img/sprite.svg#icon-arrow"></use>
-            </svg>
-          </button>
+        <button class="companion__button button" type="submit">
+          <span>Показать всех</span>
+          <svg class="companion__button-icon" width="13" height="13">
+            <use href="img/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
       </section>
     </div>
 
     <div class="wrapper wrapper--tariff wrapper--stats wrapper--border">
-      <section class="tariff">
-        <h2 class="visually-hidden">Тарифы размещения</h2>
-        <p class="tariff__slogan">Добавьте свой профиль</p>
-        <div class="tariff__rates tariff-payment">
-          <span class="visually-hidden">Оплата тарифа</span>
-        </div>
-        <ol class="tariff__list tariff-list">
-          <li class="tariff-list__item tariff__item">
-            <dl class="tariff-list__wrapper">
-              <dt class="tariff-list__text tariff-list__text-therm">Базовое размещение</dt>
-              <dd class="tariff-list__text tariff-list__text-definition tariff-list__text-definition--first">Бесплатно
-              </dd>
-            </dl>
-            <span class="tariff-list__number tariff-list__number--first tariff__number">1</span>
-          </li>
-          <li class="tariff-list__item tariff__item">
-            <dl class="tariff-list__wrapper">
-              <dt class="tariff-list__text tariff-list__text-therm">Вывод на первых позициях</dt>
-              <dd class="tariff-list__text tariff-list__text-definition">99 руб./мес</dd>
-            </dl>
-            <span class="tariff-list__number tariff-list__number--second tariff__number">2</span>
-          </li>
-          <li class="tariff-list__item tariff__item">
-            <dl class="tariff-list__wrapper">
-              <dt class="tariff-list__text tariff-list__text-therm">Кастомный цвет карточки</dt>
-              <dd class="tariff-list__text tariff-list__text-definition  tariff-list__text-definition--last">59 руб./мес
-              </dd>
-            </dl>
-            <span class="tariff-list__number tariff-list__number--third tariff__number">3</span>
-          </li>
-        </ol>
-
-        <div class="tariff__business-block business-block">
-          <a class="tariff__link tariff__business business-block__link business-tariff">
-            <span class="tariff__business-small">
-              <svg class="tariff__business-icon" width="28" height="28">
-                <use href="img/sprite.svg#icon-businessman"></use>
-              </svg>
-            </span>
-            <p class="tariff__business-desc">Показать тарифы для бизнеса</p>
-          </a>
-          <div class="business-block__popover business-popover">
-            <div class="business-popover__content">
-              <h2 class="business-popover__title">Бизнес-тарифы</h2>
-              <dl class="business-block__list">
-                <dt class="business-block__desc">Реклама у блоггера</dt>
-                <dd class="business-block__desc">300 000 руб./пост</dd>
-                <dt class="business-block__desc">Накрутка подписчиков</dt>
-                <dd class="business-block__desc">от 1 руб./шт.</dd>
-                <dt class="business-block__desc">Лайки от ботов</dt>
-                <dd class="business-block__desc">от 20 коп./лайк</dd>
-                <dt class="business-block__desc">Ваш продакт-плейсмент </dt>
-                <dd class="business-block__desc">Индивидуально</dd>
-              </dl>
-              <button class="business-popover__button" type="button">Закрыть окно</button>
-            </div>
+      <div class="wrapper__tariff">
+        <section class="tariff">
+          <h2 class="visually-hidden">Тарифы размещения</h2>
+          <p class="tariff__slogan">Добавьте свой профиль</p>
+          <div class="tariff__rates tariff-payment">
+            <span class="visually-hidden">Оплата тарифа</span>
           </div>
+          <ol class="tariff__list tariff-list">
+            <li class="tariff-list__item tariff__item">
+              <dl class="tariff-list__wrapper">
+                <dt class="tariff-list__text tariff-list__text-therm">Базовое размещение</dt>
+                <dd class="tariff-list__text tariff-list__text-definition tariff-list__text-definition--first">Бесплатно
+                </dd>
+              </dl>
+              <span class="tariff-list__number tariff-list__number--first tariff__number">1</span>
+            </li>
+            <li class="tariff-list__item tariff__item">
+              <dl class="tariff-list__wrapper">
+                <dt class="tariff-list__text tariff-list__text-therm">Вывод на первых позициях</dt>
+                <dd class="tariff-list__text tariff-list__text-definition">99 руб./мес</dd>
+              </dl>
+              <span class="tariff-list__number tariff-list__number--second tariff__number">2</span>
+            </li>
+            <li class="tariff-list__item tariff__item">
+              <dl class="tariff-list__wrapper">
+                <dt class="tariff-list__text tariff-list__text-therm">Кастомный цвет карточки</dt>
+                <dd class="tariff-list__text tariff-list__text-definition  tariff-list__text-definition--last">59 руб./мес
+                </dd>
+              </dl>
+              <span class="tariff-list__number tariff-list__number--third tariff__number">3</span>
+            </li>
+          </ol>
+
+          <div class="tariff__business-block">
+            <a class="tariff__link tariff__business business-block__link business-tariff">
+              <span class="tariff__business-small">
+                <svg class="tariff__business-icon" width="28" height="28">
+                  <use href="img/sprite.svg#icon-businessman"></use>
+                </svg>
+              </span>
+              <p class="tariff__business-desc">Показать тарифы для бизнеса</p>
+            </a>
+          </div>
+        </section>
+        <div class="business-block">
+          <div class="business-block__content">
+            <h2 class="business-block__title">Бизнес-тарифы</h2>
+            <dl class="business-block__list">
+              <dt class="business-block__term">Реклама у блоггера</dt>
+              <dd class="business-block__desc">300 000 руб./пост</dd>
+              <dt class="business-block__term">Накрутка подписчиков</dt>
+              <dd class="business-block__desc">от 1 руб./шт.</dd>
+              <dt class="business-block__term">Лайки от ботов</dt>
+              <dd class="business-block__desc">от 20 коп./лайк</dd>
+              <dt class="business-block__term">Ваш продакт-плейсмент </dt>
+              <dd class="business-block__desc">Индивидуально</dd>
+            </dl>
+          </div>
+          <button class="business-block__button" type="button">Закрыть окно</button>
         </div>
-      </section>
+      </div>
     </div>
 
     <div class="wrapper wrapper--interested wrapper--stats wrapper--border">
       <section class="interested">
         <h2 class="interested__title">Заинтересовались?</h2>
-        <p class="interested__desc interested__desc--shift">Зарегистрируйтесь, <br>это быстро и бесплатно!&nbsp</p>
+        <p class="interested__desc interested__desc--shift">Зарегистрируйтесь, <br>это быстро и бесплатно!</p>
         <p class="interested__desc interested__desc--shift">Уже зарегистрированы? Тогда скорее&#160;<a
             class="interested__link interested__link--login" href="#">авторизуйтесь</a>.</p>
         <form class="interested__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -760,6 +763,7 @@
       </div>
     </div>
   </footer>
+
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.page-header__toggle');

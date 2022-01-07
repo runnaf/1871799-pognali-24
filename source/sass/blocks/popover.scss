@@ -64,7 +64,9 @@
 }
 
 .form-step-second__img-container:hover {
-  .popover {
+  position: relative;
+
+  & .popover {
     display: block;
   }
 }
@@ -85,14 +87,6 @@
 }
 
 .companion-cardy__flag-wrapper {
-  position: relative;
-
-  &:hover .popover {
-    display: block;
-  }
-}
-
-.form-step-second__img-container {
   position: relative;
 
   &:hover .popover {

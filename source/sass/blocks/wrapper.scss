@@ -48,6 +48,7 @@
   background-position-y: 64px;
   background-repeat: no-repeat;
   z-index: 8;
+  position: static;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/companion/background-mobile@2x.png");
@@ -58,6 +59,10 @@
 .wrapper--tariff {
   background-color: $lightgrey;
   z-index: 7;
+}
+
+.wrapper__tariff {
+  position: relative;
 }
 
 .wrapper--interested {
