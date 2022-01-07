@@ -176,7 +176,7 @@
 
   .wrapper--stats-inner {
     margin-top: $desctop-stats-shift;
-    padding-top: -$desctop-stats-shift;
+    padding-top: -$desctop-stats-shift + 1px;
   }
 
   .wrapper--border {
@@ -222,10 +222,11 @@
   }
 
   .wrapper--add-plan {
-    padding-bottom: 77px;
+    padding-bottom: 144px;
+    padding-top: 51px;
   }
 
   .wrapper--plans {
-    padding-bottom: 62px;
+    padding-bottom: 115px;
   }
 }

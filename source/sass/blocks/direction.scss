@@ -181,9 +181,9 @@
   opacity: 0.6;
   box-sizing: border-box;
   text-align: left;
-  padding-top: 26px;
+  padding-top: 24px;
   padding-right: 28px;
-  padding-bottom: 23px;
+  padding-bottom: 25px;
   padding-left: 23px;
 
   &:focus-visible {
@@ -270,7 +270,7 @@
 
 @media (min-width: $tablet-width) {
   .direction {
-    grid-template-columns: 73px min-content 59px 1fr 65px  94px 75px;
+    grid-template-columns: 75px min-content 59px 1fr 63px  94px 75px;
     grid-template-rows: min-content 62px min-content 50px min-content 52px min-content;
     padding-bottom: 109px;
   }
@@ -323,11 +323,7 @@
 
   .direction__filter-group {
     height: 100%;
-  }
-
-  .direction__filter-hashtag {
-    width: 97%;
-    min-width: 618px;
+    margin: 0;
   }
 
   .direction__list {
@@ -342,7 +338,7 @@
 
   .direction__title-container {
     padding-top: 89px;
-    padding-left: 50px;
+    padding-left: 75px;
     border-bottom-right-radius: 57px;
     border-bottom-left-radius: 57px;
   }
@@ -351,6 +347,7 @@
     font-size: 60px;
     line-height: 1;
     padding-bottom: 69px;
+    margin-left: 0;
 
     &::before {
       height: 8px;
@@ -456,8 +453,8 @@
   .direction {
     position: relative;
     grid-template-columns: 124px 1fr 95px 44px 190px 95px 60px;
-    grid-template-rows: 53px min-content min-content 27px min-content;
-    padding-bottom: 109px;
+    grid-template-rows: 48px min-content min-content 27px min-content;
+    padding-bottom: 116px;
 
     &::before {
       position: absolute;
@@ -487,7 +484,13 @@
   .direction__title {
     padding: 0;
     margin: 0;
-    padding-bottom: 71px;
+    padding-bottom: 68px;
+
+    &::before {
+      bottom: -8px;
+      left: 1px;
+      right: -3px;
+    }
   }
 
   .direction__small {
@@ -497,6 +500,11 @@
     width: 95px;
     height: 95px;
     color: $white;
+    margin-bottom: 15px;
+  }
+
+  .direction__small-number {
+    margin-top: 11px;
   }
 
   .direction__picture {
@@ -519,8 +527,9 @@
     border-radius: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    letter-spacing: 0;
   }
 
   .direction__toggler-small {
@@ -538,8 +547,16 @@
 
     & .direction__field {
       margin: 0;
-      margin-left: 20px;
+      margin-left: 22px;
     }
+  }
+
+  .direction__filter-group {
+    margin: 0;
+  }
+
+  .direction__filter-hashtag {
+    width: 100%;
   }
 
   .direction__form-list-way {
@@ -547,10 +564,21 @@
     grid-row: 5/6;
     justify-self: end;
     margin: 0;
+    padding-left: 40px;
+  }
+
+  .direction__list-way {
+    padding-bottom: 2px;
+    margin-left: 4px;
   }
 
   .direction__item-way .list-way {
     width: 43px;
+    height: 45px;
+  }
+
+  .direction__plane {
+    margin-top: 4px;
   }
 }
 

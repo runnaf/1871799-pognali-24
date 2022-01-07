@@ -1,6 +1,6 @@
 .selection-companion {
   width: 84%;
-  min-width: 270px;
+  min-width: 269px;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 22px;
@@ -11,7 +11,7 @@
   background-color: $orange-background;
   border-radius: 20px;
   box-sizing: border-box;
-  padding-top: 24px;
+  padding-top: 25px;
   padding-bottom: 22px;
 
   & .button:hover {
@@ -30,6 +30,7 @@
 .selection-companion__wrapper {
   margin: 0 auto;
   width: 85%;
+  min-width: 229px;
 }
 
 .selection-companion__title {
@@ -38,8 +39,8 @@
   line-height: 22px;
   letter-spacing: 0.02em;
   width: 145px;
-  margin-bottom: 28px;
-  padding-left: 5px;
+  margin-bottom: 23px;
+  padding-left: 4px;
 }
 
 .selection-companion__form {
@@ -53,40 +54,37 @@
   border: 0 none;
   padding: 0;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 
-  &:not(:last-of-type):before {
+  &:not(:last-of-type)::before {
     position: absolute;
     width: 100%;
     content: "";
     height: 1px;
     background-color: hsla(47, 89%, 56%, 1);
-    bottom: -2px;
-  }
-
-  &:first-of-type::after {
-    position: absolute;
-    width: 100%;
-    content: "";
-    height: 1px;
-    background-color: hsla(47, 89%, 56%, 1);
-    top: -39px;
+    bottom: -1px;
   }
 }
 
 .selection-companion__legend {
   width: 100%;
-  margin-bottom: 1px;
+  padding: 0;
 }
 
-.selection-companion__link-wrapper {
+.selection-companion__link {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 0;
-  padding-top: 8px;
-  padding-bottom: 9px;
   cursor: pointer;
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-transform: uppercase;
 
   &:hover {
     opacity: 0.6;
@@ -96,6 +94,16 @@
   &:focus-visible {
     opacity: 0.3;
   }
+
+  &::after {
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 0;
+    content: "";
+    border-bottom: 6px solid hsla(229, 46%, 18%, 1);
+    border-left: 6px solid transparent;
+    transform: rotate(45deg);
+  }
 }
 
 .selection-companion__button-filter {
@@ -103,28 +111,13 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-
-  &::after {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    content: "";
-    border-bottom: 6px solid hsla(229, 46%, 18%, 1);
-    border-left: 6px solid transparent;
-    transform: rotate(225deg);
-  }
-}
-
-.selection-companion__link {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  width: 50px;
 }
 
 .selection-companion__label {
   font-weight: 400;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 1;
   color: hsla(0, 0%, 0%, 1);
 }
 
@@ -137,49 +130,53 @@
 .selection-companion__list {
   box-sizing: border-box;
   padding: 0;
-  padding-bottom: 16px;
   margin: 0;
+  margin-top: 3px;
+  margin-bottom: 19px;
   list-style: none;
 }
 
 .selection-companion__input-desc {
   position: relative;
-  padding-left: 26px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -2px;
-    width: 18px;
-    height: 18px;
-    border-radius: 4px;
-    background-color: $white;
-    border: none;
-  }
+  display: flex;
+  align-items: flex-end;
 }
 
 .selection-companion__checkbox-icon {
   position: absolute;
-  top: 6px;
-  left: 2px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
   display: none;
   fill: hsla(228, 41%, 15%, 1);
 }
 
+.selection-companion__mark {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: $white;
+  border: none;
+}
+
+.selection-companion__field-desc {
+  padding-left: 9px;
+}
+
 .selection-companion__input[type="checkbox"]:checked {
-  & ~ .selection-companion__checkbox-icon {
-    display: block;
+  & ~ .selection-companion__input-desc {
+    & .selection-companion__checkbox-icon {
+      display: block;
+    }
   }
 }
 
 .selection-companion__input[type="checkbox"] {
   &:hover + .selection-companion__input-desc {
     opacity: 0.6;
-  }
-
-  &:hover ~ .selection-companion__checkbox-icon {
-    fill-opacity: 0.6;
   }
 
   &:active + .selection-companion__input-desc,
@@ -199,12 +196,12 @@
 }
 
 .selection-companion__item:not(:last-of-type) {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 }
 
 .selection-companion__list-way {
-  margin-top: 4px;
-  padding-bottom: 20px;
+  margin-top: 5px;
+  padding-left: 1px;
   display: flex;
 }
 
@@ -213,7 +210,7 @@
 }
 
 .selection-companion__item-way:not(:last-of-type) {
-  margin-right: 2px;
+  margin-right: 1px;
 }
 
 .selection-companion__link-way {
@@ -230,10 +227,26 @@
   }
 }
 
+.selection-companion__icon-plane {
+  width: 16px;
+}
+
+.selection-companion__icon-bus {
+  width: 16px;
+}
+
+.selection-companion__icon-bycicle {
+  width: 18px;
+}
+
+.selection-companion__icon-run {
+  width: 15px;
+}
+
 .selection-companion__filter-group--opened {
-  & .selection-companion__button-filter::after {
-    transform: rotate(45deg);
-    top: calc(20% - 4px);
+  & .selection-companion__link::after {
+    transform: rotate(225deg);
+    top: 50%;
   }
 
   & .selection-companion__list {
@@ -347,10 +360,11 @@
 @media (min-width: $tablet-width) {
   .selection-companion {
     width: 89%;
-    min-width: 617px;
+    min-width: 688px;
     padding: 0;
     margin: 0 auto;
-    padding-top: 34px;
+    margin-bottom: 41px;
+    padding-top: 35px;
     padding-bottom: 37px;
   }
 
@@ -393,11 +407,12 @@
 
   .selection-companion__filter-group {
     display: grid;
-    grid-template-columns: 122px 1fr;
+    grid-template-columns: 127px 1fr;
     row-gap: 5px;
     grid-template-rows: 47px;
     align-items: center;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -409,12 +424,51 @@
     }
   }
 
+  .selection-companion__filter-group--transport {
+    grid-template-columns: 122px 1fr;
+
+    & .selection-companion__link-wrapper {
+      padding-bottom: 3px;
+    }
+  }
+
+  .selection-companion__mark {
+    width: 24px;
+    height: 24px;
+  }
+
+  .selection-companion__field-desc {
+    padding-left: 12px;
+  }
+
   .selection-companion__filter-group--checkbox {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 
     & .selection-companion__filter-group {
       margin-bottom: 3px;
     }
+  }
+
+  .selection-companion__item-way:not(:last-of-type) {
+    margin-right: 2px;
+  }
+
+  .selection-companion__icon-plane {
+    width: 22px;
+  }
+
+  .selection-companion__icon-bus {
+    width: 23px;
+  }
+
+  .selection-companion__icon-bycicle {
+    width: 24px;
+  }
+
+  .selection-companion__icon-run {
+    width: 20px;
+    margin-right: 4px;
+    margin-top: 2px;
   }
 
   .selection-companion__legend {
@@ -429,6 +483,7 @@
     height: 46px;
     font-size: 20px;
     line-height: 1;
+    letter-spacing: 0.04em;
   }
 
   .selection-companion__button-filter {
@@ -436,14 +491,14 @@
   }
 
   .selection-companion__filter-group--closed .selection-companion__list {
-    grid-template-columns: 30% 30% 40%;
+    grid-template-columns: 34.5% 34.5% 1fr;
     display: grid;
   }
 
   .selection-companion__filter-group--opened {
     & .selection-companion__list {
       display: grid;
-      grid-template-columns: 30% 30% 40%;
+      grid-template-columns: 34.5% 34.5% 1fr;
     }
 
     & .selection-companion__list-way {
@@ -457,13 +512,12 @@
     padding: 0;
   }
 
-  .selection-companion__item:not(:last-of-type) {
-    margin: 0;
-    margin-left: 5px;
-  }
-
   .selection-companion__item {
-    margin-left: 5px;
+    margin: 0;
+
+    &:not(:last-of-type) {
+      margin: 0;
+    }
   }
 
   .selection-companion__link {
@@ -472,19 +526,15 @@
     line-height: 1;
     padding: 15px;
     padding-left: 0;
+
+    &::after {
+      display: none;
+    }
   }
 
   .selection-companion__label {
     font-size: 20px;
-  }
-
-  .selection-companion__input-desc {
-    padding-left: 36px;
-  }
-
-  .selection-companion__input-desc::before {
-    width: 24px;
-    height: 24px;
+    line-height: 23px;
   }
 
   .selection-companion--filter-opened + .selection-companion__list-way {
@@ -494,13 +544,15 @@
   .selection-companion__input-wrapper {
     grid-column: 3/4;
     width: 148px;
+    padding-right: 2px;
+    box-sizing: border-box;
   }
 
   .selection-companion__range {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-right: 65px;
-    margin-left: 5px;
+    margin-right: 64px;
+    margin-left: 6px;
   }
 
   .selection-companion__button-form {
@@ -527,8 +579,8 @@
     min-width: 198px;
     width: 69%;
     padding-top: 45px;
-    padding-left: 11px;
-    padding-bottom: 50px;
+    padding-left: 9px;
+    padding-bottom: 47px;
   }
 
   .selection-companion__title {
@@ -543,7 +595,7 @@
 
   .selection-companion__form {
     margin: 0;
-    margin-bottom: 43px;
+    margin-bottom: 41px;
     padding: 0;
   }
 
@@ -564,13 +616,18 @@
     }
 
     & .selection-companion__legend--checkbox {
-      margin-bottom: 18px;
+      margin-bottom: 17px;
     }
 
     & .selection-companion__list-way {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
+      padding-left: 1px;
+    }
+
+    & .selection-companion__link::after {
+      top: calc(50% - 2px);
     }
   }
 
@@ -581,11 +638,17 @@
   }
 
   .selection-companion__item:not(:last-of-type) {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   .selection-companion__filter-group--checkbox .selection-companion__filter-group {
     margin-bottom: 2px;
+  }
+
+  .selection-companion__filter-group--transport {
+    & .selection-companion__legend--checkbox {
+      margin-bottom: 10px;
+    }
   }
 
   .selection-companion__list {
@@ -598,6 +661,12 @@
     padding-top: 9px;
     padding-bottom: 9px;
     padding-left: 0;
+
+    &::after {
+      display: block;
+      right: 10px;
+      top: calc(50% - 6px);
+    }
   }
 
   .selection-companion__button-filter {
@@ -624,11 +693,6 @@
     margin-right: 5px;
   }
 
-  .selection-companion__input-desc {
-    padding-left: 32px;
-  }
-
-
   .selection-companion__range {
     width: 100%;
     margin: 0;
@@ -643,5 +707,9 @@
   .selection-companion__button-wrapper {
     padding-right: 5px;
     box-sizing: border-box;
+  }
+
+  .selection-companion__item-way:not(:last-of-type) {
+    margin-right: 1px;
   }
 }

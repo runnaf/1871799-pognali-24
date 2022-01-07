@@ -10,6 +10,7 @@
   position: absolute;
   height: 2px;
   background-color: hsla(224, 52%, 24%, 1);
+  right: 0;
 }
 
 .range__toggle {
@@ -42,7 +43,7 @@
   right: 144px;
 
   &:hover {
-    right: calc(144px - 4px)
+    right: calc(144px - 4px);
   }
 }
 
@@ -52,7 +53,7 @@
   }
 
   .range__bar {
-    width: 173px;
+    width: 174px;
     right: 0;
   }
 
