@@ -32,6 +32,8 @@
   color: hsla(27, 100%, 59%, 1);
   margin: 0;
   margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .business-block__list {
@@ -55,6 +57,7 @@
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 20px;
 
   &::after {
     position: absolute;
@@ -70,6 +73,7 @@
 .business-block__desc {
   margin: 0;
   padding-bottom: 10px;
+  padding-right: 20px;
 }
 
 .business-block__button {
@@ -90,3 +94,49 @@
   border-bottom-right-radius: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .business-block__title {
+    font-size: 45px;
+  }
+
+  .business-block__list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .business-block__desc {
+    position: relative;
+    padding: 0;
+    align-self: center;
+    justify-self: end;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: hsla(0, 0%, 0%, 0.05);
+      content: "";
+    }
+  }
+
+  .business-block__button {
+    font-size: 24px;
+    text-transform: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .business-block__button {
+    line-height: 26px;
+  }
+}
