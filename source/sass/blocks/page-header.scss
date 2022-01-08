@@ -110,6 +110,29 @@
   flex-direction: row;
 }
 
+.page-header--fixed {
+  position: fixed;
+  background-color: $white;
+  z-index: 100;
+  padding-top: 0;
+
+  & .page-header__logo-white {
+    display: none;
+  }
+
+  & .page-header__logo-black {
+    display: block;
+  }
+
+  & .main-nav::after {
+    background-color: hsla(229, 46%, 18%, 1);
+  }
+
+  & .main-nav__link {
+    color: hsla(229, 46%, 18%, 1);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     padding-top: 26px;
@@ -164,13 +187,36 @@
       padding-right: 5px;
     }
   }
+
+  .page-header--fixed {
+    position: fixed;
+    background-color: $white;
+    z-index: 100;
+    padding-top: 0;
+
+    & .page-header__logo-white {
+      display: none;
+    }
+
+    & .page-header__logo-black {
+      display: block;
+    }
+
+    & .main-nav::after {
+      background-color: hsla(229, 46%, 18%, 1);
+    }
+
+    & .main-nav__link {
+      color: hsla(229, 46%, 18%, 1);
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-top: 49px;
-    padding-bottom: 9px;
-    padding-left: 60px;
+    padding-top: 28px;
+    padding-bottom: 0;
+    padding-left: 34px;
     padding-right: 60px;
     background-color: transparent;
   }
@@ -188,8 +234,8 @@
 
     &.page-header--ineer {
       background-color: $darkfont-color;
-      padding-top: 47px;
-      padding-left: 53px;
+      padding-top: 28px;
+      padding-left: 34px;
     }
   }
 
@@ -211,6 +257,10 @@
     display: none;
   }
 
+  .page-header__social {
+    margin-top: 5px;
+  }
+
   .page-header__list {
     position: relative;
     display: flex;
@@ -225,5 +275,28 @@
 
   .page-header__list--closed {
     display: none;
+  }
+
+  .page-header--fixed {
+    padding-top: 0;
+    position: fixed;
+    background-color: $white;
+    z-index: 100;
+
+    & .page-header__logo-white {
+      display: none;
+    }
+
+    & .page-header__logo-black {
+      display: block;
+    }
+
+    & .main-nav::after {
+      background-color: hsla(229, 46%, 18%, 1);
+    }
+
+    & .main-nav__link {
+      color: hsla(229, 46%, 18%, 1);
+    }
   }
 }

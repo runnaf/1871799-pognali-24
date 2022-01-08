@@ -4,7 +4,7 @@
   background-color: $lightgrey;
   margin: 0 auto;
   box-sizing: border-box;
-  padding-bottom: 45px;
+  padding-bottom: 46px;
 }
 
 .slider-companion__card {
@@ -12,7 +12,7 @@
   font-size: 15px;
   line-height: 16px;
   font-weight: 400;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .slider-companion__name {
@@ -50,13 +50,13 @@
 .slider-companion__wrapper-link {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .slider-companion__link-more {
   padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 14px;
+  padding-right: 18px;
+  padding-top: 9px;
   padding-bottom: 12px;
   width: 100%;
   color: hsla(224, 52%, 24%, 1);
@@ -89,14 +89,14 @@
 
 .slider-companion__link-more--wrapper {
   position: relative;
-  padding-left: 34px;
+  padding-left: 33px;
 
   &::after,
   &::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 50%;
+    top: calc(50% - 1px);
     width: 18px;
     height: 2px;
     background-color: hsla(224, 52%, 24%, 1);
@@ -114,30 +114,35 @@
 @media (min-width: $tablet-width) {
   .slider-companion {
     padding: 0;
-    padding-bottom: 133px;
-    width: 90%;
+    padding-bottom: 61px;
+    width: 89%;
+    min-width: 688px;
   }
 
   .slider-companion__card {
-    margin-top: 41px;
+    margin-bottom: 40px;
+  }
 
-    &:last-of-type {
-      margin-bottom: 40px;
-    }
+  .slider-companion__card--last {
+    margin-bottom: 0;
   }
 
   .slider-companion__wrapper-link {
     margin-top: 32px;
-    margin-bottom: 38px;
+    margin-bottom: 37px;
   }
 
   .slider-companion__link-more {
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 52px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 10px;
+  }
+
+  .slider-companion__link-more--wrapper {
+    padding-left: 50px;
 
     &::after,
     &::before {
@@ -154,7 +159,7 @@
     margin: 0;
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-left: 29px;
+    padding-left: 28px;
     padding-right: 23px;
     display: flex;
     justify-content: space-between;
@@ -169,7 +174,7 @@
     grid-row: 1/-1;
     grid-template-columns: 949px 86px 285px;
     width: 100%;
-    padding-bottom: 149px;
+    padding-bottom: 78px;
   }
 
   .slider-companion__card {
@@ -185,7 +190,13 @@
   .slider-companion__pagination-wrapper {
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-left: 29px;
-    padding-right: 23px;
+    padding-left: 28px;
+    padding-right: 24px;
+  }
+
+  .slider-companion__link-more {
+    padding-right: 83px;
+    padding-top: 15px;
+    padding-bottom: 18px;
   }
 }
