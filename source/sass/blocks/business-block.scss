@@ -92,9 +92,14 @@
   padding-right: 15px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
+  .business-block {
+    top: 0;
+  }
+
   .business-block__title {
     font-size: 45px;
   }
@@ -136,6 +141,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .business-block {
+    max-width: 750px;
+    bottom: 0;
+    margin-top: 0;
+    top: 105px;
+    height: min-content;
+  }
+
   .business-block__button {
     line-height: 26px;
   }
