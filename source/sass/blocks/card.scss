@@ -3,6 +3,8 @@
   min-width: 235px;
   padding-top: 13px;
   padding-bottom: 23px;
+  padding-right: 4px;
+  box-sizing: border-box;
   display: grid;
   margin: 0 auto;
   grid-template-columns: 81px 1fr min-content;
@@ -73,7 +75,7 @@
     content: "";
     position: absolute;
     top: 9px;
-    right: 4px;
+    right: 0;
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -302,28 +304,18 @@
 }
 
 .card__level-container {
+  justify-self: center;
   position: relative;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
   display: grid;
   justify-content: center;
   box-sizing: border-box;
-
-  & .level-icon {
-    top: -1px;
-    right: 0;
-  }
+  width: 45px;
+  height: 45px;
 }
 
 .card__level-number {
   align-self: center;
-  justify-self: start;
-  width: 41px;
-  height: 41px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-self: center;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
@@ -331,8 +323,9 @@
 }
 
 .card__title-level {
-  padding-left: 1px;
+  padding: 0;
   margin-bottom: 10px;
+  justify-self: center;
 }
 
 .card__level {
@@ -353,7 +346,6 @@
   padding-right: 10px;
   padding-left: 10px;
   margin-left: 2px;
-  margin-right: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -364,6 +356,7 @@
     column-gap: 0;
     padding-top: 31px;
     padding-bottom: 0;
+    padding-right: 0;
     box-sizing: border-box;
   }
 
@@ -564,10 +557,6 @@
     width: 60px;
     height: 60px;
     padding: 0;
-
-    & .level-icon {
-      top: -2px;
-    }
   }
 
   .card__title-level {
@@ -577,16 +566,22 @@
   .card__level {
     position: relative;
     display: block;
-    margin-top: -12px;
+    align-self: start;
 
     &::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 1px;
       height: 1px;
+      right: -2px;
       width: 31px;
       background-color: hsla(0, 0%, 0%, 0.1);
     }
+  }
+
+  .card__level-number {
+    align-self: end;
+    margin-top: 3px;
   }
 }
 

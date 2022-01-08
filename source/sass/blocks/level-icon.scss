@@ -2,10 +2,17 @@
   stroke: hsla(27, 100%, 59%, 1);
   fill: transparent;
   position: absolute;
-  top: -3px;
-  right: -2px;
-  width: 100%;
-  height: 100%;
+  top: -2px;
+  right: -1px;
+  width: 61px;
+  height: 61px;
+}
+
+.level-icon__card {
+  width: 45px;
+  height: 45px;
+  top: 0;
+  right: 0;
 }
 
 @media (min-width: $tablet-width) {
