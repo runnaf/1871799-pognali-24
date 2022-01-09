@@ -518,6 +518,8 @@
       &::after,
       &::before {
         width: 25px;
+        height: 1px;
+        border: none;
         bottom: 0;
         top: -2px;
         left: -16px;
