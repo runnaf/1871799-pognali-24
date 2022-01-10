@@ -44,8 +44,7 @@
 
 .wrapper--companion {
   background-color: $darkgrey;
-  background-image: url("../img/companion/background-mobile.png"),
-                    image-set(url("../img/companion/background-mobile.webp") 1x);
+  background-image: url("../img/companion/background-mobile.png");
   background-position-y: 64px;
   background-repeat: no-repeat;
   z-index: 8;
@@ -53,7 +52,6 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/companion/background-mobile@2x.png");
-    background-image: image-set(url("../img/companion/background-mobile@2x.webp") 2x);
     background-size: 295px auto;
   }
 }
