@@ -270,6 +270,7 @@
 
 .card__list-transport {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card__item-transport {
@@ -695,6 +696,7 @@
     grid-column: 6/7;
     grid-row: 6/7;
     align-self: center;
+    min-width: 130px;
   }
 
   .card__icon-plane {
@@ -704,7 +706,6 @@
   }
 
   .card__list-transport {
-    display: flex;
     flex-direction: row;
   }
 
