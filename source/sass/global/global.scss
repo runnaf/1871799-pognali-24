@@ -38,13 +38,13 @@ textarea {
   overflow: hidden;
 }
 
-// input {
-//   &::-webkit-outer-spin-button,
-//   &::-webkit-inner-spin-button {
-//     -webkit-appearance: none;
-//   }
+input {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
 
-//   &[type="number"] {
-//     -moz-appearance: textfield;
-//   }
-// }
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+}

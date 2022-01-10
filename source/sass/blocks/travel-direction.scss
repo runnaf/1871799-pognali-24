@@ -63,7 +63,7 @@
   position: absolute;
   top: calc(50% - 8px);
   right: 19px;
-  height: 18px;
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -165,13 +165,12 @@
     grid-row: 5/6;
     align-self: center;
     width: fit-content;
-    padding-right: 100px;
+    min-width: 277px;
+    padding-right: 50px;
     border-radius: 20px;
   }
 
   .travel-direction__button-icon {
-    right: 30px;
-    width: 14px;
-    height: 16px;
+    right: 34px;
   }
 }

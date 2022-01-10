@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Погнали</title>
-  <link rel="preload" href="css/style.min.css" as="style">
-  <link rel="preload" href="img/logo_pognaly/lobo_mobile.svg" as="img">
-  <link rel="preload" href="/fonts/bloggersans-bold.woff2" as="font">
-  <link rel="preload" href="/fonts/bloggersans-light.woff2" as="font">
-  <link rel="preload" href="/fonts/bloggersans-medium.woff2" as="font">
+  <link rel="preload" href="css/style.min.css" onload="this.rel='stylesheet'" as="style" crossorigin="anonymous">
+  <link rel="preload" href="img/logo_pognaly/logo_mobile.svg" as="image">
+  <link rel="preload" type="font/woff2" crossorigin="anonymous" href="/fonts/bloggersans-bold.woff2" as="font">
+  <link rel="preload" type="font/woff2" crossorigin="anonymous" href="/fonts/bloggersans-light.woff2" as="font">
+  <link rel="preload" type="font/woff2" crossorigin="anonymous" href="/fonts/bloggersans-medium.woff2" as="font">
   <link rel="icon" href="favicon32.ico"> <!-- 32×32 -->
   <link rel="icon" href="favicon16.ico"> <!-- 16×16 -->
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
@@ -24,7 +24,7 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo_pognaly/logo_desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo_pognaly/logo_tablet.svg">
-        <img src="img/logo_pognaly/lobo_mobile.svg" alt="Логотип сайта 'Погнали'">
+        <img src="img/logo_pognaly/logo_mobile.svg" alt="Логотип сайта 'Погнали'">
       </picture>
     </a>
 
@@ -219,8 +219,8 @@
             <li class="direction__item-way">
               <button class="list-way list-way--selected list-way__direction" type="button">
                 <span class="visually-hidden">Способ путешествия на велосипеде.</span>
-                <svg class="list-way__icon direction__bycicle" width="25" height="24">
-                  <use href="img/sprite.svg#icon-bycicle"></use>
+                <svg class="list-way__icon direction__bicycle" width="25" height="24">
+                  <use href="img/sprite.svg#icon-bicycle"></use>
                 </svg>
               </button>
               <div class="popover popover--bike">
@@ -1324,7 +1324,7 @@
 
   <footer class="page-footer page-footer__inner">
     <div class="page-footer__container">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo_pognaly/logo-white_desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo_pognaly/logo-white_tablet.svg">

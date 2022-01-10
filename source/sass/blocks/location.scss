@@ -87,7 +87,7 @@
   position: absolute;
   top: calc(50% - 8px);
   right: 18px;
-  height: 18px;
+  height: auto;
 }
 
 .location__cart {
@@ -95,6 +95,7 @@
   width: 100%;
   height: 424px;
   margin-top: -30px;
+  z-index: -3;
 }
 
 .location__cart iframe {
@@ -204,7 +205,6 @@
   .location__button-icon {
     right: 30px;
     width: 14px;
-    height: 16px;
   }
 
   .location__icon {

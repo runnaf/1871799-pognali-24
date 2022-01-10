@@ -592,7 +592,7 @@
 @media (min-width: $desktop-width) {
   .card {
     grid-template-columns: 285px 52px min-content min-content 133px min-content 43px min-content 1fr;
-    grid-template-rows: 43px min-content 20px min-content 42px min-content 41px;
+    grid-template-rows: 43px min-content 20px auto 42px min-content 41px;
     padding: 0;
     margin: 0;
   }
@@ -662,6 +662,7 @@
     grid-column: 3/6;
     grid-row: 4/5;
     margin-left: 10px;
+    width: 300px;
   }
 
   .card__wrapper-country {
