@@ -157,6 +157,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:active .form-step__mark {
+    background-color: hsla(228, 35%, 92%, 1);
+    border-color: hsla(228, 35%, 92%, 1);
+  }
 }
 
 .form-step__mark {

@@ -47,58 +47,59 @@
     display: block;
   }
 
-  & .form-step-second__button {
-    width: 21px;
-    height: 21px;
-    display: block;
-    position: absolute;
-    top: -27%;
-    right: -22%;
-    border-radius: 50%;
-    background-color: hsla(227, 33%, 95%, 1);
-    border: none;
-    padding: 0;
-    background-image: none;
-
-    &::after,
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-      width: 10px;
-      height: 1px;
-      transform: rotate(45deg);
-      background-color: hsla(230, 4%, 70%, 1);
-      border-left: none;
-      border-bottom: none;
-    }
-
-    &::before {
-      transform: rotate(135deg);
-    }
-
-    &:hover {
-      &::after,
-      &::before {
-        background-color: hsla(0, 0%, 0%, 0.1);
-      }
-    }
-
-    &:active,
-    &:focus-visible {
-      &::after,
-      &::before {
-        background-color: hsla(0, 0%, 0%, 0.05);
-      }
-    }
-  }
 
   & .form-step-second__field-button {
     display: block;
+  }
+}
+
+.form-step-second__button--active {
+  width: 21px;
+  height: 21px;
+  display: block;
+  position: absolute;
+  top: -27%;
+  right: -22%;
+  border-radius: 50%;
+  background-color: hsla(227, 33%, 95%, 1);
+  border: none;
+  padding: 0;
+  background-image: none;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 10px;
+    height: 1px;
+    transform: rotate(45deg);
+    background-color: hsla(230, 4%, 70%, 1);
+    border-left: none;
+    border-bottom: none;
+  }
+
+  &::before {
+    transform: rotate(135deg);
+  }
+
+  &:hover {
+    &::after,
+    &::before {
+      background-color: hsla(0, 0%, 0%, 0.1);
+    }
+  }
+
+  &:active,
+  &:focus-visible {
+    &::after,
+    &::before {
+      background-color: hsla(0, 0%, 0%, 0.05);
+    }
   }
 }
 
@@ -517,6 +518,8 @@
       &::after,
       &::before {
         width: 25px;
+        height: 1px;
+        border: none;
         bottom: 0;
         top: -2px;
         left: -16px;

@@ -28,7 +28,7 @@
   background-color: $darkgrey;
   background-image: url("../img/about-us/background-mobile.png");
   background-repeat: no-repeat;
-  background-position: 20px 10px;
+  background-position: 71% 95%;
   z-index: 10;
 
   @media (min-resolution: 2dppx) {
@@ -121,7 +121,7 @@
   .wrapper--about-us {
     background-color: hsla(229, 48%, 18%, 1);
     background-image: url("../img/about-us/background-tablet.png");
-    background-position: 40px 0;
+    background-position: 74% 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/about-us/background-tablet@2x.png");
@@ -142,7 +142,7 @@
   .wrapper--travel-direction {
     background-image: url("../img/direction/background-tablet.png");
     background-repeat: no-repeat;
-    background-position: 39px 130px;
+    background-position: 50% 130px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/direction/background-tablet@2x.png");
@@ -152,7 +152,7 @@
 
   .wrapper--companion {
     background-image: url("../img/companion/background-tablet.png");
-    background-position: 41px 94px;
+    background-position: 50% 94px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/companion/background-tablet@2x.png");
@@ -208,7 +208,7 @@
   .wrapper--travel-direction {
     background-image: url("../img/direction/background-desktop.png");
     background-repeat: no-repeat;
-    background-position: 60px 158px;
+    background-position: 20% 158px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/direction/background-desktop@2x.png");
@@ -218,7 +218,7 @@
 
   .wrapper--companion {
     background-image: url("../img/companion/background-desktop.png");
-    background-position: 60px 140px;
+    background-position: 20% 140px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/companion/background-desktop@2x.png");

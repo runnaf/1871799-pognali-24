@@ -6,7 +6,7 @@
   padding-top: 16px;
   background-image: url("../img/protocol/globe-back-mobile.jpg");
   background-color: hsla(228, 41%, 15%, 1);
-  background-position: 0 -75px;
+  background-position: center -75px;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
@@ -127,7 +127,7 @@
     background-color: hsla(229, 48%, 18%, 1);
     background-image: url("../img/protocol/globe-back-tablet.jpg");
     background-repeat: no-repeat;
-    background-position: 0 252px;
+    background-position: center 252px;
     padding: 0;
     padding-bottom: 96px;
 
@@ -240,7 +240,7 @@
     background-color: hsla(228, 40%, 15%, 1);
     background-image: url("../img/protocol/globe-back-desktop.png");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center bottom;
     padding-top: 92px;
     padding-left: 60px;
     padding-right: 60px;
