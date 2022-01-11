@@ -56,12 +56,17 @@
   }
 }
 
-.wrapper--tariff {
+.wrapper__tariff {
   background-color: $lightgrey;
+  position: relative;
 }
 
-.wrapper__tariff {
-  position: relative;
+.wrapper__tariff--closed .business-block {
+  display: none;
+}
+
+.wrapper__tariff--opened .business-block {
+  display: block;
 }
 
 .wrapper--interested {
