@@ -19,10 +19,15 @@
   font-weight: 300;
   margin: 0 auto;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .interested__desc--shift {
   padding-right: 5px;
+}
+
+.interested__desc--shift:first-of-type {
+  padding: 0;
 }
 
 .interested__desc--wrapper {
@@ -36,6 +41,8 @@
 }
 
 .interested__link--login {
+  outline: none;
+
   &::after {
     content: "";
     position: absolute;
@@ -83,6 +90,9 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 16px 23px 19px 24px;
+  background-color: $white;
+  color: hsla(0, 0%, 27%, 0.3);
+  -webkit-appearance: none;
 
   &::placeholder {
     font-size: 18px;
@@ -124,7 +134,7 @@
 
 .interested__button {
   position: relative;
-  width: 100%;
+  width: 60px;
   height: auto;
   margin-left: -19px;
   padding: 0;
@@ -177,23 +187,28 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  outline: none;
 
   &:hover {
     color: hsla(41, 100%, 59%, 1);
-
-    & .interested__email-icon {
-      fill: hsla(41, 100%, 59%, 1);
-    }
-
-    & .interested__phone-icon {
-      fill: hsla(41, 100%, 59%, 1);
-    }
   }
 
   &:active,
   &:focus-visible {
-    opacity: 0.3;
+    color: hsla(47, 100%, 65%, 0.3);
   }
+}
+
+.interested__link-contacts:hover .interested__email-icon,
+.interested__link-contacts:hover .interested__phone-icon {
+  fill: hsla(41, 100%, 59%, 1);
+}
+
+.interested__link-contacts:active .interested__email-icon,
+.interested__link-contacts:active .interested__phone-icon,
+.interested__link-contacts:focus-visible .interested__email-icon,
+.interested__link-contacts:focus-visible .interested__phone-icon {
+  opacity: 0.3;
 }
 
 .interested__link-desc {
@@ -233,10 +248,18 @@
     width: 100%;
     font-size: 28px;
     line-height: 32px;
+  }
 
-    & br {
-      display: none;
-    }
+  .interested__desc br {
+    display: none;
+  }
+
+  .interested__desc--shift {
+    padding-right: 0;
+  }
+
+  .interested__desc--shift:first-of-type {
+    padding-right: 20px;
   }
 
   .interested__form {
@@ -298,24 +321,28 @@
   .interested {
     width: 81.5%;
     padding-top: 105px;
-    padding-bottom: 103px;
+    padding-bottom: 104px;
   }
 
   .interested__title {
-    margin-bottom: 60px;
+    margin-bottom: 59px;
+  }
+
+  .interested__desc {
+    line-height: 31px;
   }
 
   .interested__desc--shift {
     padding: 0;
-    padding-left: 10px;
+    padding-left: 21px;
 
     &:first-of-type {
-      padding-left: 0;
+      padding: 0;
     }
   }
 
   .interested__form {
-    margin-top: 61px;
+    margin-top: 62px;
     margin-bottom: 68px;
   }
 
@@ -343,12 +370,15 @@
 
   .interested__link-desc {
     margin: 0;
-    margin-bottom: 2px;
   }
 
   .interested__link-phone {
     margin-right: 110px;
     justify-content: flex-end;
+  }
+
+  .interested__link-phone .interested__link-desc {
+    margin-top: 2px;
   }
 
   .interested__phone-icon {
@@ -377,10 +407,10 @@
 
   .interested__desc--wrapper {
     padding: 0;
+  }
 
-    & .interested__desc {
-      letter-spacing: 0.01em;
-    }
+  .interested__desc--wrapper .interested__desc {
+    letter-spacing: 0.01em;
   }
 
   .interested__button-icon {
@@ -393,6 +423,7 @@
   .interested__email-icon {
     width: 39px;
     margin: 0;
-    margin-left: 3px;
+    margin-left: 4px;
+    margin-top: 4px;
   }
 }

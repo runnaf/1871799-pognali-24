@@ -35,14 +35,14 @@
 }
 
 .step__second {
-  padding-bottom: 8px;
+  padding-bottom: 3px;
   min-width: 225px;
 }
 
 .step__second-form {
   box-sizing: border-box;
-  padding-left: 1px;
-  padding-right: 2px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .step__second-field-group:last-of-type {
@@ -52,12 +52,6 @@
 .step__third {
   padding-bottom: 8px;
   min-width: 232px;
-
-  // & .add-plan__button {
-  //   width: 103%;
-  //   margin-left: -2px;
-  //   padding-left: 17px;
-  // }
 }
 
 .step__third-form {
@@ -134,7 +128,7 @@
 .step__third-input {
   position: relative;
   width: 100%;
-  height: 220px;
+  height: 219px;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -156,11 +150,11 @@
 
   &:focus-visible:invalid {
     border-color: hsla(0, 84%, 73%, 1);
-
-    & ~ .step-third__input-error {
-      display: block;
-    }
   }
+}
+
+.step__third-input:focus-visible:invalid ~ .step-third__input-error {
+  display: block;
 }
 
 .step__third-input--container {
@@ -202,6 +196,14 @@
   margin-bottom: 14px;
 }
 
+.step-third__img-container {
+  position: relative;
+}
+
+.step-third__img-container:hover .popover {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .step__subtitle {
     font-size: 36px;
@@ -222,19 +224,19 @@
   .step__second .add-plan__text {
     padding-right: 147px;
     padding-bottom: 35px;
+  }
 
-    & br {
-      display: none;
-    }
+  .step__second .add-plan__text br {
+    display: none;
   }
 
   .step__third {
     padding-bottom: 53px;
+  }
 
-    & .add-plan__text {
-      padding-bottom: 34px;
-      margin-bottom: 27px;
-    }
+  .step__third .add-plan__text {
+    padding-bottom: 34px;
+    margin-bottom: 27px;
   }
 
   .step__third-form {
@@ -286,7 +288,7 @@
   }
 
   .step__third-wrapper {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   .step__third-flag-img {
@@ -325,15 +327,15 @@
     padding-bottom: 104px;
     margin-left: auto;
     margin-right: auto;
+  }
 
-    & .add-plan__text {
-      padding: 0;
-      width: 57%;
-    }
+  .step__second .add-plan__text {
+    padding: 0;
+    width: 57%;
+  }
 
-    & .add-plan__button-group {
-      margin-top: 9px;
-    }
+  .step__second .add-plan__button-group {
+    margin-top: 9px;
   }
 
   .step__second-form {
@@ -344,18 +346,18 @@
 
   .step__third {
     min-width: 1005px;
-    padding-bottom: 105px;
+    padding-bottom: 103px;
+  }
 
-    & .add-plan__text {
-      padding: 0;
-      padding-left: 2px;
-      margin: 0;
-    }
+  .step__third .add-plan__text {
+    padding: 0;
+    padding-left: 2px;
+    margin: 0;
+  }
 
-    & .add-plan__button-back {
-      padding-bottom: 24px;
-      padding-right: 5px;
-    }
+  .step__third .add-plan__button-back {
+    padding-bottom: 12px;
+    padding-right: 5px;
   }
 
   .step__third-field-group {

@@ -37,10 +37,10 @@
 .pagination__button-backward {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+}
 
-  .pagination__button-icon {
-    transform: rotate(180deg);
-  }
+.pagination__button-backward .pagination__button-icon {
+  transform: rotate(180deg);
 }
 
 .pagination__button-forward {
@@ -101,14 +101,14 @@
     width: 35px;
     margin-left: 8px;
 
-    &:hover .pagination__button-icon {
-      opacity: 0.6;
-    }
-
     &:focus-visible,
     &:active {
       opacity: 0.3;
     }
+  }
+
+  .pagination__button:hover .pagination__button-icon {
+    opacity: 0.6;
   }
 
   .pagination__button-icon {

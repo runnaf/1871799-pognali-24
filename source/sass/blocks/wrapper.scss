@@ -46,9 +46,9 @@
   background-color: $darkgrey;
   background-image: url("../img/companion/background-mobile.png");
   background-position-y: 64px;
+  background-position-x: 3%;
   background-repeat: no-repeat;
   z-index: 8;
-  position: static;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/companion/background-mobile@2x.png");
@@ -56,9 +56,12 @@
   }
 }
 
+.wrapper__companion-decoration {
+  background-color: $lightgrey;
+}
+
 .wrapper__tariff {
   background-color: $lightgrey;
-  position: relative;
 }
 
 .wrapper__tariff--closed .business-block {
@@ -172,10 +175,10 @@
 @media (min-width: $desktop-width) {
   .wrapper--header-opened {
     background-color: $darkgrey;
+  }
 
-    & .page-header__logo-icon {
-      fill: $white;
-    }
+  .wrapper--header-opened .page-header__logo-icon {
+    fill: $white;
   }
 
   .wrapper--stats {
@@ -222,7 +225,7 @@
 
   .wrapper--companion {
     background-image: url("../img/companion/background-desktop.png");
-    background-position: 20% 140px;
+    background-position: 7.4% 120px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/companion/background-desktop@2x.png");

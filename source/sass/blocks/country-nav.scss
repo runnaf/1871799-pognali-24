@@ -7,20 +7,6 @@
   border-bottom-left-radius: 20px;
   padding-top: -$mobile-stats-shift;
   margin-top: $mobile-stats-shift;
-
-  & .table__cell:hover {
-    border-color: hsla(228, 16%, 64%, 1);
-  }
-
-  & .table__cell:active,
-  & .table__cell:focus-visible {
-    background-color: hsla(224, 52%, 24%, 1);
-    border-color: hsla(224, 52%, 24%, 1);
-
-    & .table__link {
-      color: $white;
-    }
-  }
 }
 
 .country-nav__link-wrapper {
@@ -56,6 +42,15 @@
     background-color: hsla(229, 46%, 18%, 1);
     box-shadow: -7px 0 0 0 hsla(229, 46%, 18%, 1), -14px 0 0 0 hsla(229, 46%, 18%, 1);
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus-visible {
+    opacity: 0.3;
+  }
 }
 
 .country-nav__toggle-desc {
@@ -66,46 +61,44 @@
   display: none;
 }
 
-.country-nav--closed {
-  & .country-nav__container {
-    display: none;
-  }
+.country-nav--closed .country-nav__container {
+  display: none;
 }
 
 .country-nav--opened {
   border-radius: 0;
+}
 
-  & .country-nav__toggle {
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      margin: auto;
-      width: 19px;
-      height: 2px;
-      background-color: hsla(229, 46%, 18%, 1);
-      border-radius: 10px;
-    }
-
-    &::before {
-      transform: rotate(45deg);
-      box-shadow: none;
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-  }
-
-  & .country-nav__container {
-    display: block;
+.country-nav--opened .country-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
     position: absolute;
-    top: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 19px;
+    height: 2px;
+    background-color: hsla(229, 46%, 18%, 1);
+    border-radius: 10px;
   }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.country-nav--opened .country-nav__container {
+  display: block;
+  position: absolute;
+  top: 100%;
 }
 
 .country-nav__container {
@@ -181,6 +174,8 @@
   padding: 0;
   padding-top: 8px;
   padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 20px;
   margin-bottom: 24px;
 
@@ -188,11 +183,11 @@
   &:hover {
     background-color: hsla(229, 41%, 85%, 1);
   }
+}
 
-  &:focus-visible .country-nav__button-wrapper,
-  &:active .country-nav__button-wrapper {
-    opacity: 0.3;
-  }
+.country-nav__button:focus-visible .country-nav__button-wrapper,
+.country-nav__button:active .country-nav__button-wrapper {
+  opacity: 0.3;
 }
 
 .country-nav__button-wrapper {
@@ -234,10 +229,6 @@
   display: flex;
   margin-left: 42px;
   margin-bottom: 10px;
-
-  & .table__wrapper {
-    background-color: $white;
-  }
 }
 
 .country-nav__lists {
@@ -265,44 +256,43 @@
   .country-nav {
     margin-top: $tablet-stats-shift;
     padding-top: -$tablet-stats-shift;
-    padding-bottom: 31px;
+    padding-bottom: 32px;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
   }
 
-  .country-nav--closed {
-    & .country-nav__wrapper {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      width: 100%;
-      padding-left: 33px;
-      padding-right: 72px;
-      box-sizing: border-box;
-      column-gap: 32px;
-      row-gap: 16px;
-    }
+  .country-nav--closed .country-nav__wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+    padding-left: 33px;
+    padding-right: 72px;
+    box-sizing: border-box;
+    column-gap: 32px;
+    row-gap: 16px;
+  }
 
-    & .country-nav__list-header {
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
+  .country-nav--closed .country-nav__list-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
 
-    & .country-filter__link {
-      display: none;
-    }
+  .country-nav--closed .country-filter__link {
+    display: none;
+  }
 
-    & .country-nav__toggle::before {
-      right: 0;
-      width: 6px;
-      height: 6px;
-      top: 45%;
-      box-shadow: -12px 0 0 0, -24px 0 0 0;
-    }
+  .country-nav--closed .country-nav__toggle::before {
+    right: 1px;
+    width: 6px;
+    height: 6px;
+    top: calc(50% - 2px);
+    box-shadow: -12px 0 0 0, -24px 0 0 0;
+  }
 
-    & .country-nav__toggle-desc--closed {
-      display: none;
-    }
+  .country-nav--closed .country-nav__toggle-desc--closed {
+    display: none;
   }
 
   .country-nav__link-wrapper {
@@ -312,12 +302,12 @@
   }
 
   .country-nav__container {
-    padding-left: 72px;
-    padding-right: 72px;
+    padding-left: 57px;
+    padding-right: 63px;
     box-sizing: border-box;
     padding-bottom: 79px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 61px;
+    border-bottom-left-radius: 61px;
   }
 
   .country-nav__toggle {
@@ -327,92 +317,73 @@
 
   .country-nav--opened {
     border-radius: 0;
+    padding-bottom: 0;
+  }
 
-    & .country-filter__link {
-      display: none;
-    }
+  .country-nav--opened .country-filter__link {
+    display: none;
+  }
 
-    & .country-nav__list-header {
-      display: flex;
-      padding: 0;
+  .country-nav--opened .country-nav__list-header {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .country-nav--opened .country-nav__wrapper {
+    display: none;
+  }
+
+  .country-nav--opened .country-nav__list {
+    display: none;
+  }
+
+  .country-nav--opened .country-nav__table-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 199px;
+    grid-template-rows: min-content 54px min-content;
+    padding-top: 23px;
+  }
+
+  .country-nav--opened .country-nav__toggle-desc {
+    display: none;
+    padding-right: 85px;
+  }
+
+  .country-nav--opened .country-nav__toggle-desc--closed {
+    display: block;
+  }
+
+  .country-nav--opened .country-nav__toggle {
+    &::before,
+    &::after {
+      right: 0;
       margin: 0;
-    }
-
-    & .country-nav__wrapper {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      width: 100%;
-      padding-left: 33px;
-      padding-right: 72px;
-      margin-bottom: 29px;
-      box-sizing: border-box;
-      column-gap: 32px;
-      row-gap: 16px;
-    }
-
-    & .country-nav__list {
-      display: none;
-    }
-
-    & .country-nav__table-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 150px;
-    }
-
-    .country-nav__toggle-desc {
-      display: none;
-    }
-
-    .country-nav__toggle-desc--closed {
-      display: block;
-    }
-
-    .country-nav__toggle {
-      &::before,
-      &::after {
-        right: 0;
-        margin: 0;
-        left: calc(100% - 25px);
-        top: calc(50% - 5px);
-      }
+      left: calc(100% - 25px);
+      top: calc(50% - 1px);
+      width: 25px;
     }
   }
 
   .country-nav__table {
     grid-column: 1/2;
+    grid-row: 1/2;
     justify-content: start;
     border: none;
-
-    & .table__wrapper {
-      background-color: inherit;
-      border: none;
-    }
-
-    & .table__cell {
-      width: 79px;
-      height: 100px;
-      border: none;
-    }
-
-    & .table__link {
-      font-size: 60px;
-      line-height: 1;
-      font-weight: 700;
-      color: hsla(229, 46%, 18%, 0.3);
-    }
   }
 
   .country-nav__lists {
     grid-column: 2/3;
+    grid-row: 1/2;
     padding: 0;
+    padding-top: 9px;
     margin: 0;
-    margin-top: 30px;
   }
 
   .country-nav__button {
     grid-column: 1/-1;
-    grid-row: 2/3;
-    width: 80%;
+    grid-row: 3/4;
+    width: auto;
     font-family: "Blogger Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -420,6 +391,9 @@
     letter-spacing: 0.2px;
     padding-top: 40px;
     padding-bottom: 40px;
+    margin: 0;
+    margin-left: 3px;
+    margin-right: 6px;
   }
 
   .country-nav__toggle-desc {
@@ -431,7 +405,7 @@
     line-height: 1;
     width: max-content;
     display: block;
-    padding-right: 55px;
+    padding-right: 56px;
   }
 
   .country-nav__list {
@@ -459,75 +433,71 @@
     margin-top: 42px;
   }
 
-  .country-nav__button-list--closed {
-    & .country-nav__button-closed {
-      display: block;
-      position: relative;
-      padding-right: 58px;
+  .country-nav__button-list--closed .country-nav__button-closed {
+    display: block;
+    position: relative;
+    padding-right: 58px;
 
-      &::before {
-        position: absolute;
-        content: "";
-        width: 7px;
-        height: 7px;
-        background-color: hsla(229, 46%, 18%, 1);
-        right: 0;
-        top: 45%;
-        border-radius: 50%;
-        box-shadow: -12px 0 0 0 hsla(229, 46%, 18%, 1), -24px 0 0 0 hsla(229, 46%, 18%, 1);
-      }
-    }
-
-    & .country-nav__button-opened {
-      display: none;
-    }
-
-    & + .country-nav__table {
-      display: none;
-    }
-
-    & ~ .country-nav__lists {
-      display: none;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 7px;
+      height: 7px;
+      background-color: hsla(229, 46%, 18%, 1);
+      right: 0;
+      top: 45%;
+      border-radius: 50%;
+      box-shadow: -12px 0 0 0 hsla(229, 46%, 18%, 1), -24px 0 0 0 hsla(229, 46%, 18%, 1);
     }
   }
 
-  .country-nav__button-list--opened {
-    & .country-nav__button-closed {
-      display: none;
+  .country-nav__button-list--closed .country-nav__button-opened {
+    display: none;
+  }
+
+  .country-nav__button-list--closed + .country-nav__table {
+    display: none;
+  }
+
+  .country-nav__button-list--closed ~ .country-nav__lists {
+    display: none;
+  }
+
+  .country-nav__button-list--opened .country-nav__button-closed {
+    display: none;
+  }
+
+  .country-nav__button-list--opened .country-nav__button-opened {
+    display: block;
+    position: relative;
+    padding-right: 86px;
+    padding-left: 2px;
+    padding-top: 3px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 2px;
+      background-color: hsla(229, 46%, 18%, 1);
+      right: 0;
+      top: 50%;
+      border-radius: 4px;
+      transform: rotate(45deg);
     }
 
-    & .country-nav__button-opened {
-      display: block;
-      position: relative;
-      padding-right: 86px;
-      padding-left: 2px;
-      padding-top: 3px;
-
-      &::before,
-      &::after {
-        position: absolute;
-        content: "";
-        width: 25px;
-        height: 2px;
-        background-color: hsla(229, 46%, 18%, 1);
-        right: 0;
-        top: 50%;
-        border-radius: 4px;
-        transform: rotate(45deg);
-      }
-
-      &::after {
-        transform: rotate(-45deg);
-      }
+    &::after {
+      transform: rotate(-45deg);
     }
+  }
 
-    & + .country-nav__table {
-      display: block;
-    }
+  .country-nav__button-list--opened + .country-nav__table {
+    display: block;
+  }
 
-    & + .country-nav__lists {
-      display: block;
-    }
+  .country-nav__button-list--opened + .country-nav__lists {
+    display: block;
   }
 
   .country-nav__list-alphabet {
@@ -582,28 +552,16 @@
     grid-column: 1/-1;
     table-layout: fixed;
     width: 100%;
+  }
 
-    & .table__cell {
-      vertical-align: baseline;
-      width: auto;
-      height: fit-content;
-      text-align: left;
-      min-width: 251px;
-    }
-
-    & .table__button {
-      text-align: left;
-      width: 100%;
-      font-size: 60px;
-      font-weight: 700;
-      padding-top: 12px;
-      padding-bottom: 31px;
-      align-items: center;
-    }
-
-    & .table__link {
-      color: hsla(229, 46%, 18%, 1);
-    }
+  .country-nav__button-letter {
+    text-align: left;
+    width: 100%;
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 12px;
+    padding-bottom: 31px;
+    align-items: center;
   }
 
   .country-nav__button-list {
@@ -619,66 +577,63 @@
     display: flex;
   }
 
-  .country-nav--closed {
-    & .country-nav__wrapper {
-      padding: 0;
-      display: flex;
-    }
-
-    & .country-nav__table-wrapper {
-      display: none;
-    }
-
-    & .country-filter__link {
-      display: flex;
-      padding: 0;
-      padding-top: 60px;
-      padding-bottom: 60px;
-      margin: 0;
-      flex-grow: 0;
-    }
-
-    & .country-nav__list-header {
-      margin-right: auto;
-      margin-left: 16px;
-    }
-
-    & .country-nav__toggle {
-      display: none;
-    }
+  .country-nav--closed .country-nav__wrapper {
+    padding: 0;
+    display: flex;
   }
 
+  .country-nav--closed .country-nav__table-wrapper {
+    display: none;
+  }
 
-  .country-nav--opened {
-    & .country-nav__wrapper {
-      padding: 0;
-      margin: 0;
-      width: fit-content;
-      flex-grow: 1;
-    }
+  .country-nav--closed .country-filter__link {
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 300px;
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0;
+    flex-grow: 0;
+  }
 
-    & .country-filter__link {
-      display: flex;
-      flex-grow: 0;
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
+  .country-nav--closed .country-nav__list-header {
+    margin-right: auto;
+    margin-left: 16px;
+  }
 
-    & .country-nav__toggle {
-      display: none;
-    }
+  .country-nav--closed .country-nav__toggle {
+    display: none;
+  }
 
-    & .country-nav__link-wrapper {
-      justify-content: flex-start;
-    }
+  .country-nav--opened .country-nav__wrapper {
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    flex-grow: 1;
+  }
 
-    & .country-nav__container {
-      position: static;
-    }
+  .country-nav--opened .country-filter__link {
+    display: flex;
+    flex-grow: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-    & .country-nav__list {
-      display: none;
-    }
+  .country-nav--opened .country-nav__toggle {
+    display: none;
+  }
+
+  .country-nav--opened .country-nav__link-wrapper {
+    justify-content: flex-start;
+  }
+
+  .country-nav--opened .country-nav__container {
+    position: static;
+  }
+
+  .country-nav--opened .country-nav__list {
+    display: none;
   }
 
   .country-nav__item {
@@ -695,9 +650,12 @@
 
   .country-nav--opened .country-nav__table-wrapper {
     grid-template-columns: 100%;
+    padding: 0;
+    grid-template-rows: min-content min-content;
   }
 
   .country-nav__button {
     width: 100%;
+    padding-right: 27px;
   }
 }

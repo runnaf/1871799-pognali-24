@@ -79,6 +79,7 @@
 }
 
 .plans__button {
+  width: fit-content;
   display: block;
   border: none;
   background-color: transparent;
@@ -195,6 +196,7 @@
     padding-bottom: 17px;
     text-align: end;
     letter-spacing: 0.1em;
+    margin-left: auto;
   }
 }
 

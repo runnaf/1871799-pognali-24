@@ -81,7 +81,7 @@
   opacity: 0.1;
   align-self: center;
   width: 12px;
-  height: 12px;
+  height: auto;
 }
 
 
@@ -104,10 +104,10 @@
     flex-grow: 1;
     order: -1;
     margin: 0;
-    padding-right: 30px;
+    padding-right: 55px;
     padding-top: 28px;
-    padding-left: 31px;
-    padding-bottom: 23px;
+    padding-left: 29px;
+    padding-bottom: 22px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
   }
@@ -121,7 +121,7 @@
   .card-country__text {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 
   .card-country__img-container {
@@ -137,26 +137,25 @@
   }
 
   .card-country__small-wrapper {
-    margin-top: auto;
+    margin-top: 0;
   }
 
   .card-country__small {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 12px;
+    padding-left: 9px;
   }
 
   .card-country__small-icon {
     fill: hsla(229, 46%, 18%, 1);
     opacity: 0.1;
-    width: 18px;
-    height: 20px;
+    width: 21px;
   }
 
   .card-country__flag-wrapper {
     top: 17px;
     grid-column: 2/3;
-    left: -35px;
+    left: -33px;
   }
 
   .card-country__img-flag {

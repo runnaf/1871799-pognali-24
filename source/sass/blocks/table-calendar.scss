@@ -63,10 +63,8 @@
 }
 
 
-.table-calendar__cell-number {
-  & .table-calendar__cell-mounth {
-    display: none;
-  }
+.table-calendar__cell-number .table-calendar__cell-mounth {
+  display: none;
 }
 
 .table-calendar__cell-check-in {
@@ -110,12 +108,12 @@
     line-height: 18px;
     font-weight: 400;
     height: 35px;
+  }
 
-    & .table-calendar__button {
-      padding-left: 7px;
-      padding-right: 5px;
-      padding-top: 3px;
-    }
+  .table-calendar__cell-day .table-calendar__button {
+    padding-left: 7px;
+    padding-right: 5px;
+    padding-top: 3px;
   }
 
   .table-calendar__button-desc--desctop {
@@ -154,13 +152,13 @@
     text-align: left;
     width: 142px;
     box-sizing: border-box;
+  }
 
-    & .table-calendar__button {
-      padding: 0;
-      padding-bottom: 3px;
-      padding-left: 15px;
-      padding-top: 16px;
-    }
+  .table-calendar__cell-day .table-calendar__button {
+    padding: 0;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-top: 16px;
   }
 
   .table-calendar__cell {
@@ -178,15 +176,13 @@
     padding-left: 15px;
   }
 
-  .table-calendar__cell-number {
-    & .table-calendar__cell-mounth {
-      display: inline-block;
-    }
+  .table-calendar__cell-number .table-calendar__cell-mounth {
+    display: inline-block;
   }
 
   .table-calendar__button {
     text-align: left;
-    padding-left: 15px;
+    padding-left: 14px;
     padding-top: 11px;
     display: flex;
     align-items: flex-start;
@@ -195,18 +191,24 @@
   .table-calendar__button--active {
     line-height: 20px;
     font-weight: 400;
-    padding-top: 8px;
+    padding-top: 10px;
+    padding-left: 15px;
     flex-direction: column;
+  }
 
-    & .table-calendar__cell-check-in {
-      display: block;
-      margin-top: 8px;
-    }
+  .table-calendar__button--hover {
+    padding-left: 13px;
+    padding-top: 9px;
+  }
 
-    & .table-calendar__cell-departure {
-      display: block;
-      margin-top: 8px;
-    }
+  .table-calendar__button--active .table-calendar__cell-check-in {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .table-calendar__button--active .table-calendar__cell-departure {
+    display: block;
+    margin-top: 8px;
   }
 
   .table-calendar__cell-mounth {

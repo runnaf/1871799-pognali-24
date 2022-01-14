@@ -89,6 +89,14 @@
     margin-right: 22px;
   }
 
+  .tariff-list__number--second {
+    margin-top: 1px;
+  }
+
+  .tariff-list__number--third {
+    margin-top: 2px;
+  }
+
   .tariff-list__wrapper {
     margin: 0;
     padding: 0;
@@ -134,6 +142,18 @@
 
   .tariff-list__number {
     margin-right: 23px;
+  }
+
+  .tariff-list__number--second {
+    margin-top: 0;
+  }
+
+  .tariff-list__number--third {
+    margin-top: 1px;
+  }
+
+  .tariff-list__item:first-of-type .tariff-list__number {
+    margin-top: 2px;
   }
 
   .tariff-list__item:last-of-type .tariff-list__wrapper {

@@ -19,20 +19,21 @@
 
   &:hover {
     color: hsla(229, 46%, 18%, 0.6);
-
-    & .user-list__icon {
-      fill: hsla(41, 100%, 59%, 1);
-    }
   }
 
   &:focus-visible,
   &:active {
     color: hsla(229, 46%, 18%, 0.3);
-
-    & .user-list__icon {
-      fill: hsla(47, 100%, 65%, 0.3);
-    }
   }
+}
+
+.user-list__link:hover .user-list__icon {
+  fill: hsla(41, 100%, 59%, 1);
+}
+
+.user-list__link:active .user-list__icon,
+.user-list__link:focus-visible .user-list__icon {
+  fill: hsla(47, 100%, 65%, 0.3);
 }
 
 .user-list__icon-wrapper {
@@ -91,10 +92,8 @@
     margin-left: 23px;
   }
 
-  .user-list__link--phone {
-    & .user-list__link-text {
-      margin-top: 5px;
-    }
+  .user-list__link--phone .user-list__link-text {
+    margin-top: 5px;
   }
 
   .user-list__icon-phone {

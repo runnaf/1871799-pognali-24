@@ -6,7 +6,7 @@
   font-weight: 400;
   color: hsla(0, 0%, 27%, 1);
   margin: 0 auto;
-  padding-bottom: 65px;
+  padding-bottom: 63px;
   box-sizing: border-box;
 }
 
@@ -40,10 +40,6 @@
   border-radius: 50%;
   padding: 0;
   margin-left: 15px;
-}
-
-.add-plan__button-group {
-  display: none;
 }
 
 .add-plan__button-desc {
@@ -93,10 +89,19 @@
   }
 }
 
+.add-plan__step--second {
+  padding-top: 20px;
+}
+
 .add-plan__subtitle {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   margin-left: 2px;
+}
+
+.add-plan__subtitle--second {
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .add-plan__text {
@@ -104,14 +109,23 @@
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 22px;
+}
 
-  & p {
-    margin: 0;
-  }
+.add-plan__text--second {
+  margin-bottom: 22px;
+}
 
-  & br {
-    display: none;
-  }
+.add-plan__text p {
+  margin: 0;
+}
+
+.add-plan__text br {
+  display: none;
+}
+
+
+.add-plan__text--first br {
+  display: inline-block;
 }
 
 .add-plan__form {
@@ -119,10 +133,11 @@
 }
 
 .add-plan__table {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .add-plan__button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,28 +159,24 @@
   background-color: $lightorange;
   cursor: pointer;
   color: hsla(224, 52%, 24%, 1);
+  outline: none;
 
   &:not(:last-of-type) {
     margin-bottom: 5px;
   }
+}
 
-  &:hover {
-    background-color: hsla(41, 100%, 59%, 1);
-  }
-
-  &:active,
-  &:focus-visible {
-    & .add-plan__button-icon {
-      opacity: 0.3;
-    }
-
-    & .add-plan__desc-button {
-      opacity: 0.3;
-    }
-  }
+.container-step__third .add-plan__button {
+  min-width: 231px;
 }
 
 .add-plan__button-icon {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: 30px;
   display: none;
   width: 13px;
   height: auto;
@@ -174,6 +185,7 @@
 .add-plan__button-back {
   background-color: transparent;
   min-width: auto;
+  outline: none;
 
   &:hover {
     background-color: transparent;
@@ -184,6 +196,14 @@
   &:focus-visible {
     opacity: 0.3;
   }
+}
+
+.add-plan__step--third .add-plan__button-back {
+  padding-top: 12px;
+}
+
+.add-plan__button-wrapper {
+  margin-right: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -199,6 +219,10 @@
   .add-plan__subtitle {
     margin-left: 0;
     margin-bottom: 36px;
+  }
+
+  .add-plan__subtitle--second {
+    margin-bottom: 35px;
   }
 
   .add-plan__header {
@@ -252,10 +276,14 @@
       height: 1px;
       background-color: hsla(225, 15%, 90%, 1);
     }
+  }
 
-    & br {
-      display: inline-block;
-    }
+  .add-plan__text br {
+    display: inline-block;
+  }
+
+  .add-plan__text--second {
+    margin-bottom: 0;
   }
 
   .add-plan__form {
@@ -275,7 +303,7 @@
     line-height: 1;
     font-weight: 700;
     text-transform: none;
-    padding-right: 34px;
+    padding-right: 35px;
     padding-left: 34px;
     padding-top: 10px;
     padding-bottom: 12px;
@@ -293,8 +321,27 @@
   .add-plan__button-icon {
     display: block;
     fill: hsla(224, 52%, 24%, 1);
-    min-width: 14px;
-    margin-top: 4px;
+    width: 12px;
+  }
+
+  .add-plan__step--third .add-plan__button {
+    min-width: 286px;
+  }
+
+  .add-plan__step--third .add-plan__button-back {
+    padding-left: 67px;
+    padding-right: 2px;
+    min-width: auto;
+  }
+
+  .add-plan__step--third .add-plan__button-icon {
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &--back {
+      padding-bottom: 4px;
+    }
   }
 
   .add-plan__desc-button {
@@ -308,13 +355,14 @@
     padding-top: 15px;
     padding-bottom: 16px;
     padding-right: 4px;
+  }
 
-    & .add-plan__button-icon {
-      transform: rotate(180deg);
-      width: 17px;
-      margin: 0;
-      margin-bottom: 3px;
-    }
+  .add-plan__button-back .add-plan__button-icon {
+    transform: rotate(180deg);
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: -10px;
   }
 
   .add-plan__desc-button-back {
@@ -343,28 +391,34 @@
     grid-template-columns: 1fr 230px;
     grid-template-rows: min-content 32px min-content 55px min-content 32px min-content 57px min-content;
     border-radius: 61px;
+  }
 
-    &.add-plan__step--second {
-      padding-top: 95px;
-      grid-template-rows: min-content 36px min-content 55px min-content 58px min-content;
+  .add-plan__step--second {
+    padding-top: 95px;
+    grid-template-rows: min-content 36px min-content 55px min-content 58px min-content;
 
-      &::before {
-        content: "";
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        background-color: hsla(225, 15%, 90%, 1);
-        top: 0;
-        bottom: 0;
-        right: -4px;
-        grid-row: 5/-1;
-        grid-column: 1/2;
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: hsla(225, 15%, 90%, 1);
+      top: 0;
+      bottom: 0;
+      right: -4px;
+      grid-row: 5/-1;
+      grid-column: 1/2;
+      z-index: 2;
     }
+  }
 
-    &.step-third {
-      grid-template-rows: min-content 33px min-content 55px min-content 57px min-content;
-    }
+  .add-plan__step--third {
+    grid-template-rows: min-content 33px min-content 55px min-content 59px min-content;
+  }
+
+  .add-plan__step--third .add-plan__button-icon--back {
+    padding: 0;
+    left: 53px;
   }
 
   .add-plan__button-group-header {
@@ -393,6 +447,20 @@
 
   .add-plan__button-step:last-of-type {
     margin-bottom: 0;
+  }
+
+  .add-plan__button {
+    max-width: 450px;
+    grid-column: 1/2;
+    grid-row: -2/-1;
+    min-width: 286px;
+    flex-grow: 0;
+    padding-top: 26px;
+    padding-right: 50px;
+    padding-left: 33px;
+    padding-bottom: 27px;
+    text-align: left;
+    margin-left: 2px;
   }
 
   .add-plan__button-desc {
@@ -424,10 +492,14 @@
     grid-column: 1/2;
     grid-row: 1/2;
     margin-bottom: 0;
+  }
 
-    & br {
-      display: none;
-    }
+  .add-plan__subtitle--second {
+    margin-bottom: 0;
+  }
+
+  .add-plan__subtitle br {
+    display: none;
   }
 
   .add-plan__text {
@@ -468,16 +540,10 @@
     margin-bottom: 0;
   }
 
-  .add-plan__button {
-    grid-column: 1/2;
-    grid-row: -2/-1;
-    min-width: 286px;
-    flex-grow: 0;
-    padding-top: 26px;
-    padding-right: 35px;
-    padding-bottom: 27px;
-    padding-left: 35px;
-    text-align: left;
+  .add-plan__button-icon {
+    right: 36px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .add-plan__button-back {
@@ -493,10 +559,10 @@
 
   .add-plan__button-wrapper--second {
     margin: 0;
+  }
 
-    & .add-plan__button-back {
-      padding-right: 5px;
-    }
+  .add-plan__button-wrapper--second .add-plan__button-back {
+    padding-right: 5px;
   }
 
   .add-plan__button--inactive {
@@ -507,5 +573,9 @@
 
   .add-plan__desc-button-back {
     padding-left: 21px;
+  }
+
+  .add-plan__step--third .add-plan__button-wrapper {
+    margin-right: 0;
   }
 }

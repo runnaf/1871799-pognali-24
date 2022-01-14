@@ -7,14 +7,21 @@
   border: 1px solid transparent;
   cursor: pointer;
   background-color: hsla(47, 100%, 65%, 1);
+  outline: none;
 
-  &:hover,
-  &:focus-visible {
+  &:hover {
     background-color: hsla(41, 100%, 59%, 1);
     outline: none;
   }
 
-  &:active {
+  &:active,
+  &:focus-visible {
+    background-color: hsla(41, 100%, 59%, 1);
     color: hsla(224, 52%, 24%, 0.3);
   }
+}
+
+button:active .button__icon,
+button:focus-visible .button__icon {
+  opacity: 0.3;
 }

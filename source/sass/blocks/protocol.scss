@@ -127,7 +127,7 @@
     background-color: hsla(229, 48%, 18%, 1);
     background-image: url("../img/protocol/globe-back-tablet.jpg");
     background-repeat: no-repeat;
-    background-position: center 252px;
+    background-position: center 250px;
     padding: 0;
     padding-bottom: 96px;
 
@@ -244,7 +244,7 @@
     padding-top: 92px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 122px;
+    padding-bottom: 123px;
     display: grid;
     grid-template-columns: 1fr 286px;
     grid-row-gap: 102px;
@@ -294,10 +294,10 @@
     font-size: 21px;
     line-height: 25px;
     margin-top: 44px;
+  }
 
-    & br {
-      display: inline-block;
-    }
+  .protocol__auther br {
+    display: inline-block;
   }
 
   .protocol__list--step {
@@ -335,10 +335,10 @@
 
   .protocol__item-text {
     width: 74%;
+  }
 
-    & br {
-      display: inline-block;
-    }
+  .protocol__item-text br {
+    display: inline-block;
   }
 
   .protocol__number {

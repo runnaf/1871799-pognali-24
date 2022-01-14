@@ -61,25 +61,28 @@
   padding-top: 18px;
   padding-bottom: 20px;
   padding-right: 50px;
+  outline: none;
 
-  &:hover,
-  &:focus-visible {
+  &:hover {
     background-color: hsla(229, 46%, 18%, 1);
     color: $white;
     outline: none;
-
-    & .location__button-icon {
-      fill: $white;
-    }
   }
 
-  &:active {
+  &:active,
+  &:focus-visible {
+    background-color: hsla(229, 46%, 18%, 1);
     color: hsla(0, 0%, 100%, 0.3);
-
-    & .location__button-icon {
-      fill: hsla(0, 0%, 100%, 0.3);
-    }
   }
+}
+
+.location__button:hover .location__button-icon {
+  fill: $white;
+}
+
+.location__button:active .location__button-icon,
+.location__button:focus-visible .location__button-icon {
+  fill: hsla(0, 0%, 100%, 0.3);
 }
 
 .location__button-icon {
@@ -136,7 +139,7 @@
     font-size: 24px;
     line-height: 24px;
     padding-left: 33px;
-    padding-top: 25px;
+    padding-top: 24px;
     padding-right: 63px;
     padding-bottom: 25px;
     border-radius: 19px;

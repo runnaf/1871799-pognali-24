@@ -63,6 +63,8 @@
 
 .header-content__home-icon {
   fill: $white;
+  width: 32px;
+  height: auto;
 }
 
 .header-content__link-desc {
@@ -78,8 +80,8 @@
     align-items: center;
     padding-left: 74px;
     padding-right: 74px;
-    padding-top: 92px;
-    padding-bottom: 78px;
+    padding-top: 86px;
+    padding-bottom: 72px;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
   }
@@ -87,16 +89,21 @@
   .header-content__title {
     font-weight: 700;
     font-size: 60px;
-    line-height: 20px;
+    line-height: 1;
 
     &::after {
       height: 8px;
-      bottom: -97px;
+      bottom: -76px;
     }
   }
 
   .header-content__link {
     display: flex;
+    padding-bottom: 11px;
+  }
+
+  .header-content__link-desc {
+    padding-right: 29px;
   }
 }
 
@@ -104,13 +111,15 @@
   .header-content {
     padding-left: 125px;
     padding-right: 92px;
-    padding-top: 95px;
-    padding-bottom: 62px;
+    padding-top: 96px;
+    padding-bottom: 61px;
+    border-bottom-right-radius: 57px;
+    border-bottom-left-radius: 57px;
   }
 
   .header-content__link {
     padding: 30px;
-    padding-top: 35px;
-    padding-bottom: 25px;
+    padding-top: 34px;
+    padding-bottom: 26px;
   }
 }

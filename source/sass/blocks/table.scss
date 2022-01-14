@@ -7,10 +7,25 @@
 
 .table__cell {
   width: 20%;
-  height: 41px;
   text-align: center;
   border: 1px solid hsla(227, 16%, 82%, 1);
   box-sizing: border-box;
+}
+
+.table__cell--second-step {
+  height: 41px;
+  border-color: hsla(227, 16%, 82%, 1);
+  background-color: $white;
+  border-width: 2px;
+}
+
+.table__cell--current-active-select {
+  color: hsla(224, 52%, 24%, 1);
+  background-color: hsla(227, 33%, 95%, 1);
+}
+
+.table__cell--country-nav:focus-within {
+  background-color: transparent;
 }
 
 .table__button {
@@ -22,12 +37,13 @@
   font-size: 14px;
   line-height: 18px;
   color: hsla(224, 52%, 24%, 1);
-  padding: 14px;
+  padding: 5px;
   text-transform: uppercase;
   z-index: 20;
   background-color: transparent;
   cursor: pointer;
   border: none;
+  box-sizing: border-box;
 
   &:hover {
     outline: 1px solid hsla(228, 16%, 64%, 1);
@@ -43,11 +59,36 @@
   }
 }
 
+.table__button--second-step {
+  padding: 5px;
+  padding-bottom: 7px;
+  padding-right: 6px;
+  height: 100%;
+}
+
 .table__button--current {
   background-color: hsla(224, 52%, 24%, 1);
   position: relative;
   color: $white;
   outline: 1px solid hsla(224, 52%, 24%, 1);
+}
+
+.table__button--country-nav {
+  &:hover {
+    border: none;
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus-visible {
+    opacity: 0.3;
+    background-color: transparent;
+  }
+}
+
+.table__wrapper--country-nav {
+  background-color: $white;
 }
 
 @media (min-width: $tablet-width) {
@@ -59,12 +100,26 @@
     margin-right: 79px;
   }
 
+  .table--country-nav {
+    margin: 0;
+  }
+
   .table__cell {
     height: 69px;
   }
 
   .table__cell--current {
     background-color: transparent;
+  }
+
+  .table__cell--second-step {
+    height: 69px;
+    background-color: $white;
+  }
+
+  .table__button--current {
+    outline-width: 2px;
+    color: $white;
   }
 
   .table__button {
@@ -74,8 +129,30 @@
     padding: 0;
   }
 
-  .table__button--current {
-    color: $white;
+  .table__button--country-nav {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 700;
+    color: hsla(229, 46%, 18%, 0.3);
+    text-align: left;
+  }
+
+  .table__button--current-country {
+    color: hsla(229, 46%, 18%, 1);
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .table__wrapper {
+    background-color: inherit;
+    border: none;
+  }
+
+  .table__cell--country-nav {
+    width: 77px;
+    height: 83px;
+    border: none;
   }
 }
 
@@ -86,29 +163,59 @@
     padding: 0;
   }
 
+  .table__cell--current-active-select {
+    background-color: hsla(224, 52%, 24%, 1);
+  }
+
+  .table__cell--second-step {
+    height: 70px;
+  }
+
+  .table__cell--country-nav {
+    vertical-align: baseline;
+    width: auto;
+    height: fit-content;
+    text-align: left;
+    min-width: 251px;
+  }
+
   .table__button--current {
     padding-bottom: 23px;
     padding-top: 23px;
     display: block;
     background-color: transparent;
-    outline: none;
+    border-radius: 4px;
     border: none;
     color: $white;
   }
 
-  .country-nav {
-    & .table {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      padding-left: 24px;
-      padding-right: 24px;
-      margin-bottom: 49px;
-    }
+  .table__button--current-country {
+    outline: none;
+    border: none;
+    color: hsla(229, 46%, 18%, 1);
+  }
+
+  .table--country-nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 38px;
+    padding-right: 24px;
+    margin-bottom: 22px;
   }
 
   .table__button {
     padding-bottom: 23px;
     padding-top: 23px;
+  }
+
+  .table__button--country-nav {
+    text-align: left;
+    width: 100%;
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 12px;
+    padding-bottom: 31px;
+    align-items: center;
   }
 }

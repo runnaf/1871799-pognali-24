@@ -25,8 +25,8 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  padding-top: 22px;
-  padding-bottom: 15px;
+  padding-top: 21px;
+  padding-bottom: 16px;
   padding-left: 25px;
   cursor: pointer;
 }
@@ -66,6 +66,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .country-filter {
+    margin-bottom: 72px;
+  }
+
   .country-filter__link {
     padding: 0;
     padding-top: 60px;

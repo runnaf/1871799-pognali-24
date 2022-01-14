@@ -39,12 +39,18 @@ textarea {
 }
 
 input {
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
+  all: unset;
+  appearance: none;
+}
 
-  &[type="number"] {
-    -moz-appearance: textfield;
-  }
+.input[type] {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }

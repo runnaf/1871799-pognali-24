@@ -61,8 +61,9 @@
 .travel-direction__button-icon {
   fill: $darkfont-color;
   position: absolute;
-  top: calc(50% - 8px);
-  right: 19px;
+  top: calc(50% - 4px);
+  right: 22px;
+  width: 11px;
   height: auto;
 }
 
@@ -75,17 +76,13 @@
   }
 
   .travel-direction__list {
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   .travel-direction__item {
     width: 100%;
     flex-direction: row;
     border-radius: 20px;
-  }
-
-  .travel-direction__item:not(:last-of-type) {
-    margin-bottom: 10px;
   }
 
   .travel-direction__title {
@@ -128,7 +125,7 @@
     column-gap: 173px;
     width: 82%;
     padding-top: 161px;
-    padding-bottom: 137px;
+    padding-bottom: 138px;
   }
 
   .travel-direction__title {
@@ -172,5 +169,9 @@
 
   .travel-direction__button-icon {
     right: 34px;
+  }
+
+  .travel-direction__item:not(:last-of-type) {
+    margin-bottom: 10px;
   }
 }
