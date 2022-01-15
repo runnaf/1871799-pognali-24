@@ -88,6 +88,7 @@
   text-decoration: none;
   color: hsla(224, 52%, 24%, 1);
   font-family: "Blogger Sans", "Arial", sans-serif;
+  outline: none;
 
   &:hover {
     opacity: 0.6;
@@ -591,7 +592,7 @@
   .selection-companion__wrapper {
     min-width: 198px;
     width: 69%;
-    padding-top: 45px;
+    padding-top: 44px;
     padding-left: 9px;
     padding-bottom: 47px;
   }
@@ -621,6 +622,7 @@
 
   .selection-companion__filter-group--opened .selection-companion__list {
     display: block;
+    padding-bottom: 11px;
   }
 
   .selection-companion__filter-group--opened .selection-companion__legend {
@@ -628,7 +630,7 @@
   }
 
   .selection-companion__filter-group--opened .selection-companion__legend--checkbox {
-    margin-bottom: 17px;
+    margin-bottom: 7px;
   }
 
   .selection-companion__filter-group--opened .selection-companion__list-way {
@@ -636,6 +638,7 @@
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 1px;
+    padding-bottom: 20px;
   }
 
   .selection-companion__filter-group--opened .selection-companion__link::after {

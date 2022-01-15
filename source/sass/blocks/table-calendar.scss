@@ -62,7 +62,6 @@
   }
 }
 
-
 .table-calendar__cell-number .table-calendar__cell-mounth {
   display: none;
 }
@@ -75,8 +74,16 @@
   display: none;
 }
 
+.table-calendar__button--active {
+  position: relative;
+  color: $white;
+  background-color: hsla(224, 52%, 24%, 1);
+  cursor: pointer;
+}
+
 .table-calendar__button--hover {
   position: relative;
+  cursor: auto;
 
   &::after {
     position: absolute;
@@ -89,11 +96,6 @@
   }
 }
 
-.table-calendar__button--active {
-  position: relative;
-  color: $white;
-  background-color: hsla(224, 52%, 24%, 1);
-}
 
 .table-calendar__cell--inactive {
   background-color: transparent;
@@ -134,6 +136,16 @@
     font-weight: 400;
     padding-top: 0;
     padding-left: 10px;
+    padding-right: 8px;
+  }
+
+  .table-calendar__button--active {
+    padding-left: 1px;
+    padding-right: 5px;
+  }
+
+  .table-calendar__button--selected {
+    padding-left: 5px;
     padding-right: 5px;
   }
 }

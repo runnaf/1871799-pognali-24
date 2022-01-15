@@ -20,6 +20,7 @@
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 50%;
+  outline: none;
 }
 
 .social__link--first {
@@ -44,6 +45,10 @@
 
 .social__link:active .protocol-icon {
   opacity: 0.3;
+}
+
+.social__link:focus-visible {
+  opacity: 0.6;
 }
 
 .social__link--header {

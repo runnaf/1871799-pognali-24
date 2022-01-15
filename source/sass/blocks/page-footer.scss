@@ -37,6 +37,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  outline: none;
 
   &[href]:hover {
     opacity: 0.6;
@@ -124,6 +125,7 @@
   justify-content: space-between;
   padding-top: 14px;
   cursor: pointer;
+  outline: none;
 
   &::before {
     position: absolute;
@@ -256,10 +258,6 @@
     &::before {
       display: none;
     }
-  }
-
-  .page-footer__inner {
-    padding-top: 38px;
   }
 
   .page-footer__inner .page-footer__icon-vkontakte {

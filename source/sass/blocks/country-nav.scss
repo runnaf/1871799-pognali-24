@@ -107,6 +107,8 @@
   width: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  padding-top: 12px;
+  box-sizing: border-box;
 }
 
 .country-nav__list {
@@ -115,10 +117,8 @@
   padding: 0;
   list-style-type: none;
   width: 100%;
-  min-width: 320px;
-  padding-top: 10px;
-  padding-left: 42px;
-  padding-bottom: 17px;
+  padding-top: 0;
+  padding-left: 0;
   box-sizing: border-box;
 }
 
@@ -136,7 +136,9 @@
   color: hsla(229, 46%, 18%);
   opacity: 0.3;
   padding: 6px;
+  padding-left: 0;
   padding-bottom: 5px;
+  outline: none;
 
   &[href]:hover {
     opacity: 0.6;
@@ -159,9 +161,7 @@
 
 .country-nav__button {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 84%;
+  width: 85%;
   border: none;
   font-weight: 700;
   font-size: 16px;
@@ -172,13 +172,15 @@
   letter-spacing: -1.1px;
   box-sizing: border-box;
   padding: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 7px;
+  padding-left: 24px;
   padding-right: 20px;
   border-radius: 20px;
-  margin-bottom: 24px;
-
+  margin-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
 
   &:hover {
     background-color: hsla(229, 41%, 85%, 1);
@@ -227,13 +229,17 @@
 
 .country-nav__table {
   display: flex;
-  margin-left: 42px;
-  margin-bottom: 10px;
+  margin-left: 0;
+  margin-bottom: 13px;
+  padding-left: 50px;
+  box-sizing: border-box;
 }
 
 .country-nav__lists {
   padding: 0;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  box-sizing: border-box;
 }
 
 .country-nav__list-alphabet {
@@ -245,6 +251,9 @@
   position: relative;
   width: auto;
   background-color: hsla(229, 38%, 92%, 1);
+  margin-bottom: 17px;
+  padding-left: 50px;
+  box-sizing: border-box;
 }
 
 .country-nav__list-wrapper {
@@ -306,6 +315,7 @@
     padding-right: 63px;
     box-sizing: border-box;
     padding-bottom: 79px;
+    padding-top: 21px;
     border-bottom-right-radius: 61px;
     border-bottom-left-radius: 61px;
   }
@@ -340,9 +350,12 @@
 
   .country-nav--opened .country-nav__table-wrapper {
     display: grid;
-    grid-template-columns: 1fr 199px;
-    grid-template-rows: min-content 54px min-content;
-    padding-top: 23px;
+    grid-template-columns: 1fr 172px;
+    grid-template-rows: min-content 56px min-content;
+    padding-top: 0;
+    padding-left: 17px;
+    padding-right: 17px;
+    box-sizing: border-box;
   }
 
   .country-nav--opened .country-nav__toggle-desc {
@@ -376,7 +389,8 @@
     grid-column: 2/3;
     grid-row: 1/2;
     padding: 0;
-    padding-top: 9px;
+    padding-top: 11px;
+    padding-left: 0;
     margin: 0;
   }
 
@@ -392,8 +406,6 @@
     padding-top: 40px;
     padding-bottom: 40px;
     margin: 0;
-    margin-left: 3px;
-    margin-right: 6px;
   }
 
   .country-nav__toggle-desc {
@@ -540,8 +552,8 @@
   .country-nav__link-wrapper {
     display: flex;
     flex-grow: 1;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 81px;
+    padding-right: 76px;
   }
 
   .country-nav__table-wrapper {
@@ -599,7 +611,7 @@
 
   .country-nav--closed .country-nav__list-header {
     margin-right: auto;
-    margin-left: 16px;
+    margin-left: 8px;
   }
 
   .country-nav--closed .country-nav__toggle {
@@ -630,6 +642,9 @@
 
   .country-nav--opened .country-nav__container {
     position: static;
+    padding-top: 0;
+    padding-right: 60px;
+    padding-left: 63px;
   }
 
   .country-nav--opened .country-nav__list {
@@ -656,6 +671,13 @@
 
   .country-nav__button {
     width: 100%;
-    padding-right: 27px;
+    padding-right: 35px;
+  }
+
+  .country-nav__button-wrapper {
+    &::after,
+    &::before {
+      left: 13px;
+    }
   }
 }

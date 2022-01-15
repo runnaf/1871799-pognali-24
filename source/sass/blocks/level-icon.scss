@@ -18,7 +18,12 @@
   width: 45px;
   height: 45px;
   top: 0;
-  right: 0;
+  right: -1px;
+}
+
+.level-icon__companion-card {
+  width: 61px;
+  height: 63px;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,6 +32,10 @@
     height: 108%;
     left: -2px;
     top: -2px;
+  }
+
+  .level-icon__card {
+    left: -3px;
   }
 }
 

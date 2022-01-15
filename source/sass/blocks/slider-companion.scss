@@ -70,6 +70,7 @@
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
+  outline: none;
 }
 
 .slider-companion__link-more:hover .slider-companion__link-more--decoration {
@@ -143,6 +144,7 @@
     &::before {
       width: 27px;
       top: 48%;
+      left: 1px;
     }
   }
 

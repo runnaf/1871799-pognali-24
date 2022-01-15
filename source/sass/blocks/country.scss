@@ -7,10 +7,16 @@
 }
 
 .country__link-alphabet {
-  padding-left: 20px;
+  padding-left: 0;
   padding-right: 20px;
 }
 
 .country--closed {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .country__link-alphabet {
+    padding-right: 0;
+  }
 }

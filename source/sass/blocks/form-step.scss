@@ -54,6 +54,7 @@
   width: 40px;
   height: 100%;
   cursor: pointer;
+  outline: none;
 
   &::after,
   &::before {
@@ -187,8 +188,7 @@
   display: block;
 }
 
-.form-step__input[type="checkbox"]:hover + .form-step__label-child,
-.form-step__input[type="checkbox"]:hover .form-step__mark {
+.form-step__input[type="checkbox"]:hover + .form-step__label-child .form-step__mark {
   border-color: hsla(228, 16%, 64%, 1);
 }
 

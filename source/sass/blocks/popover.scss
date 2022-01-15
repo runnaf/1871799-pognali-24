@@ -83,10 +83,18 @@
   display: block;
 }
 
-.companion-cardy__flag-wrapper {
+.companion-card__flag-wrapper {
   position: relative;
 }
 
-.companion-cardy__flag-wrapper:hover .popover {
+.companion-card__flag-wrapper:hover .popover {
+  display: block;
+}
+
+.companion-card__item-way:hover .popover {
+  display: block;
+}
+
+.step__third-img-container:hover .popover {
   display: block;
 }

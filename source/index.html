@@ -20,10 +20,10 @@
 <body class="page__body">
 
   <header class="page-header page-header--closed page-header--nojs">
-    <!-- page-header--fixed фиксированое положение-->
+    <!-- page-header--fixed класс для фиксированого положения-->
     <a class="page-header__logo page-header__logo-white">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo_pognaly/logo_desktop.svg">
+        <source media="(min-width: 1440px)" srcset="img/logo_pognaly/logo_desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo_pognaly/logo_tablet.svg">
         <img src="img/logo_pognaly/logo_mobile.svg" alt="Логотип сайта 'Погнали'">
       </picture>
@@ -31,6 +31,7 @@
 
     <a class="page-header__logo-black page-header__logo">
       <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo_pognaly/logo-white_desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo_pognaly/logo-white_tablet.svg">
         <img src="img/logo_pognaly/logo-white_mobile.svg" alt="Логотип сайта 'Погнали'">
       </picture>
@@ -379,7 +380,7 @@
                 <div class="companion-img__small companion-card__small level">
                   <p class="level__number">99</p>
                   <p class="level__desc">level</p>
-                  <svg class="level-icon">
+                  <svg class="level-icon level-icon__companion-card">
                     <use href="img/sprite.svg#icon-level99"></use>
                   </svg>
                 </div>
@@ -395,7 +396,7 @@
                   <ul class="companion-card__list flag-list">
                     <li class="companion-card__item-country">
                       <span class="visually-hidden">Шриланка</span>
-                      <div class="companion-cardy__flag-wrapper">
+                      <div class="companion-card__flag-wrapper">
                         <div class="companion-card__img-container">
                           <picture>
                             <source srcset="img/flag__img/35_24/SriLanka.webp 1x, img/flag__img/35_24/SriLanka@2x.webp 2x" type="image/webp">
@@ -410,7 +411,7 @@
                     </li>
                     <li class="companion-card__item-country">
                       <span class="visually-hidden">Таиланд</span>
-                      <div class="companion-cardy__flag-wrapper">
+                      <div class="companion-card__flag-wrapper">
                         <div class="companion-card__img-container">
                           <picture>
                             <source srcset="img/flag__img/35_24/Thailand.webp 1x, img/flag__img/35_24/Thailand@2x.webp 2x" type="image/webp">
@@ -425,7 +426,7 @@
                     </li>
                     <li class="companion-card__item-country">
                       <span class="visually-hidden">Сейшеллы</span>
-                      <div class="companion-cardy__flag-wrapper">
+                      <div class="companion-card__flag-wrapper">
                         <div class="companion-card__img-container">
                           <picture>
                             <source srcset="img/flag__img/35_24/Seychelles.webp 1x, img/flag__img/35_24/Seychelles@2x.webp 2x" type="image/webp">
@@ -451,7 +452,7 @@
                 <ul class="companion-card__list companion-card__list-last companion-card__list-way">
                   <li class="companion-card__item-way">
                     <span class="visually-hidden">Способ путешествия самолетом.</span>
-                    <svg class="list-way__icon list-way__icon--current" width="21" height="23">
+                    <svg class="list-way__icon list-way__icon--current companion-card__icon-plane" width="21" height="23">
                       <use href="img/sprite.svg#icon-plane"></use>
                     </svg>
                     <div class="popover popover--plane">
@@ -460,7 +461,7 @@
                   </li>
                   <li class="companion-card__item-way">
                     <span class="visually-hidden">Способ путешествия автотранспортом.</span>
-                    <svg class="list-way__icon" width="18" height="21">
+                    <svg class="list-way__icon companion-card__icon-bus" width="18" height="21">
                       <use href="img/sprite.svg#icon-bus"></use>
                     </svg>
                     <div class="popover popover--bus">
@@ -469,7 +470,7 @@
                   </li>
                   <li class="companion-card__item-way">
                     <span class="visually-hidden">Способ путешествия на велосипеде.</span>
-                    <svg class="list-way__icon" width="25" height="24">
+                    <svg class="list-way__icon companion-card__icon-bicycle" width="25" height="24">
                       <use href="img/sprite.svg#icon-bicycle"></use>
                     </svg>
                     <div class="popover popover--bike">
@@ -478,7 +479,7 @@
                   </li>
                   <li class="companion-card__item-way">
                     <span class="visually-hidden">Способ путешествия пешком.</span>
-                    <svg class="list-way__icon" width="21" height="24">
+                    <svg class="list-way__icon companion-card__icon-run" width="21" height="24">
                       <use href="img/sprite.svg#icon-run"></use>
                     </svg>
                     <div class="popover popover--run">
@@ -506,7 +507,7 @@
                 <div class="companion-img__small companion-card__small level">
                   <p class="level__number">80</p>
                   <p class="level__desc">level</p>
-                  <svg class="level-icon">
+                  <svg class="level-icon level-icon__companion-card">
                     <use href="img/sprite.svg#icon-level80"></use>
                   </svg>
                 </div>
@@ -522,7 +523,7 @@
                   <ul class="companion-card__list flag-list">
                     <li class="companion-card__item-country flag-list__item">
                       <span class="visually-hidden">Бельгия</span>
-                      <div class="companion-cardy__flag-wrapper">
+                      <div class="companion-card__flag-wrapper">
                         <div class="companion-card__img-container">
                           <picture>
                             <source srcset="img/flag__img/35_24/Belgium.webp 1x, img/flag__img/35_24/Belgium@2x.webp 2x" type="image/webp">
@@ -537,7 +538,7 @@
                     </li>
                     <li class="companion-card__item-country">
                       <span class="visually-hidden">Чехия</span>
-                      <div class="companion-cardy__flag-wrapper">
+                      <div class="companion-card__flag-wrapper">
                         <div class="companion-card__img-container">
                           <picture>
                             <source srcset="img/flag__img/35_24/Czech.webp, img/flag__img/35_24/Czech@2x.webp 2x" type="image/webp">
@@ -562,7 +563,7 @@
                 <ul class="companion-card__list companion-card__list-last companion-card__list-way">
                   <li class="companion-card__item-way">
                     <span class="visually-hidden">Способ путешествия самолетом.</span>
-                    <svg class="list-way__icon list-way__icon--current" width="21" height="23">
+                    <svg class="list-way__icon companion-card__icon-plane list-way__icon--current" width="21" height="23">
                       <use href="img/sprite.svg#icon-plane"></use>
                     </svg>
                     <div class="popover popover--plane">
@@ -571,7 +572,7 @@
                   </li>
                   <li class="companion-card__item-way">
                     <span class="visually-hidden">Способ путешествия автотранспортом.</span>
-                    <svg class="list-way__icon list-way__icon--current" width="18" height="21">
+                    <svg class="list-way__icon companion-card__icon-bus list-way__icon--current" width="18" height="21">
                       <use href="img/sprite.svg#icon-bus"></use>
                     </svg>
                     <div class="popover popover--bus">
@@ -580,7 +581,7 @@
                   </li>
                   <li class="companion-card__item-way">
                     <span class="visually-hidden">Способ путешествия на велосипеде.</span>
-                    <svg class="list-way__icon" width="25" height="24">
+                    <svg class="list-way__icon companion-card__icon-bicycle" width="25" height="24">
                       <use href="img/sprite.svg#icon-bicycle"></use>
                     </svg>
                     <div class="popover popover--bike">
@@ -589,7 +590,7 @@
                   </li>
                   <li class="companion-card__item-way">
                     <span class="visually-hidden">Способ путешествия пешком.</span>
-                    <svg class="list-way__icon list-way__icon--current" width="21" height="24">
+                    <svg class="list-way__icon companion-card__icon-run list-way__icon--current" width="21" height="24">
                       <use href="img/sprite.svg#icon-run"></use>
                     </svg>
                     <div class="popover popover--run">

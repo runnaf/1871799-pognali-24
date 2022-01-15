@@ -210,6 +210,7 @@
   .add-plan {
     width: 80%;
     min-width: 619px;
+    padding-bottom: 65px;
   }
 
   .add-plan__form-step-first {
@@ -236,6 +237,7 @@
   .add-plan__button-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .add-plan__button-wrapper--second {
@@ -272,7 +274,7 @@
       content: "";
       bottom: 0;
       left: 0;
-      right: 6px;
+      right: 44px;
       height: 1px;
       background-color: hsla(225, 15%, 90%, 1);
     }
@@ -310,8 +312,8 @@
     margin-left: 0;
     border-radius: 22px;
     box-sizing: border-box;
-    flex-grow: 1;
     justify-content: space-between;
+    flex-grow: 1;
   }
 
   .add-plan__button:not(:last-of-type) {
@@ -322,6 +324,8 @@
     display: block;
     fill: hsla(224, 52%, 24%, 1);
     width: 12px;
+    min-width: 12px;
+    right: 36px;
   }
 
   .add-plan__step--third .add-plan__button {
@@ -329,9 +333,11 @@
   }
 
   .add-plan__step--third .add-plan__button-back {
-    padding-left: 67px;
+    padding-left: 65px;
     padding-right: 2px;
-    min-width: auto;
+    margin-right: 0;
+    justify-content: flex-end;
+    min-width: 250px;
   }
 
   .add-plan__step--third .add-plan__button-icon {
@@ -342,6 +348,11 @@
     &--back {
       padding-bottom: 4px;
     }
+  }
+
+  .add-plan__desc-button-back {
+    padding-left: 23px;
+    margin-left: auto;
   }
 
   .add-plan__desc-button {
@@ -362,13 +373,14 @@
     margin: 0;
     margin-top: auto;
     margin-bottom: auto;
-    left: -10px;
+    position: static;
+    order: -1;
   }
 
-  .add-plan__desc-button-back {
-    padding-left: 10px;
-    order: 1;
-  }
+  // .add-plan__desc-button-back {
+  //   padding-left: 10px;
+  //   order: 1;
+  // }
 }
 
 @media (min-width: $desktop-width) {
@@ -480,6 +492,11 @@
     }
   }
 
+  .add-plan__desc-button-back {
+    margin-left: 0;
+    padding-left: 21px;
+  }
+
   .add-plan__button-step--current .add-plan__button-desc {
     color: hsla(0, 0%, 0%, 1);
 
@@ -569,10 +586,6 @@
     padding-right: 4px;
     padding-left: 77px;
     text-align: right;
-  }
-
-  .add-plan__desc-button-back {
-    padding-left: 21px;
   }
 
   .add-plan__step--third .add-plan__button-wrapper {

@@ -29,6 +29,16 @@
   padding-bottom: 16px;
   padding-left: 25px;
   cursor: pointer;
+  outline: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus-visible {
+    opacity: 0.3;
+  }
 }
 
 .country-filter__icon {

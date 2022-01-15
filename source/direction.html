@@ -602,17 +602,17 @@
             <p class="add-plan__text add-plan__text--second"> Укажите страны, которые&nbsp;<br>вы хотели бы посетить. Это может быть одна или сразу
               несколько.</p>
             <form class="step__second-form form-step-second add-plan__form">
-              <div class="form-step-second__field-group form-step-second__field-group--active step__second-field-group">
+              <div class="form-step-second__field-group step__second-field-group">
                 <label class="visually-hidden" for="Bosnia-and-Herzegovina">Страна посещения</label>
                 <div class="form-step-second__field-wrapper form-step-second__field-country">
-                  <input class="form-step-second__field form-step-second__field--active" type="text" id="Bosnia-and-Herzegovina"
-                    placeholder="Босния и Герцеговина">
-                  <button class="form-step-second__field-button form-step-second__field-button--active" type="submit">
+                  <input class="form-step-second__field" type="text" id="Bosnia-and-Herzegovina"
+                    value="Босния и Герцеговина" placeholder="Выберите страну">
+                  <button class="form-step-second__field-button" type="submit">
                     <span class="visually-hidden">Выбрать страну.</span>
                   </button>
                 </div>
-                <div class="form-step-second__flag-container form-step-second__flag-container--active">
-                  <div class="form-step-second__small form-step-second__small--active">
+                <div class="form-step-second__flag-container">
+                  <div class="form-step-second__small">
                     <span class="visually-hidden">активное поле</span>
                   </div>
                   <div class="form-step-second__img-container">
@@ -629,21 +629,494 @@
                       <p class="popover__desc">Босния и Герцеговина</p>
                     </div>
                   </div>
-                  <button class="form-step-second__button form-step-second__button--active" type="button">
+                  <button class="form-step-second__button" type="button">
                     <span class="visually-hidden">Закрыть поле страны для посещения</span>
                   </button>
+                </div>
+                <div class="form-step-second__country-wrapper form-step-second__country-wrapper--active-select">
+                  <table class="form-step-second__table">
+                    <tbody class="table__wrapper">
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--current table__cell--current-active-select table__cell--second-step">
+                          <button class="table__button table__button--second-step table__button--current" type="submit" disabled>А</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Б</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step table__cell table__cell--second-step--second-step">
+                          <button class="table__button table__button--second-step table__button table__button--second-step--second-step" type="submit">В</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Г</button>
+                        </td>
+
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Д</button>
+                        </td>
+                      </tr>
+
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Е</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">З</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">И</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">К</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Л</button>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">М</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Н</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">О</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">П</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Р</button>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">С</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Т</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">У</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Ф</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Х</button>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Ч</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Ш</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Э</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Ю</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Я</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="form-step-second__lists">
+                    <ol class="form-step-second__alphabet country">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Австралия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Австрия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Азербайджан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Албания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Алжир</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ангола</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Андорра</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Антигуа и Барбуда</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Аргентина</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Армения</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Афганистан</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Багамские Острова</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бангладеш</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Барбадос</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бахрейн</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Белоруссия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Белиз</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бельгия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бенин</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Болгария</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Боливия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Босния и Герцеговина</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ботсвана</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бразилия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бруней</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Буркина-Фасо</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бурунди</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бутан</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Вануату</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Великобритания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Венгрия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Венесуэла</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Восточный Тимор</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Вьетнам</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Габон</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гаити</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гайана</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гамбия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гана</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гватемала</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гвинея</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гвинея-Бисау</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Германия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гондурас</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гренада</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Греция</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Грузия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Дания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Джибути</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Доминика</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Доминикана</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Египет</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Замбия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Зимбабве</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Израиль</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Индия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Индонезия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Иордания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ирак</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Иран</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ирландия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Исландия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Испания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Италия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Кабо-Верде</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Казахстан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Камбоджа</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Камерун</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Канада</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Катар</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Кения</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Кипр</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Киргизия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Кирибати</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Китай</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Колумбия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Лаос</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Латвия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Лесото</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Либерия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ливан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ливия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Литва</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Лихтенштейн</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Люксембург</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Маврикий</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мавритания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мадагаскар</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Малави</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Малайзия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мали</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мальдивы</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мальта</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Марокко</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Намибия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Науру</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Непал</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Нигер</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Нигерия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Нидерланды</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Никарагуа</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Новая Зеландия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Норвегия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">ОАЭ</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#"> Оман</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Пакистан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Палау</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Панама</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Папуа - Новая Гвинея</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Парагвай</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Перу</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Польша</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Португалия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Руанда</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Румыния</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Россия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сальвадор</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Самоа</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сан-Марино</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Саудовская Аравия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сейшелы</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сенегал</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сербия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сингапур</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сирия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Словакия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Словения</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">США</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Таджикистан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Таиланд</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Танзания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Того</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Тонга</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Тринидад и Тобаго</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Тувалу</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Тунис</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Туркмения</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Турция</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Уганда</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Узбекистан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Украина</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Уругвай</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Фиджи</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#"> Филиппины</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Финляндия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Франция</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Хорватия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Чад</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Черногория</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Чехия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#"> Чили</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Швейцария</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Швеция</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Шри-Ланка</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эквадор</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эритрея</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эсватини</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эстония</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эфиопия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">ЮАР</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Южный Судан</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ямайка</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Япония</a></li>
+                    </ol>
+                    <button class="country-list__button-table">Свернуть</button>
+                  </div>
                 </div>
               </div>
               <div class="form-step-second__field-group form-step-second__field-group--active">
                 <label class="visually-hidden" for="czech">Страна посещения</label>
                 <div class="form-step-second__field-wrapper form-step-second__field-country">
-                  <input class="form-step-second__field form-step-second__field--active" type="text" id="czech" placeholder="Чехия">
-                  <button class="form-step-second__field-button form-step-second__field-button--active" type="submit">
+                  <input class="form-step-second__field" type="text" id="czech" placeholder="Выбрать страну" value="Чехия">
+                  <button class="form-step-second__field-button" type="submit">
                     <span class="visually-hidden">Выбрать страну.</span>
                   </button>
                 </div>
-                <div class="form-step-second__flag-container form-step-second__flag-container--active">
-                  <div class="form-step-second__small form-step-second__small--active">
+                <div class="form-step-second__flag-container">
+                  <div class="form-step-second__small">
                     <span class="visually-hidden">активное поле</span>
                   </div>
                   <div class="form-step-second__img-container">
@@ -660,41 +1133,7 @@
                       <p class="popover__desc">Чехия</p>
                     </div>
                   </div>
-                  <button class="form-step-second__button form-step-second__button--active" type="button">
-                    <span class="visually-hidden">Закрыть поле страны для посещения</span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="form-step-second__field-group form-step-second__field-group--active-select">
-                <label class="visually-hidden" for="country-hover">поле выбора страны</label>
-                <div class="form-step-second__field-wrapper">
-                  <input class="form-step-second__field form-step-second__field--active-select form-step-second__field--hover" type="text" id="country-hover"
-                    placeholder="выберите страну">
-                  <button class="form-step-second__field-button form-step-second__field-button--active-select"
-                    type="submit">
-                    <span class="visually-hidden">Выбрать страну.</span>
-                  </button>
-                </div>
-                <div class="form-step-second__flag-container form-step-second__flag-container--active-select">
-                  <div class="form-step-second__small form-step-second__small--active-select">
-                    <span class="visually-hidden">активное поле</span>
-                  </div>
-                  <div class="form-step-second__img-container form-step-second__img-container--active-select">
-                    <picture>
-                      <source media="(min-width: 768px)"
-                        srcset="img/flag__img/70_47/Czech.webp 1x, img/flag__img/35_24/Czech@2x.webp 2x" type="image/webp">
-                      <source media="(min-width: 768px)"
-                        srcset="img/flag__img/70_47/Czech.jpg 1x, img/flag__img/35_24/Czech@2x.jpg 2x">
-                      <source srcset="img/flag__img/35_24/Czech.webp 1x, img/flag__img/35_24/Czech@2x.webp 2x" type="image/webp">
-                      <img class="form-step-second__flag-img" src="img/flag__img/35_24/Czech.jpg"
-                        srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии">
-                    </picture>
-                    <div class="popover popover--flag">
-                      <p class="popover__desc">Чехия</p>
-                    </div>
-                  </div>
-                  <button class="form-step-second__button form-step-second__button--active-select" type="button">
+                  <button class="form-step-second__button" type="button">
                     <span class="visually-hidden">Закрыть поле страны для посещения</span>
                   </button>
                 </div>
@@ -1173,18 +1612,525 @@
                 </div>
               </div>
 
-              <div class="form-step-second__field-group form-step-second__field-group--inactive">
-                <label class="visually-hidden" for="czech-inactive">Страна посещения</label>
-                <div class="form-step-second__field-wrapper form-step-second__field-wrapper--inactive">
-                  <input class="form-step-second__field form-step-second__field--inactive" type="text"
-                    id="czech-inactive" placeholder="Добавить страну">
-                  <button class="form-step-second__field-button form-step-second__field-button--inactive" type="submit">
+              <div class="form-step-second__field-group form-step-second__field-group--active-select">
+                <label class="visually-hidden" for="country-hover">поле выбора страны</label>
+                <div class="form-step-second__field-wrapper">
+                  <input class="form-step-second__field form-step-second__field--active-select form-step-second__field--hover" type="text" id="country-hover"
+                    placeholder="выберите страну">
+                  <button class="form-step-second__field-button"
+                    type="submit">
+                    <span class="visually-hidden">Выбрать страну.</span>
+                  </button>
+                </div>
+                <div class="form-step-second__flag-container">
+                  <div class="form-step-second__small">
+                    <span class="visually-hidden">активное поле</span>
+                  </div>
+                  <div class="form-step-second__img-container">
+                    <picture>
+                      <source media="(min-width: 768px)"
+                        srcset="img/flag__img/70_47/Czech.webp 1x, img/flag__img/35_24/Czech@2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 768px)"
+                        srcset="img/flag__img/70_47/Czech.jpg 1x, img/flag__img/35_24/Czech@2x.jpg 2x">
+                      <source srcset="img/flag__img/35_24/Czech.webp 1x, img/flag__img/35_24/Czech@2x.webp 2x" type="image/webp">
+                      <img class="form-step-second__flag-img" src="img/flag__img/35_24/Czech.jpg"
+                        srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии">
+                    </picture>
+                    <div class="popover popover--flag">
+                      <p class="popover__desc">Чехия</p>
+                    </div>
+                  </div>
+                  <button class="form-step-second__button" type="button">
+                    <span class="visually-hidden">Закрыть поле страны для посещения</span>
+                  </button>
+                </div>
+                <div class="form-step-second__country-wrapper">
+                  <table class="form-step-second__table">
+                    <tbody class="table__wrapper">
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--current table__cell--current-active-select table__cell--second-step">
+                          <button class="table__button table__button--second-step table__button--current" type="submit" disabled>А</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Б</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step table__cell table__cell--second-step--second-step">
+                          <button class="table__button table__button--second-step table__button table__button--second-step--second-step" type="submit">В</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Г</button>
+                        </td>
+
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Д</button>
+                        </td>
+                      </tr>
+
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Е</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">З</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">И</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">К</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Л</button>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">М</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Н</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">О</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">П</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Р</button>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">С</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Т</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">У</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Ф</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Х</button>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Ч</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Ш</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Э</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Ю</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Я</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="form-step-second__lists">
+                    <ol class="form-step-second__alphabet country">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Австралия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Австрия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Азербайджан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Албания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Алжир</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ангола</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Андорра</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Антигуа и Барбуда</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Аргентина</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Армения</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Афганистан</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Багамские Острова</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бангладеш</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Барбадос</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бахрейн</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Белоруссия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Белиз</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бельгия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бенин</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Болгария</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Боливия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Босния и Герцеговина</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ботсвана</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бразилия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бруней</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Буркина-Фасо</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бурунди</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бутан</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Вануату</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Великобритания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Венгрия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Венесуэла</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Восточный Тимор</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Вьетнам</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Габон</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гаити</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гайана</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гамбия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гана</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гватемала</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гвинея</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гвинея-Бисау</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Германия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гондурас</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гренада</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Греция</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Грузия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Дания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Джибути</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Доминика</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Доминикана</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Египет</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Замбия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Зимбабве</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Израиль</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Индия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Индонезия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Иордания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ирак</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Иран</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ирландия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Исландия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Испания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Италия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Кабо-Верде</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Казахстан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Камбоджа</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Камерун</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Канада</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Катар</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Кения</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Кипр</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Киргизия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Кирибати</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Китай</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Колумбия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Лаос</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Латвия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Лесото</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Либерия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ливан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ливия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Литва</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Лихтенштейн</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Люксембург</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Маврикий</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мавритания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мадагаскар</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Малави</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Малайзия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мали</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мальдивы</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мальта</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Марокко</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Намибия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Науру</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Непал</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Нигер</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Нигерия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Нидерланды</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Никарагуа</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Новая Зеландия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Норвегия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">ОАЭ</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#"> Оман</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Пакистан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Палау</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Панама</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Папуа - Новая Гвинея</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Парагвай</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Перу</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Польша</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Португалия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Руанда</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Румыния</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Россия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сальвадор</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Самоа</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сан-Марино</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Саудовская Аравия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сейшелы</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сенегал</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сербия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сингапур</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сирия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Словакия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Словения</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">США</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Таджикистан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Таиланд</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Танзания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Того</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Тонга</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Тринидад и Тобаго</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Тувалу</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Тунис</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Туркмения</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Турция</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Уганда</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Узбекистан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Украина</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Уругвай</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Фиджи</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#"> Филиппины</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Финляндия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Франция</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Хорватия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Чад</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Черногория</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Чехия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#"> Чили</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Швейцария</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Швеция</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Шри-Ланка</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эквадор</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эритрея</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эсватини</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эстония</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эфиопия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">ЮАР</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Южный Судан</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ямайка</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Япония</a></li>
+                    </ol>
+                    <button class="country-list__button-table">Свернуть</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-step-second__field-group-inactive">
+                <label class="visually-hidden" for="inactive">Страна посещения</label>
+                <div class="form-step-second__field-wrapper">
+                  <input class="form-step-second__field" type="text"
+                    id="inactive" placeholder="Добавить страну" disabled>
+                  <button class="form-step-second__field-button" type="submit" disabled>
                     <span class="visually-hidden">Добавить страну.</span>
                   </button>
                 </div>
 
-                <div class="form-step-second__flag-container form-step-second__flag-container--inactive">
-                  <div class="form-step-second__small form-step-second__small--inactive">
+                <div class="form-step-second__flag-container">
+                  <div class="form-step-second__small">
                     <span class="visually-hidden">неактивное поле</span>
                   </div>
                   <picture>
@@ -1196,9 +2142,482 @@
                     <img class="form-step-second__flag-img form-step-second__flag-img--inactive" src="img/flag__img/35_24/Czech.jpg"
                       srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии">
                   </picture>
-                  <button class="form-step-second__button form-step-second__button--inactive" type="button">
+                  <button class="form-step-second__button" type="button" disabled>
                     <span class="visually-hidden">Закрыть поле страны для посещения</span>
                   </button>
+                </div>
+                <div class="form-step-second__country-wrapper">
+                  <table class="form-step-second__table">
+                    <tbody class="table__wrapper">
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--current table__cell--current-active-select table__cell--second-step">
+                          <button class="table__button table__button--second-step table__button--current" type="submit" disabled>А</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Б</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step table__cell table__cell--second-step--second-step">
+                          <button class="table__button table__button--second-step table__button table__button--second-step--second-step" type="submit">В</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Г</button>
+                        </td>
+
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Д</button>
+                        </td>
+                      </tr>
+
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Е</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">З</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">И</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">К</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Л</button>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">М</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Н</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">О</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">П</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Р</button>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">С</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Т</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">У</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Ф</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Х</button>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Ч</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Ш</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Э</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Ю</button>
+                        </td>
+                        <td class="table__cell table__cell--second-step">
+                          <button class="table__button table__button--second-step" type="submit">Я</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="form-step-second__lists">
+                    <ol class="form-step-second__alphabet country">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Австралия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Австрия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Азербайджан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Албания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Алжир</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ангола</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Андорра</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Антигуа и Барбуда</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Аргентина</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Армения</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Афганистан</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Багамские Острова</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бангладеш</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Барбадос</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бахрейн</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Белоруссия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Белиз</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бельгия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бенин</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Болгария</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Боливия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Босния и Герцеговина</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ботсвана</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бразилия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бруней</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Буркина-Фасо</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бурунди</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Бутан</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Вануату</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Великобритания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Венгрия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Венесуэла</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Восточный Тимор</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Вьетнам</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Габон</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гаити</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гайана</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гамбия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гана</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гватемала</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гвинея</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гвинея-Бисау</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Германия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гондурас</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Гренада</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Греция</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Грузия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Дания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Джибути</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Доминика</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Доминикана</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Египет</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Замбия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Зимбабве</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Израиль</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Индия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Индонезия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Иордания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ирак</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Иран</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ирландия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Исландия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Испания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Италия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Кабо-Верде</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Казахстан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Камбоджа</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Камерун</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Канада</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Катар</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Кения</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Кипр</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Киргизия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Кирибати</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Китай</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Колумбия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Лаос</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Латвия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Лесото</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Либерия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ливан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ливия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Литва</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Лихтенштейн</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Люксембург</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Маврикий</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мавритания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мадагаскар</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Малави</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Малайзия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мали</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мальдивы</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Мальта</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Марокко</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Намибия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Науру</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Непал</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Нигер</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Нигерия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Нидерланды</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Никарагуа</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Новая Зеландия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Норвегия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">ОАЭ</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#"> Оман</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Пакистан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Палау</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Панама</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Папуа - Новая Гвинея</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Парагвай</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Перу</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Польша</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Португалия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Руанда</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Румыния</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Россия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сальвадор</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Самоа</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сан-Марино</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Саудовская Аравия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сейшелы</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сенегал</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сербия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сингапур</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Сирия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Словакия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Словения</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">США</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Таджикистан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Таиланд</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Танзания</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Того</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Тонга</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Тринидад и Тобаго</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Тувалу</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Тунис</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Туркмения</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Турция</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Уганда</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Узбекистан</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Украина</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Уругвай</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Фиджи</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#"> Филиппины</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Финляндия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Франция</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Хорватия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Чад</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Черногория</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Чехия</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#"> Чили</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Швейцария</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Швеция</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Шри-Ланка</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эквадор</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эритрея</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эсватини</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эстония</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Эфиопия</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">ЮАР</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Южный Судан</a></li>
+                    </ol>
+                    <ol class="form-step-second-alphabet country country--closed">
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Ямайка</a></li>
+                      <li class="form-step-second-alphabet alphabet__item"><a
+                          class="form-step-second-alphabet alphabet__link" href="#">Япония</a></li>
+                    </ol>
+                    <button class="country-list__button-table">Свернуть</button>
+                  </div>
                 </div>
               </div>
             </form>
@@ -1262,10 +2681,12 @@
                     </div>
                   </div>
                 </div>
-                <textarea class="step__third-input" id="Bosnia-and-Herzegovina-area"
+                <div class="step__third-textarea-container">
+                  <textarea class="step__third-input" id="Bosnia-and-Herzegovina-area"
                   placeholder="План действий"></textarea>
-                <div class="step__third-input-error">
+                <div class="step__third-input-error"> <!--Блок который появляется когда поле не заполнено-->
                   <p class="step__third-input-error-desc">Это поле должно быть заполнено</p>
+                </div>
                 </div>
               </div>
 
@@ -1293,7 +2714,7 @@
                 <div class="step__third-input--container">
                   <textarea class="step__third-input" id="Czech" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
                 </textarea>
-                  <div class="step__third-input-error">
+                  <div class="step__third-input-error"><!--Блок который появляется когда поле не заполнено-->
                     <p class="step__third-input-error-desc">Это поле должно быть заполнено</p>
                   </div>
                 </div>

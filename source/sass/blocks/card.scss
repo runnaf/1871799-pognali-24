@@ -139,9 +139,14 @@
   justify-self: end;
   cursor: pointer;
   z-index: 1;
+  outline: none;
 
   &:hover {
     background-color: hsla(229, 38%, 92%, 1);
+  }
+
+  &:focus-visible {
+    background-color: hsla(228, 16%, 64%, 0.5);
   }
 }
 
@@ -149,8 +154,7 @@
   opacity: 0.5;
 }
 
-.card__link-favorite:active .card__favorite-icon,
-.card__link-favorite:focus-visible .card__favorite-icon {
+.card__link-favorite:active .card__favorite-icon {
   opacity: 0.1;
 }
 
@@ -166,6 +170,10 @@
 
   &:hover {
     background-color: hsla(0, 73%, 91%, 1);
+  }
+
+  &:focus-visible {
+    background-color: hsla(0, 92%, 72%, 0.5);
   }
 }
 
@@ -282,6 +290,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
 }
 
 .card__link-transport {
@@ -478,6 +489,14 @@
     margin-left: 10px;
   }
 
+  .card__item-desc--czech {
+    margin-left: 15px;
+  }
+
+  .card__item-desc--seychelles {
+    margin-left: 13px;
+  }
+
   .card__flag-img {
     width: 36px;
     height: 24px;
@@ -527,6 +546,7 @@
 
   .card__item-transport--container {
     background-color: transparent;
+    height: auto;
   }
 
   .card__link-transport {
@@ -720,7 +740,12 @@
 
     &:not(:last-of-type) {
       margin-bottom: 13px;
+      margin-top: 7px;
     }
+  }
+
+  .card__item-desc--dominica {
+    align-self: flex-start;
   }
 
   .card__wrapper-transport {
@@ -778,7 +803,8 @@
   }
 
   .card__level-container .level-icon {
-    left: -2px;
+    left: -1px;
+    top: -1px;
   }
 
   .card__favorite-icon {
