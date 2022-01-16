@@ -21,12 +21,12 @@
   margin-right: auto;
 }
 
-.page-footer__inner {
+.page-footer--inner {
   margin-top: -121px;
   padding-top: 20px;
 }
 
-.page-footer__inner .page-footer__developed-text {
+.page-footer--inner .page-footer__developed-text {
   margin-bottom: 5px;
 }
 
@@ -156,7 +156,7 @@
   margin: 0;
 }
 
-.page-footer__companion {
+.page-footer--companion {
   margin-top: 0;
 }
 
@@ -234,21 +234,21 @@
     padding: 0;
   }
 
-  .page-footer__companion {
+  .page-footer--companion {
     margin-top: 0;
     padding-top: 37px;
   }
 
-  .page-footer__companion .page-footer__list {
+  .page-footer--companion .page-footer__list {
     margin-top: 0;
     margin-right: 10px;
   }
 
-  .page-footer__companion .page-footer__developed {
+  .page-footer--companion .page-footer__developed {
     padding-right: 3px;
   }
 
-  .page-footer__companion .page-footer__developed-text {
+  .page-footer--companion .page-footer__developed-text {
     margin-right: 23px;
   }
 
@@ -260,13 +260,13 @@
     }
   }
 
-  .page-footer__inner .page-footer__icon-vkontakte {
+  .page-footer--inner .page-footer__icon-vkontakte {
     margin-bottom: 2px;
     margin-right: 2px;
     width: 29px;
   }
 
-  .page-footer__inner .page-footer__developed-text {
+  .page-footer--inner .page-footer__developed-text {
     margin-bottom: 7px;
     margin-right: 24px;
   }
@@ -287,46 +287,46 @@
     box-sizing: border-box;
   }
 
-  .page-footer__inner {
+  .page-footer--inner {
     padding-left: 0;
     padding-top: 36px;
   }
 
-  .page-footer__inner .page-footer__icon-vkontakte {
+  .page-footer--inner .page-footer__icon-vkontakte {
     margin-bottom: 0;
     margin-right: 0;
     margin-left: 1px;
   }
 
-  .page-footer__inner .page-footer__logo {
+  .page-footer--inner .page-footer__logo {
     padding-top: 17px;
   }
 
-  .page-footer__inner .page-footer__link {
+  .page-footer--inner .page-footer__link {
     padding-top: 14px;
   }
 
-  .page-footer__companion {
+  .page-footer--companion {
     padding-top: 35px;
   }
 
-  .page-footer__companion .page-footer__list {
+  .page-footer--companion .page-footer__list {
     margin-right: 1px;
   }
 
-  .page-footer__companion .page-footer__developed {
+  .page-footer--companion .page-footer__developed {
     padding-right: 0;
   }
 
-  .page-footer__companion .page-footer__container {
+  .page-footer--companion .page-footer__container {
     padding-right: 4px;
   }
 
-  .page-footer__companion .page-footer__logo {
+  .page-footer--companion .page-footer__logo {
     padding-top: 18px;
   }
 
-  .page-footer__companion .page-footer__developed-text {
+  .page-footer--companion .page-footer__developed-text {
     margin-right: 24px;
     margin-bottom: 7px;
   }

@@ -8,20 +8,20 @@
   height: 100%;
 }
 
-.level-icon__direction {
+.level-icon--direction {
   width: 100px;
   height: 100px;
   right: -3px;
 }
 
-.level-icon__card {
+.level-icon--card {
   width: 45px;
   height: 45px;
   top: 0;
   right: -1px;
 }
 
-.level-icon__companion-card {
+.level-icon--companion-card {
   width: 61px;
   height: 63px;
 }
@@ -34,7 +34,7 @@
     top: -2px;
   }
 
-  .level-icon__card {
+  .level-icon--card {
     left: -3px;
   }
 }
@@ -46,11 +46,11 @@
     height: 105%;
   }
 
-  .level-icon__direction {
+  .level-icon--direction {
     top: 0;
   }
 
-  .level-icon__card {
+  .level-icon--card {
     top: 0;
   }
 }

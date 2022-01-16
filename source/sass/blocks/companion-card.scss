@@ -133,6 +133,15 @@
   width: 27px;
 }
 
+.companion-card__icon {
+  fill: hsla(224, 52%, 24%, 0.15);
+  height: auto;
+}
+
+.companion-card__icon--current {
+  fill: hsla(224, 52%, 24%, 1);
+}
+
 @media (min-width: $tablet-width) {
   .companion-card {
     width: 285px;

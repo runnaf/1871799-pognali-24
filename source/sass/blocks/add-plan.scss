@@ -106,7 +106,7 @@
 
 .add-plan__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-size: 16px;
   line-height: 22px;
 }
@@ -196,6 +196,15 @@
   &:focus-visible {
     opacity: 0.3;
   }
+}
+
+.add-plan__button-back:hover .add-plan__button-icon {
+  opacity: 0.6;
+}
+
+.add-plan__button-back:active .add-plan__button-icon,
+.add-plan__button-back:focus .add-plan__button-icon {
+  opacity: 0.3;
 }
 
 .add-plan__step--third .add-plan__button-back {
@@ -350,6 +359,11 @@
     }
   }
 
+  .add-plan__text--third {
+    padding-bottom: 35px;
+    margin-bottom: 26px;
+  }
+
   .add-plan__desc-button-back {
     padding-left: 23px;
     margin-left: auto;
@@ -376,11 +390,6 @@
     position: static;
     order: -1;
   }
-
-  // .add-plan__desc-button-back {
-  //   padding-left: 10px;
-  //   order: 1;
-  // }
 }
 
 @media (min-width: $desktop-width) {
@@ -431,6 +440,11 @@
   .add-plan__step--third .add-plan__button-icon--back {
     padding: 0;
     left: 53px;
+  }
+
+  .add-plan__step--third .add-plan__button-back {
+    padding-top: 28px;
+    padding-right: 5px;
   }
 
   .add-plan__button-group-header {

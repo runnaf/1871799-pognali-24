@@ -9,12 +9,22 @@
   padding-top: -$mobile-stats-shift;
 }
 
+.wrapper__stats {
+  margin-top: $mobile-stats-shift;
+  padding-top: -$mobile-stats-shift;
+}
+
 .wrapper--stats-inner {
   margin-top: $mobile-stats-shift-inner;
   padding-top: -$mobile-stats-shift-inner;
 }
 
 .wrapper--border {
+  border-bottom-left-radius: $mobile-border-shift;
+  border-bottom-right-radius: $mobile-border-shift;
+}
+
+.wrapper__border {
   border-bottom-left-radius: $mobile-border-shift;
   border-bottom-right-radius: $mobile-border-shift;
 }
@@ -42,7 +52,7 @@
   z-index: 9;
 }
 
-.wrapper--companion {
+.wrapper__companion {
   background-color: $darkgrey;
   background-image: url("../img/companion/background-mobile.png");
   background-position-y: 64px;
@@ -56,19 +66,19 @@
   }
 }
 
-.wrapper__companion-decoration {
+.wrapper--companion-decoration {
   background-color: $lightgrey;
 }
 
-.wrapper__tariff {
+.wrapper--tariff {
   background-color: $lightgrey;
 }
 
-.wrapper__tariff--closed .business-block {
+.wrapper--tariff-closed .business-block {
   display: none;
 }
 
-.wrapper__tariff--opened .business-block {
+.wrapper--tariff-opened .business-block {
   display: block;
 }
 
@@ -115,12 +125,22 @@
     padding-top: -$tablet-stats-shift;
   }
 
+  .wrapper__stats {
+    margin-top: $tablet-stats-shift;
+    padding-top: -$tablet-stats-shift;
+  }
+
   .wrapper--stats-inner {
     margin-top: $tablet-stats-shift;
     padding-top: -$tablet-stats-shift;
   }
 
   .wrapper--border {
+    border-bottom-left-radius: $tablet-border-shift;
+    border-bottom-right-radius: $tablet-border-shift;
+  }
+
+  .wrapper__border {
     border-bottom-left-radius: $tablet-border-shift;
     border-bottom-right-radius: $tablet-border-shift;
   }
@@ -157,7 +177,7 @@
     }
   }
 
-  .wrapper--companion {
+  .wrapper__companion {
     background-image: url("../img/companion/background-tablet.png");
     background-position: 50% 94px;
 
@@ -186,12 +206,22 @@
     padding-top: -$desctop-stats-shift;
   }
 
+  .wrapper__stats {
+    margin-top: $desctop-stats-shift;
+    padding-top: -$desctop-stats-shift;
+  }
+
   .wrapper--stats-inner {
     margin-top: $desctop-stats-shift;
     padding-top: -$desctop-stats-shift + 1px;
   }
 
   .wrapper--border {
+    border-bottom-left-radius: $desctop-border-shift;
+    border-bottom-right-radius: $desctop-border-shift;
+  }
+
+  .wrapper__border {
     border-bottom-left-radius: $desctop-border-shift;
     border-bottom-right-radius: $desctop-border-shift;
   }
@@ -223,7 +253,7 @@
     }
   }
 
-  .wrapper--companion {
+  .wrapper__companion {
     background-image: url("../img/companion/background-desktop.png");
     background-position: 7.4% 120px;
 

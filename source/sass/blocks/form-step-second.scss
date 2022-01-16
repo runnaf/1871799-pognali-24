@@ -235,21 +235,6 @@
   background-color: $white;
 }
 
-.form-step-second__table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.form-step-second__table .table__button--current {
-  background-color: hsla(227, 33%, 95%, 1);
-  outline-color: hsla(227, 33%, 95%, 1);
-  color: hsla(224, 52%, 24%, 1);
-
-  &:hover {
-    outline-color: hsla(227, 33%, 95%, 1);
-  }
-}
-
 .form-step-second__alphabet {
   margin: 0;
   padding: 0;
@@ -258,6 +243,33 @@
   padding-bottom: 11px;
   margin-bottom: 1px;
   box-sizing: border-box;
+}
+
+.form-step-second__alphabet-item {
+  background-color: transparent;
+  margin-bottom: 3.9px;
+}
+
+.form-step-second__alphabet-link {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: hsla(0, 0%, 27%, 1);
+  text-decoration: none;
+  width: 100%;
+  height: auto;
+  display: block;
+  outline: none;
+
+  &:hover {
+    color: hsla(224, 52%, 24%, 1);
+  }
+
+  &:focus-visible,
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .form-step-second__field-wrapper {
@@ -666,6 +678,15 @@
     width: max-content;
   }
 
+  .form-step-second__alphabet-item {
+    margin-bottom: 10px;
+  }
+
+  .form-step-second__alphabet-link {
+    font-size: 20px;
+    line-height: 1;
+  }
+
   .form-step-second__field-group {
     grid-template-columns: 1fr 181px;
     column-gap: 24px;
@@ -831,12 +852,6 @@
     display: none;
   }
 
-  .form-step-second__table {
-    width: 75%;
-    min-width: 262px;
-    margin-right: 79px;
-  }
-
   .form-step-second__field-group--active {
     column-gap: 26px;
     padding: 0;
@@ -918,7 +933,7 @@
     background-color: hsla(224, 52%, 24%, 1);
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
-    padding-left: 25px;
+    padding-left: 23px;
     padding-bottom: 14px;
     letter-spacing: 0.1em;
     font-size: 20px;
@@ -951,6 +966,7 @@
 
   .form-step-second__field-group--active-select .form-step-second__field-button {
     display: block;
+    width: 68px;
   }
 
   .form-step-second__field-group--active-select .form-step-second__field-button:hover,
@@ -981,7 +997,7 @@
     padding-top: 34px;
     padding-left: 26px;
     padding-right: 23px;
-    padding-bottom: 34px;
+    padding-bottom: 32px;
   }
 
   .form-step-second__field-group--active-select .form-step-second__small {
@@ -1069,18 +1085,6 @@
     display: block;
     left: -4px;
   }
-
-  .form-step-second__table .table__button--current {
-    background-color: hsla(224, 52%, 24%, 1);
-    color: $white;
-    outline-color: hsla(224, 52%, 24%, 1);
-
-    &:hover {
-      outline-color: hsla(224, 52%, 24%, 1);
-      outline-width: 2px;
-      border-radius: 0;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -1116,17 +1120,20 @@
     }
   }
 
-  .form-step-second__table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 15px;
-    padding-right: 85px;
-    margin: 0;
-  }
-
   .form-step-second__alphabet {
     padding: 0;
     margin: 0;
+  }
+
+  .form-step-second__alphabet-item {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .form-step-second__alphabet-link {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
   }
 
   .form-step-second__field-button {
@@ -1218,11 +1225,5 @@
   .form-step-second__field-group-inactive .form-step-second__flag-container {
     display: block;
     background-color: transparent;
-  }
-
-  .form-step-second__table .table__button--current {
-    &:hover {
-      border-radius: 4px;
-    }
   }
 }

@@ -3,7 +3,7 @@
   border-collapse: collapse;
 }
 
-.table-calendar__button-desc--desctop {
+.table-calendar__button-desc-desctop {
   display: none;
 }
 
@@ -31,6 +31,7 @@
   height: 100%;
   border: none;
   background-color: transparent;
+  padding-bottom: 5px;
 }
 
 .table-calendar__button-weekend {
@@ -118,7 +119,7 @@
     padding-top: 3px;
   }
 
-  .table-calendar__button-desc--desctop {
+  .table-calendar__button-desc-desctop {
     display: block;
   }
 
@@ -155,7 +156,7 @@
     margin-bottom: 0;
   }
 
-  .table-calendar__button-desc--desctop {
+  .table-calendar__button-desc-desctop {
     display: block;
   }
 

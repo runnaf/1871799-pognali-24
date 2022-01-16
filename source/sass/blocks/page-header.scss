@@ -189,10 +189,6 @@
     display: flex;
   }
 
-  .page-header__item--closed {
-    display: none;
-  }
-
   .page-header--opened {
     background-color: $white;
   }
@@ -266,10 +262,6 @@
 
   .page-header--direction {
     background-color: hsla(229, 46%, 18%, 1);
-  }
-
-  .page-header__item--closed {
-    display: flex;
   }
 
   .page-header__toggle {

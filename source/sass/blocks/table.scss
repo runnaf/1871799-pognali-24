@@ -9,6 +9,11 @@
   width: auto;
 }
 
+.table--second-form {
+  border-collapse: collapse;
+  width: 100%;
+}
+
 .table__cell {
   width: 20%;
   text-align: center;
@@ -17,7 +22,7 @@
 }
 
 .table__cell--second-step {
-  height: 41px;
+  height: 40px;
   border-color: hsla(227, 16%, 82%, 1);
   background-color: $white;
   border-width: 2px;
@@ -68,6 +73,20 @@
   padding-bottom: 7px;
   padding-right: 6px;
   height: 100%;
+
+  &:hover {
+    border-radius: 0;
+    outline-width: 2px;
+  }
+
+  &:active,
+  &:focus-visible {
+    background-color: hsla(227, 33%, 95%, 1);
+    outline-color: hsla(227, 33%, 95%, 1);
+    outline-width: 1px;
+    color: hsla(224, 52%, 24%, 1);
+    border-radius: 0;
+  }
 }
 
 .table__button--current {
@@ -103,6 +122,16 @@
 
 .table__wrapper--country-nav {
   background-color: $white;
+}
+
+.table--second-form .table__button--current {
+  background-color: hsla(227, 33%, 95%, 1);
+  outline-color: hsla(227, 33%, 95%, 1);
+  color: hsla(224, 52%, 24%, 1);
+
+  &:hover {
+    outline-color: hsla(227, 33%, 95%, 1);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -141,8 +170,8 @@
   }
 
   .table__cell--second-step {
-    height: 69px;
     background-color: $white;
+    height: 69px;
   }
 
   .table__button--current {
@@ -192,6 +221,39 @@
     width: 77px;
     height: 83px;
     border: none;
+  }
+
+  .table--second-form {
+    width: 75%;
+    min-width: 262px;
+    margin: 0;
+    border-spacing: 0;
+    margin-right: 79px;
+  }
+
+  .table--second-form .table__button--current {
+    background-color: hsla(224, 52%, 24%, 1);
+    color: $white;
+    outline-color: hsla(224, 52%, 24%, 1);
+
+    &:hover {
+      outline-color: hsla(224, 52%, 24%, 1);
+      outline-width: 2px;
+      border-radius: 0;
+    }
+  }
+
+  .table__button--second-step {
+    height: 100%;
+
+    &:focus-visible,
+    &:active {
+      background-color: hsla(224, 52%, 24%, 1);
+      color: $white;
+      outline-color: hsla(224, 52%, 24%, 1);
+      outline-width: 2px;
+      border-radius: 0;
+    }
   }
 }
 
@@ -262,6 +324,26 @@
     &:hover {
       color: hsla(229, 46%, 18%, 1);
       opacity: 1;
+    }
+  }
+
+  .table--second-form {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+    padding-right: 85px;
+    margin: 0;
+  }
+
+  .table--second-form .table__button--current {
+    &:hover {
+      border-radius: 4px;
+    }
+  }
+
+  .table__button--second-step {
+    &:hover {
+      border-radius: 4px;
     }
   }
 }

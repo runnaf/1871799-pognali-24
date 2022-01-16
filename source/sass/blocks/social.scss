@@ -102,6 +102,10 @@
     padding-left: 11px;
     min-width: 188px;
   }
+
+  .social__item--closed {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -111,5 +115,9 @@
 
   .social__mail-icon {
     width: 16px;
+  }
+
+  .social__item--closed {
+    display: flex;
   }
 }

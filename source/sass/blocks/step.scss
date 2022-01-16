@@ -34,7 +34,11 @@
   line-height: 18px;
 }
 
-.step__second {
+.step--first {
+  padding-bottom: 24px;
+}
+
+.step--second {
   padding-bottom: 3px;
   min-width: 225px;
 }
@@ -49,7 +53,7 @@
   margin-bottom: 0;
 }
 
-.step__third {
+.step--third {
   padding-bottom: 8px;
   min-width: 232px;
 }
@@ -157,7 +161,7 @@
   display: block;
 }
 
-.step__third-input--container {
+.step__third-input-container {
   position: relative;
 }
 
@@ -218,23 +222,28 @@
     min-width: 538px;
   }
 
-  .step__second {
+  .step--first {
+    padding-bottom: 56px;
+    margin-bottom: 40px;
+  }
+
+  .step--second {
     margin-left: 43px;
     margin-right: 0;
     width: auto;
     padding-bottom: 54px;
   }
 
-  .step__second .add-plan__text {
+  .step--second .add-plan__text {
     padding-right: 147px;
     padding-bottom: 35px;
   }
 
-  .step__second .add-plan__text br {
+  .step--second .add-plan__text br {
     display: none;
   }
 
-  .step__third {
+  .step--third {
     padding-bottom: 53px;
   }
 
@@ -337,18 +346,23 @@
     min-width: 1003px;
   }
 
-  .step__second {
+  .step--first {
+    padding-bottom: 106px;
+    margin-bottom: 44px;
+  }
+
+  .step--second {
     padding-bottom: 104px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .step__second .add-plan__text {
+  .step--second .add-plan__text {
     padding: 0;
     width: 57%;
   }
 
-  .step__second .add-plan__button-group {
+  .step--second .add-plan__button-group {
     margin-top: 9px;
   }
 
@@ -358,7 +372,7 @@
     padding-left: 1px;
   }
 
-  .step__third {
+  .step--third {
     min-width: 1005px;
     padding-bottom: 103px;
   }
