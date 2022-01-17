@@ -344,12 +344,12 @@
             </div>
           </li>
         </ul>
-        <button class="button travel-direction__button" type="submit">
+        <a class="button travel-direction__link" href="direction.html">
           <span>Показать все</span>
           <svg class="travel-direction__button-icon button__icon" width="13" height="13">
             <use href="img/sprite.svg#icon-arrow"></use>
           </svg>
-        </button>
+        </a>
       </section>
     </div>
 
@@ -601,12 +601,12 @@
               </div>
             </section>
           </div>
-          <button class="companion__button button" type="submit">
+          <a class="companion__link button" href="companion.html">
             <span>Показать всех</span>
             <svg class="companion__button-icon button__icon" width="13" height="13">
               <use href="img/sprite.svg#icon-arrow"></use>
             </svg>
-          </button>
+          </a>
         </section>
       </div>
     </div>
@@ -678,7 +678,7 @@
         <h2 class="interested__title">Заинтересовались?</h2>
         <p class="interested__desc interested__desc--shift">Зарегистрируйтесь,&nbsp;<br> это быстро и бесплатно!</p>
         <p class="interested__desc interested__desc--shift">Уже зарегистрированы? Тогда скорее&#160;<a
-            class="interested__link interested__link--login" href="#">авторизуйтесь</a>.</p>
+            class="interested__link interested__link--login" href="authorization.html">авторизуйтесь</a>.</p>
         <form class="interested__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email.</label>
           <input class="interested__input field-email" placeholder="E-mail" type="email" name="newsletter-email"
@@ -726,12 +726,12 @@
             </span>
             <p class="location__text">ул. Большая Конюшенная, 19/8</p>
           </div>
-          <button class="location__button">
-            <span>Проложить маршрут</span>
+          <a class="location__link" href="https://www.google.ru/maps/dir/Инженерная+улица,+5,+Санкт-Петербург/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург,+191186/@59.9379902,30.3249999,16z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4696310912779e6d:0x9d2404f4adc3cabe!2m2!1d30.33558!2d59.937208!1m5!1m1!1s0x4696310fca145cc1:0x42b32648d8238007!2m2!1d30.3230474!2d59.9387165">
+            <span class="location__link-desk">Проложить маршрут</span>
             <svg class="location__button-icon" width="13" height="13">
               <use href="img/sprite.svg#icon-arrow"></use>
             </svg>
-          </button>
+          </a>
         </div>
       </div>
       <div class="location__cart">
@@ -834,7 +834,8 @@
 
   navTariff.classList.remove('wrapper--tariff-nojs');
 
-  navTariffOpened.addEventListener('click', function () {
+  navTariffOpened.addEventListener('click', function (evt) {
+    evt.preventDefault();
     (navTariff.classList.contains('wrapper--tariff-closed'))
     navTariff.classList.remove('wrapper--tariff-closed');
     navTariff.classList.add('wrapper--tariff-opened');

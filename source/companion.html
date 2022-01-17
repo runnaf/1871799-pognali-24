@@ -1026,13 +1026,13 @@
           <div class="card-container">
             <div class="card">
               <div class="card__name-wrapper">
-                <p class="card__name">Таня Фирсова</p>
+                <a class="card__name" href="firsova-tatiana.html">Таня Фирсова</a>
                 <div class="card__small">
                   <span class="visually-hidden">Статус активности в сети</span>
                 </div>
               </div>
               <p class="card__text">1,5 М</p>
-              <div class="card__picture">
+              <a class="card__picture" href="firsova-tatiana.html">
                 <picture>
                   <source media="(min-width: 1440px)"
                     srcset="img/user/tania_firsova/companion/firsova-desktop.webp 1x, img/user/tania_firsova/companion/firsova-desktop@2x.webp 2x" type="image/webp">
@@ -1046,7 +1046,7 @@
                   <img class="card__img" src="img/user/tania_firsova/firsova-mobile.jpg"
                     srcset="img/user/tania_firsova/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова">
                 </picture>
-              </div>
+              </a>
 
               <a class="card__link-favorite card__link-favorite--current favorite-link" href="#">
                 <span class="visually-hidden">Добавить в избранное</span>
@@ -1189,13 +1189,13 @@
           <div class="card-container">
             <div class="card card--demin">
               <div class="card__name-wrapper">
-                <p class="card__name">Петя Демин</p>
+                <a class="card__name" href="demin-petr.html">Петя Демин</a>
                 <div class="card__small">
                   <span class="visually-hidden">Статус активности в сети</span>
                 </div>
               </div>
               <p class="card__text">1500</p>
-              <div class="card__picture">
+              <a class="card__picture" href="demin-petr.html">
                 <picture>
                   <source media="(min-width: 1440px)"
                     srcset="img/user/petr_demin/companion/demin-desktop.webp 1x, img/user/petr_demin/companion/demin-desktop@2x.webp 2x" type="image/webp">
@@ -1209,7 +1209,7 @@
                   <img class="card__img" src="img/user/petr_demin/demin-mobile.jpg"
                     srcset="img/user/petr_demin/demin-mobile@2x.jpg 2x" alt="Петр Демин">
                 </picture>
-              </div>
+              </a>
               <a class="card__link-favorite favorite-link" href="#">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="card__favorite-icon" width="13" height="11">
@@ -1333,13 +1333,13 @@
           <div class="card-container">
             <div class="card card--smolov">
               <div class="card__name-wrapper">
-                <p class="card__name">Марк Смолов</p>
+                <a class="card__name" href="smolov-mark.html">Марк Смолов</a>
                 <div class="card__small">
                   <span class="visually-hidden">Статус активности в сети</span>
                 </div>
               </div>
               <p class="card__text">170</p>
-              <div class="card__picture">
+              <a class="card__picture" href="smolov-mark.html">
                 <picture>
                   <source media="(min-width: 1440px)"
                     srcset="img/user/mark_smolov/smolov-desktop.webp 1x, img/user/mark_smolov/smolov-desktop@2x.webp 2x" type="image/webp">
@@ -1353,7 +1353,7 @@
                   <img class="card__img" src="img/user/mark_smolov/smolov-mobile.jpg"
                     srcset="img/user/mark_smolov/smolov-mobile@2x.jpg 2x" alt="Петр Демин">
                 </picture>
-              </div>
+              </a>
               <a class="card__link-favorite favorite-link" href="#">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="card__favorite-icon" width="13" height="11">
@@ -1494,13 +1494,13 @@
           <div class="card-container">
             <div class="card card--rogova">
               <div class="card__name-wrapper">
-                <p class="card__name">Лариса Роговая</p>
+                <a class="card__name" href="rogova-larisa.html">Лариса Роговая</a>
                 <div class="card__small card__small--active">
                   <span class="visually-hidden">Статус активности в сети</span>
                 </div>
               </div>
               <p class="card__text">23</p>
-              <div class="card__picture">
+              <a class="card__picture" href="rogova-larisa.html">
                 <picture>
                   <source media="(min-width: 1440px)"
                     srcset="img/user/larisa_rogovaya/rogovaya-desktop.webp, img/user/larisa_rogovaya/rogovaya-desktop@2x.webp 2x" type="image/webp">
@@ -1514,7 +1514,7 @@
                   <img class="card__img" src="img/user/larisa_rogovaya/rogovaya-mobile.jpg"
                     srcset="img/user/larisa_rogovaya/rogovaya-mobile@2x.jpg 2x" alt="Лариса Роговая">
                 </picture>
-              </div>
+              </a>
               <a class="card__link-favorite favorite-link" href="#">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="card__favorite-icon" width="13" height="11">
@@ -1806,7 +1806,8 @@
 
       var filterLink = filter.querySelector('.selection-companion__link');
 
-      filterLink.addEventListener('click', function () {
+      filterLink.addEventListener('click', function (evt) {
+        evt.preventDefault();
         if (filter.classList.contains('selection-companion__filter-group--closed')) {
           filter.classList.remove('selection-companion__filter-group--closed');
           filter.classList.add('selection-companion__filter-group--opened');

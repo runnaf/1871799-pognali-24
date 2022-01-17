@@ -1146,9 +1146,10 @@
   }
 
   .form-step-second__lists {
+    grid-column: 2/3;
+    padding: 0;
     padding-top: 12px;
     padding-left: 28px;
-    padding-right: 40px;
   }
 
   .form-step-second__flag-container {
@@ -1193,12 +1194,24 @@
 
   .form-step-second__field-group--active-select .form-step-second__country-wrapper {
     grid-column: 1/2;
-    grid-template-columns: 1fr 243px;
+    display: grid;
+    grid-template-columns: 1fr 221px;
     padding-top: 18px;
     padding-left: 11px;
     padding-bottom: 20px;
     box-sizing: border-box;
     box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
+
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 3px;
+      width: 1px;
+      background-color: hsla(229, 24%, 87%, 1);
+      content: "";
+      grid-column: 2/3;
+    }
   }
 
   .form-step-second__field-group--active-select .form-step-second__button {

@@ -29,6 +29,7 @@
 
 .popover__desc {
   margin: 0;
+  width: max-content;
 }
 
 .popover--plane {
@@ -59,6 +60,10 @@
   display: block;
 }
 
+.card__item-transport-container:hover + .popover {
+  display: block;
+}
+
 .popover--flag {
   min-width: fit-content;
 }
@@ -76,11 +81,11 @@
 }
 
 .card__flag-wrapper:hover .popover {
-  display: block;
+  display: none;
 }
 
 .card-country__flag-wrapper:hover .popover {
-  display: block;
+  display: none;
 }
 
 .companion-card__flag-wrapper {
