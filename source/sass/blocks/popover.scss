@@ -29,6 +29,7 @@
 
 .popover__desc {
   margin: 0;
+  width: max-content;
 }
 
 .popover--plane {
@@ -59,45 +60,46 @@
   display: block;
 }
 
+.card__item-transport-container:hover + .popover {
+  display: block;
+}
+
 .popover--flag {
   min-width: fit-content;
 }
 
 .form-step-second__img-container:hover {
   position: relative;
+}
 
-  & .popover {
-    display: block;
-  }
+.form-step-second__img-container:hover .popover {
+  display: block;
 }
 
 .card__flag-wrapper {
   position: relative;
-
-  &:hover .popover {
-    display: block;
-  }
 }
 
-
-.card-country__flag-wrapper {
-  &:hover .popover {
-    display: block;
-  }
+.card__flag-wrapper:hover .popover {
+  display: none;
 }
 
-.companion-cardy__flag-wrapper {
+.card-country__flag-wrapper:hover .popover {
+  display: none;
+}
+
+.companion-card__flag-wrapper {
   position: relative;
-
-  &:hover .popover {
-    display: block;
-  }
 }
 
-.step-third__img-container {
-  position: relative;
+.companion-card__flag-wrapper:hover .popover {
+  display: block;
+}
 
-  &:hover .popover {
-    display: block;
-  }
+.companion-card__item-way:hover .popover {
+  display: block;
+}
+
+.step__third-img-container:hover .popover {
+  display: block;
 }

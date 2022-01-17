@@ -49,6 +49,13 @@ const copyImages = () => {
     .pipe(gulp.dest('build/img'))
 }
 
+//manifest
+
+export const copyManifest = () => {
+  return gulp.src('source/*.webmanifest')
+    .pipe(gulp.dest('build'))
+}
+
 // WebP
 
 const createWebp = () => {
@@ -62,11 +69,11 @@ const createWebp = () => {
 // SVG
 
 const svg = () =>
-  gulp.src(['source/img/logo_pognaly/*.svg', '!source/img/icons/*.svg'])
+  gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
-    .pipe(gulp.dest('build/img/logo_pognaly'));
+    .pipe(gulp.dest('build/img'));
 
-export const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
@@ -146,6 +153,7 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
+  copyManifest,
   gulp.parallel(
     styles,
     html,

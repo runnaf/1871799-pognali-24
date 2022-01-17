@@ -34,30 +34,28 @@
   line-height: 18px;
 }
 
-.step__second {
-  padding-bottom: 8px;
+.step--first {
+  padding-bottom: 24px;
+}
+
+.step--second {
+  padding-bottom: 3px;
   min-width: 225px;
 }
 
 .step__second-form {
   box-sizing: border-box;
-  padding-left: 1px;
-  padding-right: 2px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .step__second-field-group:last-of-type {
   margin-bottom: 0;
 }
 
-.step__third {
+.step--third {
   padding-bottom: 8px;
   min-width: 232px;
-
-  // & .add-plan__button {
-  //   width: 103%;
-  //   margin-left: -2px;
-  //   padding-left: 17px;
-  // }
 }
 
 .step__third-form {
@@ -134,7 +132,7 @@
 .step__third-input {
   position: relative;
   width: 100%;
-  height: 220px;
+  height: 219px;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -156,14 +154,18 @@
 
   &:focus-visible:invalid {
     border-color: hsla(0, 84%, 73%, 1);
-
-    & ~ .step-third__input-error {
-      display: block;
-    }
   }
 }
 
-.step__third-input--container {
+.step__third-input:focus-visible:invalid ~ .step-third__input-error {
+  display: block;
+}
+
+.step__third-input-container {
+  position: relative;
+}
+
+.step__third-textarea-container {
   position: relative;
 }
 
@@ -202,6 +204,14 @@
   margin-bottom: 14px;
 }
 
+.step__third-img-container {
+  position: relative;
+}
+
+.step__third-img-container:hover .popover {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .step__subtitle {
     font-size: 36px;
@@ -212,29 +222,34 @@
     min-width: 538px;
   }
 
-  .step__second {
+  .step--first {
+    padding-bottom: 56px;
+    margin-bottom: 40px;
+  }
+
+  .step--second {
     margin-left: 43px;
     margin-right: 0;
     width: auto;
     padding-bottom: 54px;
   }
 
-  .step__second .add-plan__text {
+  .step--second .add-plan__text {
     padding-right: 147px;
     padding-bottom: 35px;
-
-    & br {
-      display: none;
-    }
   }
 
-  .step__third {
-    padding-bottom: 53px;
+  .step--second .add-plan__text br {
+    display: none;
+  }
 
-    & .add-plan__text {
-      padding-bottom: 34px;
-      margin-bottom: 27px;
-    }
+  .step--third {
+    padding-bottom: 53px;
+  }
+
+  .step__third .add-plan__text {
+    padding-bottom: 34px;
+    margin-bottom: 27px;
   }
 
   .step__third-form {
@@ -252,7 +267,7 @@
     &:first-of-type::before {
       top: 28px;
       left: 100%;
-      height: calc(100% + 20px);
+      height: calc(100% + 40px);
     }
 
     &::after {
@@ -286,7 +301,7 @@
   }
 
   .step__third-wrapper {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   .step__third-flag-img {
@@ -311,7 +326,17 @@
   }
 
   .step__third-field-group:not(:last-of-type) {
-    margin-bottom: 17px;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
+
+  .step__third-input-error {
+    width: calc(99% - 2px);
+    min-width: 498px;
+    margin-right: auto;
+    margin-left: 3px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
   }
 }
 
@@ -321,19 +346,24 @@
     min-width: 1003px;
   }
 
-  .step__second {
+  .step--first {
+    padding-bottom: 106px;
+    margin-bottom: 44px;
+  }
+
+  .step--second {
     padding-bottom: 104px;
     margin-left: auto;
     margin-right: auto;
+  }
 
-    & .add-plan__text {
-      padding: 0;
-      width: 57%;
-    }
+  .step--second .add-plan__text {
+    padding: 0;
+    width: 57%;
+  }
 
-    & .add-plan__button-group {
-      margin-top: 9px;
-    }
+  .step--second .add-plan__button-group {
+    margin-top: 9px;
   }
 
   .step__second-form {
@@ -342,20 +372,20 @@
     padding-left: 1px;
   }
 
-  .step__third {
+  .step--third {
     min-width: 1005px;
-    padding-bottom: 105px;
+    padding-bottom: 103px;
+  }
 
-    & .add-plan__text {
-      padding: 0;
-      padding-left: 2px;
-      margin: 0;
-    }
+  .step__third .add-plan__text {
+    padding: 0;
+    padding-left: 2px;
+    margin: 0;
+  }
 
-    & .add-plan__button-back {
-      padding-bottom: 24px;
-      padding-right: 5px;
-    }
+  .step__third .add-plan__button-back {
+    padding-bottom: 12px;
+    padding-right: 5px;
   }
 
   .step__third-field-group {
@@ -436,5 +466,11 @@
     &::placeholder {
       color: hsla(0, 0%, 27%, 0.3);
     }
+  }
+
+  .step__third-input-error {
+    grid-column: 1px / 2px;
+    width: calc(94% - 2px);
+    margin-left: 2px;
   }
 }

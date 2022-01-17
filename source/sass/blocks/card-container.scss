@@ -1,0 +1,12 @@
+.card-container {
+  background-color: $white;
+  border-radius: 20px;
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+  }
+}
+
+.card-container:hover .card__img {
+  transform: scale(1.2);
+}

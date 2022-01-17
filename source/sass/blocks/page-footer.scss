@@ -21,13 +21,13 @@
   margin-right: auto;
 }
 
-.page-footer__inner {
+.page-footer--inner {
   margin-top: -121px;
   padding-top: 20px;
+}
 
-  & .page-footer__developed-text {
-    margin-bottom: 5px;
-  }
+.page-footer--inner .page-footer__developed-text {
+  margin-bottom: 5px;
 }
 
 .page-footer__logo {
@@ -37,7 +37,17 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  cursor: pointer;
+  outline: none;
+
+  &[href]:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &[href]:active,
+  &[href]:focus-visible {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__icon {
@@ -63,12 +73,16 @@
 
 .page-footer__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0;
   margin-bottom: 36px;
   padding: 0;
   list-style: none;
   margin-right: 1px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .page-footer__link-social {
@@ -82,18 +96,21 @@
   border: 1px solid transparent;
   background-color: $orange-background;
   cursor: pointer;
+  outline: none;
 
-  &:hover,
+  &:hover {
+    background-color: hsla(41, 100%, 59%, 1);
+  }
+
+  &:active,
   &:focus-visible {
     background-color: hsla(41, 100%, 59%, 1);
-    outline: none;
   }
+}
 
-  &:active {
-    &:active {
-      fill: hsla(229, 46%, 18%, 0.3);
-    }
-  }
+.page-footer__link-social:active .page-footer__icon,
+.page-footer__link-social:focus-visible .page-footer__icon {
+  fill: hsla(229, 46%, 18%, 0.3);
 }
 
 .page-footer__link {
@@ -108,6 +125,7 @@
   justify-content: space-between;
   padding-top: 14px;
   cursor: pointer;
+  outline: none;
 
   &::before {
     position: absolute;
@@ -138,7 +156,7 @@
   margin: 0;
 }
 
-.page-footer__companion {
+.page-footer--companion {
   margin-top: 0;
 }
 
@@ -146,7 +164,7 @@
   .page-footer {
     margin-top: -70px;
     padding-top: 36px;
-    padding-bottom: 28px;
+    padding-bottom: 24px;
     border-top-left-radius: 57px;
     border-top-right-radius: 57px;
   }
@@ -162,6 +180,7 @@
   .page-footer__logo {
     margin: 0;
     width: fit-content;
+    padding-top: 20px;
   }
 
   .page-footer__logo-icon {
@@ -188,7 +207,8 @@
   }
 
   .page-footer__icon-vkontakte {
-    width: 28px;
+    width: 29px;
+    margin-right: 4px;
   }
 
   .page-footer__icon-instagram {
@@ -209,23 +229,27 @@
     font-size: 20px;
     line-height: 20px;
     margin: 0;
-    margin-right: 25px;
-    margin-bottom: 6px;
+    margin-right: 23px;
+    margin-bottom: 4px;
     padding: 0;
   }
 
-  .page-footer__companion {
+  .page-footer--companion {
     margin-top: 0;
-    padding-top: 38px;
+    padding-top: 37px;
+  }
 
-    & .page-footer__list {
-      margin-top: 0;
-      margin-right: 10px;
-    }
+  .page-footer--companion .page-footer__list {
+    margin-top: 0;
+    margin-right: 10px;
+  }
 
-    & .page-footer__developed-text {
-      margin-right: 23px;
-    }
+  .page-footer--companion .page-footer__developed {
+    padding-right: 3px;
+  }
+
+  .page-footer--companion .page-footer__developed-text {
+    margin-right: 23px;
   }
 
   .page-footer__link {
@@ -236,26 +260,22 @@
     }
   }
 
-  .page-footer__inner {
-    padding-top: 38px;
+  .page-footer--inner .page-footer__icon-vkontakte {
+    margin-bottom: 2px;
+    margin-right: 2px;
+    width: 29px;
+  }
 
-    & .page-footer__icon-vkontakte {
-      margin-bottom: 2px;
-      margin-right: 2px;
-      width: 29px;
-    }
-
-    & .page-footer__developed-text {
-      margin-bottom: 7px;
-      margin-right: 24px;
-    }
+  .page-footer--inner .page-footer__developed-text {
+    margin-bottom: 7px;
+    margin-right: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
     padding-top: 34px;
-    padding-bottom: 37px;
+    padding-bottom: 31px;
     justify-content: space-between;
   }
 
@@ -267,23 +287,52 @@
     box-sizing: border-box;
   }
 
-  .page-footer__inner {
+  .page-footer--inner {
     padding-left: 0;
     padding-top: 36px;
-
-    & .page-footer__icon-vkontakte {
-      margin-bottom: 0;
-      margin-right: 0;
-      margin-left: 1px;
-    }
   }
 
-  .page-footer__companion {
-    padding-top: 35px;
+  .page-footer--inner .page-footer__icon-vkontakte {
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 1px;
+  }
 
-    & .page-footer__list {
-      margin-right: 1px;
-    }
+  .page-footer--inner .page-footer__logo {
+    padding-top: 17px;
+  }
+
+  .page-footer--inner .page-footer__link {
+    padding-top: 14px;
+  }
+
+  .page-footer--companion {
+    padding-top: 35px;
+  }
+
+  .page-footer--companion .page-footer__list {
+    margin-right: 1px;
+  }
+
+  .page-footer--companion .page-footer__developed {
+    padding-right: 0;
+  }
+
+  .page-footer--companion .page-footer__container {
+    padding-right: 4px;
+  }
+
+  .page-footer--companion .page-footer__logo {
+    padding-top: 18px;
+  }
+
+  .page-footer--companion .page-footer__developed-text {
+    margin-right: 24px;
+    margin-bottom: 7px;
+  }
+
+  .page-footer__logo {
+    padding-top: 19px;
   }
 
   .page-footer__logo-icon {
@@ -298,7 +347,7 @@
   .page-footer__link {
     justify-content: flex-end;
     box-sizing: border-box;
-    padding-top: 13px;
+    padding-top: 16px;
     padding-bottom: 13px;
   }
 
@@ -323,6 +372,7 @@
 
   .page-footer__icon-vkontakte {
     width: 30px;
+    margin: 0;
   }
 
   .page-footer__icon-instagram {

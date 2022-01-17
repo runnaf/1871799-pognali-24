@@ -27,6 +27,7 @@
   width: 100%;
   height: auto;
   display: block;
+  outline: none;
 
   &:hover {
     color: hsla(224, 52%, 24%, 1);
@@ -43,6 +44,10 @@
     margin-bottom: 10px;
   }
 
+  .alphabet__item--country {
+    margin: 0;
+  }
+
   .alphabet__link {
     font-size: 20px;
     line-height: 1;
@@ -52,6 +57,7 @@
 @media (min-width: $desktop-width) {
   .alphabet {
     display: block;
+    margin-bottom: 39px;
   }
 
   .alphabet__link {

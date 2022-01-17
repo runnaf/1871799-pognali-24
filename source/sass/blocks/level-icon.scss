@@ -4,15 +4,26 @@
   position: absolute;
   top: -2px;
   right: -1px;
-  width: 61px;
-  height: 61px;
+  width: 100%;
+  height: 100%;
 }
 
-.level-icon__card {
+.level-icon--direction {
+  width: 100px;
+  height: 100px;
+  right: -3px;
+}
+
+.level-icon--card {
   width: 45px;
   height: 45px;
   top: 0;
-  right: 0;
+  right: -1px;
+}
+
+.level-icon--companion-card {
+  width: 61px;
+  height: 63px;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,10 +33,24 @@
     left: -2px;
     top: -2px;
   }
+
+  .level-icon--card {
+    left: -3px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .level-icon {
-    left: -4px;
+    left: -1px;
+    width: 105%;
+    height: 105%;
+  }
+
+  .level-icon--direction {
+    top: 0;
+  }
+
+  .level-icon--card {
+    top: 0;
   }
 }

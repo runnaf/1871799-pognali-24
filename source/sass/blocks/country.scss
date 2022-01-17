@@ -4,13 +4,59 @@
 
 .country__item-alphabet {
   display: flex;
+  background-color: transparent;
+  margin: 0;
 }
 
 .country__link-alphabet {
-  padding-left: 20px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: hsla(0, 0%, 27%, 1);
+  text-decoration: none;
+  width: 100%;
+  height: auto;
+  display: block;
+  outline: none;
+  padding-left: 0;
   padding-right: 20px;
+
+  &:hover {
+    color: hsla(224, 52%, 24%, 1);
+  }
+
+  &:focus-visible,
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .country--closed {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .country__link-alphabet {
+    padding-right: 0;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .country__item-alphabet {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .country__link-alphabet {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .country__item-alphabet {
+    margin-bottom: 0;
+    text-align: left;
+  }
 }

@@ -34,22 +34,19 @@
   width: 100%;
 }
 
-.about-us__header {
-  display: none;
-}
-
 .about-us__button {
   position: relative;
   min-width: 277px;
   font-size: 24px;
   line-height: 24px;
-  display: flex;
   padding-top: 25px;
   padding-bottom: 28px;
   padding-left: 32px;
   padding-right: 50px;
   border-radius: 18px;
   background-color: $orange-background;
+  outline: none;
+  display: flex;
 }
 
 .about-us__button--closed {
@@ -86,10 +83,10 @@
     margin-bottom: 32px;
     padding: 0;
     margin-left: 2px;
+  }
 
-    & br:first-of-type {
-      display: none;
-    }
+  .about-us__text br:first-of-type {
+    display: none;
   }
 
   .about-us__transfer-tablet {
@@ -97,7 +94,7 @@
   }
 
   .about-us__text-advice {
-    width: 376px;
+    width: 307px;
     font-size: 21px;
     line-height: 25px;
     margin-bottom: 54px;
@@ -112,9 +109,9 @@
   }
 
   .about-us__button-icon {
-    width: 14px;
-    top: calc(50% - 6px);
-    right: 32px;
+    width: 12px;
+    top: calc(50% - 7px);
+    right: 34px;
   }
 }
 
@@ -123,7 +120,7 @@
     width: 82%;
     padding: 0;
     padding-bottom: 163px;
-    padding-top: 128px;
+    padding-top: 126px;
   }
 
   .about-us__header--open {
@@ -150,18 +147,18 @@
   }
 
   .about-us__text-advice {
-    width: 465px;
+    width: 425px;
     font-size: 21px;
     line-height: 24px;
     margin-bottom: 87px;
   }
 
   .about-us__button {
+    display: flex;
     width: 0;
     min-width: 275px;
     font-size: 24px;
     line-height: 24px;
-    display: flex;
     padding-top: 26px;
     padding-bottom: 29px;
     padding-left: 33px;
@@ -170,9 +167,8 @@
   }
 
   .about-us__button-icon {
-    right: 31px;
+    right: 34px;
     top: calc(50% - 8px);
-    width: 14px;
-    height: 16px;
+    width: 12px;
   }
 }

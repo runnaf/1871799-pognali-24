@@ -43,13 +43,16 @@
   margin-bottom: 11px;
 }
 
-.travel-direction__button {
+.travel-direction__link {
   position: relative;
   display: flex;
   justify-content: flex-start;
+  text-decoration: none;
+  color: hsla(0, 0%, 27%, 1);
   width: 100%;
   font-size: 18px;
   line-height: 18px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   padding-left: 22px;
   padding-right: 40px;
   padding-top: 20px;
@@ -61,9 +64,10 @@
 .travel-direction__button-icon {
   fill: $darkfont-color;
   position: absolute;
-  top: calc(50% - 8px);
-  right: 19px;
-  height: 18px;
+  top: calc(50% - 4px);
+  right: 22px;
+  width: 11px;
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -75,17 +79,13 @@
   }
 
   .travel-direction__list {
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   .travel-direction__item {
     width: 100%;
     flex-direction: row;
     border-radius: 20px;
-  }
-
-  .travel-direction__item:not(:last-of-type) {
-    margin-bottom: 10px;
   }
 
   .travel-direction__title {
@@ -105,7 +105,7 @@
     margin-bottom: 106px;
   }
 
-  .travel-direction__button {
+  .travel-direction__link {
     font-size: 24px;
     line-height: 24px;
     padding-top: 28px;
@@ -128,7 +128,7 @@
     column-gap: 173px;
     width: 82%;
     padding-top: 161px;
-    padding-bottom: 137px;
+    padding-bottom: 138px;
   }
 
   .travel-direction__title {
@@ -160,18 +160,21 @@
     }
   }
 
-  .travel-direction__button {
+  .travel-direction__link {
     grid-column: 2/3;
     grid-row: 5/6;
     align-self: center;
     width: fit-content;
-    padding-right: 100px;
+    min-width: 277px;
+    padding-right: 50px;
     border-radius: 20px;
   }
 
   .travel-direction__button-icon {
-    right: 30px;
-    width: 14px;
-    height: 16px;
+    right: 34px;
+  }
+
+  .travel-direction__item:not(:last-of-type) {
+    margin-bottom: 10px;
   }
 }

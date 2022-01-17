@@ -20,36 +20,35 @@
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 50%;
+  outline: none;
 }
 
 .social__link--first {
   background-color: $darkorange;
 
-  &:hover,
-  &:focus-visible {
+  &:hover {
     background-color: hsla(20, 89%, 55%, 1);
     border: none;
     outline: none;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 
 .social__link--second {
   background-color: $midlorange;
 
-  &:hover,
-  &:focus-visible {
+  &:hover {
     background-color: hsla(27, 100%, 59%, 1);
     border: none;
     outline: none;
   }
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.social__link:active .protocol-icon {
+  opacity: 0.3;
+}
+
+.social__link:focus-visible {
+  opacity: 0.6;
 }
 
 .social__link--header {
@@ -61,13 +60,13 @@
 .social__phone-icon {
   fill: hsla(228, 41%, 15%, 1);
   width: 16px;
-  height: 16px;
+  height: auto;
 }
 
 .social__mail-icon {
   fill: hsla(228, 41%, 15%, 1);
   width: 18px;
-  height: 16px;
+  height: auto;
 }
 
 .social__link--authentication {
@@ -81,14 +80,14 @@
   background-color: hsla(47, 100%, 65%, 1);
   box-sizing: border-box;
 
-  &:hover,
-  &:focus-visible {
+  &:hover {
     background-color: hsla(41, 100%, 59%, 1);
     outline: none;
   }
 
-  &:active {
-    opacity: 0.3;
+  &:active,
+  &:focus-visible {
+    color: hsla(228, 41%, 15%, 0.3);
   }
 }
 
@@ -98,19 +97,27 @@
   }
 
   .social__link--authentication {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 11px;
+    min-width: 188px;
+  }
+
+  .social__item--closed {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .social__phone-icon {
     width: 18px;
-    height: 18px;
   }
 
   .social__mail-icon {
     width: 16px;
-    height: 14px;
+  }
+
+  .social__item--closed {
+    display: flex;
   }
 }

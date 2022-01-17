@@ -25,10 +25,20 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  padding-top: 22px;
-  padding-bottom: 15px;
+  padding-top: 21px;
+  padding-bottom: 16px;
   padding-left: 25px;
   cursor: pointer;
+  outline: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus-visible {
+    opacity: 0.3;
+  }
 }
 
 .country-filter__icon {
@@ -66,6 +76,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .country-filter {
+    margin-bottom: 72px;
+  }
+
   .country-filter__link {
     padding: 0;
     padding-top: 60px;

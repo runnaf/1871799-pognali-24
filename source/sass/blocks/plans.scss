@@ -79,6 +79,7 @@
 }
 
 .plans__button {
+  width: fit-content;
   display: block;
   border: none;
   background-color: transparent;
@@ -94,6 +95,7 @@
   padding-top: 23px;
   padding-bottom: 25px;
   cursor: pointer;
+  outline: none;
 
   &:hover {
     color: hsla(0, 0%, 0%, 0.6);
@@ -105,7 +107,7 @@
   }
 }
 
-.plans__desc--shift {
+.plans__desc-wrapper--shift {
   padding-left: 2px;
 }
 
@@ -169,7 +171,7 @@
     padding: 0;
   }
 
-  .plans__desc--shift {
+  .plans__desc-wrapper--shift {
     padding-left: 0;
   }
 
@@ -195,6 +197,7 @@
     padding-bottom: 17px;
     text-align: end;
     letter-spacing: 0.1em;
+    margin-left: auto;
   }
 }
 

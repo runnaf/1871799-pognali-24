@@ -16,28 +16,11 @@
   color: hsla(0, 0%, 27%, 1);
 }
 
-.card__container {
-  background-color: $white;
-  border-radius: 20px;
-
-  &:hover {
-    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
-
-    & .card__img {
-      transform: scale(1.2);
-    }
-  }
-}
-
 .card__name-wrapper {
   grid-column: 2/4;
   grid-row: 1/2;
   margin: 0;
   padding: 0;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
-  color: hsla(224, 52%, 24%, 1);
   height: fit-content;
   display: flex;
   justify-content: space-between;
@@ -58,8 +41,12 @@
   font-family: "Blogger Sans", "Arial", sans-serif;
   margin: 0;
   width: 106px;
+  font-weight: 700;
   font-size: 20px;
+  line-height: 20px;
+  color: hsla(224, 52%, 24%, 1);
   text-align: left;
+  text-decoration: none;
 }
 
 .card__text {
@@ -107,6 +94,7 @@
   border-radius: 50%;
   display: inline-block;
   overflow: hidden;
+  align-self: center;
 }
 
 .card__img {
@@ -125,7 +113,9 @@
 
 .card__link-favorite {
   grid-column: 1/2;
-  grid-row: 2/3;
+  grid-row: 1/5;
+  position: relative;
+  top: calc(50% + 4px);
   width: 31px;
   height: 31px;
   display: flex;
@@ -136,21 +126,23 @@
   justify-self: end;
   cursor: pointer;
   z-index: 1;
+  outline: none;
 
   &:hover {
     background-color: hsla(229, 38%, 92%, 1);
-
-    & .card__favorite-icon {
-      opacity: 0.5;
-    }
   }
 
-  &:active,
   &:focus-visible {
-    & .card__favorite-icon {
-      opacity: 0.1;
-    }
+    background-color: hsla(228, 16%, 64%, 0.5);
   }
+}
+
+.card__link-favorite:hover .card__favorite-icon {
+  opacity: 0.5;
+}
+
+.card__link-favorite:active .card__favorite-icon {
+  opacity: 0.1;
 }
 
 .card__favorite-icon-current {
@@ -163,24 +155,26 @@
 .card__link-favorite--current {
   background-color: hsla(0, 56%, 95%, 1);
 
-  & .card__favorite-icon {
-    display: none;
-  }
-
-  & .card__favorite-icon-current {
-    display: block;
-  }
-
   &:hover {
     background-color: hsla(0, 73%, 91%, 1);
   }
 
-  &:active,
   &:focus-visible {
-    & .card__favorite-icon-current {
-      opacity: 0.5;
-    }
+    background-color: hsla(0, 92%, 72%, 0.5);
   }
+}
+
+.card__link-favorite--current .card__favorite-icon {
+  display: none;
+}
+
+.card__link-favorite--current .card__favorite-icon-current {
+  display: block;
+}
+
+.card__link-favorite--current:active .card__favorite-icon-current,
+.card__link-favorite--current:focus-visible .card__favorite-icon-current {
+  opacity: 0.5;
 }
 
 .card__icon-favorite {
@@ -270,6 +264,7 @@
 
 .card__list-transport {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card__item-transport {
@@ -277,12 +272,27 @@
   margin-right: 1px;
 }
 
-.card__item-transport--container {
+.card__item-transport-container {
   background-color: hsla(227, 33%, 95%, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
 }
 
 .card__link-transport {
   background-color: hsla(227, 33%, 95%, 1);
+}
+
+.card__icon-transport {
+  fill: hsla(224, 52%, 24%, 0.15);
+  height: auto;
+}
+
+.card__icon-transport--current {
+  fill: hsla(224, 52%, 24%, 1);
 }
 
 .card__icon-plane {
@@ -350,12 +360,13 @@
   padding-right: 10px;
   padding-left: 10px;
   margin-left: 2px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .card {
     width: 100%;
-    grid-template-columns: 35px 219px min-content min-content 1fr min-content 24px;
+    grid-template-columns: 35px 219px auto min-content 1fr 20px min-content 24px;
     grid-template-rows: min-content 20px min-content 41px min-content 18px min-content;
     column-gap: 0;
     padding-top: 31px;
@@ -376,7 +387,19 @@
     font-size: 30px;
     line-height: 1;
     padding-left: 4px;
-    margin-right: 23px;
+    margin-right: 22px;
+  }
+
+  .card--demin .card__name {
+    margin-right: 25px;
+  }
+
+  .card--smolov .card__name {
+    margin-right: 32px;
+  }
+
+  .card--rogova .card__name {
+    margin-right: 31px;
   }
 
   .card__small {
@@ -420,35 +443,39 @@
   .card__item-hashtag {
     font-size: 20px;
     line-height: 23px;
-    margin-right: 7px;
-    display: contents;
+    margin-right: 6px;
   }
 
   .card__wrapper-country {
-    grid-column: 1/-1;
+    grid-column: 2/-2;
     grid-row: 7/8;
     padding: 0;
+    margin: 0;
   }
 
   .card__title-country {
-    padding-left: 78px;
+    padding-left: 48px;
+    margin-bottom: 10px;
   }
 
   .card__list-country {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
-    margin-top: 20px;
-    margin-left: 29px;
+    margin: 0;
   }
 
   .card__item-country {
     margin-right: 27px;
     display: flex;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .card__item-country:not(:last-of-type) {
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .card__item-desc {
@@ -456,6 +483,14 @@
     font-size: 20px;
     line-height: 1;
     margin-left: 10px;
+  }
+
+  .card__item-desc--czech {
+    margin-left: 15px;
+  }
+
+  .card__item-desc--seychelles {
+    margin-left: 13px;
   }
 
   .card__flag-img {
@@ -466,7 +501,7 @@
   .card__button {
     grid-column: 3/4;
     grid-row: 5/6;
-    min-width: 150px;
+    min-width: 149px;
     align-self: center;
     margin: 0;
     font-size: 20px;
@@ -505,8 +540,9 @@
     height: auto;
   }
 
-  .card__item-transport--container {
+  .card__item-transport-container {
     background-color: transparent;
+    height: auto;
   }
 
   .card__link-transport {
@@ -522,9 +558,9 @@
   }
 
   .card__icon-bike {
-    width: 25px;
+    width: 28px;
     margin-left: 3px;
-    margin-top: -1px;
+    margin-top: -3px;
   }
 
   .card__icon-run {
@@ -541,6 +577,7 @@
     margin: 0;
     margin-left: 7px;
     margin-top: 2px;
+    min-width: 50px;
   }
 
   .card__link-favorite {
@@ -550,6 +587,14 @@
     width: 50px;
     height: 50px;
     align-self: center;
+  }
+
+  .card__favorite-icon {
+    width: 21px;
+  }
+
+  .card__favorite-icon-current {
+    width: 22px;
   }
 
   .card__wrapper-level {
@@ -591,10 +636,11 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    grid-template-columns: 285px 52px min-content min-content 133px min-content 43px min-content 1fr;
-    grid-template-rows: 43px min-content 20px min-content 42px min-content 41px;
+    grid-template-columns: 285px 52px auto min-content 1fr auto 42px min-content 43px;
+    grid-template-rows: 43px min-content 20px auto 42px min-content 41px;
     padding: 0;
     margin: 0;
+    width: 949px;
   }
 
   .card__item-desc {
@@ -612,6 +658,7 @@
     grid-row: 2/3;
     justify-content: start;
     margin-left: 21px;
+    padding-top: 1px;
   }
 
   .card__small {
@@ -630,7 +677,7 @@
     grid-row: 6/7;
     margin: 0;
     margin-left: 7px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
 
   .card__picture {
@@ -656,12 +703,14 @@
     width: 50px;
     height: 50px;
     margin-bottom: 3px;
+    justify-self: center;
   }
 
   .card__list-hashtag {
     grid-column: 3/6;
     grid-row: 4/5;
     margin-left: 10px;
+    width: 255px;
   }
 
   .card__wrapper-country {
@@ -676,8 +725,8 @@
 
   .card__list-country {
     margin: 0;
-    margin-top: 6px;
-    margin-left: 2px;
+    margin-top: 7px;
+    margin-left: 0;
     display: block;
   }
 
@@ -687,23 +736,40 @@
 
     &:not(:last-of-type) {
       margin-bottom: 13px;
+      margin-top: 7px;
     }
+  }
+
+  .card__item-desc--dominica {
+    align-self: flex-start;
   }
 
   .card__wrapper-transport {
     grid-column: 6/7;
     grid-row: 6/7;
     align-self: center;
+    min-width: 130px;
+    margin: 0;
   }
 
   .card__icon-plane {
-    margin-right: 2px;
-    margin-bottom: 4px;
+    margin: 0;
+    margin-right: 6px;
     width: 22px;
   }
 
+  .card__icon-bike {
+    margin: 0;
+    margin-top: -2px;
+    width: 30px;
+  }
+
+  .card__icon-run {
+    width: 22px;
+    margin: 0;
+  }
+
   .card__list-transport {
-    display: flex;
     flex-direction: row;
   }
 
@@ -728,11 +794,13 @@
 
   .card__item-transport {
     margin: 0;
-    margin-right: 9px;
+    margin-right: 0;
+    width: 31px;
   }
 
   .card__level-container .level-icon {
-    left: -2px;
+    left: -1px;
+    top: -1px;
   }
 
   .card__favorite-icon {
@@ -741,5 +809,13 @@
 
   .card__favorite-icon-current {
     width: 21px;
+  }
+
+  .card__level-number {
+    margin-top: 6px;
+  }
+
+  .card__level {
+    margin-top: 2px;
   }
 }
