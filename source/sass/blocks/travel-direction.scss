@@ -71,6 +71,11 @@
   height: auto;
 }
 
+.travel-direction__link:active .travel-direction__button-icon,
+.travel-direction__link:focus-visible .travel-direction__button-icon {
+  fill-opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .travel-direction {
     width: 80%;

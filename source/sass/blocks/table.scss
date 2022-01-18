@@ -22,7 +22,7 @@
 }
 
 .table__cell--second-step {
-  height: 40px;
+  height: 41px;
   border-color: hsla(227, 16%, 82%, 1);
   background-color: $white;
   border-width: 2px;
@@ -134,6 +134,14 @@
   }
 }
 
+.table__button--current-country {
+  &:hover {
+    border: none;
+    outline: 1px solid hsla(224, 52%, 24%, 1);
+    opacity: 1;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .table {
     width: auto;
@@ -209,6 +217,8 @@
     &:hover {
       color: hsla(229, 46%, 18%, 1);
       opacity: 1;
+      border: none;
+      outline: none;
     }
   }
 
@@ -294,6 +304,12 @@
     outline: none;
     border: none;
     color: hsla(229, 46%, 18%, 1);
+
+    &:hover {
+      border: none;
+      outline: none;
+      opacity: 1;
+    }
   }
 
   .table--country-nav {

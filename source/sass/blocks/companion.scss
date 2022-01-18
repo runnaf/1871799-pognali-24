@@ -89,6 +89,11 @@
   right: 22px;
 }
 
+.companion__link:active .companion__button-icon,
+.companion__link:focus-visible .companion__button-icon {
+  fill-opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .companion {
     width: 80%;

@@ -23,5 +23,5 @@
 
 button:active .button__icon,
 button:focus-visible .button__icon {
-  opacity: 0.3;
+  fill: hsla(224, 52%, 24%, 0.3);
 }
