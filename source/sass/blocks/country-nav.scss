@@ -101,6 +101,42 @@
   top: 100%;
 }
 
+.country-nav--nojs {
+  border-radius: 0;
+}
+
+.country-nav--nojs .country-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 19px;
+    height: 2px;
+    background-color: hsla(229, 46%, 18%, 1);
+    border-radius: 10px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.country-nav--nojs .country-nav__container {
+  display: block;
+  position: relative;
+  top: 100%;
+}
+
 .country-nav__container {
   background-color: hsla(229, 38%, 92%, 1);
   z-index: 20;
@@ -154,7 +190,7 @@
   opacity: 1;
 }
 
-.country-list__button-table {
+.country-nav__button-table {
   display: none;
   margin-right: 4px;
 }

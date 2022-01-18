@@ -25,6 +25,15 @@
   background-color: $white;
   border: none;
   cursor: pointer;
+
+  &:focus-visible,
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.pagination__button:hover .pagination__button-icon {
+  opacity: 0.6;
 }
 
 .pagination__button-icon {
@@ -100,15 +109,6 @@
   .pagination__button {
     width: 35px;
     margin-left: 8px;
-
-    &:focus-visible,
-    &:active {
-      opacity: 0.3;
-    }
-  }
-
-  .pagination__button:hover .pagination__button-icon {
-    opacity: 0.6;
   }
 
   .pagination__button-icon {

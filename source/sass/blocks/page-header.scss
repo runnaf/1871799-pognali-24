@@ -29,12 +29,21 @@
   }
 }
 
+.page-header__logo-picture {
+  width: 100%;
+  height: auto;
+}
+
 .page-header--closed {
   background-color: $darkgrey;
 }
 
 .page-header--closed .page-header__logo-black {
   display: none;
+}
+
+.page-header--closed .page-header__toggle {
+  display: block;
 }
 
 .page-header--ineer {
@@ -54,6 +63,8 @@
 }
 
 .page-header--opened .page-header__toggle {
+  display: block;
+
   &::after,
   &::before {
     background-color: hsla(0, 0%, 80%, 1);
@@ -68,6 +79,22 @@
   &::before {
     transform: rotate(45deg);
   }
+}
+
+.page-header--nojs .page-header__toggle {
+  display: none;
+}
+
+.page-header--nojs {
+  background-color: $white;
+}
+
+.page-header--nojs .page-header__logo-black {
+  display: block;
+}
+
+.page-header--nojs .page-header__logo-white {
+  display: none;
 }
 
 .page-header__toggle {

@@ -92,6 +92,9 @@
   padding: 16px 23px 19px 24px;
   background-color: $white;
   color: hsla(0, 0%, 27%, 0.3);
+  display: inline-block;
+  appearance: none;
+  outline: none;
 
   &::placeholder {
     font-size: 18px;
@@ -113,6 +116,7 @@
     box-sizing: border-box;
     background-color: hsla(229, 46%, 18%, 1);
     color: $white;
+    outline: none;
 
     input:-webkit-autofill {
       background: hsla(229, 46%, 18%, 1);
@@ -128,6 +132,10 @@
     &::placeholder {
       color: hsla(0, 100%, 50%, 1);
     }
+  }
+
+  &:active {
+    outline: none;
   }
 }
 
@@ -270,9 +278,9 @@
     flex-grow: 1;
     height: 80px;
     padding-left: 34px;
-    padding-top: 20px;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
+    background-color: $white;
 
     &::placeholder {
       font-size: 24px;

@@ -32,6 +32,12 @@
   background-color: $white;
 }
 
+.main-nav--nojs {
+  display: block;
+  background-color: $white;
+  position: relative;
+}
+
 .main-nav__wrapper {
   width: 84%;
   min-width: 270px;

@@ -173,6 +173,9 @@
   cursor: pointer;
   background-color: transparent;
   text-transform: uppercase;
+  display: inline-block;
+  appearance: none;
+  outline: none;
 
   &::placeholder {
     display: none;
@@ -186,6 +189,8 @@
 
   &:active,
   &:focus {
+    outline: none;
+
     ::placeholder {
       color: $white;
     }

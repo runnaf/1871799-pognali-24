@@ -143,6 +143,8 @@
   border-radius: 4px;
   color: hsla(0, 0%, 27%, 1);
   display: block;
+  resize: none;
+  overflow: hidden;
 
   &:hover {
     border-color: hsla(228, 16%, 64%, 1);

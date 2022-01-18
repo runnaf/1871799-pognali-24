@@ -19,13 +19,17 @@
 
 <body class="page__body">
 
+  <!-- page-header--nojs - класс при отсутсвии js состояние шапки;
+  page-header--closed - класс при закрытом меню состояние шапки;
+page-heder--opened -класс при открытом меню состояние шапки-->
+
   <header class="page-header page-header--closed page-header--nojs">
     <!-- page-header--fixed класс для фиксированого положения-->
     <a class="page-header__logo page-header__logo-white">
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo_pognaly/logo_desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo_pognaly/logo_tablet.svg">
-        <img src="img/logo_pognaly/logo_mobile.svg" alt="Логотип сайта 'Погнали'">
+        <img class="page-header__logo-picture" src="img/logo_pognaly/logo_mobile.svg" alt="Логотип сайта 'Погнали'" width="96" height="15">
       </picture>
     </a>
 
@@ -33,7 +37,7 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo_pognaly/logo-white_desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo_pognaly/logo-white_tablet.svg">
-        <img src="img/logo_pognaly/logo-white_mobile.svg" alt="Логотип сайта 'Погнали'">
+        <img class="page-header__logo-picture" src="img/logo_pognaly/logo-white_mobile.svg" alt="Логотип сайта 'Погнали'" width="96" height="15">
       </picture>
     </a>
 
@@ -41,6 +45,9 @@
       <span class="visually-hidden">Открыть меню</span>
     </button>
 
+    <!-- main-nav--nojs - класс при отсутсвии js;
+  main-nav--closed - класс при закрытом меню;
+main-nav--opened -класс при открытом меню -->
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list page-header__list main-nav__list--closed site-list">
@@ -233,9 +240,9 @@
                   srcset="img/country__img/thailand-tablet.webp 1x, img/country__img/thailand-tablet@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 768px)"
                   srcset="img/country__img/thailand-tablet.jpg 1x, img/country__img/thailand-tablet@2x.jpg 2x">
-                <source srcset="img/country__img/thailand-mobile.webp, img/country__img/thailand-mobile@2xwebp 2x" type="image/webp">
+                <source srcset="img/country__img/thailand-mobile.webp, img/country__img/thailand-mobile@2x.webp 2x" type="image/webp">
                 <img class="card-country__img" src="img/country__img/thailand-mobile.jpg"
-                  srcset="img/country__img/thailand-mobile@2x.jpg 2x" alt="Таиланд">
+                  srcset="img/country__img/thailand-mobile@2x.jpg 2x" alt="Таиланд" width="310" height="126">
               </picture>
             </div>
             <div class="card-country__desc">
@@ -247,7 +254,7 @@
                     srcset="img/flag__img/70_47/Thailand.jpg 1x, img/flag__img/70_47/Thailand@2x.jpg 2x">
                   <source srcset="img/flag__img/35_24/Thailand.webp 1x, img/flag__img/35_24/Thailand@2x.webp 2x" type="image/webp">
                   <img class="card-country__img-flag" src="img/flag__img/35_24/Thailand.jpg"
-                    srcset="img/flag__img/35_24/Thailand@2x.jpg 2x" alt="флаг Таиланда">
+                    srcset="img/flag__img/35_24/Thailand@2x.jpg 2x" alt="флаг Таиланда" width="36" height="24">
                 </picture>
                 <div class="popover popover--flag">
                   <p class="popover__desc">Таиланд</p>
@@ -274,7 +281,7 @@
                   srcset="img/country__img/france-tablet.jpg 1x, img/country__img/france-tablet@2x.jpg 2x">
                   <source srcset="img/country__img/france-mobile.webp 1x, img/country__img/france-mobile@2x.webp 2x" type="image/webp">
                 <img class="card-country__img" src="img/country__img/france-mobile.jpg"
-                  srcset="img/country__img/france-mobile.jpg 2x" alt="Франция">
+                  srcset="img/country__img/france-mobile@2x.jpg 2x" alt="Франция" width="310" height="126">
               </picture>
             </div>
             <div class="card-country__desc">
@@ -286,7 +293,7 @@
                     srcset="img/flag__img/70_47/France.jpg 1x, img/flag__img/70_47/France@2x.jpg 2x">
                   <source srcset="img/flag__img/35_24/France.webp 1x, img/flag__img/35_24/France@2x.webp 2x" type="image/webp">
                   <img class="card-country__img-flag" src="img/flag__img/35_24/France.jpg"
-                    srcset="img/flag__img/35_24/France@2x.jpg 2x" alt="флаг Франции">
+                    srcset="img/flag__img/35_24/France@2x.jpg 2x" alt="флаг Франции" width="36" height="24">
                 </picture>
                 <div class="popover popover--flag">
                   <p class="popover__desc">Франция</p>
@@ -313,7 +320,7 @@
                   srcset="img/country__img/czech-tablet.jpg 1x, img/country__img/czech-tablet@2x.jpg 2x">
                 <source srcset="img/country__img/czech-mobile.webp 1x, img/country__img/czech-mobile@2x.webp 2x" type="image/webp">
                 <img class="card-country__img" src="img/country__img/czech-mobile.jpg"
-                  srcset="img/country__img/czech-mobile.jpg 2x" alt="Чехия">
+                  srcset="img/country__img/czech-mobile@2x.jpg 2x" alt="Чехия" width="310" height="126">
               </picture>
             </div>
             <div class="card-country__desc">
@@ -325,7 +332,7 @@
                     srcset="img/flag__img/70_47/Czech.jpg 1x, img/flag__img/70_47/Czech@2x.jpg 2x">
                   <source srcset="img/flag__img/35_24/Czech.webp 1x, img/flag__img/35_24/Czech@2x.webp 2x" type="image/webp">
                   <img class="card-country__img-flag" src="img/flag__img/35_24/Czech.jpg"
-                    srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии">
+                    srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии" width="36" height="24">
                 </picture>
                 <div class="popover popover--flag">
                   <p class="popover__desc">Чехия</p>
@@ -374,7 +381,7 @@
                       srcset="img/user/tania_firsova/firsova-desktop.jpg, img/user/tania_firsova/firsova-desktop@2x.jpg 2x">
                     <source srcset="img/user/tania_firsova/firsova-mobile_270.webp 1x, img/user/tania_firsova/firsova-mobile_270@2x.webp 2x" type="image/webp">
                     <img class="companion-card__img" src="img/user/tania_firsova/firsova-mobile_270.jpg"
-                      srcset="img/user/tania_firsova/firsova-mobile_270@2x.jpg 2x" alt="Татьяна Фирсова">
+                      srcset="img/user/tania_firsova/firsova-mobile_270@2x.jpg 2x" alt="Татьяна Фирсова" width="310" height="310">
                   </picture>
                 </div>
                 <div class="companion-img__small companion-card__small level">
@@ -401,7 +408,7 @@
                           <picture>
                             <source srcset="img/flag__img/35_24/SriLanka.webp 1x, img/flag__img/35_24/SriLanka@2x.webp 2x" type="image/webp">
                             <img class="companion-card__flag-img" src="img/flag__img/35_24/SriLanka.jpg"
-                              srcset="img/flag__img/35_24/SriLanka@2x.jpg 2x" alt="флаг Шри-Ланки">
+                              srcset="img/flag__img/35_24/SriLanka@2x.jpg 2x" alt="флаг Шри-Ланки" width="35" height="24">
                           </picture>
                         </div>
                         <div class="popover popover--flag">
@@ -416,7 +423,7 @@
                           <picture>
                             <source srcset="img/flag__img/35_24/Thailand.webp 1x, img/flag__img/35_24/Thailand@2x.webp 2x" type="image/webp">
                             <img class="companion-card__flag-img" src="img/flag__img/35_24/Thailand.jpg"
-                              srcset="img/flag__img/35_24/Thailand@2x.jpg 2x" alt="флаг Таиланда">
+                              srcset="img/flag__img/35_24/Thailand@2x.jpg 2x" alt="флаг Таиланда" width="35" height="24">
                           </picture>
                         </div>
                         <div class="popover popover--flag">
@@ -431,7 +438,7 @@
                           <picture>
                             <source srcset="img/flag__img/35_24/Seychelles.webp 1x, img/flag__img/35_24/Seychelles@2x.webp 2x" type="image/webp">
                             <img class="companion-card__flag-img" src="img/flag__img/35_24/Seychelles.jpg"
-                              srcset="img/flag__img/35_24/Seychelles@2x.jpg 2x" alt="флаг Сейшеллы">
+                              srcset="img/flag__img/35_24/Seychelles@2x.jpg 2x" alt="флаг Сейшеллы" width="35" height="24">
                           </picture>
                         </div>
                         <div class="popover popover--flag">
@@ -501,7 +508,7 @@
                       srcset="img/user/petr_demin/demin-desktop.jpg, img/user/petr_demin/demin-desktop@2x.jpg 2x">
                     <source srcset="img/user/petr_demin/demin-mobile_270.webp, img/user/petr_demin/demin-mobile_270@2x.webp 2x" type="image/webp">
                     <img class="companion-card__img" src="img/user/petr_demin/demin-mobile_270.jpg"
-                      srcset="img/user/petr_demin/demin-mobile_270@2x.jpg 2x" alt="Татьяна Фирсова">
+                      srcset="img/user/petr_demin/demin-mobile_270@2x.jpg 2x" alt="Татьяна Фирсова" width="310" height="310">
                   </picture>
                 </div>
                 <div class="companion-img__small companion-card__small level">
@@ -528,7 +535,7 @@
                           <picture>
                             <source srcset="img/flag__img/35_24/Belgium.webp 1x, img/flag__img/35_24/Belgium@2x.webp 2x" type="image/webp">
                             <img class="companion-card__flag-img" src="img/flag__img/35_24/Belgium.jpg"
-                              srcset="img/flag__img/35_24/Belgium@2x.jpg 2x" alt="флаг Бельгии">
+                              srcset="img/flag__img/35_24/Belgium@2x.jpg 2x" alt="флаг Бельгии" width="35" height="24">
                           </picture>
                         </div>
                         <div class="popover popover--flag">
@@ -543,7 +550,7 @@
                           <picture>
                             <source srcset="img/flag__img/35_24/Czech.webp, img/flag__img/35_24/Czech@2x.webp 2x" type="image/webp">
                             <img class="companion-card__flag-img" src="img/flag__img/35_24/Czech.jpg"
-                              srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии">
+                              srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии" width="35" height="24">
                           </picture>
                         </div>
                         <div class="popover popover--flag">
@@ -645,7 +652,7 @@
         </ol>
 
         <div class="tariff__business-block">
-          <a class="tariff__link tariff__business-link" href="#">
+          <a class="tariff__link tariff__business-link" href="business-block.html">
             <span class="tariff__business-small">
               <svg class="tariff__business-icon" width="28" height="28">
                 <use href="img/sprite.svg#icon-businessman"></use>
@@ -749,7 +756,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo_pognaly/logo-white_desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo_pognaly/logo-white_tablet.svg">
-          <img src="img/logo_pognaly/logo-white_mobile.svg" alt="Логотип сайта 'Погнали'">
+          <img class="page-footer__logo-picture" src="img/logo_pognaly/logo-white_mobile.svg" alt="Логотип сайта 'Погнали'" width="96" height="15">
         </picture>
       </a>
       <ul class="page-footer__list social">
@@ -792,67 +799,67 @@
   </footer>
 
   <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.page-header__toggle');
+    var navMain = document.querySelector(".main-nav");
+    var navToggle = document.querySelector(".page-header__toggle");
 
-    navMain.classList.remove('main-nav--nojs');
+    navMain.classList.remove("main-nav--nojs");
 
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
+    navToggle.addEventListener("click", function () {
+      if (navMain.classList.contains("main-nav--closed")) {
+        navMain.classList.remove("main-nav--closed");
+        navMain.classList.add("main-nav--opened");
       } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
+        navMain.classList.add("main-nav--closed");
+        navMain.classList.remove("main-nav--opened");
       }
     });
 
   </script>
 
   <script>
-    var navHeader = document.querySelector('.page-header');
-    var navToggle = document.querySelector('.page-header__toggle');
+    var navHeader = document.querySelector(".page-header");
+    var navToggle = document.querySelector(".page-header__toggle");
 
-    navHeader.classList.remove('page-header--nojs');
+    navHeader.classList.remove("page-header--nojs");
 
-    navToggle.addEventListener('click', function () {
-      if (navHeader.classList.contains('page-header--closed')) {
-        navHeader.classList.remove('page-header--closed');
-        navHeader.classList.add('page-header--opened');
+    navToggle.addEventListener("click", function () {
+      if (navHeader.classList.contains("page-header--closed")) {
+        navHeader.classList.remove("page-header--closed");
+        navHeader.classList.add("page-header--opened");
       } else {
-        navHeader.classList.add('page-header--closed');
-        navHeader.classList.remove('page-header--opened');
+        navHeader.classList.add("page-header--closed");
+        navHeader.classList.remove("page-header--opened");
       }
     });
 
   </script>
 
 <script>
-  var navTariff = document.querySelector('.wrapper--tariff');
-  var navTariffOpened = document.querySelector('.tariff__business-link');
-  var navTariffClosed = document.querySelector('.business-block__button')
+  var navTariff = document.querySelector(".wrapper--tariff");
+  var navTariffOpened = document.querySelector(".tariff__business-link");
+  var navTariffClosed = document.querySelector(".business-block__button")
 
-  navTariff.classList.remove('wrapper--tariff-nojs');
+  navTariff.classList.remove("wrapper--tariff-nojs");
 
-  navTariffOpened.addEventListener('click', function (evt) {
+  navTariffOpened.addEventListener("click", function (evt) {
     evt.preventDefault();
-    (navTariff.classList.contains('wrapper--tariff-closed'))
-    navTariff.classList.remove('wrapper--tariff-closed');
-    navTariff.classList.add('wrapper--tariff-opened');
+    (navTariff.classList.contains("wrapper--tariff-closed"))
+    navTariff.classList.remove("wrapper--tariff-closed");
+    navTariff.classList.add("wrapper--tariff-opened");
   });
 
 </script>
 
 <script>
-  var navTariff = document.querySelector('.wrapper--tariff');
-  var navTariffClosed = document.querySelector('.business-block__button')
+  var navTariff = document.querySelector(".wrapper--tariff");
+  var navTariffClosed = document.querySelector(".business-block__button")
 
-  navTariff.classList.remove('wrapper--tariff-nojs');
+  navTariff.classList.remove("wrapper--tariff-nojs");
 
-  navTariffClosed.addEventListener('click', function () {
-    (navTariff.classList.contains('wrapper--tariff-opened'))
-    navTariff.classList.remove('wrapper--tariff-opened');
-    navTariff.classList.add('wrapper--tariff-closed');
+  navTariffClosed.addEventListener("click", function () {
+    (navTariff.classList.contains("wrapper--tariff-opened"))
+    navTariff.classList.remove("wrapper--tariff-opened");
+    navTariff.classList.add("wrapper--tariff-closed");
   });
 
 </script>
