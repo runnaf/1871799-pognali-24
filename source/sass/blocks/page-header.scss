@@ -522,7 +522,7 @@
   }
 
   .page-header--nojs {
-    background-color: hsla(229, 46%, 18%, 1);
+    background-color: $darkgrey;
   }
 
   .page-header--nojs .page-header__logo-black {
@@ -534,7 +534,15 @@
   }
 
   .page-header--nojs .page-header__nav {
-    background-color: $darkfont-color;
+    background-color: $darkgrey;
+  }
+
+  .page-header--ineer {
+    background-color: hsla(229, 48%, 18%, 1);
+  }
+
+  .page-header--ineer .page-header__nav {
+    background-color: hsla(229, 48%, 18%, 1);
   }
 
   .page-header--closed .page-header__toggle {
