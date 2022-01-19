@@ -119,6 +119,10 @@
   }
 }
 
+.wrapper--tariff-nojs .business-block {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .wrapper--stats {
     margin-top: $tablet-stats-shift;
@@ -189,6 +193,10 @@
 
   .wrapper__step {
     border-radius: 32px;
+  }
+
+  .wrapper--tariff-nojs .business-block {
+    display: none;
   }
 }
 
@@ -270,5 +278,9 @@
 
   .wrapper--plans {
     padding-bottom: 115px;
+  }
+
+  .wrapper--tariff-nojs .business-block {
+    display: none;
   }
 }

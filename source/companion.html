@@ -19,12 +19,12 @@
 
 <body class="page__body page__body--companion">
   <header class="page-header page-header--closed page-header--nojs page-header--ineer">
-    <!-- page-header--fixed фиксированое положение-->
+    <!-- page-header--fixed класс для фиксированого положения-->
     <a class="page-header__logo page-header__logo-white" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo_pognaly/logo_desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo_pognaly/logo_tablet.svg">
-        <img class="page-header__logo-picture" src="img/logo_pognaly/logo_mobile.svg" alt="Логотип сайта 'Погнали'" width="95" height="15">
+        <img class="page-header__logo-picture" src="img/logo_pognaly/logo_mobile.svg" alt="Логотип сайта 'Погнали'" width="96" height="15">
       </picture>
     </a>
 
@@ -40,31 +40,31 @@
       <span class="visually-hidden">Открыть меню</span>
     </button>
 
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list page-header__list main-nav__list--closed site-list">
-          <li class="main-nav__item site-list__item">
-            <a class="main-nav__link site-list__link" href="index.html">
-              <span class="main-nav__link-regular" data-hover="О сервисе">О сервисе</span>
+    <nav class="page-header__nav">
+      <div class="page-header__nav-wrapper">
+        <ul class="page-header__nav-list page-header__list page-header__nav-list--closed site-list">
+          <li class="page-header__nav-item site-list__item">
+            <a class="page-header__nav-link site-list__link" href="index.html">
+              <span class="page-header__nav-link-regular" data-hover="О сервисе">О сервисе</span>
             </a>
           </li>
-          <li class="main-nav__item site-list__item">
-            <a class="main-nav__link site-list__link" href="direction.html">
-              <span class="main-nav__link-regular" data-hover="Направления">Направления</span>
+          <li class="page-header__nav-item site-list__item">
+            <a class="page-header__nav-link site-list__link" href="direction.html">
+              <span class="page-header__nav-link-regular" data-hover="Направления">Направления</span>
             </a>
           </li>
-          <li class="main-nav__item site-list__item">
-            <a class="main-nav__link site-list__link">
-              <span class="main-nav__link-regular" data-hover="Попутчики">Попутчики</span>
+          <li class="page-header__nav-item site-list__item">
+            <a class="page-header__nav-link site-list__link">
+              <span class="page-header__nav-link-regular" data-hover="Попутчики">Попутчики</span>
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="main-nav__wrapper-contact main-nav__wrapper">
-        <ul class="main-nav__list user-list">
+      <div class="page-header__nav-wrapper-contact page-header__nav-wrapper">
+        <ul class="page-header__nav-list user-list">
           <li class="user-list__item user-list__item--authentication user-list__item--open user-item">
-            <a class="user-list__link button main-nav__button user-list__link--authentication" href="#">Авторизация</a>
+            <a class="user-list__link button page-header__nav-button user-list__link--authentication" href="#">Авторизация</a>
           </li>
           <li class="user-list__item user-item">
             <a class="user-list__link user-list__link--phone" href="tel:+78005558628">
@@ -89,8 +89,8 @@
         </ul>
       </div>
 
-      <div class="main-nav__social-wrapper main-nav__wrapper social-nav">
-        <ul class="main-nav__list social-list">
+      <div class="page-header__nav-social-wrapper page-header__nav-wrapper social-nav">
+        <ul class="page-header__nav-list social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фэйсбук</span>
@@ -144,7 +144,6 @@
       </ul>
     </div>
   </header>
-
 
   <main class="page-companion">
     <h1 class="visually-hidden">Попутчики</h1>
@@ -1732,24 +1731,6 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    var navMain = document.querySelector(".main-nav");
-    var navToggle = document.querySelector(".page-header__toggle");
-
-    navMain.classList.remove("main-nav--nojs");
-
-    navToggle.addEventListener("click", function () {
-      if (navMain.classList.contains("main-nav--closed")) {
-        navMain.classList.remove("main-nav--closed");
-        navMain.classList.add("main-nav--opened");
-      } else {
-        navMain.classList.add("main-nav--closed");
-        navMain.classList.remove("main-nav--opened");
-      }
-    });
-
-  </script>
 
   <script>
     var navHeader = document.querySelector(".page-header");
