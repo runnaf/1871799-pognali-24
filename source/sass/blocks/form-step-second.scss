@@ -173,6 +173,9 @@
   cursor: pointer;
   background-color: transparent;
   text-transform: uppercase;
+  display: inline-block;
+  appearance: none;
+  outline: none;
 
   &::placeholder {
     display: none;
@@ -186,6 +189,8 @@
 
   &:active,
   &:focus {
+    outline: none;
+
     ::placeholder {
       color: $white;
     }
@@ -233,6 +238,7 @@
   width: 100%;
   z-index: 21;
   background-color: $white;
+  margin-top: -2px;
 }
 
 .form-step-second__alphabet {
@@ -1138,6 +1144,12 @@
 
   .form-step-second__field-button {
     width: 71px;
+
+    &::before {
+      width: 12px;
+      height: 12px;
+      right: 2px;
+    }
   }
 
   .form-step-second__field {
@@ -1189,6 +1201,12 @@
 
   .form-step-second__field-group--active-select .form-step-second__field-button {
     display: block;
+
+    &::before,
+    &::after {
+      width: 26px;
+      right: 8px;
+    }
   }
 
 
@@ -1199,6 +1217,7 @@
     padding-top: 18px;
     padding-left: 11px;
     padding-bottom: 20px;
+    margin-top: 0;
     box-sizing: border-box;
     box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
 

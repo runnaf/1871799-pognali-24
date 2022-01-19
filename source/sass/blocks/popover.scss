@@ -5,15 +5,17 @@
   left: 50%;
   transform: translate(-54%);
   background-color: hsla(224, 60%, 16%, 1);
-  min-height: 60px;
+  min-height: 40px;
   text-align: center;
   color: $white;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
-  padding: 18px;
+  padding: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
   box-sizing: border-box;
-  min-width: 110px;
+  min-width: 60px;
   z-index: 100;
   border-radius: 4px;
 
@@ -30,26 +32,6 @@
 .popover__desc {
   margin: 0;
   width: max-content;
-}
-
-.popover--plane {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.popover--bus {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.popover--bike {
-  padding-left: 20px;
-  padding-right: 21px;
-}
-
-.popover--run {
-  padding-left: 22px;
-  padding-right: 26px;
 }
 
 .list-way:hover + .popover {
@@ -102,4 +84,34 @@
 
 .step__third-img-container:hover .popover {
   display: block;
+}
+
+
+@media (min-width: $tablet-width) {
+  .popover {
+    font-size: 20px;
+    padding: 20px;
+    min-width: 110px;
+    min-height: 60px;
+  }
+
+  .popover--plane {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .popover--bus {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .popover--bike {
+    padding-left: 20px;
+    padding-right: 21px;
+  }
+
+  .popover--run {
+    padding-left: 22px;
+    padding-right: 26px;
+  }
 }

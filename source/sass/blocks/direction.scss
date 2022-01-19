@@ -185,9 +185,19 @@
   padding-right: 28px;
   padding-bottom: 25px;
   padding-left: 23px;
+  resize: none;
+  overflow: hidden;
 
   &:focus-visible {
     opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
   }
 }
 

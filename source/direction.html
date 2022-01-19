@@ -18,20 +18,21 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--closed page-header--nojs page-header--ineer">
-    <!-- page-header--fixed фиксированое положение-->
+  <header class="page-header page-header--opened page-header--nojs page-header--ineer">
+    <!-- page-header--fixed класс для фиксированого положения-->
     <a class="page-header__logo page-header__logo-white" href="index.html">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo_pognaly/logo_desktop.svg">
+        <source media="(min-width: 1440px)" srcset="img/logo_pognaly/logo_desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo_pognaly/logo_tablet.svg">
-        <img src="img/logo_pognaly/logo_mobile.svg" alt="Логотип сайта 'Погнали'">
+        <img class="page-header__logo-picture" src="img/logo_pognaly/logo_mobile.svg" alt="Логотип сайта 'Погнали'" width="96" height="15">
       </picture>
     </a>
 
     <a class="page-header__logo-black page-header__logo" href="index.html">
       <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo_pognaly/logo-white_desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo_pognaly/logo-white_tablet.svg">
-        <img src="img/logo_pognaly/logo-white_mobile.svg" alt="Логотип сайта 'Погнали'">
+        <img class="page-header__logo-picture" src="img/logo_pognaly/logo-white_mobile.svg" alt="Логотип сайта 'Погнали'" width="96" height="15">
       </picture>
     </a>
 
@@ -39,31 +40,31 @@
       <span class="visually-hidden">Открыть меню</span>
     </button>
 
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list page-header__list main-nav__list--closed site-list">
-          <li class="main-nav__item site-list__item">
-            <a class="main-nav__link site-list__link" href="index.html">
-              <span class="main-nav__link-regular" data-hover="О сервисе">О сервисе</span>
+    <nav class="page-header__nav">
+      <div class="page-header__nav-wrapper">
+        <ul class="page-header__nav-list page-header__list page-header__nav-list--closed site-list">
+          <li class="page-header__nav-item site-list__item">
+            <a class="page-header__nav-link site-list__link" href="index.html">
+              <span class="page-header__nav-link-regular" data-hover="О сервисе">О сервисе</span>
             </a>
           </li>
-          <li class="main-nav__item site-list__item">
-            <a class="main-nav__link site-list__link">
-              <span class="main-nav__link-regular" data-hover="Направления">Направления</span>
+          <li class="page-header__nav-item site-list__item">
+            <a class="page-header__nav-link site-list__link">
+              <span class="page-header__nav-link-regular" data-hover="Направления">Направления</span>
             </a>
           </li>
-          <li class="main-nav__item site-list__item">
-            <a class="main-nav__link site-list__link" href="companion.html">
-              <span class="main-nav__link-regular" data-hover="Попутчики">Попутчики</span>
+          <li class="page-header__nav-item site-list__item">
+            <a class="page-header__nav-link site-list__link" href="companion.html">
+              <span class="page-header__nav-link-regular" data-hover="Попутчики">Попутчики</span>
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="main-nav__wrapper-contact main-nav__wrapper">
-        <ul class="main-nav__list user-list">
+      <div class="page-header__nav-wrapper-contact page-header__nav-wrapper">
+        <ul class="page-header__nav-list user-list">
           <li class="user-list__item user-list__item--authentication user-list__item--open user-item">
-            <a class="user-list__link button main-nav__button user-list__link--authentication" href="#">Авторизация</a>
+            <a class="user-list__link button page-header__nav-button user-list__link--authentication" href="#">Авторизация</a>
           </li>
           <li class="user-list__item user-item">
             <a class="user-list__link user-list__link--phone" href="tel:+78005558628">
@@ -88,8 +89,8 @@
         </ul>
       </div>
 
-      <div class="main-nav__social-wrapper main-nav__wrapper social-nav">
-        <ul class="main-nav__list social-list">
+      <div class="page-header__nav-social-wrapper page-header__nav-wrapper social-nav">
+        <ul class="page-header__nav-list social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фэйсбук</span>
@@ -171,7 +172,7 @@
             srcset="img/direction/demin/demin-tablet.jpg 1x, img/direction/demin/demin-tablet@2x.jpg 2x">
           <source srcset="img/direction/demin/demin-mobile.webp 1x, img/direction/demin/demin-mobile@2x.webp 2x" type="image/webp">
           <img class="direction__avatar" src="img/direction/demin/demin-mobile.jpg"
-            srcset="img/direction/demin/demin-mobile@2x.jpg 2x" alt="Петр Демин">
+            srcset="img/direction/demin/demin-mobile@2x.jpg 2x" alt="Петр Демин" width="100" height="100">
         </picture>
       </div>
 
@@ -623,7 +624,7 @@
                         srcset="img/flag__img/70_47/Bosnia-and-Herzegovina.jpg 1x, img/flag__img/70_47/Bosnia-and-Herzegovina@2x.jpg 2x">
                       <source srcset="img/flag__img/35_24/Bosnia-and-Herzegovina.webp 1x, img/flag__img/35_24/Bosnia-and-Herzegovina@2x.webp 2x" type="image/webp">
                       <img class="form-step-second__flag-img" src="img/flag__img/35_24/Bosnia-and-Herzegovina.jpg"
-                        srcset="img/flag__img/35_24/Bosnia-and-Herzegovina@2x.jpg 2x" alt="флаг Боснии и Герцеговины">
+                        srcset="img/flag__img/35_24/Bosnia-and-Herzegovina@2x.jpg 2x" alt="флаг Боснии и Герцеговины" width="35" height="24">
                     </picture>
                     <div class="popover popover--flag">
                       <p class="popover__desc">Босния и Герцеговина</p>
@@ -1126,7 +1127,7 @@
                         srcset="img/flag__img/70_47/Czech.jpg 1x, img/flag__img/70_47/Czech@2x.jpg 2x">
                       <source srcset="img/flag__img/35_24/Czech.webp 1x, img/flag__img/35_24/Czech@2x.webp 2x" type="image/webp">
                       <img class="form-step-second__flag-img" src="img/flag__img/35_24/Czech.jpg"
-                        srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии">
+                        srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии" width="35" height="24">
                     </picture>
                     <div class="popover popover--flag">
                       <p class="popover__desc">Чехия</p>
@@ -1632,7 +1633,7 @@
                         srcset="img/flag__img/70_47/Czech.jpg 1x, img/flag__img/35_24/Czech@2x.jpg 2x">
                       <source srcset="img/flag__img/35_24/Czech.webp 1x, img/flag__img/35_24/Czech@2x.webp 2x" type="image/webp">
                       <img class="form-step-second__flag-img" src="img/flag__img/35_24/Czech.jpg"
-                        srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии">
+                        srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии" width="35" height="24">
                     </picture>
                     <div class="popover popover--flag">
                       <p class="popover__desc">Чехия</p>
@@ -2137,7 +2138,7 @@
                       srcset="img/flag__img/70_47/Czech.jpg 1x, img/flag__img/35_24/Czech@2x.jpg 2x">
                     <source srcset="img/flag__img/35_24/Czech.webp 1x, img/flag__img/35_24/Czech@2x.webp 2x" type="image/webp">
                     <img class="form-step-second__flag-img form-step-second__flag-img--inactive" src="img/flag__img/35_24/Czech.jpg"
-                      srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии">
+                      srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии" width="35" height="24">
                   </picture>
                   <button class="form-step-second__button" type="button" disabled>
                     <span class="visually-hidden">Закрыть поле страны для посещения</span>
@@ -2669,7 +2670,7 @@
                           srcset="img/flag__img/70_47/Bosnia-and-Herzegovina.jpg 1x, img/flag__img/70_47/Bosnia-and-Herzegovina@2x.jpg 2x">
                         <source srcset="img/flag__img/35_24/Bosnia-and-Herzegovina.webp 1x, img/flag__img/35_24/Bosnia-and-Herzegovina@2x.webp 2x" type="image/webp">
                         <img class="step__third-flag-img" src="img/flag__img/35_24/Bosnia-and-Herzegovina.jpg"
-                          srcset="img/flag__img/35_24/Bosnia-and-Herzegovina@2x.jpg 2x" alt="флаг Боснии и Герцеговины">
+                          srcset="img/flag__img/35_24/Bosnia-and-Herzegovina@2x.jpg 2x" alt="флаг Боснии и Герцеговины" width="35" height="24">
                       </picture>
                       <div class="popover popover--flag">
                         <p class="popover__desc">Босния и Герцеговина</p>
@@ -2699,7 +2700,7 @@
                           srcset="img/flag__img/70_47/Czech.jpg 1x, img/flag__img/35_24/Czech@2x.jpg 2x">
                         <source srcset="img/flag__img/35_24/Czech.webp 1x, img/flag__img/35_24/Czech@2x.webp 2x" type="image/webp">
                         <img class="step__third-flag-img" src="img/flag__img/35_24/Czech.jpg"
-                          srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии">
+                          srcset="img/flag__img/35_24/Czech@2x.jpg 2x" alt="флаг Чехии" width="35" height="24">
                       </picture>
                       <div class="popover popover--flag">
                         <p class="popover__desc">Чехия</p>
@@ -2745,7 +2746,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo_pognaly/logo-white_desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo_pognaly/logo-white_tablet.svg">
-          <img src="img/logo_pognaly/logo-white_mobile.svg" alt="Логотип сайта 'Погнали'">
+          <img class="page-footer__logo-picture" src="img/logo_pognaly/logo-white_mobile.svg" alt="Логотип сайта 'Погнали'" width="95" height="15">
         </picture>
       </a>
       <ul class="page-footer__list social">
@@ -2788,36 +2789,21 @@
   </footer>
 
   <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.page-header__toggle');
+    var navHeader = document.querySelector(".page-header");
+    var navToggle = document.querySelector(".page-header__toggle");
 
-    navMain.classList.remove('main-nav--nojs');
+    navHeader.classList.remove("page-header--nojs");
+    navHeader.classList.remove("page-header--opened")
+    navHeader.classList.add("page-header--closed");
 
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
+    navToggle.addEventListener("click", function () {
+      if (navHeader.classList.contains("page-header--closed")) {
+        navHeader.classList.remove("page-header--closed");
+        navHeader.classList.add("page-header--opened");
       } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
-
-  <script>
-    var navHeader = document.querySelector('.page-header');
-    var navToggle = document.querySelector('.page-header__toggle');
-
-    navHeader.classList.remove('page-header--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navHeader.classList.contains('page-header--closed')) {
-        navHeader.classList.remove('page-header--closed');
-        navHeader.classList.add('page-header--opened');
-      } else {
-        navHeader.classList.add('page-header--closed');
-        navHeader.classList.remove('page-header--opened');
+        navHeader.classList.add("page-header--opened");
+        navHeader.classList.remove("page-header--opened");
+        navHeader.classList.add("page-header--closed");
       }
     });
 

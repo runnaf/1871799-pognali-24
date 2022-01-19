@@ -119,6 +119,10 @@
   }
 }
 
+.wrapper--tariff-nojs .business-block {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .wrapper--stats {
     margin-top: $tablet-stats-shift;
@@ -179,7 +183,7 @@
 
   .wrapper__companion {
     background-image: url("../img/companion/background-tablet.png");
-    background-position: 50% 94px;
+    background-position: 35% 161px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/companion/background-tablet@2x.png");
@@ -189,6 +193,10 @@
 
   .wrapper__step {
     border-radius: 32px;
+  }
+
+  .wrapper--tariff-nojs .business-block {
+    display: none;
   }
 }
 
@@ -270,5 +278,9 @@
 
   .wrapper--plans {
     padding-bottom: 115px;
+  }
+
+  .wrapper--tariff-nojs .business-block {
+    display: none;
   }
 }

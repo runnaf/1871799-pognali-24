@@ -36,6 +36,7 @@
 .travel-direction__item {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .travel-direction__item:not(:last-of-type) {
@@ -68,6 +69,11 @@
   right: 22px;
   width: 11px;
   height: auto;
+}
+
+.travel-direction__link:active .travel-direction__button-icon,
+.travel-direction__link:focus-visible .travel-direction__button-icon {
+  fill-opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
