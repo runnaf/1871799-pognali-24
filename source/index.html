@@ -22,9 +22,9 @@
   <!-- page-header--nojs - класс при отсутсвии js состояние меню;
   page-header--closed - класс при закрытом меню состояние меню;
 page-heder--opened -класс при открытом меню состояние меню-->
+<!-- page-header--fixed класс для фиксированого положения-->
 
-  <header class="page-header page-header--closed page-header--nojs">
-    <!-- page-header--fixed класс для фиксированого положения-->
+  <header class="page-header page-header--opened page-header--nojs">
     <a class="page-header__logo page-header__logo-white">
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo_pognaly/logo_desktop.svg">
@@ -800,14 +800,17 @@ page-heder--opened -класс при открытом меню состояни
     var navToggle = document.querySelector(".page-header__toggle");
 
     navHeader.classList.remove("page-header--nojs");
+    navHeader.classList.remove("page-header--opened")
+    navHeader.classList.add("page-header--closed");
 
     navToggle.addEventListener("click", function () {
       if (navHeader.classList.contains("page-header--closed")) {
         navHeader.classList.remove("page-header--closed");
         navHeader.classList.add("page-header--opened");
       } else {
-        navHeader.classList.add("page-header--closed");
+        navHeader.classList.add("page-header--opened");
         navHeader.classList.remove("page-header--opened");
+        navHeader.classList.add("page-header--closed");
       }
     });
 

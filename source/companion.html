@@ -18,7 +18,7 @@
 </head>
 
 <body class="page__body page__body--companion">
-  <header class="page-header page-header--closed page-header--nojs page-header--ineer">
+  <header class="page-header page-header--opened page-header--nojs page-header--ineer">
     <!-- page-header--fixed класс для фиксированого положения-->
     <a class="page-header__logo page-header__logo-white" href="index.html">
       <picture>
@@ -1737,14 +1737,17 @@
     var navToggle = document.querySelector(".page-header__toggle");
 
     navHeader.classList.remove("page-header--nojs");
+    navHeader.classList.remove("page-header--opened")
+    navHeader.classList.add("page-header--closed");
 
     navToggle.addEventListener("click", function () {
       if (navHeader.classList.contains("page-header--closed")) {
         navHeader.classList.remove("page-header--closed");
         navHeader.classList.add("page-header--opened");
       } else {
-        navHeader.classList.add("page-header--closed");
+        navHeader.classList.add("page-header--opened");
         navHeader.classList.remove("page-header--opened");
+        navHeader.classList.add("page-header--closed");
       }
     });
 

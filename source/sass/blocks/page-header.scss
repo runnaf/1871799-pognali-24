@@ -151,14 +151,6 @@
   display: block;
 }
 
-.page-header--ineer {
-  background-color: $darkfont-color;
-}
-
-.page-header--opened {
-  background-color: $white;
-}
-
 .page-header--opened .page-header__nav {
   display: block;
   background-color: $white;
@@ -288,6 +280,14 @@
 
 .page-header--fixed .page-header__nav-link {
   color: hsla(229, 46%, 18%, 1);
+}
+
+.page-header--ineer {
+  background-color: hsla(229, 48%, 18%, 1);
+}
+
+.page-header--opened {
+  background-color: $white;
 }
 
 @media (min-width: $tablet-width) {
@@ -519,6 +519,18 @@
 
   .page-header__toggle {
     display: none;
+  }
+
+  .page-header--nojs {
+    background-color: hsla(229, 46%, 18%, 1);
+  }
+
+  .page-header--nojs .page-header__logo-black {
+    display: none;
+  }
+
+  .page-header--nojs .page-header__logo-white {
+    display: block;
   }
 
   .page-header--nojs .page-header__nav {
