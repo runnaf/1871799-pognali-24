@@ -739,10 +739,20 @@ page-heder--opened -класс при открытом меню состояни
         </div>
       </div>
       <div class="location__cart">
-        <iframe
+        <iframe class="location__img-iframe location__img-iframe--nojs"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003135!2d30.320858716175987!3d59.93871916905405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639586548206!5m2!1sru!2sru"
           width="320" height="424" allowfullscreen
-          title="Офис компании по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
+          title="Офис компании по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург">
+        </iframe>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/location/background_map-desktop.webp 1x" srcset="img/location/background_map-desktop@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1440px)" srcset="img/location/background_map-desktop.jpg 1x" srcset="img/location/background_map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/location/background_map-tablet.webp 1x, img/location/background_map-tablet@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/location/background_map-tablet.jpg 1x, img/location/background_map-tablet@2x.jpg 2x">
+          <source srcset="img/location/background_map-mobile.webp, img/location/background_map-mobile@2x.webp 2x" type="image/webp">
+          <img class="location__img-card location__img-card--nojs" src="img/location/background_map-mobile.jpg"
+            srcset="img/location/background_map-mobile@2x.jpg 2x" alt="Карта с адресом местонахождения ул. Большая Конюшенная, 19/8, Санкт-Петербург" width="320" height="424">
+        </picture>
       </div>
     </section>
   </main>
@@ -844,6 +854,15 @@ page-heder--opened -класс при открытом меню состояни
     navTariff.classList.add("wrapper--tariff-closed");
   });
 
+</script>
+
+<script>
+  const mapIframe = document.getElementsByClassName("location__img-iframe")[0]
+  mapIframe?.classList?.remove("location__img-iframe--nojs")
+
+  const mapPicture = document.getElementsByClassName("location__img-card")[0]
+  mapPicture?.classList?.remove("location__img-card--nojs")
+  mapPicture?.classList?.add("location__img-card--hidden")
 </script>
 </body>
 

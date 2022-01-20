@@ -97,17 +97,32 @@
 
 .location__cart {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 424px;
   margin-top: -30px;
   z-index: -3;
 }
 
-.location__cart iframe {
+.location__img-iframe {
   border: none;
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.location__img-card {
+  display: none;
+}
+
+.location__img-card--nojs {
+  display: block;
+}
+
+.location__img-iframe--nojs {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
